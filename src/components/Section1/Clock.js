@@ -39,12 +39,19 @@ function Clock(props) { // TODO:         line 73....
 
     }
 
+    var status; 
+    if(props.cc === 'Morocco'){
+        status = '/true/';
+    }else{
+        status = '/';
+    }
+
 
     const fetchData = async () => {
 
-        Axios.get(`https://api.pray.zone/v2/times/today.json?ip=${props.query}`).then(res => {
-            setSlt(res.data.results.datetime[0].times); setStt(false);
-        }).catch(err => { window.alert('Clock' + err) })
+        Axios.get(`http://muslimsalat.com/${props.cc}/${props.ss}${status}.json?key=9233c34903ef6aa6fd59a97cedac8226`).then(res => {
+            setSlt(res.data.items[0]); setStt(false);
+        }).catch(err => { console.log('Clock' + err) })
     }
 
 
@@ -60,20 +67,21 @@ function Clock(props) { // TODO:         line 73....
 
     const calC = async () => {
 
-        const sltAr = ['Fajr', 'Sunrise', 'Dhuhr', 'Asr', 'Maghrib', 'Isha']
+        const sltAr = ['fajr', 'shurooq', 'dhuhr', 'asr', 'maghrib', 'isha']
 
         for (let i = 0; i < sltAr.length; i++) {
 
             const nSl = slt[sltAr[i]];
 
-            let Hdiff = moment(slt[sltAr[i]], 'HH:mm').add(1, 'hours').format('HH') - moment().format('HH');
-            let Mdiff = moment(slt[sltAr[i]], 'HH:mm').format('mm') - moment().format('mm');
+            let Hdiff = moment(slt[sltAr[i]], 'h:mm A').format('HH') - moment().format('HH');
+            let Mdiff = moment(slt[sltAr[i]], 'h:mm A').format('mm') - moment().format('mm');
 
 
-            if ((props.cc==='Ma'? moment(nSl, 'HH:mm').add(1, 'hours').format('HHmm'):moment(nSl, 'HH:mm').format('HHmm') ) > moment().format('HHmm')) {
+            if (moment(nSl, 'h:mm A').format('HHmm') > moment().format('HHmm') ) {
                 if (Mdiff < 0) {
                     Hdiff = Hdiff - 1;
                     Mdiff = 60 - Math.abs(Mdiff);
+                    // console.log(moment(nSl, 'h:mm A').format('HH:mm'), Hdiff, Mdiff)
                 }
                 setHDiff(Hdiff);
                 setMDiff(Mdiff);
@@ -82,18 +90,18 @@ function Clock(props) { // TODO:         line 73....
                 break;
             } else {
 
-                Hdiff = (props.cc==='Ma'? moment(slt[sltAr[0]], 'HH:mm').add(1, 'hours').format('HH'): moment(slt[sltAr[0]], 'HH:mm').format('HH') ) - moment().format('HH');
-                Mdiff = moment(slt[sltAr[0]], 'HH:mm').format('mm') - moment().format('mm');
+                Hdiff = (props.cc==='Ma'? moment(slt[sltAr[0]], 'h:mm A').add(1, 'hours').format('HH'): moment(slt[sltAr[0]], 'h:mm A').format('HH') ) - moment().format('HH');
+                Mdiff = moment(slt[sltAr[0]], 'h:mm A').format('mm') - moment().format('mm');
 
                 if (Mdiff < 0) {
                     Hdiff = Hdiff - 1;
                     Mdiff = 60 - Math.abs(Mdiff);
                 }
-                Hdiff = 24 - parseInt(moment().format('HH')) + (props.cc==='Ma'? parseInt(moment(slt[sltAr[0]], 'HH:mm').format('HH')): parseInt(moment(slt[sltAr[0]], 'HH:mm').add(1, 'hours').format('HH'))) ; // TODO: fix this
+                Hdiff = 24 - parseInt(moment().format('HH')) + (parseInt(moment(slt[sltAr[0]], 'h:mm A').add(1, 'hours').format('HH'))) ; // TODO: fix this
                 setHDiff(Hdiff);
                 setMDiff(Mdiff);
                 setNextis(sltAr[0]);
-                // window.alert('else')
+                // window.alert()
 
             }
 

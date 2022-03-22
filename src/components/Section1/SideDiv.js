@@ -14,7 +14,7 @@ function SlideDiv() {
             .then((response) => {
 
                 setAsmaAlHusna(response.data.data[0]);
-                console.log(response.data.data[0]);
+                // console.log(response.data.data[0]);
                 setLoad(false);
 
 

@@ -142,14 +142,14 @@ function Player(props) {
     useEffect(() => {
         if (load === true) {
             setPlay(false)
-            console.log('loading...');
+            // console.log('loading...');
             document.querySelector('#play_button').src = 'https://cdn2.iconfinder.com/data/icons/guest-house-and-lodge-2/64/47-512.png';
 
             // handlePlay();
         }
         if (load === false) {
             setPlay(false)
-            console.log('Done!');
+            // console.log('Done!');
             document.querySelector('#play_button').src = 'https://www.talkerscode.com/webtricks/demo/images/play.png';
 
             // handlePlay();

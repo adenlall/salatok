@@ -27,7 +27,7 @@ function Vers(props) {
             .then((response) => {
                 // handle success
                 setAyah(response.data['verses'][0][`text_${para}`])
-                console.log(`https://api.quran.com/api/v4/quran/verses/${para}?verse_key=${props.num}`);
+                // console.log(`https://api.quran.com/api/v4/quran/verses/${para}?verse_key=${props.num}`);
             })
             .catch((error) => {
                 // handle error
@@ -40,7 +40,7 @@ function Vers(props) {
             .then((response) => {
                 // handle success
                 setAyah(response.data['translations'][0][`text`])
-                console.log(`https://api.quran.com/api/v4/quran/verses/${para}?verse_key=${props.num}`);
+                // console.log(`https://api.quran.com/api/v4/quran/verses/${para}?verse_key=${props.num}`);
             })
             .catch((error) => {
                 // handle error
