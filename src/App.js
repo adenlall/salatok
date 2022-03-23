@@ -29,6 +29,10 @@ function App() {
       setErr(false)
       // console.log(res.data)
     })
+setSS(res.data.city)
+      setCC(res.data.country_name)
+      setTat(true)
+      setErr(false)
     }).catch(error => { console.log('App.js : ' + error); setErr(true) })
 
   }
@@ -68,7 +72,7 @@ function App() {
       </>
     );
   }
-/*
+
   if (err === true && tat ===false) {
     return (
       <>
@@ -87,7 +91,7 @@ function App() {
       </>
     )
   }
-*/
+
 };
 
 export default App
