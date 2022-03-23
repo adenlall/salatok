@@ -22,13 +22,14 @@ function App() {
   //creating function to load ip address from the API
   const getData = async () => {
     await Axios.get('https://api.ipify.org?format=json').then(res => {
-      Axios.get(`http://api.ipstack.com/${res.data.ip}?access_key=983f89561a8b502b939929964d77c403&format=1`).then(res => {
+      await Axios.get(`http://api.ipstack.com/${res.data.ip}?access_key=983f89561a8b502b939929964d77c403&format=1`).then(res => {
       setSS(res.data.city)
       setCC(res.data.country_name)
       setTat(true)
+      setErr(false)
       // console.log(res.data)
     })
-    }).catch(error => { console.log('App.js : ' + error); setTat(false); setSS(false); setErr(true) })
+    }).catch(error => { console.log('App.js : ' + error); setErr(true) })
 
   }
 
@@ -67,7 +68,7 @@ function App() {
       </>
     );
   }
-
+/*
   if (err === true && tat ===false) {
     return (
       <>
@@ -86,7 +87,7 @@ function App() {
       </>
     )
   }
-
+*/
 };
 
 export default App
