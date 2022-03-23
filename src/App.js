@@ -11,7 +11,7 @@ import Support from './components/secLast/support';
 
 
 function App() {
-  
+
 
 
   const [ss, setSS] = useState(0);
@@ -21,14 +21,17 @@ function App() {
 
   //creating function to load ip address from the API
   const getData = async () => {
-    await Axios.get('https://api.ipify.org?format=json').then(res => {
-      Axios.get(`https://api.ipstack.com/${res.data.ip}?access_key=983f89561a8b502b939929964d77c403&format=1`).then(res => {
-      setSS(res.data.city)
-      setCC(res.data.country_name)
-      setTat(true)
-      // console.log(res.data)
-    })
-    }).catch(error => { console.log('App.js : ' + error); setTat(false); setSS(false); setErr(true) })
+    Axios.get('https://api.ipify.org?format=json').then(res => {
+      Axios.get(`http://api.ipstack.com/${res.data.ip}?access_key=983f89561a8b502b939929964d77c403&format=1`).then(res => {
+        setSS(res.data.city)
+        setCC(res.data.country_name)
+        setTat(true)
+        setErr(false)
+      }).catch(erro => {
+        setTat(true);
+        setErr(true);
+      })
+    }).catch(error => { console.log('App.js : ' + error); setErr(true); setTat(true); })
 
   }
 
@@ -39,8 +42,8 @@ function App() {
 
   }, [tat])
 
-
   if (tat === true && ss !== 0) {
+
 
     return (
       <>
@@ -66,9 +69,7 @@ function App() {
 
       </>
     );
-  }
-
-  if (err === true && tat === false && ss === 0) {
+  } if (err === true && tat === true && ss !== 0 ) {
     return (
       <>
         <div className='bg-gradient-to-tr from-red-400  to-red-500 w-screen h-screen m-0 p-2 flex flex-col space-y-4 items-center content-center justify-center'>
@@ -77,7 +78,8 @@ function App() {
         </div>
       </>
     )
-  }   if (err === false && tat === false && ss === 0) {
+
+  } if (err === true && tat === false && ss !== 0) {
     return (
       <>
         <div className='bg-gradient-to-tr from-teal-500  to-cyan-500 w-screen h-screen m-0 p-2 flex flex-col items-center content-center justify-center'>
@@ -85,6 +87,7 @@ function App() {
         </div>
       </>
     )
+
   }
 
 };
