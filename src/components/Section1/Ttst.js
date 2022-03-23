@@ -19,7 +19,7 @@ function Ttst(props) {
 
     const fetchDatta = async () => {
 
-        axios.get(`http://muslimsalat.com/${props.cc}/${props.ss}${status}weekly.json?key=9233c34903ef6aa6fd59a97cedac8226`).then(res => {
+        axios.get(`https://muslimsalat.com/${props.cc}/${props.ss}${status}weekly.json?key=9233c34903ef6aa6fd59a97cedac8226`).then(res => {
             setWeek(res.data.items); setState(false);
         }).catch(err => console.log('Ttst' +err))
 

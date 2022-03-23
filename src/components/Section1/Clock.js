@@ -49,7 +49,7 @@ function Clock(props) { // TODO:         line 73....
 
     const fetchData = async () => {
 
-        Axios.get(`http://muslimsalat.com/${props.cc}/${props.ss}${status}.json?key=9233c34903ef6aa6fd59a97cedac8226`).then(res => {
+        Axios.get(`https://muslimsalat.com/${props.cc}/${props.ss}${status}.json?key=9233c34903ef6aa6fd59a97cedac8226`).then(res => {
             setSlt(res.data.items[0]); setStt(false);
         }).catch(err => { console.log('Clock' + err) })
     }
