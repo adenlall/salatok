@@ -68,7 +68,7 @@ function App() {
     );
   }
 
-  if (err === true) {
+  if (err === true || tat ===false) {
     return (
       <>
         <div className='bg-gradient-to-tr from-red-400  to-red-500 w-screen h-screen m-0 p-2 flex flex-col space-y-4 items-center content-center justify-center'>
