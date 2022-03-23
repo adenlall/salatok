@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import moment from 'moment'
-import axios from 'axios';
+import moment from 'moment';
+import $ from 'jquery';
 
 
 function Ttst(props) {
@@ -17,11 +17,20 @@ function Ttst(props) {
         status = '/';
     }
 
-    const fetchDatta = async () => {
+    const fetchDatta = () => {
 
-        axios.get(`https://muslimsalat.com/${props.cc}/${props.ss}${status}weekly.json?key=9233c34903ef6aa6fd59a97cedac8226`).then(res => {
-            setWeek(res.data.items); setState(false);
-        }).catch(err => console.log('Ttst' +err))
+        // await axios.get(`https://muslimsalat.com/${props.cc}/${props.ss}${status}weekly.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`).then(res => {
+        //     setWeek(res.data.items); setState(false);
+        // }).catch(err => console.log('Ttst' +err))
+
+
+        $(
+            $.getJSON(`https://muslimsalat.com/${props.cc}/${props.ss}${status}weekly.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`, function (data)
+            {
+                setWeek(data.items); setState(false);
+                // console.log(data)
+            })
+       )
 
     }
 

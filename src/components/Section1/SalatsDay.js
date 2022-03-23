@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import React, { useState, useEffect } from 'react';
-import Axios from 'axios';
+import $ from 'jquery';
 import moment from 'moment'
 
 
@@ -16,13 +16,31 @@ function SalatsDay(props) {
         status = '/';
     }
 
+    const response = {
+        headers: {
+            'Access-Control-Allow-Origin' : '*',
+        },
+    };
+    
+    
+    const fetchData = () => {
+        // await Axios.get(`https://muslimsalat.com/${props.cc}/${props.ss}${status}.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`).then(res => {
+        //     setSalatAPI(res.data); setStateAPI(true);
+        //     // console.log(res.data);
+        // }).catch(err => { console.log('SalatDay' + err) })
 
-    const fetchData = async () => {
 
-        Axios.get(`https://muslimsalat.com/${props.cc}/${props.ss}${status}.json?key=9233c34903ef6aa6fd59a97cedac8226`).then(res => {
-            setSalatAPI(res.data); setStateAPI(true);
-            // console.log(res.data);
-        }).catch(err => { console.log('SalatDay' + err) })
+
+        $(
+            $.getJSON('https://muslimsalat.com/london/daily.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?', function (data)
+            {
+                setSalatAPI(data); setStateAPI(true);
+                // console.log(data)
+            })
+       )
+                        
+
+
     }
 
     useEffect(() => {

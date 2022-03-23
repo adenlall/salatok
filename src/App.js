@@ -19,9 +19,11 @@ function App() {
   const [tat, setTat] = useState(false);
   const [err, setErr] = useState(false);
 
+ 
+
   //creating function to load ip address from the API
   const getData = async () => {
-    Axios.get('https://api.ipify.org?format=json').then(res => {
+    await Axios.get('https://api.ipify.org?format=json').then(res => {
       Axios.get(`https://api.ipstack.com/${res.data.ip}?access_key=983f89561a8b502b939929964d77c403&format=1`).then(res => {
         setSS(res.data.city)
         setCC(res.data.country_name)

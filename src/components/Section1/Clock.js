@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Axios from 'axios';
+import $ from 'jquery'
 import moment from 'moment'
 
 
@@ -47,11 +47,21 @@ function Clock(props) { // TODO:         line 73....
     }
 
 
-    const fetchData = async () => {
+    const fetchData = () => {
 
-        Axios.get(`https://muslimsalat.com/${props.cc}/${props.ss}${status}.json?key=9233c34903ef6aa6fd59a97cedac8226`).then(res => {
-            setSlt(res.data.items[0]); setStt(false);
-        }).catch(err => { console.log('Clock' + err) })
+        // await Axios.get(`https://muslimsalat.com/${props.cc}/${props.ss}${status}.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`).then(res => {
+        //     setSlt(res.data.items[0]); setStt(false);
+        // }).catch(err => { console.log('Clock' + err) })
+
+
+        $(
+            $.getJSON(`https://muslimsalat.com/${props.cc}/${props.ss}${status}.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`, function (data)
+            {
+                setSlt(data.items[0]); setStt(false);
+                // console.log(data)
+            })
+       )
+
     }
 
 
