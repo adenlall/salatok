@@ -21,15 +21,13 @@ function App() {
 
   //creating function to load ip address from the API
   const getData = async () => {
-    await Axios.get('https://api.ipify.org?format=json').then(res => {
+     Axios.get('https://api.ipify.org?format=json').then(res => {
       await Axios.get(`http://api.ipstack.com/${res.data.ip}?access_key=983f89561a8b502b939929964d77c403&format=1`).then(res => {
       setSS(res.data.city)
       setCC(res.data.country_name)
       setTat(true)
       setErr(false)
       })
-      setTat(true)
-      setErr(false)
     }).catch(error => { console.log('App.js : ' + error); setErr(true) })
 
   }
@@ -42,8 +40,7 @@ function App() {
   }, [tat])
 
 
-  if (tat === true && ss !== 0 && err === false) {
-
+  
     return (
       <>
         <div className='w-full flex lg:flex-row flex-col items-stretch justify-center content-center space-y-4 space-x-0 lg:space-y-0 lg:space-x-4 p-4'>
@@ -68,27 +65,7 @@ function App() {
 
       </>
     );
-  }
-
-  if (err === true && tat ===false) {
-    return (
-      <>
-        <div className='bg-gradient-to-tr from-red-400  to-red-500 w-screen h-screen m-0 p-2 flex flex-col space-y-4 items-center content-center justify-center'>
-          <p className='text-4xl text-black font-extrabold'>A Fatal Error, Your Adblock or Browser block website to locate your position</p>
-          <p className='text-xl text-black font-bold'>Please Disable ypur Adblocker or change the browser. report a bug on <button className='btn btn-sm'>GitHub</button></p>
-        </div>
-      </>
-    )
-  } else {
-    return (
-      <>
-        <div className='bg-gradient-to-tr from-teal-500  to-cyan-500 w-screen h-screen m-0 p-2 flex flex-col items-center content-center justify-center'>
-          <p className='text-4xl text-white font-extrabold'>loading ...</p>
-        </div>
-      </>
-    )
-  }
-
+  
 };
 
 export default App
