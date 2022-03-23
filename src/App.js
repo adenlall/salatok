@@ -40,7 +40,7 @@ function App() {
   }, [tat])
 
 
-  if (tat === true && ss !== 0) {
+  if (tat === true && ss !== 0 && err === false) {
 
     return (
       <>
@@ -68,7 +68,7 @@ function App() {
     );
   }
 
-  if (err === true || tat ===false) {
+  if (err === true && tat ===false) {
     return (
       <>
         <div className='bg-gradient-to-tr from-red-400  to-red-500 w-screen h-screen m-0 p-2 flex flex-col space-y-4 items-center content-center justify-center'>
