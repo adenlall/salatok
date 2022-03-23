@@ -19,7 +19,7 @@ function SalatsDay(props) {
 
     const fetchData = async () => {
 
-        Axios.get(`http://muslimsalat.com/${props.cc}/${props.ss}${status}.json?key=9233c34903ef6aa6fd59a97cedac8226`).then(res => {
+        Axios.get(`https://muslimsalat.com/${props.cc}/${props.ss}${status}.json?key=9233c34903ef6aa6fd59a97cedac8226`).then(res => {
             setSalatAPI(res.data); setStateAPI(true);
             // console.log(res.data);
         }).catch(err => { console.log('SalatDay' + err) })
