@@ -23,8 +23,8 @@ function App() {
 
   //creating function to load ip address from the API
   const getData = async () => {
-    await Axios.get('http://api.ipify.org?format=json').then(res => {
-      console.log(res.data);
+    await Axios.get('https://api.ipify.org?format=json').then(res => {
+      // console.log(res.data);
       Axios.post(`https://iptwist.com`, { ip: `${res.data.ip}`}, {
         headers: {
           'Content-Type': 'application/json',
