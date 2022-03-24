@@ -110,12 +110,12 @@ function Calendar() {
                         </div>
                     </div>
                     <div className="flex lg:flex-row space-y-4 lg:space-x-4 space-x-0  lg:space-y-0 flex-col w-full items-center content-center">
-                        <div className='flex space-x-4 lg:w-2/6 w-full items-center content-center'>
+                        <div className='flex space-x-4 lg:w-1/2 w-full items-center content-center'>
                             <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-teal-500  to-cyan-500"><h1 className="text-slate-100 font-extrabold text-xl">:</h1></div>
                             <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h1 className="text-slate-100 font-extrabold text-xl">:</h1></div>
                             <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h1 className="text-slate-100 font-extrabold text-xl">:</h1></div>
                         </div>
-                        <div className='flex space-x-4 lg:w-2/6 w-full items-center content-center'>
+                        <div className='flex space-x-4 lg:w-1/2 w-full items-center content-center'>
                             <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h1 className="text-slate-100 font-extrabold text-xl">:</h1></div>
                             <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h1 className="text-slate-100 font-extrabold text-xl">:</h1></div>
                             <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h1 className="text-slate-100 font-extrabold text-xl">:</h1></div>
