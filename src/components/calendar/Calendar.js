@@ -26,14 +26,9 @@ function Calendar() {
                 setDy(json.data.hijri);
                 setDd(json.data.hijri.weekday.en);
                 setDm(json.data.hijri.month.en);
-
-
-                convert(moment(moment().add(0, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 0, 'en')
-                convert(moment(moment().add(1, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 1, 'en')
-                convert(moment(moment().add(2, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 2, 'en')
-                convert(moment(moment().add(3, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 3, 'en')
-                convert(moment(moment().add(4, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 4, 'en')
-                convert(moment(moment().add(5, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 5, 'en')
+                for (let i = 0; i < document.querySelectorAll('.weekc').length; i++) {
+                    convert(moment(moment().add(i, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), i, 'en')
+                }
 
             }).finally(() => {
                 setLoad(false);
@@ -55,12 +50,10 @@ function Calendar() {
         if (document.querySelector('#togg').checked === false) {
             setDd(Dy.weekday.en);
             setDm(Dy.month.en);
-            convert(moment(moment().add(0, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 0, 'en')
-            convert(moment(moment().add(1, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 1, 'en')
-            convert(moment(moment().add(2, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 2, 'en')
-            convert(moment(moment().add(3, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 3, 'en')
-            convert(moment(moment().add(4, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 4, 'en')
-            convert(moment(moment().add(5, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 5, 'en')
+
+            for (let i = 0; i < document.querySelectorAll('.weekc').length; i++) {
+                convert(moment(moment().add(i, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), i, 'en')
+            }
 
             document.querySelector('.nmak1').innerHTML = "To day done";
             document.querySelector('.nmak2').innerHTML = "To week done";
@@ -69,14 +62,11 @@ function Calendar() {
         } else {
             setDd(Dy.weekday.ar);
             setDm(Dy.month.ar);
-            convert(moment(moment().add(0, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 0, 'ar')
-            convert(moment(moment().add(1, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 1, 'ar')
-            convert(moment(moment().add(2, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 2, 'ar')
-            convert(moment(moment().add(3, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 3, 'ar')
-            convert(moment(moment().add(4, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 4, 'ar')
-            convert(moment(moment().add(5, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 5, 'ar')
 
-
+            for (let i = 0; i < document.querySelectorAll('.weekc').length; i++) {
+                convert(moment(moment().add(i, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), i, 'ar')
+            
+            }
             document.querySelector('.nmak1').innerHTML = "قبل انتهاء اليوم";
             document.querySelector('.nmak2').innerHTML = "قبل انتهاء الاسبوع";
             document.querySelector('.nmak3').innerHTML = "قبل انتهاء الشهر";
@@ -123,12 +113,10 @@ function Calendar() {
                         <div className='flex space-x-4 lg:w-2/6 w-full items-center content-center'>
                             <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-teal-500  to-cyan-500"><h1 className="text-slate-100 font-extrabold text-xl">:</h1></div>
                             <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h1 className="text-slate-100 font-extrabold text-xl">:</h1></div>
-                        </div>
-                        <div className='flex space-x-4 lg:w-2/6 w-full items-center content-center'>
-                            <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h1 className="text-slate-100 font-extrabold text-xl">:</h1></div>
                             <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h1 className="text-slate-100 font-extrabold text-xl">:</h1></div>
                         </div>
                         <div className='flex space-x-4 lg:w-2/6 w-full items-center content-center'>
+                            <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h1 className="text-slate-100 font-extrabold text-xl">:</h1></div>
                             <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h1 className="text-slate-100 font-extrabold text-xl">:</h1></div>
                             <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h1 className="text-slate-100 font-extrabold text-xl">:</h1></div>
                         </div>
