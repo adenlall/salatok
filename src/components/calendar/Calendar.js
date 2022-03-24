@@ -27,7 +27,7 @@ function Calendar() {
                 setDd(json.data.hijri.weekday.en);
                 setDm(json.data.hijri.month.en);
                 for (let i = 0; i < document.querySelectorAll('.weekc').length; i++) {
-                    convert(moment(moment().add(i, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), i, 'en')
+                    document.querySelectorAll('.weekc')[i].innerHTML = convert(moment(moment().add(i, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), i, 'en')
                 }
 
             }).finally(() => {
