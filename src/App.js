@@ -23,7 +23,7 @@ function App() {
 
   //creating function to load ip address from the API
   const getData = async () => {
-    await Axios.get('https://api.ipify.org?format=json').then(res => {
+    await Axios.get('http://api.ipify.org?format=json').then(res => {
       console.log(res.data);
       Axios.get(`http://api.ipstack.com/${res.data.ip}?access_key=983f89561a8b502b939929964d77c403&format=1`).then(res => {
         setSS(res.data.city)
