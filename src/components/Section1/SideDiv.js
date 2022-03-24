@@ -32,7 +32,7 @@ function SlideDiv() {
     return (
         <>
             <div className="lg:w-1/2 w-full shadow-xl rounded-lg" style={{ background: 'url("https://tlgur.com/d/GZ3Xn16g") center center / cover ',backgroundRepeat: 'no-repeat'}} >
-                <div className="flex flex-col h-full items-center lg:py-4 py-12 justify-between rounded-lg dark:text-slate-100 text-gray-800" style={{ background: 'linear-gradient(181deg, black, transparent)' }} >
+                <div className="flex flex-col h-full items-center lg:py-4 py-12 justify-between rounded-lg text-slate-100" style={{ background: 'linear-gradient(181deg, black, transparent)' }} >
                     {
                         load === true
                             ? 'Loading...'

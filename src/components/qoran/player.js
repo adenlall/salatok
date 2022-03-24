@@ -189,7 +189,7 @@ function Player(props) {
                     </div>
                 </div>
 
-                <div className="flex items-center w-full justify-center content-center space-x-4  p-3 rounded-lg bg-slate-200 dark:bg-gray-700 dark:text-slate-100 text-gray-00">
+                <div className="flex items-center w-full justify-center content-center space-x-4  p-3 rounded-lg bg-gray-700 text-slate-100">
                     <audio id="music_player">
                         <source id="srslp" src="" />
                     </audio>
@@ -211,7 +211,7 @@ function Player(props) {
                     </div>
                 </div>
                 <div className=''>
-                    <h1 className='text-lg pl-2'>The reciter :  <span className='font-bold badge badge-primary ' id='bbs'>Mohamed Siddiq al-Minshawi</span></h1>
+                    <h1 className='text-lg pl-2'>The reciter :  <span className='font-bold badge text-base badge-primary ' id='bbs'>Mohamed Siddiq al-Minshawi</span></h1>
                     <div className='flex mt-2 space-x-2 p-2'>
 
                         <div className="avatar  w-full online" id="rec8">

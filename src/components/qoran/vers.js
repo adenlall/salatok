@@ -63,15 +63,15 @@ function Vers(props) {
                     {/* <p className="text-xl">{surah.englishName + ' - ' + surah.englishNameTranslation }<p className='text-lg'>{'ayah : '+snum}</p></p> */}
                 </div>
                 <div className='w-full p-1 rounded-lg bg-slate-200 flex flex-col dark:bg-gray-900'>
-                    <h1 className='pl-2 text-lg'>Select Ayah font format</h1>
-                    <div className='w-full p-2 rounded-lg space-x-2'>
+                    <h1 className='pl-2 text-lg'>Select <strong>Ayah</strong> font format</h1>
+                    <div className='w-full p-2 rounded-lg space-x-2 space-y-4 lg:space-y-0'>
                         <button onClick={() => { fontType('indopak') }} className='badge badge-accent badge-outline'>indopak</button>
                         <button onClick={() => { fontType('uthmani') }} className='badge badge-accent badge-outline'>uthmani</button>
                         <button onClick={() => { fontType('uthmani_simple') }} className='badge badge-accent badge-outline'>simple</button>
                         <button onClick={() => { fontType('imlaei') }} className='badge badge-accent badge-outline'>imlaei</button>
-                        <button onClick={() => { trans(20) }} className='badge badge-primary badge-outline'>english</button>
-                        <button onClick={() => { trans(136) }} className='badge badge-primary badge-outline'>french</button>
-                        <button onClick={() => { trans(78) }} className='badge badge-primary badge-outline'>russian</button>
+                        <button onClick={() => { trans(20) }} className='badge bg-cyan-300 text-gray-800 badge-outline'>english</button>
+                        <button onClick={() => { trans(136) }} className='badge bg-cyan-300 text-gray-800 badge-outline'>french</button>
+                        <button onClick={() => { trans(78) }} className='badge bg-cyan-300 text-gray-800 badge-outline'>russian</button>
                     </div>
                 </div>
             </div>

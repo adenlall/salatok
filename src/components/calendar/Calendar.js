@@ -107,30 +107,30 @@ function Calendar() {
                                 <p>{D}</p>
                             </div>
                             <div className="flex w-full justify-self-stretch items-stretch flex-col space-y-2 ">
-                                <h1 className="w-full space-x-2 flex justify-between"><span className="px-1 min-w-fit rounded-sm bg-gray-700">{moment().endOf('day').fromNow('D')}</span><p className="   nmak1 w-full">To day done</p></h1>
-                                <h1 className="w-full space-x-2 flex justify-between"><span className="px-1 min-w-fit rounded-sm bg-gray-700">{moment().endOf('week').fromNow('D')}</span><p className="  nmak2 w-full">To week done </p></h1>
-                                <h1 className="w-full space-x-2 flex justify-between"><span className="px-1 min-w-fit rounded-sm bg-gray-700">{moment().endOf('month').fromNow('D')}</span><p className=" nmak3 w-full">To month done</p></h1>
+                                <h1 className="w-full space-x-2 flex justify-between"><span className="px-1 min-w-fit rounded-sm text-slate-100 bg-gray-700">{moment().endOf('day').fromNow('D')}</span><p className="   nmak1 w-full">To day done</p></h1>
+                                <h1 className="w-full space-x-2 flex justify-between"><span className="px-1 min-w-fit rounded-sm text-slate-100 bg-gray-700">{moment().endOf('week').fromNow('D')}</span><p className="  nmak2 w-full">To week done </p></h1>
+                                <h1 className="w-full space-x-2 flex justify-between"><span className="px-1 min-w-fit rounded-sm text-slate-100 bg-gray-700">{moment().endOf('month').fromNow('D')}</span><p className=" nmak3 w-full">To month done</p></h1>
                             </div>
                         </div>
                         <div class="form-control">
                             <label class="label cursor-pointer">
-                                <span class="label-text mr-2">Arabic</span>
+                                <span class="label-text mr-2">To <strong>Arabic</strong></span>
                                 <input type="checkbox" id='togg' onChange={() => { togg() }} class="toggle toggle-accent" />
                             </label>
                         </div>
                     </div>
                     <div className="flex lg:flex-row space-y-4 lg:space-x-4 space-x-0  lg:space-y-0 flex-col w-full items-center content-center">
                         <div className='flex space-x-4 lg:w-2/6 w-full items-center content-center'>
-                            <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-teal-500  to-cyan-500"><h1 className="font-extrabold text-xl">:</h1></div>
-                            <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h1 className="font-extrabold text-xl">:</h1></div>
+                            <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-teal-500  to-cyan-500"><h1 className="text-slate-100 font-extrabold text-xl">:</h1></div>
+                            <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h1 className="text-slate-100 font-extrabold text-xl">:</h1></div>
                         </div>
                         <div className='flex space-x-4 lg:w-2/6 w-full items-center content-center'>
-                            <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h1 className="font-extrabold text-xl">:</h1></div>
-                            <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h1 className="font-extrabold text-xl">:</h1></div>
+                            <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h1 className="text-slate-100 font-extrabold text-xl">:</h1></div>
+                            <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h1 className="text-slate-100 font-extrabold text-xl">:</h1></div>
                         </div>
                         <div className='flex space-x-4 lg:w-2/6 w-full items-center content-center'>
-                            <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h1 className="font-extrabold text-xl">:</h1></div>
-                            <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h1 className="font-extrabold text-xl">:</h1></div>
+                            <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h1 className="text-slate-100 font-extrabold text-xl">:</h1></div>
+                            <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h1 className="text-slate-100 font-extrabold text-xl">:</h1></div>
                         </div>
                     </div>
                 </div>
