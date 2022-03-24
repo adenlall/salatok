@@ -25,16 +25,25 @@ function App() {
   const getData = async () => {
     await Axios.get('http://api.ipify.org?format=json').then(res => {
       console.log(res.data);
-      Axios.get(`http://api.ipstack.com/${res.data.ip}?access_key=983f89561a8b502b939929964d77c403&format=1`).then(res => {
+      Axios.post(`https://iptwist.com`, { ip: `${res.data.ip}`}, {
+        headers: {
+          'Content-Type': 'application/json',
+          'X-IPTWIST-TOKEN': 'FTXdxEfcL0Bq1XS1MVVAw8G0h2CSRBqARS43CDDeBjhMS1FWPoHWzoy6g6Qrkbd6'
+        },
+      }).then(res => {
         setSS(res.data.city)
-        setCC(res.data.country_name)
-        setTat(true)
-        setErr(false)
-        console.log(res.data);
-      }).catch(erro => {
+        setCC(res.data.country)
+        // config
+        setErr(false);
         setTat(true);
+        // console.log(res.data, err, tat);
+      }).catch(erro => {
+        console.log(erro)
+        // config
         setErr(true);
+        setTat(true);
       })
+      
     }).catch(error => { console.log('App.js : ' + error); setErr(true); setTat(true); })
 
   }
@@ -46,7 +55,7 @@ function App() {
 
   }, [tat])
 
-  if (err === false && tat === true && ss !== 0) {
+  if (err === false && tat === true) {
 
 
     return (

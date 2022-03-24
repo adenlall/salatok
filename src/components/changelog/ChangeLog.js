@@ -1,5 +1,12 @@
+import { animate } from "popmotion"
+
 
 function ChangeLog() {
+
+
+    const ele = document.querySelector('#test');
+    animate({ from: 0, to: 100, elapsed: -3000,onUpdate: latest => ele.innerHTML = latest})
+
     return (
         <>
             <div className='p-0 m-0 flex flex-col space-y-4 items-center bg-white dark:bg-gray-900'>
@@ -18,14 +25,13 @@ function ChangeLog() {
                     {/* First */}
                     <article className="px-14 items-center ">
                         <div className="flex flex-col w-full space-y-2">
+                            <span id="test"></span>
                             <h1 class="text-3xl leading-8 font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">Salatok App : First Release ᐢ ᵕ ᐢ</h1>
                             <p>Friay 18-03-22</p>
                         </div>
                         <div className="flex lg:flex-row flex-col-reverse space-x-2">
                             <p className="p-2 pl-0 text-base indent-8 whitespace-normal lg:w-3/4 w-full space-y-4 items-center tracking-tight text-gray-900 dark:text-white sm:text-2xl">
-                                welcome to the  <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-cyan-600 relative inline-block">
-                                    <span class="relative text-white">First Release</span>
-                                </span>, as you see this is a non-profit and voluntary project, so we cannot guarantee that there will be future updates, well if it is then you will see it above
+                                welcome to the First Release, as you see this is a non-profit and voluntary project, so we cannot guarantee that there will be future updates, well if it is then you will see it above
                                 okay we will start by introduct the main features and the website concept.
                                 <ul className="space-y-6 pl-6 mt-5">
                                     <li className=""> <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-cyan-600 relative inline-block">
