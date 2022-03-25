@@ -17,7 +17,7 @@ function Calendar() {
     useEffect(() => {
         const date = moment().format('D-M-Y');
 
-        fetch(`https://api.aladhan.com/v1/gToH?date${date}`)
+        fetch(`http://api.aladhan.com/v1/gToH?date${date}`)
             .then(response => response.json())
             .then(json => {
                 // console.log(json)
@@ -35,7 +35,7 @@ function Calendar() {
             })
     }, []);
     function convert(lldate, nuum, lan) {
-        fetch(`https://api.aladhan.com/v1/gToH?date=${lldate}`)
+        fetch(`http://api.aladhan.com/v1/gToH?date=${lldate}`)
             .then(response => response.json())
             .then(json => {
                 document.querySelectorAll('.weekc')[nuum].innerHTML = json.data.hijri.day + " " + json.data['hijri']['month'][`${lan}`];
