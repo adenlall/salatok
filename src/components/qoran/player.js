@@ -12,11 +12,11 @@ function Player(props) {
     function qakl() {
         setLoad(true)
 
-        axios.get(`https://api.quran.com/api/v4/recitations/3/by_ayah/${props.num}`)
+        axios.get(`http://api.quran.com/api/v4/recitations/3/by_ayah/${props.num}`)
             .then((response) => {
 
                 // setSuraha(response.data.data.surah)
-                document.querySelector('#srslp').src = `https://verses.quran.com/${response.data.audio_files[0].url}`;
+                document.querySelector('#srslp').src = `http://verses.quran.com/${response.data.audio_files[0].url}`;
                 // console.log(`https://verses.quran.com/${response.data.audio_files[0].url}`)
                 document.querySelector('#music_player').load();
                 setLoad(false)
@@ -54,11 +54,11 @@ function Player(props) {
         document.querySelector('#bbs').innerHTML = recico[`${rec}`][0];
         player.pause();
 
-        axios.get(`https://api.quran.com/api/v4/recitations/${rec}/by_ayah/${props.num}`)
+        axios.get(`http://api.quran.com/api/v4/recitations/${rec}/by_ayah/${props.num}`)
             .then((response) => {
 
                 // setSuraha(response.data.data.surah)
-                document.querySelector('#srslp').src = `https://verses.quran.com/${response.data.audio_files[0].url}`;
+                document.querySelector('#srslp').src = `http://verses.quran.com/${response.data.audio_files[0].url}`;
                 document.querySelector('#music_player').load();
                 setLoad(false)
 
@@ -78,11 +78,11 @@ function Player(props) {
 
         if (play === false) {
             player.play();
-            document.querySelector('#play_button').src = "https://www.talkerscode.com/webtricks/demo/images/pause.png";
+            document.querySelector('#play_button').src = "http://www.talkerscode.com/webtricks/demo/images/pause.png";
             setPlay(true);
         } else {
             player.pause();
-            document.querySelector('#play_button').src = "https://www.talkerscode.com/webtricks/demo/images/play.png";
+            document.querySelector('#play_button').src = "http://www.talkerscode.com/webtricks/demo/images/play.png";
             setPlay(false);
         }
     };
@@ -143,14 +143,14 @@ function Player(props) {
         if (load === true) {
             setPlay(false)
             // console.log('loading...');
-            document.querySelector('#play_button').src = 'https://cdn2.iconfinder.com/data/icons/guest-house-and-lodge-2/64/47-512.png';
+            document.querySelector('#play_button').src = 'http://cdn2.iconfinder.com/data/icons/guest-house-and-lodge-2/64/47-512.png';
 
             // handlePlay();
         }
         if (load === false) {
             setPlay(false)
             // console.log('Done!');
-            document.querySelector('#play_button').src = 'https://www.talkerscode.com/webtricks/demo/images/play.png';
+            document.querySelector('#play_button').src = 'http://www.talkerscode.com/webtricks/demo/images/play.png';
 
             // handlePlay();
         }
@@ -216,27 +216,27 @@ function Player(props) {
 
                         <div className="avatar  w-full online" id="rec8">
                             <div onClick={() => { ggd(8) }} className="shadow-lg w-full mask hover:opacity-80 cursor-pointer mask-squircle ">
-                                <img alt="" className=' object-cover object-center' src="https://quran.com.kw/en/wp-content/uploads/al-minshawy-1.jpg" />
+                                <img alt="" className=' object-cover object-center' src="http://quran.com.kw/en/wp-content/uploads/al-minshawy-1.jpg" />
                             </div>
                         </div>
                         <div className="avatar  w-full" id="rec2">
                             <div onClick={() => { ggd(2) }} className="shadow-lg w-full mask hover:opacity-80 cursor-pointer mask-squircle ">
-                                <img alt="" className=' object-cover object-center' src="https://darulquran.co.uk/wp-content/uploads/2021/02/Abdul-Basit-Abdus-Samad.jpg" />
+                                <img alt="" className=' object-cover object-center' src="http://darulquran.co.uk/wp-content/uploads/2021/02/Abdul-Basit-Abdus-Samad.jpg" />
                             </div>
                         </div>
                         <div className="avatar  w-full" id="rec10">
                             <div onClick={() => { ggd(10) }} className="shadow-lg w-full mask hover:opacity-80 cursor-pointer mask-squircle ">
-                                <img alt="" className=' object-cover object-center' src="https://4.bp.blogspot.com/_0S0sNxarG_M/TMnWY_fGxuI/AAAAAAAAFUk/10C_Fqm7K9E/s1600/saoud-shuraim-123.jpg" />
+                                <img alt="" className=' object-cover object-center' src="http://4.bp.blogspot.com/_0S0sNxarG_M/TMnWY_fGxuI/AAAAAAAAFUk/10C_Fqm7K9E/s1600/saoud-shuraim-123.jpg" />
                             </div>
                         </div>
                         <div className="avatar  w-full" id="rec5">
                             <div onClick={() => { ggd(5) }} className="shadow-lg w-full mask hover:opacity-80 cursor-pointer mask-squircle ">
-                                <img alt="" className=' object-cover object-center' src="https://masjidassunnah-fl.com/wp-content/uploads/2012/12/Hani-Ar-Rifai.jpg" />
+                                <img alt="" className=' object-cover object-center' src="http://masjidassunnah-fl.com/wp-content/uploads/2012/12/Hani-Ar-Rifai.jpg" />
                             </div>
                         </div>
                         <div className="avatar  w-full" id="rec7">
                             <div onClick={() => { ggd(7) }} className="shadow-lg w-full mask hover:opacity-80 cursor-pointer mask-squircle ">
-                                <img alt="" className=' object-cover object-center' src="https://yt3.ggpht.com/a/AGF-l7895FcDq0jG9uG_7uDQZ2T-v1kcSAaGrzP20w=s900-mo-c-c0xffffffff-rj-k-no" />
+                                <img alt="" className=' object-cover object-center' src="http://yt3.ggpht.com/a/AGF-l7895FcDq0jG9uG_7uDQZ2T-v1kcSAaGrzP20w=s900-mo-c-c0xffffffff-rj-k-no" />
                             </div>
                         </div>
                     </div>

@@ -9,7 +9,7 @@ function Vers(props) {
 
     
     const getQrn = () => {
-        axios.get(`https://api.quran.com/api/v4/quran/verses/imlaei?verse_key=${props.num}`)
+        axios.get(`http://api.quran.com/api/v4/quran/verses/imlaei?verse_key=${props.num}`)
             .then((response) => {
                 // handle success
                 setAyah(response.data.verses[0].text_imlaei)
@@ -23,7 +23,7 @@ function Vers(props) {
 
     }
     const fontType = (para) => {
-        axios.get(`https://api.quran.com/api/v4/quran/verses/${para}?verse_key=${props.num}`)
+        axios.get(`http://api.quran.com/api/v4/quran/verses/${para}?verse_key=${props.num}`)
             .then((response) => {
                 // handle success
                 setAyah(response.data['verses'][0][`text_${para}`])
@@ -36,7 +36,7 @@ function Vers(props) {
 
     }
     const trans = (para) => {
-        axios.get(`https://api.quran.com/api/v4/quran/translations/${para}?verse_key=${props.num}`)
+        axios.get(`http://api.quran.com/api/v4/quran/translations/${para}?verse_key=${props.num}`)
             .then((response) => {
                 // handle success
                 setAyah(response.data['translations'][0][`text`])
