@@ -26,14 +26,17 @@ function Calendar() {
                 setDy(json.data.hijri);
                 setDd(json.data.hijri.weekday.en);
                 setDm(json.data.hijri.month.en);
-                for (let i = 0; i < document.querySelectorAll('.items').length; i++) {
-                    document.querySelectorAll('.items')[i].innerHTML = convert(moment(moment().add(i, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), i, 'en')
-                }
+                document.querySelectorAll('.zitems')[0].innerHTML = convert(moment(moment().add(0, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 0, 'en')
+                document.querySelectorAll('.zitems')[1].innerHTML = convert(moment(moment().add(1, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 1, 'en')
+                document.querySelectorAll('.zitems')[2].innerHTML = convert(moment(moment().add(2, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 2, 'en')
+                document.querySelectorAll('.zitems')[3].innerHTML = convert(moment(moment().add(3, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 3, 'en')
+                document.querySelectorAll('.zitems')[4].innerHTML = convert(moment(moment().add(4, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 4, 'en')
+                document.querySelectorAll('.zitems')[5].innerHTML = convert(moment(moment().add(5, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 5, 'en')
 
             }).finally(() => {
                 setLoad(false);
             })
-    }, []);
+    }, [load]);
     function convert(lldate, nuum, lan) {
         fetch(`http://api.aladhan.com/v1/gToH?date=${lldate}`)
             .then(response => response.json())
@@ -111,14 +114,14 @@ function Calendar() {
                     </div>
                     <div className="flex lg:flex-row space-y-4 lg:space-x-4 space-x-0  lg:space-y-0 flex-col w-full items-center content-center">
                         <div className='flex space-x-4 w-full items-center content-center'>
-                            <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-teal-500  to-cyan-500"><h1 className="items text-slate-100 font-extrabold text-xl">:</h1></div>
-                            <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h1 className="items text-slate-100 font-extrabold text-xl">:</h1></div>
-                            <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h1 className="items text-slate-100 font-extrabold text-xl">:</h1></div>
+                            <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-teal-500  to-cyan-500"><h1 className="zitems text-slate-100 font-extrabold text-xl">:</h1></div>
+                            <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h1 className="zitems text-slate-100 font-extrabold text-xl">:</h1></div>
+                            <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h1 className="zitems text-slate-100 font-extrabold text-xl">:</h1></div>
                         </div>
                         <div className='flex space-x-4 w-full items-center content-center'>
-                            <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h1 className="items text-slate-100 font-extrabold text-xl">:</h1></div>
-                            <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h1 className="items text-slate-100 font-extrabold text-xl">:</h1></div>
-                            <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h1 className="items text-slate-100 font-extrabold text-xl">:</h1></div>
+                            <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h1 className="zitems text-slate-100 font-extrabold text-xl">:</h1></div>
+                            <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h1 className="zitems text-slate-100 font-extrabold text-xl">:</h1></div>
+                            <div className="weekc w-full h-28 flex items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h1 className="zitems text-slate-100 font-extrabold text-xl">:</h1></div>
                         </div>
                     </div>
                 </div>
