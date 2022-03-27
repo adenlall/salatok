@@ -1,5 +1,4 @@
 import { animate } from "popmotion"
-import { } from "react";
 import { useEffect } from "react";
 
 function ChangeLog() {
