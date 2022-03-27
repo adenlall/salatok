@@ -5,9 +5,9 @@ function About() {
 
     useEffect(() => {
         document.title = "About Salatok.App - Muslim Day Manager";
-      }, []);
-    
-    return ( 
+    }, []);
+
+    return (
 
         <>
             <div className='p-0 m-0 bg-white dark:bg-gray-900'>
@@ -20,14 +20,14 @@ function About() {
                         <p class="text-center mb-32 text-xl font-normal text-gray-500">
                             Meat the best team in wolrd
                         </p>
-                        <div class="flex items-center space-y-24 lg:space-y-0 flex-col lg:flex-row justify evenly">
+                        <div class="flex space-y-24 lg:space-y-0 flex-col lg:flex-row items-stretch">
                             <div class="p-4 relative">
                                 <div class="text-center mb-4 absolute -top-16 right-1/2 transform translate-x-1/2">
                                     <a href="_" class="block relative">
-                                        <img alt="profil" src="https://tlgur.com/d/G7Bq5kD8" class="mx-auto object-cover rounded-lg h-40 w-40  border-2 border-white dark:border-gray-800" />
+                                        <img alt="profil" src="https://tlgur.com/d/GW1yzeX4" class="mx-auto object-cover rounded-lg h-40 w-40  border-2 border-white dark:border-gray-800" />
                                     </a>
                                 </div>
-                                <div class="bg-white dark:bg-gray-800 rounded-lg shadow px-8 py-4 pt-24">
+                                <div class="bg-white dark:bg-gray-800 rounded-lg flex flex-col justify-between shadow h-full px-8 py-4 pt-24">
                                     <div class="text-center">
                                         <p class="text-2xl text-gray-800 dark:text-white">
                                             Kh Abass
@@ -36,7 +36,7 @@ function About() {
                                             Product Manager
                                         </p>
                                         <p class="text-md text-gray-500 w-60 dark:text-gray-400 mx-auto py-4 font-light">
-                                            Patrick Sébastien, born November 14, 1953 in Brive-la-Gaillarde, is an imitator.
+                                            Abbes Khouyi, born November 14, 2002 in Sidi Bennour, provide the large view of project.
                                         </p>
                                     </div>
                                     <div class="space-x-2 pt-8 flex border-t border-gray-200 w-40 mx-auto text-gray-500 items-center justify-center">
@@ -67,16 +67,16 @@ function About() {
                                         <img alt="profil" src="https://tlgur.com/d/G7Bq5kD8" class="mx-auto object-cover rounded-lg h-40 w-40  border-2 border-white dark:border-gray-800" />
                                     </a>
                                 </div>
-                                <div class="bg-white dark:bg-gray-800 rounded-lg shadow px-8 py-4 pt-24">
+                                <div class="bg-white dark:bg-gray-800 rounded-lg flex flex-col justify-between shadow h-full px-8 py-4 pt-24">
                                     <div class="text-center">
                                         <p class="text-2xl text-gray-800 dark:text-white">
                                             Aden lall
                                         </p>
                                         <p class="text-xl text-gray-500 dark:text-gray-200 font-light">
-                                            bill - Developer
+                                            Developer
                                         </p>
                                         <p class="text-md text-gray-500 w-60 dark:text-gray-400 mx-auto py-4 font-light">
-                                            Charlie, born December 18, 1993 in Challans, is an imitator and pintor.
+                                            bill JN, born November 14, 2003 in Sidi Bennour, Who changed the idea to what it is now.
                                         </p>
                                     </div>
                                     <div class="space-x-2 pt-8 flex border-t border-gray-200 w-40 mx-auto text-gray-500 items-center justify-center">
@@ -110,19 +110,19 @@ function About() {
                             <div class="p-4 relative">
                                 <div class="text-center mb-4 absolute -top-16 right-1/2 transform translate-x-1/2">
                                     <a href="_" class="block relative">
-                                        <img alt="profil" src="https://tlgur.com/d/G7Bq5kD8" class="mx-auto object-cover rounded-lg h-40 w-40  border-2 border-white dark:border-gray-800" />
+                                        <img alt="profil" src="https://tlgur.com/d/4kxQeOd8" class="mx-auto object-cover rounded-lg h-40 w-40  border-2 border-white dark:border-gray-800" />
                                     </a>
                                 </div>
-                                <div class="bg-white dark:bg-gray-800 rounded-lg shadow px-8 py-4 pt-24">
+                                <div class="bg-white dark:bg-gray-800 rounded-lg flex flex-col justify-between shadow h-full px-8 py-4 pt-24">
                                     <div class="text-center">
                                         <p class="text-2xl text-gray-800 dark:text-white">
-                                            Toler Ns
+                                            Taller Ns
                                         </p>
                                         <p class="text-xl text-gray-500 dark:text-gray-200 font-light">
                                             Fonder
                                         </p>
                                         <p class="text-md text-gray-500 w-60 dark:text-gray-400 mx-auto py-4 font-light">
-                                            Thierry Halliday, born November 4, 1993 in Saint hilaire de riez, is css specialist.
+                                            Nasr Eddine, born November 2 2000, the owner of the idea and the one who laid the foundations of the project.
                                         </p>
                                     </div>
                                     <div class="space-x-2 pt-8 flex border-t border-gray-200 w-40 mx-auto text-gray-500 items-center justify-center">
@@ -233,11 +233,11 @@ function About() {
                                         </path>
                                     </svg>
                                     <div class="ml-4 text-xl">
-                                        Fill the missing
+                                        All in one
                                     </div>
                                 </div>
                                 <p class="leading-loose text-gray-500 dark:text-gray-200 text-md">
-                                    Modify products with extra properties and achieve the maximum output for each installed sales channel.
+                                    Here you can find all what you need as Muslim, Pray time, Quran and Hijri Calendar.
                                 </p>
                             </div>
                             <div class="w-full md:w-1/2 lg:w-1/3 p-8">
@@ -260,7 +260,7 @@ function About() {
 
             </div>
         </>
-     );
+    );
 }
 
 export default About;
