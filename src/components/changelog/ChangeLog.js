@@ -87,28 +87,16 @@ function ChangeLog() {
 
             </div>
 
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1574082076576647"
-                crossorigin="anonymous"></script>
-            <ins class="adsbygoogle"
-                style="display:block"
-                data-ad-format="fluid"
-                data-ad-layout-key="-f1+5r+5a-db+57"
-                data-ad-client="ca-pub-1574082076576647"
-                data-ad-slot="7751548652"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({ });
-            </script>
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1574082076576647"
-                crossorigin="anonymous"></script>
-            <ins class="adsbygoogle"
-                style="display:block"
-                data-ad-format="fluid"
-                data-ad-layout-key="-f1+5r+5a-db+57"
-                data-ad-client="ca-pub-1574082076576647"
-                data-ad-slot="7751548652"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({ });
-            </script>
+            <div>
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1574082076576647" crossOrigin="anonymous"></script>
+                <ins className="adsbygoogle" style={{ display: 'block' }} data-ad-format="fluid" data-ad-layout-key="-f1+5r+5a-db+57" data-ad-client="ca-pub-1574082076576647" data-ad-slot="7751548652"></ins>
+                <script> (adsbygoogle = window.adsbygoogle || []).push({ });
+                </script>
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1574082076576647" crossOrigin="anonymous"></script>
+                <ins className="adsbygoogle" style={{ display: 'block' }} data-ad-format="fluid" data-ad-layout-key="-f1+5r+5a-db+57" data-ad-client="ca-pub-1574082076576647" data-ad-slot="7751548652"></ins>
+                <script> (adsbygoogle = window.adsbygoogle || []).push({ });
+                </script>
+            </div>
         </>
     );
 }
