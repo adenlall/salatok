@@ -9,11 +9,11 @@ function Ttst(props) {
 
     const [state, setState] = useState(true);
     const [week, setWeek] = useState(0);
-    
-    var status; 
-    if(props.cc === "Morocco"){
+
+    var status;
+    if (props.cc === "Morocco") {
         status = '/true/';
-    }else{
+    } else {
         status = '/';
     }
 
@@ -25,14 +25,18 @@ function Ttst(props) {
 
 
         $(
-            $.getJSON(`https://muslimsalat.com/${props.cc}/${props.ss}${status}weekly.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`, function (data)
-            {
+            $.getJSON(`https://muslimsalat.com/${props.cc}/${props.ss}${status}weekly.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`, function (data) {
                 setWeek(data.items); setState(false);
                 // console.log(data)
             })
-       )
+        )
 
     }
+
+    useEffect(() => {
+        document.title = `${props.ynt} Time - Salatok.App - Muslim Day Manager`;
+    }, [])
+
 
     useEffect(() => {
         fetchDatta()
@@ -43,10 +47,10 @@ function Ttst(props) {
     for (let i = 0; i < week.length; i++) {
         var diff = moment(week[i][props.ynt], 'HHmm').format('mm') - moment(week[0][props.ynt], 'HHmm').format('mm');
         if (moment(week[i][props.ynt], 'HHmm').format('HH') - moment(week[0][props.ynt], 'HHmm').format('HH') !== 0) {
-            if(moment(week[i][props.ynt], 'HHmm').format('HH') - moment(week[0][props.ynt], 'HHmm').format('HH') > 0){
+            if (moment(week[i][props.ynt], 'HHmm').format('HH') - moment(week[0][props.ynt], 'HHmm').format('HH') > 0) {
                 diff = 60 + diff
             }
-            if(moment(week[i][props.ynt], 'HHmm').format('HH') - moment(week[0][props.ynt], 'HHmm').format('HH') < 0){
+            if (moment(week[i][props.ynt], 'HHmm').format('HH') - moment(week[0][props.ynt], 'HHmm').format('HH') < 0) {
                 diff = diff - 60
             }
         }

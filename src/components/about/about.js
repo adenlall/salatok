@@ -1,5 +1,12 @@
+import { useEffect } from "react";
+
 
 function About() {
+
+    useEffect(() => {
+        document.title = "About Salatok.App - Muslim Day Manager";
+      }, []);
+    
     return ( 
 
         <>

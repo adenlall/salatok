@@ -1,9 +1,13 @@
 import { animate } from "popmotion"
-
+import {  } from "react";
+import { useEffect } from "react";
 
 function ChangeLog() {
 
-
+    useEffect(() => {
+        document.title = "Change Log - Salatok.App - Muslim Day Manager";
+      }, []);
+    
     const ele = document.querySelector('#test');
     animate({ from: 0, to: 100, elapsed: -3000,onUpdate: latest => ele.innerHTML = latest})
 

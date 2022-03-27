@@ -21,6 +21,9 @@ function App() {
 
  
 
+  useEffect(() => {
+    document.title = "Home - Salatok.App - Muslim Day Manager";
+  }, []);
   //creating function to load ip address from the API
   const getData = async () => {
     await Axios.get('http://api.ipify.org?format=json').then(res => {
