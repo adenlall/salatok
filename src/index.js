@@ -16,7 +16,7 @@ ReactDOM.render(
     <div className='p-0 m-0 bg-white dark:bg-gray-900'>
           <Navbar />
       <Routes>
-        <Route path='*' element={<App />} />
+        <Route path='/' element={<App />} />
         <Route path='/ChangeLog' element={<ChangeLog />} />
         <Route path='/About' element={<About />} />
 
