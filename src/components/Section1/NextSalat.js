@@ -23,7 +23,7 @@ function NextSalat(props) {
             <Routes>
                     <Route index               element={ <ChSal    ss={props.ss} cc={props.cc} /> } />
                     <Route path='/salat/fajr'     element={ <Ttst     ss={props.ss}  cc={props.cc} ynt="fajr" /> } />
-                    <Route path='/salat/sunrise'  element={ <Ttst     ss={props.ss}  cc={props.cc} ynt="shurooq" /> } />
+                    <Route path='/salat/sunrise'  element={ <Ttst     ss={props.ss}  cc={props.cc} ynt="sunrise" /> } />
                     <Route path='/salat/dhuhr'    element={ <Ttst     ss={props.ss}  cc={props.cc} ynt="dhuhr" /> } />
                     <Route path='/salat/asr'      element={ <Ttst     ss={props.ss}  cc={props.cc} ynt="asr" /> } />
                     <Route path='/salat/maghrib'  element={ <Ttst     ss={props.ss}  cc={props.cc} ynt="maghrib" /> } />
