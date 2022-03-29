@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import React, { useEffect, useState } from "react";
-
+import '../../logo.png'
 
 function Navbar() {
 
@@ -46,7 +46,7 @@ function Navbar() {
                     </a>
                 </ul>
                 <div className='mx-4 mb-6 flex items-center sppace-x-4'>                        
-                    <img className='w-16 h-16' alt="salatok app logo" src="../../logo.png" />
+                    <img className='w-16 h-16' alt="salatok app logo"  src='/favicon-194x194.png'  />
                     <h1 className='text-lg font-bold'>Salatok App - Your daily guide</h1>
                 </div>
             </div>
@@ -84,7 +84,7 @@ function Navbar() {
                         id="navbarSupportedContent1"
                     >
                         <div className='flex items-center space-x-2'>
-                        <img className='w-11 h-11' alt="salatok app logo" src="../../logo.png" />
+                        <img className='w-11 h-11' alt="salatok app logo" src='/favicon-194x194.png'  />
 
 
                             <NavLink to="/" className="text-xl text-white pr-2 font-semibold" >

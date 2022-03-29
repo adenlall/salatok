@@ -12,7 +12,17 @@ function Calendar() {
     const [D, setD] = useState(0);
     const [load, setLoad] = useState(true);
 
+/* 
+    const fftch = async () => {
 
+        document.querySelectorAll('.zitems')[0].innerHTML = convert(moment(moment().add(0, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 0, 'en')
+        document.querySelectorAll('.zitems')[1].innerHTML = convert(moment(moment().add(1, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 1, 'en')
+        document.querySelectorAll('.zitems')[2].innerHTML = convert(moment(moment().add(2, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 2, 'en')
+        document.querySelectorAll('.zitems')[3].innerHTML = convert(moment(moment().add(3, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 3, 'en')
+        document.querySelectorAll('.zitems')[4].innerHTML = convert(moment(moment().add(4, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 4, 'en')
+        document.querySelectorAll('.zitems')[5].innerHTML = convert(moment(moment().add(5, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 5, 'en')
+
+    } */
 
     useEffect(() => {
         const date = moment().format('D-M-Y');
@@ -26,16 +36,17 @@ function Calendar() {
                 setDy(json.data.hijri);
                 setDd(json.data.hijri.weekday.en);
                 setDm(json.data.hijri.month.en);
-                document.querySelectorAll('.zitems')[0].innerHTML = convert(moment(moment().add(0, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 0, 'en')
-                document.querySelectorAll('.zitems')[1].innerHTML = convert(moment(moment().add(1, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 1, 'en')
-                document.querySelectorAll('.zitems')[2].innerHTML = convert(moment(moment().add(2, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 2, 'en')
-                document.querySelectorAll('.zitems')[3].innerHTML = convert(moment(moment().add(3, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 3, 'en')
-                document.querySelectorAll('.zitems')[4].innerHTML = convert(moment(moment().add(4, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 4, 'en')
-                document.querySelectorAll('.zitems')[5].innerHTML = convert(moment(moment().add(5, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 5, 'en')
 
             }).finally(() => {
                 setLoad(false);
             })
+
+            for (let i = 0; i < document.querySelectorAll('.zitems').length; i++) {
+                
+                document.querySelectorAll('.zitems')[i].innerHTML = convert(moment(moment().add(i, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), i, 'en')
+            }
+
+
     }, [load]);
     function convert(lldate, nuum, lan) {
         fetch(`http://api.aladhan.com/v1/gToH?date=${lldate}`)
@@ -68,7 +79,7 @@ function Calendar() {
 
             for (let i = 0; i < document.querySelectorAll('.weekc').length; i++) {
                 convert(moment(moment().add(i, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), i, 'ar')
-            
+
             }
             document.querySelector('.nmak1').innerHTML = "قبل انتهاء اليوم";
             document.querySelector('.nmak2').innerHTML = "قبل انتهاء الاسبوع";
@@ -105,10 +116,10 @@ function Calendar() {
                                 <h1 className="w-full space-x-2 flex justify-between"><span className="px-1 min-w-fit rounded-sm text-slate-100 bg-gray-700">{moment().endOf('month').fromNow('D')}</span><p className=" nmak3 w-full">To month done</p></h1>
                             </div>
                         </div>
-                        <div class="form-control">
-                            <label class="label cursor-pointer">
-                                <span class="label-text mr-2">To <strong>Arabic</strong></span>
-                                <input type="checkbox" id='togg' onChange={() => { togg() }} class="toggle toggle-accent" />
+                        <div className="form-control">
+                            <label className="label cursor-pointer">
+                                <span className="label-text mr-2">To <strong>Arabic</strong></span>
+                                <input type="checkbox" id='togg' onChange={() => { togg() }} className="toggle toggle-accent" />
                             </label>
                         </div>
                     </div>

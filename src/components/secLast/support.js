@@ -6,12 +6,12 @@ function Support() {
                     <h1 className="text-4xl font-bold text-white mx-8">It's Open Source and Free, Support Us : </h1>
                     <div className="flex space-x-2 items-center">
                         <a rel="nofollow" href="https://www.github.com/adenlall/salatok">
-                            <button class="btn btn-outline border-black bg-transparent hover:bg-white text-white">
+                            <button className="btn btn-outline border-black bg-transparent hover:bg-white text-white">
                                 GitHub
                             </button>
                         </a>
                         <a rel="nofollow" href="https:www.github.com/adenlall/salatok">
-                        <button class="btn border-black bg-cyan-400 hover:bg-cyan-300 text-black">
+                        <button className="btn border-black bg-cyan-400 hover:bg-cyan-300 text-black">
                             Patron
                         </button>
                         </a>

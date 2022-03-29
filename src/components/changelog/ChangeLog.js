@@ -29,7 +29,7 @@ function ChangeLog() {
                     <article className="px-2 items-center ">
                         <div className="flex flex-col w-full space-y-2">
                             <span id="test"></span>
-                            <h1 class="text-2xl leading-8 font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">Salatok App : First Release ᐢ ᵕ ᐢ</h1>
+                            <h1 className="text-2xl leading-8 font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">Salatok App : First Release ᐢ ᵕ ᐢ</h1>
                             <p>Friay 18-03-22</p>
                         </div>
                         <div className="flex flex-col space-x-2">
