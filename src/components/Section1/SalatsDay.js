@@ -62,28 +62,28 @@ function SalatsDay(props) {
                 <div className="w-2/3 rounded-lg text-slate-100 shadow-lg" style={{ background: "url('https://tlgur.com/d/GZ3XKdNg') center center / cover" }}>
                     <nav className="flex flex-col rounded-lg items-center space-y-4 justify-center content-center w-full h-full p-4 overflow-y-scroll" style={{ background: 'linear-gradient(71deg, #000000d9, transparent)' }} >
 
-                        <NavLink to='/salat/fajr' className="p-2 px-4 w-full rounded-lg space-x-2 " style={{ background: "linear-gradient(21deg,  #00000061, #ffffff29)" }} itemscope>
-                            <header className="font-bold text-lg" itemprop="salat">Fajr</header>
+                        <NavLink to='/salat/fajr' className="p-2 px-4 w-full rounded-lg space-x-2 " style={{ background: "linear-gradient(21deg,  #00000061, #ffffff29)" }} itemScope>
+                            <header className="font-bold text-lg" itemProp="salat">Fajr</header>
                             <p className="">{moment(salatAPI.items[0].fajr, 'h:mm A').format('HH:mm')}</p>
                         </NavLink>
-                        <NavLink to='/salat/sunrise' className="p-2 px-4 w-full rounded-lg space-x-2 " style={{ background: "linear-gradient(21deg,  #00000061, #ffffff29)" }} itemscope>
-                            <header className="font-bold text-lg" itemprop="salat">Sunrise</header>
+                        <NavLink to='/salat/sunrise' className="p-2 px-4 w-full rounded-lg space-x-2 " style={{ background: "linear-gradient(21deg,  #00000061, #ffffff29)" }} itemScope>
+                            <header className="font-bold text-lg" itemProp="salat">Sunrise</header>
                             <p className="">{moment(salatAPI.items[0].shurooq, 'h:mm A').format('HH:mm')}</p>
                         </NavLink>
-                        <NavLink to='/salat/dhuhr' className="p-2 px-4 w-full rounded-lg space-x-2 " style={{ background: "linear-gradient(21deg,  #00000061, #ffffff29)" }} itemscope>
-                            <header className="font-bold text-lg" itemprop="salat">Dhuhr</header>
+                        <NavLink to='/salat/dhuhr' className="p-2 px-4 w-full rounded-lg space-x-2 " style={{ background: "linear-gradient(21deg,  #00000061, #ffffff29)" }} itemScope>
+                            <header className="font-bold text-lg" itemProp="salat">Dhuhr</header>
                             <p className="">{moment(salatAPI.items[0].dhuhr, 'h:mm A').format('HH:mm')}</p>
                         </NavLink>
-                        <NavLink to='/salat/asr' className="p-2 px-4 w-full rounded-lg space-x-2 " style={{ background: "linear-gradient(21deg,  #00000061, #ffffff29)" }} itemscope>
-                            <header className="font-bold text-lg" itemprop="salat">Asr</header>
+                        <NavLink to='/salat/asr' className="p-2 px-4 w-full rounded-lg space-x-2 " style={{ background: "linear-gradient(21deg,  #00000061, #ffffff29)" }} itemScope>
+                            <header className="font-bold text-lg" itemProp="salat">Asr</header>
                             <p className="">{moment(salatAPI.items[0].asr, 'h:mm A').format('HH:mm')}</p>
                         </NavLink>
-                        <NavLink to='/salat/maghrib' className="p-2 px-4 w-full rounded-lg space-x-2 " style={{ background: "linear-gradient(21deg,  #00000061, #ffffff29)" }} itemscope>
-                            <header className="font-bold text-lg" itemprop="salat">Maghrib</header>
+                        <NavLink to='/salat/maghrib' className="p-2 px-4 w-full rounded-lg space-x-2 " style={{ background: "linear-gradient(21deg,  #00000061, #ffffff29)" }} itemScope>
+                            <header className="font-bold text-lg" itemProp="salat">Maghrib</header>
                             <p className="">{moment(salatAPI.items[0].maghrib, 'h:mm A').format('HH:mm')}</p>
                         </NavLink>
-                        <NavLink to='/salat/isha' className="p-2 px-4 w-full rounded-lg space-x-2 " style={{ background: "linear-gradient(21deg,  #00000061, #ffffff29)" }} itemscope>
-                            <header className="font-bold text-lg" itemprop="salat">Isha</header>
+                        <NavLink to='/salat/isha' className="p-2 px-4 w-full rounded-lg space-x-2 " style={{ background: "linear-gradient(21deg,  #00000061, #ffffff29)" }} itemScope>
+                            <header className="font-bold text-lg" itemProp="salat">Isha</header>
                             <p className="">{moment(salatAPI.items[0].isha, 'h:mm A').format('HH:mm')}</p>
                         </NavLink>
 

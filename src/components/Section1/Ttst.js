@@ -55,7 +55,7 @@ function Ttst(props) {
             }
         }
         newArr.push(
-            <div className='flex space-x-2 justify-between'>
+            <div className='flex space-x-2 justify-between' key={i} >
                 <p className='italic'>{moment(week[i]['date_for']).format('dddd')} {moment(week[i]['date_for']).format("MM-D")} :</p>
                 <div className='flex justify-between w-1/3 space-x-2'>
                     <p className='px-2 pt-1 rounded-lg bg-slate-200 dark:bg-gray-700 dark:text-slate-100 text-gray-800' key={i}>{moment(week[i][props.ynt], 'h:mm A').format('HH:mm')}</p>
