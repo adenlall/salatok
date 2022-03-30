@@ -20,11 +20,12 @@ function App() {
   const [err, setErr] = useState(false);
 
  
-
   useEffect(() => {
     document.title = "Home - Salatok.App - Muslim Day Manager";
   }, []);
-  //creating function to load ip address from the API
+  
+
+
   const getData = async () => {
     await Axios.get('https://api.ipify.org?format=json').then(res => {
       // console.log(res.data);
@@ -74,7 +75,7 @@ function App() {
           {/* <Holiday/> */}
         </div>
         <div className='w-full flex lg:flex-row flex-col items-stretch justify-center content-center space-y-4 space-x-0 lg:space-y-0 lg:space-x-4 p-4'>
-          <MPro />
+          {/* <MPro /> */}
         </div>
         <div className='w-full flex lg:flex-row flex-col items-stretch justify-center content-center space-y-4 space-x-0 lg:space-y-0 lg:space-x-4 p-4'>
           <Calendar />
