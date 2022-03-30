@@ -26,7 +26,7 @@ function App() {
   }, []);
   //creating function to load ip address from the API
   const getData = async () => {
-    await Axios.get('http://api.ipify.org?format=json').then(res => {
+    await Axios.get('https://api.ipify.org?format=json').then(res => {
       // console.log(res.data);
       Axios.post(`https://iptwist.com`, { ip: `${res.data.ip}`}, {
         headers: {
@@ -74,7 +74,7 @@ function App() {
           {/* <Holiday/> */}
         </div>
         <div className='w-full flex lg:flex-row flex-col items-stretch justify-center content-center space-y-4 space-x-0 lg:space-y-0 lg:space-x-4 p-4'>
-          {/* <MPro /> */}
+          <MPro />
         </div>
         <div className='w-full flex lg:flex-row flex-col items-stretch justify-center content-center space-y-4 space-x-0 lg:space-y-0 lg:space-x-4 p-4'>
           <Calendar />
