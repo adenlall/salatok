@@ -30,18 +30,18 @@ function Navbar() {
 
     return (
         <>
-            <div className="xnav  hidden fixed top-0 pt-20 h-screen flex-col justify-between items-center sppace-y-4 w-full m-2 rounded-lg bg-slate-900" style={{ zIndex: '99999' }} >
-                <ul className="flex w-full flex-col mx-2 items-stretch space-y-4 text-lg list-style-none z-50">
-                    <NavLink onClick={hundelNavbar} to="/" className=" px-4 py-3 mr-8 ml-2 hover:bg-slate-700 bg-slate-800 rounded-lg text-2xl font-extrabold ">
+            <div className="xnav  hidden fixed top-0 pt-20 h-screen flex-col justify-between items-center sppace-y-4 w-full bg-slate-900" style={{ zIndex: '99999' }} >
+                <ul className="flex w-[94%] flex-col items-center space-y-4 text-lg list-style-none z-50">
+                    <NavLink onClick={hundelNavbar} to="/" className=" px-4 py-3 w-full hover:bg-slate-700 bg-slate-800 text-gray-200 rounded-lg text-2xl font-extrabold ">
                         Home
                     </NavLink>
-                    <NavLink onClick={hundelNavbar} to="/ChangeLog" className=" px-4 py-3 mr-8 ml-2 hover:bg-slate-700 bg-slate-800 rounded-lg text-2xl font-extrabold ">
+                    <NavLink onClick={hundelNavbar} to="/ChangeLog" className=" px-4 py-3 w-full hover:bg-slate-700 text-gray-200 bg-slate-800 rounded-lg text-2xl font-extrabold ">
                         Change Log
                     </NavLink>
-                    <NavLink onClick={hundelNavbar} to="/About" className=" px-4 py-3 mr-8 ml-2 hover:bg-slate-700 bg-slate-800 rounded-lg text-2xl font-extrabold">
+                    <NavLink onClick={hundelNavbar} to="/About" className=" px-4 py-3 w-full hover:bg-slate-700 text-gray-200 bg-slate-800 rounded-lg text-2xl font-extrabold">
                         About
                     </NavLink>
-                    <a href="https://www.github.com/adenlall/salatok" className=" px-4 py-3 mr-8 ml-2 hover:bg-slate-700 bg-slate-800 rounded-lg text-2xl font-extrabold">
+                    <a href="https://www.github.com/adenlall/salatok" className=" px-4 py-3 w-full hover:bg-slate-700 text-gray-200 bg-slate-800 rounded-lg text-2xl font-extrabold">
                         Github
                     </a>
                 </ul>

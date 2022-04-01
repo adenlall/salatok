@@ -11,7 +11,7 @@ function Ttst(props) {
     const [week, setWeek] = useState(0);
 
     var status;
-    if (props.cc === "Morocco") {
+    if (props.cc === true) {
         status = '/true/';
     } else {
         status = '/';

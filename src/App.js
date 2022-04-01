@@ -19,17 +19,17 @@ function App() {
   const [tat, setTat] = useState(false);
   const [err, setErr] = useState(false);
 
- 
+
   useEffect(() => {
     document.title = "Home - Salatok.App - Muslim Day Manager";
   }, []);
-  
+
 
 
   const getData = async () => {
     await Axios.get('https://api.ipify.org?format=json').then(res => {
       // console.log(res.data);
-      Axios.post(`https://iptwist.com`, { ip: `${res.data.ip}`}, {
+      Axios.post(`https://iptwist.com`, { ip: `${res.data.ip}` }, {
         headers: {
           'Content-Type': 'application/json',
           'X-IPTWIST-TOKEN': 'FTXdxEfcL0Bq1XS1MVVAw8G0h2CSRBqARS43CDDeBjhMS1FWPoHWzoy6g6Qrkbd6'
@@ -47,7 +47,7 @@ function App() {
         setErr(true);
         setTat(true);
       })
-      
+
     }).catch(error => { console.log('App.js : ' + error); setErr(true); setTat(true); })
 
   }
@@ -86,7 +86,7 @@ function App() {
 
       </>
     );
-  }if (err === false && tat === false) {
+  } if (err === false && tat === false) {
     return (
       <>
         <div className='bg-gradient-to-tr from-teal-500  to-cyan-500 w-screen h-screen m-0 p-2 flex flex-col items-center content-center justify-center'>
@@ -95,7 +95,7 @@ function App() {
       </>
     )
 
-  }else {
+  } else {
     return (
       <>
         <div className='bg-gradient-to-tr from-red-400  to-red-500 w-screen h-screen m-0 p-2 flex flex-col space-y-4 items-center content-center justify-center'>
