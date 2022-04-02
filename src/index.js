@@ -24,7 +24,7 @@ ReactDOM.render(
         <div className='w-full flex lg:flex-row flex-col items-stretch justify-center content-center space-y-4 space-x-0 lg:space-y-0 lg:space-x-4 p-4'>
           <div id="125770478">
             <script type="text/javascript"> 
-            try {window._mNHandle.queue.push(function () { window._mNDetails.loadTag("125770478", "728x90", "125770478"); }) } catch (error) { }
+            try {window._mNHandle.queue.push(function () { window._mNDetails.loadTag("125770478", "728x90", "125770478") }) } catch (error) { }
             </script>
           </div>
         </div>
