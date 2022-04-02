@@ -41,7 +41,7 @@ function ChangeLog() {
                                     The tolerance bitween those, daylight status, Quran verse to read & hear ...
                                 </p>
                                 <div className="md:w-1/3 w-full min-h-fit">
-                                    <img alt="" className="object-cover" src="/salatokLogoWide.svg" />
+                                    <img alt="" className="object-cover" src="/salatokBlagFirstVersion.svg" />
                                 </div>
 
                                 <p className="space-y-2">
