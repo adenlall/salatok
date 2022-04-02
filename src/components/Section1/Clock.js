@@ -41,7 +41,7 @@ function Clock(props) { // TODO:         line 73....
 
     var status; 
     if(props.cc === true){
-        status = '/true/';
+        status = '/';
     }else{
         status = '/';
     }
