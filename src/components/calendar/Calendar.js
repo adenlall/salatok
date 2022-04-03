@@ -20,7 +20,7 @@ function Calendar() {
         fetch(`https://api.aladhan.com/v1/gToH?date${date}`)
             .then(response => response.json())
             .then(json => {
-                console.log(json)
+                // console.log(json)
 
                 setD(json.data.hijri.date);
                 setDy(json.data.hijri);
