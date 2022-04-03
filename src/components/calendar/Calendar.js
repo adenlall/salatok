@@ -49,6 +49,15 @@ function Calendar() {
             })
     }
 
+    function dataMou(data){
+        fetch(`https://api.aladhan.com/v1/gToH?date=${data}`)
+        .then(responses => responses.json())
+        .then(data => {
+            return ( data.data.hijri.day - 31 );
+        }).finally(() => {
+            setLoad(false);
+        })
+    }
     const togg = () => {
         if (document.querySelector('#togg').checked === false) {
             setDd(moment(moment().format('DD-MM-YYYY'), 'DD-MM-YYYY').format('dddd'))
@@ -102,7 +111,7 @@ function Calendar() {
                             <div className="flex w-full justify-self-stretch items-stretch flex-col space-y-2 ">
                                 <h1 className="w-full space-x-2 flex justify-between"><span className="px-1 min-w-fit rounded-sm text-slate-100 bg-gray-700">{moment().endOf('day').fromNow('D')}</span><p className="   nmak1 w-full">To day done</p></h1>
                                 <h1 className="w-full space-x-2 flex justify-between"><span className="px-1 min-w-fit rounded-sm text-slate-100 bg-gray-700">{moment().endOf('week').fromNow('D')}</span><p className="  nmak2 w-full">To week done </p></h1>
-                                <h1 className="w-full space-x-2 flex justify-between"><span className="px-1 min-w-fit rounded-sm text-slate-100 bg-gray-700">{moment().endOf('month').fromNow('D')}</span><p className=" nmak3 w-full">To month done</p></h1>
+                                <h1 className="w-full space-x-2 flex justify-between"><span className="px-1 min-w-fit rounded-sm text-slate-100 bg-gray-700">{dataMou(moment().format('DD-MM-YYYY'))}</span><p className=" nmak3 w-full">To month done</p></h1>
                             </div>
                         </div>
                         <div class="form-control">
