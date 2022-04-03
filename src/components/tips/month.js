@@ -12,7 +12,7 @@ convert(moment().format('DD-MM-YYYY'))
     const convert = (date) => {
 
         const md =  Math.floor((31 - moment().format('D')) * 31 / 100);
-        document.querySelector('.gper').innerHTML = md;
+        document.querySelector('.gper').innerHTML = md + ' %';
         // console.log()
         fetch(`https://api.aladhan.com/v1/gToH?date=${date}`)
             .then(response => response.json())

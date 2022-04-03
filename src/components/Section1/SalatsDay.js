@@ -18,11 +18,11 @@ function SalatsDay(props) {
 
     const response = {
         headers: {
-            'Access-Control-Allow-Origin' : '*',
+            'Access-Control-Allow-Origin': '*',
         },
     };
-    
-    
+
+
     const fetchData = () => {
         // await Axios.get(`https://muslimsalat.com/${props.cc}/${props.ss}${status}.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`).then(res => {
         //     setSalatAPI(res.data); setStateAPI(true);
@@ -32,13 +32,12 @@ function SalatsDay(props) {
 
 
         $(
-            $.getJSON(`https://muslimsalat.com/${props.cc}/${props.ss}${status}.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`, function (data)
-            {
+            $.getJSON(`https://muslimsalat.com/${props.cc}/${props.ss}${status}.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`, function (data) {
                 setSalatAPI(data); setStateAPI(true);
                 // console.log(data)
             })
-       )
-                        
+        )
+
 
 
     }
@@ -51,7 +50,15 @@ function SalatsDay(props) {
 
     if (stateAPI === false) {
         return (
-            <>Opss...</>
+            <>
+                <div className="w-full sm:w-2/3 shadow-xl h-[35em] flex space-y-6 items-center justify-center p-4 rounded-lg bg-slate-200 dark:bg-gray-700 dark:text-slate-100 text-gray-800">
+                    <div class="loader">
+                        <div class="outer"></div>
+                        <div class="middle"></div>
+                        <div class="inner"></div>
+                    </div>
+                </div>
+            </>
         )
     }
     if (stateAPI === true) {
@@ -87,7 +94,7 @@ function SalatsDay(props) {
                         </NavLink>
 
                         <p>
-                            {props.ss + ' - ' + props.cc+' '}
+                            {props.ss + ' - ' + props.cc + ' '}
                             |
                             <span>
                                 {'  daylight : ' + salatAPI.daylight}

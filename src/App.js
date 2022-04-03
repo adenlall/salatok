@@ -89,8 +89,14 @@ function App() {
   } if (err === false && tat === false) {
     return (
       <>
-        <div className='bg-gradient-to-tr from-teal-500  to-cyan-500 w-screen h-screen m-0 p-2 flex flex-col items-center content-center justify-center'>
-          <p className='text-4xl text-white font-extrabold'>loading ...</p>
+        <div className='bg-gradient-to-tr from-teal-800  to-cyan-800 w-screen h-screen m-0 p-2 flex flex-col items-center content-center justify-center'>
+
+          <div class="loader">
+            <div class="outer"></div>
+            <div class="middle"></div>
+            <div class="inner"></div>
+          </div>
+
         </div>
       </>
     )

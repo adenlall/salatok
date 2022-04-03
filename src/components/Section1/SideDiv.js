@@ -8,7 +8,7 @@ function SlideDiv() {
     const [asmaAlHusna, setAsmaAlHusna] = useState(0);
 
     function qakl() {
-        var ran = Math.floor(Math.random()*100); 
+        var ran = Math.floor(Math.random() * 100);
 
         axios.get(`https://api.aladhan.com/asmaAlHusna/${ran}`)
             .then((response) => {
@@ -31,11 +31,21 @@ function SlideDiv() {
     }, [])
     return (
         <>
-            <div className="lg:w-1/2 w-full shadow-xl rounded-lg" style={{ background: 'url("https://tlgur.com/d/GZ3Xn16g") center center / cover ',backgroundRepeat: 'no-repeat'}} >
+            <div className="lg:w-1/2 w-full shadow-xl rounded-lg" style={{ background: 'url("https://tlgur.com/d/GZ3Xn16g") center center / cover ', backgroundRepeat: 'no-repeat' }} >
                 <div className="flex flex-col h-full items-center lg:py-4 py-12 justify-between rounded-lg text-slate-100" style={{ background: 'linear-gradient(181deg, black, transparent)' }} >
                     {
                         load === true
-                            ? 'Loading...'
+                            ?
+                            <>
+                                <div class="h-[100%] flex items-center justify-center">
+                                <div class="loader">
+                                    <div class="outer"></div>
+                                    <div class="middle"></div>
+                                    <div class="inner"></div>
+                                </div>
+                                </div>
+                            </>
+
                             : <>
                                 <div className="flex flex-col items-center justify-center pt-8">
                                     <h1 className=" font-extrabold text-4xl mb-2"> {asmaAlHusna.name}</h1>
