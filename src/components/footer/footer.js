@@ -2,7 +2,7 @@ function Footer() {
     return (
         <footer className="footer rounded-lg shadow-lg p-10 bg-slate-100 dark:bg-gray-800 dark:text-slate-100 text-gray-800">
             <div>
-                <img className='w-[19em] h-[6em] rounded-sm' src="/salatokLogoWide.svg" alt="" />
+                <img className='w-[6] h-[6em] rounded-sm' src="/favicon-194x194.png" alt="salatok app logo" />
 
                 <p>AdenDev<br />Salatok App - muslim day manager.</p>
             </div>

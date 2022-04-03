@@ -56,7 +56,7 @@ function Vers(props) {
         <div className="lg:w-1/2 w-full shadow-xl flex justify-between items-center p-4 rounded-lg bg-slate-100 dark:bg-gray-800 dark:text-slate-100 text-gray-800">
             <div className="flex w-full flex-col items-start justify-center content-center space-y-4 ">
                     <div id='ayyah' className='overflow-scroll h-48 max-h-48'>
-                        <p className=" text-2xl"><span className="font-extrabold font-2xl italic">" </span>{ayah}<span className="font-extrabold font-2xl"> "</span></p>
+                        <p className=" text-2xl"><span className="font-extrabold font-2xl italic">" </span> <div dangerouslySetInnerHTML={{__html:ayah}} /><span className="font-extrabold font-2xl"> "</span></p>
                     </div>
                
                 <div>
