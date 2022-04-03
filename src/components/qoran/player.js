@@ -216,7 +216,7 @@ function Player(props) {
 
                         <div className="avatar  w-full online" id="rec8">
                             <div onClick={() => { ggd(8) }} className="shadow-lg w-full mask hover:opacity-80 cursor-pointer mask-squircle ">
-                                <img alt="" className=' object-cover object-center' src="https://quran.com.kw/en/wp-content/uploads/al-minshawy-1.jpg" />
+                                <img alt="" className=' object-cover object-center' src="https://tlgur.com/d/GL0BjABG" />
                             </div>
                         </div>
                         <div className="avatar  w-full" id="rec2">
