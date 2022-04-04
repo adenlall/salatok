@@ -148,14 +148,14 @@ function Calendar() {
                     </div>
                     <div className="flex lg:flex-row space-y-4 lg:space-x-4 space-x-0  lg:space-y-0 flex-col w-full items-center content-center">
                         <div className='flex space-x-4 w-full items-center content-center'>
-                            <div className="weekc w-full h-28 flex flex-col items-center content-center justify-center rounded-lg bg-gradient-to-tr from-teal-500  to-cyan-500"><h4 className="zitems text-slate-100 font-extrabold text-xl">:</h4><p className='days'></p></div>
-                            <div className="weekc w-full h-28 flex flex-col items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h4 className="zitems text-slate-100 font-extrabold text-xl">:</h4><p className='days'></p></div>
-                            <div className="weekc w-full h-28 flex flex-col items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h4 className="zitems text-slate-100 font-extrabold text-xl">:</h4><p className='days'></p></div>
+                            <div className="weekc w-full h-28 flex flex-col items-center content-center justify-center rounded-lg bg-gradient-to-tr from-teal-500  to-cyan-500"><h4 className="zitems text-slate-100 font-extrabold sm:text-xl text-sm text-center">:</h4><p className='days text-slate-100 sm:text-lg text-sm'></p></div>
+                            <div className="weekc w-full h-28 flex flex-col items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h4 className="zitems text-slate-100 font-extrabold sm:text-xl text-sm text-center">:</h4><p className='days text-slate-100 sm:text-lg text-sm'></p></div>
+                            <div className="weekc w-full h-28 flex flex-col items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h4 className="zitems text-slate-100 font-extrabold sm:text-xl text-sm text-center">:</h4><p className='days text-slate-100 sm:text-lg text-sm'></p></div>
                         </div>
                         <div className='flex space-x-4 w-full items-center content-center'>
-                            <div className="weekc w-full h-28 flex flex-col items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h4 className="zitems text-slate-100 font-extrabold text-xl">:</h4><p className='days'></p></div>
-                            <div className="weekc w-full h-28 flex flex-col items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h4 className="zitems text-slate-100 font-extrabold text-xl">:</h4><p className='days'></p></div>
-                            <div className="weekc w-full h-28 flex flex-col items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h4 className="zitems text-slate-100 font-extrabold text-xl">:</h4><p className='days'></p></div>
+                            <div className="weekc w-full h-28 flex flex-col items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h4 className="zitems text-slate-100 font-extrabold sm:text-xl text-sm text-center">:</h4><p className='days text-slate-100 sm:text-lg text-sm'></p></div>
+                            <div className="weekc w-full h-28 flex flex-col items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h4 className="zitems text-slate-100 font-extrabold sm:text-xl text-sm text-center">:</h4><p className='days text-slate-100 sm:text-lg text-sm'></p></div>
+                            <div className="weekc w-full h-28 flex flex-col items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h4 className="zitems text-slate-100 font-extrabold sm:text-xl text-sm text-center">:</h4><p className='days text-slate-100 sm:text-lg text-sm'></p></div>
                         </div>
                     </div>
                 </div>
