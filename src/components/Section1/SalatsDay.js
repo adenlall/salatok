@@ -30,13 +30,41 @@ function SalatsDay(props) {
         // }).catch(err => { console.log('SalatDay' + err) })
 
 
-
         $(
             $.getJSON(`https://muslimsalat.com/${props.cc}/${props.ss}${status}.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`, function (data) {
                 setSalatAPI(data); setStateAPI(true);
                 // console.log(data)
+                localStorage.setItem("salatsday", data);
+                console.log('here fetch')
+
             })
         )
+        if (localStorage.getItem("salatsday") === null) {
+
+            setSalatAPI(localStorage.getItem("salatsday")); setStateAPI(true);
+            var hours = 24; // to clear the localStorage after 1 hour(if someone want to clear after 8hrs simply change hours=8)
+            var now = new Date().getTime();
+            console.log('here locale storage')
+            if (localStorage.getItem('setupTime') === null) {
+                localStorage.setItem('setupTime', now)
+            } else {
+
+                if (now - localStorage.getItem('setupTime') > hours * 60 * 60 * 1000) {
+                    localStorage.setItem('setupTime', now);
+
+                    $(
+                        $.getJSON(`https://muslimsalat.com/${props.cc}/${props.ss}${status}.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`, function (data) {
+                            setSalatAPI(data); setStateAPI(true);
+                            // console.log(data)
+                            localStorage.setItem("salatsday", data);
+                            console.log('fetch but locale storage')
+
+                        })
+                    )
+
+                }
+            }
+        }
 
 
 

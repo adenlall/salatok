@@ -41,6 +41,9 @@ function Navbar() {
                     <NavLink onClick={hundelNavbar} to="/About" className=" px-4 py-3 w-full hover:bg-slate-700 text-gray-200 bg-slate-800 rounded-lg text-2xl font-extrabold">
                         About
                     </NavLink>
+                    <NavLink onClick={hundelNavbar} to="/Privacy" className=" px-4 py-3 w-full hover:bg-slate-700 text-gray-200 bg-slate-800 rounded-lg text-2xl font-extrabold">
+                        Privacy
+                    </NavLink>
                     <a href="https://www.github.com/adenlall/salatok" className=" px-4 py-3 w-full hover:bg-slate-700 text-gray-200 bg-slate-800 rounded-lg text-2xl font-extrabold">
                         Github
                     </a>
@@ -102,6 +105,9 @@ function Navbar() {
                             </NavLink>
                             <NavLink to="/About" className="hover:bg-gray-800 rounded-lg py-1 px-2">
                                 About
+                            </NavLink>
+                            <NavLink to="/Privacy" className="hover:bg-gray-800 rounded-lg py-1 px-2">
+                                Privacy
                             </NavLink>
                             <a className="hover:bg-gray-800 rounded-lg py-1 px-2" href="https://www.github.com/adenlall/salatok">
                                 Github

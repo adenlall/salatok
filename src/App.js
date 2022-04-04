@@ -12,8 +12,6 @@ import Support from './components/secLast/support';
 
 function App() {
 
-
-
   const [ss, setSS] = useState(0);
   const [cc, setCC] = useState(0);
   const [tat, setTat] = useState(false);
@@ -27,29 +25,44 @@ function App() {
 
 
   const getData = async () => {
-    await Axios.get('https://api.ipify.org?format=json').then(res => {
-      // console.log(res.data);
-      Axios.post(`https://iptwist.com`, { ip: `${res.data.ip}` }, {
-        headers: {
-          'Content-Type': 'application/json',
-          'X-IPTWIST-TOKEN': 'FTXdxEfcL0Bq1XS1MVVAw8G0h2CSRBqARS43CDDeBjhMS1FWPoHWzoy6g6Qrkbd6'
-        },
-      }).then(res => {
-        setSS(res.data.city)
-        setCC(res.data.country)
-        // config
-        setErr(false);
-        setTat(true);
-        // console.log(res.data, err, tat);
-      }).catch(erro => {
-        console.log(erro)
-        // config
-        setErr(true);
-        setTat(true);
-      })
+    if (localStorage.getItem("city") === null || localStorage.getItem("country") === null) {
 
-    }).catch(error => { console.log('App.js : ' + error); setErr(true); setTat(true); })
+      console.log('very slow, because there nothing in Locale storage yet')
+      await Axios.get('https://api.ipify.org?format=json').then(res => {
+        // console.log(res.data);
+        Axios.post(`https://iptwist.com`, { ip: `${res.data.ip}` }, {
+          headers: {
+            'Content-Type': 'application/json',
+            'X-IPTWIST-TOKEN': 'Xpy1YphN5bu10XqVYDASedcCt2AJJnDTTIRQcaTLgOstdTIcg5HEAwPYU9fzjKjN'
+          },
+        }).then(res => {
+          localStorage.setItem("city", `${res.data.city}`);
+          localStorage.setItem("country", `${res.data.country}`);
+          setSS(res.data.city)
+          setCC(res.data.country)
+          // config
+          setErr(false);
+          setTat(true);
+          // console.log(res.data, err, tat);
+        }).catch(erro => {
+          console.log(erro)
+          // config
+          setErr(true);
+          setTat(true);
+        })
 
+      }).catch(error => { console.log('App.js : ' + error); setErr(true); setTat(true); })
+      
+
+    }else{
+
+      setSS(localStorage.getItem("city"))
+      setCC(localStorage.getItem("country"))
+      // config
+      setErr(false);
+      setTat(true);
+      console.log('very fast, because of Locale storage')
+    }
   }
 
   useEffect(() => {

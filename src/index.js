@@ -8,6 +8,7 @@ import ChangeLog from './components/changelog/ChangeLog';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/footer';
 import About from './components/about/about';
+import Policy from './components/privacy policy/policy';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -19,7 +20,8 @@ ReactDOM.render(
           <Route path='*' element={<App />} />
           <Route path='/ChangeLog' element={<ChangeLog />} />
           <Route path='/About' element={<About />} />
-
+          <Route path='/privacy' element={<Policy/>} />
+          <Route path='/contact' element={<Policy/>} />
         </Routes>
 
         <div className='w-full flex lg:flex-row flex-col items-stretch justify-center content-center space-y-4 space-x-0 lg:space-y-0 lg:space-x-4 p-4'>
