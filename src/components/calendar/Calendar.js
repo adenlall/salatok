@@ -15,6 +15,10 @@ function Calendar() {
 
 
     useEffect(() => {
+
+        
+
+
         const date = moment().format('D-M-Y');
 
         fetch(`https://api.aladhan.com/v1/gToH?date${date}`)
