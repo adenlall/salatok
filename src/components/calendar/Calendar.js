@@ -15,8 +15,13 @@ function Calendar() {
 
 
     useEffect(() => {
+        if (localStorage.getItem('timeOut') < moment().format('YYYYMMDD')) {
+            var day = moment().format('YYYYMMDD');
+            let item = moment(day - 1, 'YYYYMMDD').format('DD-MM-YYYY')
+            localStorage.removeItem(item);
+            localStorage.setItem('timeOut', day);
+        }
 
-        
 
 
         const date = moment().format('D-M-Y');
@@ -31,8 +36,7 @@ function Calendar() {
                 setDd(json.data.hijri.weekday.en);
                 setDm(json.data.hijri.month.en);
                 for (let i = 0; i < document.querySelectorAll('.zitems').length; i++) {
-                    const ele = document.querySelectorAll('.zitems')[i];
-                    ele.innerHTML = convert(moment(moment().add(i, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), i, 'en')
+                    convert(moment(moment().add(i, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), i, 'en')
                 }
 
             }).finally(() => {
@@ -42,15 +46,28 @@ function Calendar() {
 
 
     function convert(lldate, nuum, lan) {
-        fetch(`https://api.aladhan.com/v1/gToH?date=${lldate}`)
-            .then(response => response.json())
-            .then(json => {
-                document.querySelectorAll('.zitems')[nuum].innerHTML = json.data.hijri.day + " " + json.data['hijri']['month'][`${lan}`];
-                // 
-                (lan === 'ar') ? document.querySelectorAll('.days')[nuum].innerHTML = json.data['hijri']['weekday'][`${lan}`] : document.querySelectorAll('.days')[nuum].innerHTML = moment(lldate, 'DD-MM-YYYY').format('dddd')
-            }).finally(() => {
-                setLoad(false);
-            })
+        if (localStorage.getItem(lldate) === null) {
+            fetch(`https://api.aladhan.com/v1/gToH?date=${lldate}`)
+                .then(response => response.json())
+                .then(json => {
+                    document.querySelectorAll('.zitems')[nuum].innerHTML = json.data.hijri.day + " " + json.data['hijri']['month'][`${lan}`];
+                    (lan === 'ar') ? document.querySelectorAll('.days')[nuum].innerHTML = json.data['hijri']['weekday'][`${lan}`] : document.querySelectorAll('.days')[nuum].innerHTML = moment(lldate, 'DD-MM-YYYY').format('dddd')
+                    // json.data.hijri 
+                    localStorage.setItem(lldate, JSON.stringify(json.data.hijri));
+                }).finally(() => {
+                    setLoad(false);
+                })
+        } else {
+            var time = moment().format('YYYYMMDD')
+            if (localStorage.getItem('timeOut') === null) {
+                localStorage.setItem('timeOut', time)
+            } else {
+                console.log('storage')
+                var datta = JSON.parse(localStorage.getItem(lldate))
+                document.querySelectorAll('.zitems')[nuum].innerHTML = datta.day + " " + datta['month'][`${lan}`];
+                (lan === 'ar') ? document.querySelectorAll('.days')[nuum].innerHTML = datta['weekday'][`${lan}`] : document.querySelectorAll('.days')[nuum].innerHTML = moment(lldate, 'DD-MM-YYYY').format('dddd');
+            }
+        }
     }
 
     function dataMou(data) {

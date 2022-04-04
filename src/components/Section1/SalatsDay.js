@@ -42,9 +42,10 @@ function SalatsDay(props) {
         } else {
 
             setSalatAPI(JSON.parse(localStorage.getItem("salatsday"))); setStateAPI(true);
+            // console.log(JSON.parse(localStorage.getItem("salatsday")))
             var hours = 24; // to clear the localStorage after 1 hour(if someone want to clear after 8hrs simply change hours=8)
             var now = new Date().getTime();
-            // console.log('here locale storage')
+            console.log('here locale storage')
             if (localStorage.getItem('setupTime') === null) {
                 localStorage.setItem('setupTime', now)
             } else {
@@ -57,7 +58,7 @@ function SalatsDay(props) {
                             setSalatAPI(data); setStateAPI(true);
                             // console.log(data)
                             localStorage.setItem("salatsday",JSON.stringify(data));
-                            // console.log('fetch but locale storage')
+                            console.log('fetch but locale storage')
 
                         })
                     )
