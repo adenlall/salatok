@@ -40,7 +40,8 @@ function Player(props) {
         '10': ['Sa`ud ash-Shuraym', 'سعود الشريم', 'undifined'],
         '12': ['Mahmoud Khalil Al-Husary', 'محمود خليل الحصري', 'Muallim'],
         '5': ['Hani ar-Rifai', 'هاني الرفاعي', 'undifined'],
-        '7': ['Mishari Rashid al-`Afasy', 'مشاري راشد العفاسي', 'undifined']
+        '7': ['Mishari Rashid al-`Afasy', 'مشاري راشد العفاسي', 'undifined'],
+        '3': ['Abdur-Rahman as-Sudais', 'عَبْدُ ٱلرَّحْمَٰنِ بْنُ عَبْدِ ٱلْعَزِيزِ', 'Murattal']
     }
     function ggd(rec) {
         setLoad(true)
@@ -108,9 +109,10 @@ function Player(props) {
         const audio = document.querySelector('#music_player');
         let duration = audio.duration;
         let current = audio.currentTime * (100 / duration);
-        setSeek(current);
-        document.querySelector('#ct').innerHTML = setct(audio.currentTime);
-        document.querySelector('#tt').innerHTML = setct(duration);
+        // console.log('current in logseek : ' + current + '   is not a number ? ' +isNaN(current))
+        setSeek(String(current));
+        document.querySelector('#ct').innerHTML = `${setct(audio.currentTime)}`;
+        document.querySelector('#tt').innerHTML = `${setct(duration)}`;
 
         // console.log('from useEffect : ' + current)
 
@@ -121,22 +123,35 @@ function Player(props) {
         let duration = audio.duration;
         audio.currentTime = seek.value * duration / 100;
         let current = audio.currentTime * (100 / duration);
-        setSeek(current);
-        document.querySelector('#ct').innerHTML = setct(audio.currentTime);
-        document.querySelector('#tt').innerHTML = setct(duration);
+        // console.log('current in logseek : ' + current + '   is not a number ? ' +isNaN(current))
+        setSeek(String(current));
+        document.querySelector('#ct').innerHTML = `${setct(audio.currentTime)}`;
+        document.querySelector('#tt').innerHTML = `${setct(duration)}`;
 
     }
     const setct = (time) => {
 
+        time = String(time)
+        // console.log('time normal : ' + time)
+        if (isNaN(time) === true) {
+            time = '00';
+            // console.log('time 0 is : ' + time)
+        }
         var mins = Math.floor(time / 60);
         if (mins < 10) {
             mins = '0' + String(mins);
+            mins = String(mins)
+            // console.log(mins)
         }
         var secs = Math.floor(time % 60);
         if (secs < 10) {
             secs = '0' + String(secs);
+            secs = String(secs)
+            // console.log(secs)
         }
 
+        // console.log("mins: " + typeof(mins), '   &&&   secs: ' + typeof(secs))
+        // console.log(time + '  ' + typeof(time) + ' type of time is :   ' + isNaN(time))
         return mins + ':' + secs;
     }
     useEffect(() => {
@@ -189,7 +204,7 @@ function Player(props) {
                     </div>
                 </div>
 
-                <div className="flex items-center w-full justify-center content-center space-x-4  p-3 rounded-lg bg-gray-700 text-slate-100">
+                <div className="flex items-center w-full justify-center content-center space-x-4  p-3 rounded-lg dark:bg-gray-700 bg-[linear-gradient(20deg,#4399be,#08457938)] text-slate-100">
                     <audio id="music_player">
                         <source id="srslp" src="" />
                     </audio>
@@ -207,38 +222,47 @@ function Player(props) {
 
                     <div className='flex items-center justify-center space-x-4 p-4'>
                         <img alt='' className='w-6 h-6' src="https://www.talkerscode.com/webtricks/demo/images/volume.png" id="vol_img" />
-                        <input type="range" id="change_vol" onChange={volChange} step="0.1" min="0" max="1" class="range range-sm" />
+                        <input type="range" id="change_vol" onChange={volChange} step="0.1" min="0" max="1" className="range range-sm" />
                     </div>
                 </div>
                 <div className=''>
-                    <h1 className='text-lg pl-2'>The reciter :  <span className='font-bold badge text-base badge-primary ' id='bbs'>Mohamed Siddiq al-Minshawi</span></h1>
-                    <div className='flex mt-2 space-x-2 p-2'>
+                    <h3 className='text-lg pl-2 h-[4em]'>The reciter : <span className='font-bold badge text-base badge-primary ' id='bbs'>Mohamed Siddiq al-Minshawi</span></h3>
+                    <div className='flex sm:flex-row flex-col mt-2 space-x-0 sm:space-x-2 space-y-2 sm:space-y-0 p-2'>
+                        <div className="space-x-2 flex w-full sm:w-1/2">
+                            <div className="avatar  w-full online" id="rec8">
+                                <div onClick={() => { ggd(8) }} className="shadow-lg w-full mask hover:opacity-80 cursor-pointer mask-squircle ">
+                                    <img alt="" className=' object-cover object-center' src="https://tlgur.com/d/GL0BjABG" />
+                                </div>
+                            </div>
+                            <div className="avatar  w-full" id="rec2">
+                                <div onClick={() => { ggd(2) }} className="shadow-lg w-full mask hover:opacity-80 cursor-pointer mask-squircle ">
+                                    <img alt="" className=' object-cover object-center' src="https://darulquran.co.uk/wp-content/uploads/2021/02/Abdul-Basit-Abdus-Samad.jpg" />
+                                </div>
+                            </div>
+                            <div className="avatar  w-full" id="rec10">
+                                <div onClick={() => { ggd(10) }} className="shadow-lg w-full mask hover:opacity-80 cursor-pointer mask-squircle ">
+                                    <img alt="" className=' object-cover object-center' src="https://4.bp.blogspot.com/_0S0sNxarG_M/TMnWY_fGxuI/AAAAAAAAFUk/10C_Fqm7K9E/s1600/saoud-shuraim-123.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="space-x-2 flex w-full sm:w-1/2">
+                            <div className="avatar  w-full" id="rec5">
+                                <div onClick={() => { ggd(5) }} className="shadow-lg w-full mask hover:opacity-80 cursor-pointer mask-squircle ">
+                                    <img alt="" className=' object-cover object-center' src="https://masjidassunnah-fl.com/wp-content/uploads/2012/12/Hani-Ar-Rifai.jpg" />
+                                </div>
+                            </div>
+                            <div className="avatar  w-full" id="rec7">
+                                <div onClick={() => { ggd(7) }} className="shadow-lg w-full mask hover:opacity-80 cursor-pointer mask-squircle ">
+                                    <img alt="" className=' object-cover object-center' src="https://yt3.ggpht.com/a/AGF-l7895FcDq0jG9uG_7uDQZ2T-v1kcSAaGrzP20w=s900-mo-c-c0xffffffff-rj-k-no" />
+                                </div>
+                            </div>
+                            <div className="avatar  w-full" id="rec3">
+                                <div onClick={() => { ggd(3) }} className="shadow-lg w-full mask hover:opacity-80 cursor-pointer mask-squircle ">
+                                    <img alt="" className=' object-cover object-center' src="https://nice-direct-links.herokuapp.com/4c44/file.jpg" />
+                                </div>
+                            </div>
+                        </div>
 
-                        <div className="avatar  w-full online" id="rec8">
-                            <div onClick={() => { ggd(8) }} className="shadow-lg w-full mask hover:opacity-80 cursor-pointer mask-squircle ">
-                                <img alt="" className=' object-cover object-center' src="https://tlgur.com/d/GL0BjABG" />
-                            </div>
-                        </div>
-                        <div className="avatar  w-full" id="rec2">
-                            <div onClick={() => { ggd(2) }} className="shadow-lg w-full mask hover:opacity-80 cursor-pointer mask-squircle ">
-                                <img alt="" className=' object-cover object-center' src="https://darulquran.co.uk/wp-content/uploads/2021/02/Abdul-Basit-Abdus-Samad.jpg" />
-                            </div>
-                        </div>
-                        <div className="avatar  w-full" id="rec10">
-                            <div onClick={() => { ggd(10) }} className="shadow-lg w-full mask hover:opacity-80 cursor-pointer mask-squircle ">
-                                <img alt="" className=' object-cover object-center' src="https://4.bp.blogspot.com/_0S0sNxarG_M/TMnWY_fGxuI/AAAAAAAAFUk/10C_Fqm7K9E/s1600/saoud-shuraim-123.jpg" />
-                            </div>
-                        </div>
-                        <div className="avatar  w-full" id="rec5">
-                            <div onClick={() => { ggd(5) }} className="shadow-lg w-full mask hover:opacity-80 cursor-pointer mask-squircle ">
-                                <img alt="" className=' object-cover object-center' src="https://masjidassunnah-fl.com/wp-content/uploads/2012/12/Hani-Ar-Rifai.jpg" />
-                            </div>
-                        </div>
-                        <div className="avatar  w-full" id="rec7">
-                            <div onClick={() => { ggd(7) }} className="shadow-lg w-full mask hover:opacity-80 cursor-pointer mask-squircle ">
-                                <img alt="" className=' object-cover object-center' src="https://yt3.ggpht.com/a/AGF-l7895FcDq0jG9uG_7uDQZ2T-v1kcSAaGrzP20w=s900-mo-c-c0xffffffff-rj-k-no" />
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

@@ -2,9 +2,9 @@ function Policy() {
     return (
         <>
 
-            <div class="container mx-4 space-y-10">
+            <div className="container mx-4 space-y-10">
                     <h1 className="text-2xl dark:text-white text-black font-bold my-10">Privacy Policy for Salatok App</h1>
-                <div class="space-y-4">
+                <div className="space-y-4">
                     <p>At <strong>SALATOK.APP</strong>, accessible from <i>https://www.salatok.app</i>, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by SALATOK.APP and how we use it.</p>
                     <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>
                     <p>This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in SALATOK.APP. This policy is not applicable to any information collected offline or via channels other than this website.</p>

@@ -27,7 +27,7 @@ function App() {
   const getData = async () => {
     if (localStorage.getItem("city") === null || localStorage.getItem("country") === null) {
 
-      console.log('very slow, because there nothing in Locale storage yet')
+      // console.log('very slow, because there nothing in Locale storage yet')
       await Axios.get('https://api.ipify.org?format=json').then(res => {
         // console.log(res.data);
         Axios.post(`https://iptwist.com`, { ip: `${res.data.ip}` }, {
@@ -61,7 +61,7 @@ function App() {
       // config
       setErr(false);
       setTat(true);
-      console.log('very fast, because of Locale storage')
+      // console.log('very fast, because of Locale storage')
     }
   }
 
@@ -104,10 +104,10 @@ function App() {
       <>
         <div className='bg-gradient-to-tr from-teal-800  to-cyan-800 w-screen h-screen m-0 p-2 flex flex-col items-center content-center justify-center'>
 
-          <div class="loader">
-            <div class="outer"></div>
-            <div class="middle"></div>
-            <div class="inner"></div>
+          <div className="loader">
+            <div className="outer"></div>
+            <div className="middle"></div>
+            <div className="inner"></div>
           </div>
 
         </div>

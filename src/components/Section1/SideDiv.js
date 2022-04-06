@@ -37,11 +37,11 @@ function SlideDiv() {
                         load === true
                             ?
                             <>
-                                <div class="h-[100%] flex items-center justify-center">
-                                <div class="loader">
-                                    <div class="outer"></div>
-                                    <div class="middle"></div>
-                                    <div class="inner"></div>
+                                <div className="h-[100%] flex items-center justify-center">
+                                <div className="loader">
+                                    <div className="outer"></div>
+                                    <div className="middle"></div>
+                                    <div className="inner"></div>
                                 </div>
                                 </div>
                             </>

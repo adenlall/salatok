@@ -62,7 +62,7 @@ function Calendar() {
             if (localStorage.getItem('timeOut') === null) {
                 localStorage.setItem('timeOut', time)
             } else {
-                console.log('storage')
+                // console.log('storage')
                 var datta = JSON.parse(localStorage.getItem(lldate))
                 document.querySelectorAll('.zitems')[nuum].innerHTML = datta.day + " " + datta['month'][`${lan}`];
                 (lan === 'ar') ? document.querySelectorAll('.days')[nuum].innerHTML = datta['weekday'][`${lan}`] : document.querySelectorAll('.days')[nuum].innerHTML = moment(lldate, 'DD-MM-YYYY').format('dddd');
@@ -114,10 +114,10 @@ function Calendar() {
     if (load === true) {
         return (
             <div className="w-full shadow-xl flex flex-col h-[12em] space-y-6 items-center justify-center p-4 rounded-lg bg-slate-100 dark:bg-gray-800 dark:text-slate-100 text-gray-800">
-                <div class="loader">
-                    <div class="outer"></div>
-                    <div class="middle"></div>
-                    <div class="inner"></div>
+                <div className="loader">
+                    <div className="outer"></div>
+                    <div className="middle"></div>
+                    <div className="inner"></div>
                 </div>
             </div>
         )
@@ -139,23 +139,23 @@ function Calendar() {
                                 <h1 className="w-full space-x-2 flex justify-between"><span className="px-1 min-w-fit rounded-sm text-slate-100 bg-gray-700 xleld">{dataMou(moment().format('DD-MM-YYYY'))}</span><p className=" nmak3 w-full">To month end</p></h1>
                             </div>
                         </div>
-                        <div class="form-control">
-                            <label class="label cursor-pointer">
-                                <span class="label-text mr-2">To <strong>Arabic</strong></span>
-                                <input type="checkbox" id='togg' onChange={() => { togg() }} class="toggle toggle-accent" />
+                        <div className="form-control">
+                            <label className="label cursor-pointer">
+                                <span className="label-text mr-2">To <strong>Arabic</strong></span>
+                                <input type="checkbox" id='togg' onChange={() => { togg() }} className="toggle toggle-accent" />
                             </label>
                         </div>
                     </div>
                     <div className="flex lg:flex-row space-y-4 lg:space-x-4 space-x-0  lg:space-y-0 flex-col w-full items-center content-center">
                         <div className='flex space-x-4 w-full items-center content-center'>
                             <div className="weekc w-full h-28 flex flex-col items-center content-center justify-center rounded-lg bg-gradient-to-tr from-teal-500  to-cyan-500"><h4 className="zitems text-slate-100 font-extrabold sm:text-xl text-sm text-center">:</h4><p className='days text-slate-100 sm:text-lg text-sm'></p></div>
-                            <div className="weekc w-full h-28 flex flex-col items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h4 className="zitems text-slate-100 font-extrabold sm:text-xl text-sm text-center">:</h4><p className='days text-slate-100 sm:text-lg text-sm'></p></div>
-                            <div className="weekc w-full h-28 flex flex-col items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h4 className="zitems text-slate-100 font-extrabold sm:text-xl text-sm text-center">:</h4><p className='days text-slate-100 sm:text-lg text-sm'></p></div>
+                            <div className="weekc w-full h-28 flex flex-col items-center content-center justify-center rounded-lg bg-gradient-to-tr dark:from-gray-600  dark:to-gray-700 from-[#1eb7c347]  to-[#ffffff9e]"><h4 className="zitems text-slate-700 dark:text-slate-100 font-extrabold sm:text-xl text-sm text-center">:</h4><p className='days text-slate-700 dark:text-slate-100 sm:text-lg text-sm'></p></div>
+                            <div className="weekc w-full h-28 flex flex-col items-center content-center justify-center rounded-lg bg-gradient-to-tr dark:from-gray-600  dark:to-gray-700 from-[#1eb7c347]  to-[#ffffff9e]"><h4 className="zitems text-slate-700 dark:text-slate-100 font-extrabold sm:text-xl text-sm text-center">:</h4><p className='days text-slate-700 dark:text-slate-100 sm:text-lg text-sm'></p></div>
                         </div>
                         <div className='flex space-x-4 w-full items-center content-center'>
-                            <div className="weekc w-full h-28 flex flex-col items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h4 className="zitems text-slate-100 font-extrabold sm:text-xl text-sm text-center">:</h4><p className='days text-slate-100 sm:text-lg text-sm'></p></div>
-                            <div className="weekc w-full h-28 flex flex-col items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h4 className="zitems text-slate-100 font-extrabold sm:text-xl text-sm text-center">:</h4><p className='days text-slate-100 sm:text-lg text-sm'></p></div>
-                            <div className="weekc w-full h-28 flex flex-col items-center content-center justify-center rounded-lg bg-gradient-to-tr from-gray-600  to-gray-700"><h4 className="zitems text-slate-100 font-extrabold sm:text-xl text-sm text-center">:</h4><p className='days text-slate-100 sm:text-lg text-sm'></p></div>
+                            <div className="weekc w-full h-28 flex flex-col items-center content-center justify-center rounded-lg bg-gradient-to-tr dark:from-gray-600  dark:to-gray-700 from-[#1eb7c347]  to-[#ffffff9e]"><h4 className="zitems text-slate-700 dark:text-slate-100 font-extrabold sm:text-xl text-sm text-center">:</h4><p className='days text-slate-700 dark:text-slate-100 sm:text-lg text-sm'></p></div>
+                            <div className="weekc w-full h-28 flex flex-col items-center content-center justify-center rounded-lg bg-gradient-to-tr dark:from-gray-600  dark:to-gray-700 from-[#1eb7c347]  to-[#ffffff9e]"><h4 className="zitems text-slate-700 dark:text-slate-100 font-extrabold sm:text-xl text-sm text-center">:</h4><p className='days text-slate-700 dark:text-slate-100 sm:text-lg text-sm'></p></div>
+                            <div className="weekc w-full h-28 flex flex-col items-center content-center justify-center rounded-lg bg-gradient-to-tr dark:from-gray-600  dark:to-gray-700 from-[#1eb7c347]  to-[#ffffff9e]"><h4 className="zitems text-slate-700 dark:text-slate-100 font-extrabold sm:text-xl text-sm text-center">:</h4><p className='days text-slate-700 dark:text-slate-100 sm:text-lg text-sm'></p></div>
                         </div>
                     </div>
                 </div>

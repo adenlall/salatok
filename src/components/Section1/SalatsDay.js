@@ -45,7 +45,7 @@ function SalatsDay(props) {
             // console.log(JSON.parse(localStorage.getItem("salatsday")))
             var hours = 24; // to clear the localStorage after 1 hour(if someone want to clear after 8hrs simply change hours=8)
             var now = new Date().getTime();
-            console.log('here locale storage')
+            // console.log('here locale storage')
             if (localStorage.getItem('setupTime') === null) {
                 localStorage.setItem('setupTime', now)
             } else {
@@ -58,7 +58,7 @@ function SalatsDay(props) {
                             setSalatAPI(data); setStateAPI(true);
                             // console.log(data)
                             localStorage.setItem("salatsday",JSON.stringify(data));
-                            console.log('fetch but locale storage')
+                            // console.log('fetch but locale storage')
 
                         })
                     )
@@ -80,11 +80,11 @@ function SalatsDay(props) {
     if (stateAPI === false) {
         return (
             <>
-                <div className="w-full sm:w-2/3 shadow-xl h-[35em] flex space-y-6 items-center justify-center p-4 rounded-lg bg-slate-200 dark:bg-gray-700 dark:text-slate-100 text-gray-800">
-                    <div class="loader">
-                        <div class="outer"></div>
-                        <div class="middle"></div>
-                        <div class="inner"></div>
+                <div className="w-full sm:w-2/3 shadow-xl h-[35em] flex space-y-6 items-center justify-center p-4 rounded-lg ebg-slate-100 dark:bg-gray-700 dark:text-slate-100 text-gray-800">
+                    <div className="loader">
+                        <div className="outer"></div>
+                        <div className="middle"></div>
+                        <div className="inner"></div>
                     </div>
                 </div>
             </>
@@ -95,34 +95,34 @@ function SalatsDay(props) {
         return (
             <>
                 <div className="w-full sm:w-2/3 rounded-lg text-slate-100 shadow-lg" style={{ background: "url('https://tlgur.com/d/GZ3XKdNg') center center / cover" }}>
-                    <nav className="flex flex-col rounded-lg items-center space-y-4 justify-center content-center w-full h-full p-4 overflow-y-scroll" style={{ background: 'linear-gradient(71deg, #000000d9, transparent)' }} >
+                    <nav className="flex flex-col rounded-lg items-center space-y-4 justify-center content-center w-full h-full p-4 overflow-y-scroll dark:bg-[linear-gradient(71deg,#000000d9,transparent)] bg-[linear-gradient(71deg,#a6e1ff52,transparent)] " >
 
-                        <NavLink to='/salat/fajr' className="p-2 px-4 w-full rounded-lg space-x-2 " style={{ background: "linear-gradient(21deg,  #00000061, #ffffff29)" }} itemScope>
+                        <NavLink to='/salat/fajr' className="p-2 px-4 w-full rounded-lg space-x-2 dark:bg-[linear-gradient(21deg,#00000061,#ffffff29)] bg-[linear-gradient(21deg,#ffffffa6,#ffffff29)] text-gray-900 dark:text-slate-100" itemScope>
                             <header className="font-bold text-lg" itemProp="salat">Fajr</header>
                             <p className="">{moment(salatAPI.items[0].fajr, 'h:mm A').format('HH:mm')}</p>
                         </NavLink>
-                        <NavLink to='/salat/sunrise' className="p-2 px-4 w-full rounded-lg space-x-2 " style={{ background: "linear-gradient(21deg,  #00000061, #ffffff29)" }} itemScope>
+                        <NavLink to='/salat/sunrise' className="p-2 px-4 w-full rounded-lg space-x-2 dark:bg-[linear-gradient(21deg,#00000061,#ffffff29)] bg-[linear-gradient(21deg,#ffffffa6,#ffffff29)] text-gray-900 dark:text-slate-100" itemScope>
                             <header className="font-bold text-lg" itemProp="salat">Sunrise</header>
                             <p className="">{moment(salatAPI.items[0].shurooq, 'h:mm A').format('HH:mm')}</p>
                         </NavLink>
-                        <NavLink to='/salat/dhuhr' className="p-2 px-4 w-full rounded-lg space-x-2 " style={{ background: "linear-gradient(21deg,  #00000061, #ffffff29)" }} itemScope>
+                        <NavLink to='/salat/dhuhr' className="p-2 px-4 w-full rounded-lg space-x-2 dark:bg-[linear-gradient(21deg,#00000061,#ffffff29)] bg-[linear-gradient(21deg,#ffffffa6,#ffffff29)] text-gray-900 dark:text-slate-100" itemScope>
                             <header className="font-bold text-lg" itemProp="salat">Dhuhr</header>
                             <p className="">{moment(salatAPI.items[0].dhuhr, 'h:mm A').format('HH:mm')}</p>
                         </NavLink>
-                        <NavLink to='/salat/asr' className="p-2 px-4 w-full rounded-lg space-x-2 " style={{ background: "linear-gradient(21deg,  #00000061, #ffffff29)" }} itemScope>
+                        <NavLink to='/salat/asr' className="p-2 px-4 w-full rounded-lg space-x-2 dark:bg-[linear-gradient(21deg,#00000061,#ffffff29)] bg-[linear-gradient(21deg,#ffffffa6,#ffffff29)] text-gray-900 dark:text-slate-100" itemScope>
                             <header className="font-bold text-lg" itemProp="salat">Asr</header>
                             <p className="">{moment(salatAPI.items[0].asr, 'h:mm A').format('HH:mm')}</p>
                         </NavLink>
-                        <NavLink to='/salat/maghrib' className="p-2 px-4 w-full rounded-lg space-x-2 " style={{ background: "linear-gradient(21deg,  #00000061, #ffffff29)" }} itemScope>
+                        <NavLink to='/salat/maghrib' className="p-2 px-4 w-full rounded-lg space-x-2 dark:bg-[linear-gradient(21deg,#00000061,#ffffff29)] bg-[linear-gradient(21deg,#ffffffa6,#ffffff29)] text-gray-900 dark:text-slate-100" itemScope>
                             <header className="font-bold text-lg" itemProp="salat">Maghrib</header>
                             <p className="">{moment(salatAPI.items[0].maghrib, 'h:mm A').format('HH:mm')}</p>
                         </NavLink>
-                        <NavLink to='/salat/isha' className="p-2 px-4 w-full rounded-lg space-x-2 " style={{ background: "linear-gradient(21deg,  #00000061, #ffffff29)" }} itemScope>
+                        <NavLink to='/salat/isha' className="p-2 px-4 w-full rounded-lg space-x-2 dark:bg-[linear-gradient(21deg,#00000061,#ffffff29)] bg-[linear-gradient(21deg,#ffffffa6,#ffffff29)] text-gray-900 dark:text-slate-100" itemScope>
                             <header className="font-bold text-lg" itemProp="salat">Isha</header>
                             <p className="">{moment(salatAPI.items[0].isha, 'h:mm A').format('HH:mm')}</p>
                         </NavLink>
 
-                        <p>
+                        <p className="text-slate-100">
                             {props.ss + ' - ' + props.cc + ' '}
                             |
                             <span>
