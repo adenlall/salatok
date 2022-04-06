@@ -29,7 +29,7 @@ function NextSalat(props) {
                         <Route path='/salat/maghrib' element={<Ttst ss={props.ss} cc={props.cc} ynt="maghrib" />} />
                         <Route path='/salat/isha' element={<Ttst ss={props.ss} cc={props.cc} ynt="isha" />} />
                     </Routes>
-                    <div className="space-x-1 flex items-center justify-center md:absolute bottom-0">
+                    <div className="space-x-1 flex items-center justify-center mt-4 md:absolute bottom-0">
                         <NavLink id='clos' to='/'><button className='btn btn-info w-[14em]'>Clock</button></NavLink>
                         <img className='h-[4em] w-[4em]' src='/favicon-194x194.png' alt='clock img' />
                     </div>
