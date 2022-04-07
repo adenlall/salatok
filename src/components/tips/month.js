@@ -3,9 +3,9 @@ import moment from "moment";
 function MPro() {
 
 
-    const convert = (data) => {
-        console.log(data)
-        fetch(`https://api.aladhan.com/v1/gToH?date=${moment().format('DD-MM-YYYY')}`)
+    const convert = (date) => {
+        console.log(date) // DD-MM-YYYY
+        fetch(`https://api.aladhan.com/v1/gToH?date=${date}`)
             .then(response => response.json())
             .then(json => {
 
@@ -24,7 +24,7 @@ function MPro() {
                     <progress class="progress progress-info w-full bg-slate-700" value={Math.floor((30 - moment().endOf('month').fromNow('dd').match(/(\d+)/)) * 100 / 31)} max="100"></progress>
                 </div>
                 <div className="flex lg:flex-row flex-col  lg:items-center items-start w-full lg:space-x-4 space-x-0 space-y-2 lg:space-y-0">
-                    <h1 className="text-xl font-bold lg:w-2/3 w-full text-cyan-400">Arabic mounth progress : <span className="exos">{convert(moment(moment().add(4, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), 4)} %</span></h1 >
+                    <h1 className="text-xl font-bold lg:w-2/3 w-full text-cyan-400">Arabic mounth progress : <span className="exos">{convert(moment().format('DD-MM-YYYY'))} %</span></h1 >
                     <progress class="progress progress-info w-full bg-slate-700 exosa" value="72" max="100"></progress>
                 </div>
             </div>
