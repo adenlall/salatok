@@ -26,7 +26,7 @@ function Sec2() {
     axios.get(`https://api.quran.com/api/v4/verses/random${bar}`)
       .then((response) => {
         setRun(response.data.verse.verse_key); 
-        console.log(response.data.verse.verse_key); 
+        // console.log(response.data.verse.verse_key); 
         setLoad(false);
       })
       .catch((error) => {

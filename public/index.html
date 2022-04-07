@@ -77,10 +77,8 @@
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
-    gtag('config', 'G-W41MD614E4');
+    gtag('config', 'G-W41MD614E4', {cookie_flags: 'SameSite=None;Secure'});
   </script>
-
-
 
   <!--
         manifest.json provides metadata used when your web app is installed on a
@@ -114,7 +112,7 @@
                 window._mNDetails.loadTag("300687069", "970x250", "300687069");
             });
         }
-        catch (error) {}
+        catch (error) {console.log('Media.net : ' + error)}
     </script>
 </div>
 

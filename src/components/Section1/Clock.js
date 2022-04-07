@@ -39,10 +39,10 @@ function Clock(props) { // TODO:         line 73....
 
     }
 
-    var status; 
-    if(props.cc === true){
-        status = '/true/';
-    }else{
+    var status;
+    if (props.cc === true) {
+        status = '/';
+    } else {
         status = '/';
     }
 
@@ -55,12 +55,11 @@ function Clock(props) { // TODO:         line 73....
 
 
         $(
-            $.getJSON(`https://muslimsalat.com/${props.cc}/${props.ss}${status}.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`, function (data)
-            {
+            $.getJSON(`https://muslimsalat.com/${props.cc}/${props.ss}${status}.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`, function (data) {
                 setSlt(data.items[0]); setStt(false);
                 // console.log(data)
             })
-       )
+        )
 
     }
 
@@ -87,7 +86,7 @@ function Clock(props) { // TODO:         line 73....
             let Mdiff = moment(slt[sltAr[i]], 'h:mm A').format('mm') - moment().format('mm');
 
 
-            if (moment(nSl, 'h:mm A').format('HHmm') > moment().format('HHmm') ) {
+            if (moment(nSl, 'h:mm A').format('HHmm') > moment().format('HHmm')) {
                 if (Mdiff < 0) {
                     Hdiff = Hdiff - 1;
                     Mdiff = 60 - Math.abs(Mdiff);
@@ -100,14 +99,14 @@ function Clock(props) { // TODO:         line 73....
                 break;
             } else {
 
-                Hdiff = (props.cc==='Ma'? moment(slt[sltAr[0]], 'h:mm A').add(1, 'hours').format('HH'): moment(slt[sltAr[0]], 'h:mm A').format('HH') ) - moment().format('HH');
+                Hdiff = (props.cc === 'Ma' ? moment(slt[sltAr[0]], 'h:mm A').add(1, 'hours').format('HH') : moment(slt[sltAr[0]], 'h:mm A').format('HH')) - moment().format('HH');
                 Mdiff = moment(slt[sltAr[0]], 'h:mm A').format('mm') - moment().format('mm');
 
                 if (Mdiff < 0) {
                     Hdiff = Hdiff - 1;
                     Mdiff = 60 - Math.abs(Mdiff);
                 }
-                Hdiff = 24 - parseInt(moment().format('HH')) + (parseInt(moment(slt[sltAr[0]], 'h:mm A').add(1, 'hours').format('HH'))) ; // TODO: fix this
+                Hdiff = 24 - parseInt(moment().format('HH')) + (parseInt(moment(slt[sltAr[0]], 'h:mm A').add(1, 'hours').format('HH'))); // TODO: fix this
                 setHDiff(Hdiff);
                 setMDiff(Mdiff);
                 setNextis(sltAr[0]);
@@ -170,8 +169,25 @@ function Clock(props) { // TODO:         line 73....
 
             </div>
             <div className='flex flex-col space-y-2 items-center p-2'>
-                <h1 className="font-bold text-lg">Next Salat : {nextis} <span className="font-extrabold"></span></h1>
-                <h1 className=''>in: {Hdiff}h and {Mdiff}min </h1>
+                <h2 className="font-bold text-[1.4em]">Next Salat is : <span className="font-extrabold text-[2em]"> {nextis}</span></h2>
+                <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
+                    <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+                        <span className="countdown font-mono text-5xl">
+                            <span style={{ '--value': Hdiff }}></span>
+                        </span> hours
+                    </div>
+                    <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+                        <span className="countdown font-mono text-5xl">
+                            <span style={{ '--value': Mdiff }}></span>
+                        </span> min
+                    </div>
+                    <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+                        <span className="countdown font-mono text-5xl">
+                            <span style={{ '--value': 60 - new Date().getSeconds() }}></span>
+                        </span> sec
+                    </div>
+                </div>
+
             </div>
         </div>
     );

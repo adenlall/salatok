@@ -1,5 +1,5 @@
-import { animate } from "popmotion"
 import { useEffect } from "react";
+import { motion } from "framer-motion";
 
 function ChangeLog() {
 
@@ -7,20 +7,19 @@ function ChangeLog() {
         document.title = "Change Log - Salatok.App - Muslim Day Manager";
     }, []);
 
-    const ele = document.querySelector('#test');
-    animate({ from: 0, to: 100, elapsed: -3000, onUpdate: latest => ele.innerHTML = latest })
 
     return (
         <>
-            <div className='p-0 m-0 flex flex-col space-y-4 items-center bg-white dark:bg-gray-900'>
+            <div className='xpag p-0 m-0 flex flex-col space-y-4 items-center bg-white dark:bg-gray-900'>
                 <div className="lg:w-3/4 mt-16 w-4/5 shadow-xl flex md:flex-row flex-col items-center h-80 justify-center rounded-lg dark:text-slate-100 text-gray-800" style={{ background: 'url("https://tlgur.com/d/8BOqzyxG") center / cover' }}>
-                    <div className="flex flex-col h-full w-full items-center content-center rounded-lg p-4 justify-center" style={{ background: 'linear-gradient(228deg, #000000ba, transparent)' }}>
+                    <div className="flex flex-col h-full w-full items-center content-center rounded-lg p-4 justify-center dark:bg-[linear-gradient(228deg,#000000ba,transparent)] bg-[linear-gradient(137deg,#fff,transparent)]">
                         <div className="flex flex-col items-start space-y-4">
                             <header className="text-3xl leading-8 font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">Track full progress on GitHub</header>
                             <a rel="nofollow" href="https://www.github.com/adenlall/salatok"><button className="btn">GitHub</button></a>
                         </div>
                     </div>
                 </div>
+                
 
                 <div className=" mt-12 w-full flex flex-col items-center min-h-fit  justify-center  p-4 rounded-lg dark:text-slate-100 text-gray-800">
 
@@ -29,6 +28,16 @@ function ChangeLog() {
                     <article className="px-2 items-center ">
                         <div className="flex flex-col w-full space-y-2">
                             <span id="test"></span>
+                            <motion.h2
+                                whileTap={{ scale: 0.9 }}
+                                onHoverStart={e => { document.querySelector('.xpag').classList.add('dark:bg-[rgb(13,132,161)]') }}
+                                onHoverEnd={e   => { document.querySelector('.xpag').classList.remove('dark:bg-[rgb(13,132,161)]') }}
+                                className="bg-cyan-600 rounded-lg px-3 py-1"
+                                animate={{ backgroundColor: ['rgb(31,197,237)','rgb(13,132,161)', 'rgb(31,197,237)'] }}
+                                transition={{ repeat: Infinity, duration: 3}}
+                                >
+                                <span className="font-bold text-sm">version: 1.0.0</span>
+                            </motion.h2>
                             <h1 class="text-2xl leading-8 font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">Salatok App : First Release ᐢ ᵕ ᐢ</h1>
                             <p>Friay 18-03-22</p>
                         </div>

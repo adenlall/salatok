@@ -56,7 +56,7 @@ function Vers(props) {
         <div className="lg:w-1/2 w-full shadow-xl flex justify-between items-center p-4 rounded-lg bg-slate-100 dark:bg-gray-800 dark:text-slate-100 text-gray-800">
             <div className="flex w-full flex-col items-start justify-center content-center space-y-4 ">
                     <div id='ayyah' className='overflow-scroll h-48 max-h-48'>
-                        <p className=" text-2xl"><span className="font-extrabold font-2xl italic">" </span>{ayah}<span className="font-extrabold font-2xl"> "</span></p>
+                      <div className='text-2xl' dangerouslySetInnerHTML={{__html:ayah}} />
                     </div>
                
                 <div>
@@ -65,10 +65,10 @@ function Vers(props) {
                 <div className='w-full p-1 rounded-lg bg-slate-200 flex flex-col dark:bg-gray-900'>
                     <h1 className='pl-2 text-lg'>Select <strong>Ayah</strong> font format</h1>
                     <div className='w-full p-2 rounded-lg space-x-2 space-y-4 lg:space-y-0'>
-                        <button onClick={() => { fontType('indopak') }} className='badge badge-accent badge-outline'>indopak</button>
-                        <button onClick={() => { fontType('uthmani') }} className='badge badge-accent badge-outline'>uthmani</button>
-                        <button onClick={() => { fontType('uthmani_simple') }} className='badge badge-accent badge-outline'>simple</button>
-                        <button onClick={() => { fontType('imlaei') }} className='badge badge-accent badge-outline'>imlaei</button>
+                        <button onClick={() => { fontType('indopak') }} className='badge badge-accent hover:text-black badge-outline'>indopak</button>
+                        <button onClick={() => { fontType('uthmani') }} className='badge badge-accent hover:text-black badge-outline'>uthmani</button>
+                        <button onClick={() => { fontType('uthmani_simple') }} className='badge badge-accent hover:text-black badge-outline'>simple</button>
+                        <button onClick={() => { fontType('imlaei') }} className='badge badge-accent hover:text-black badge-outline'>imlaei</button>
                         <button onClick={() => { trans(20) }} className='badge bg-cyan-300 text-gray-800 badge-outline'>english</button>
                         <button onClick={() => { trans(136) }} className='badge bg-cyan-300 text-gray-800 badge-outline'>french</button>
                         <button onClick={() => { trans(78) }} className='badge bg-cyan-300 text-gray-800 badge-outline'>russian</button>

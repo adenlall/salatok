@@ -30,7 +30,7 @@ function Navbar() {
 
     return (
         <>
-            <div className="xnav  hidden fixed top-0 pt-20 h-screen flex-col justify-between items-center sppace-y-4 w-full bg-slate-900" style={{ zIndex: '99999' }} >
+            <nav className="xnav  hidden fixed top-0 pt-20 h-screen flex-col justify-between items-center sppace-y-4 w-full bg-slate-900" style={{ zIndex: '99999' }} >
                 <ul className="flex w-[94%] flex-col items-center space-y-4 text-lg list-style-none z-50">
                     <NavLink onClick={hundelNavbar} to="/" className=" px-4 py-3 w-full hover:bg-slate-700 bg-slate-800 text-gray-200 rounded-lg text-2xl font-extrabold ">
                         Home
@@ -41,6 +41,9 @@ function Navbar() {
                     <NavLink onClick={hundelNavbar} to="/About" className=" px-4 py-3 w-full hover:bg-slate-700 text-gray-200 bg-slate-800 rounded-lg text-2xl font-extrabold">
                         About
                     </NavLink>
+                    <NavLink onClick={hundelNavbar} to="/Privacy" className=" px-4 py-3 w-full hover:bg-slate-700 text-gray-200 bg-slate-800 rounded-lg text-2xl font-extrabold">
+                        Privacy
+                    </NavLink>
                     <a href="https://www.github.com/adenlall/salatok" className=" px-4 py-3 w-full hover:bg-slate-700 text-gray-200 bg-slate-800 rounded-lg text-2xl font-extrabold">
                         Github
                     </a>
@@ -48,9 +51,9 @@ function Navbar() {
                 <div className='mx-4 mb-6 flex items-center sppace-x-4'>
                     <img className='w-10 h-10 rounded-sm' src="/favicon-194x194.png" alt="" />
 
-                    <h1 className='text-lg font-bold'>Salatok App - Your daily guide</h1>
+                    <h1 className='text-lg font-bold text-gray-400'>Salatok App - Your daily guide</h1>
                 </div>
-            </div>
+            </nav>
             <nav className="relative w-full flex flex-wrap items-center justify-between py-3 bg-gray-900 text-gray-200 shadow-lg navbar navbar-expand-lg navbar-light">
                 <div className="container-fluid w-full flex flex-nowrap items-center justify-between px-6">
                     <button
@@ -80,7 +83,7 @@ function Navbar() {
                             />
                         </svg>
                     </button>
-                    <div
+                    <nav
                         className="flex flex-row items-center justify-between w-full flex-grow"
                         id="navbarSupportedContent1"
                     >
@@ -103,12 +106,15 @@ function Navbar() {
                             <NavLink to="/About" className="hover:bg-gray-800 rounded-lg py-1 px-2">
                                 About
                             </NavLink>
+                            <NavLink to="/Privacy" className="hover:bg-gray-800 rounded-lg py-1 px-2">
+                                Privacy
+                            </NavLink>
                             <a className="hover:bg-gray-800 rounded-lg py-1 px-2" href="https://www.github.com/adenlall/salatok">
                                 Github
                             </a>
                         </ul>
 
-                    </div>
+                    </nav>
 
                 </div>
             </nav>
