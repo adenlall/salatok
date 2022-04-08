@@ -112,7 +112,7 @@ function Clock() { // TODO:         line 73....
     useEffect(() => {
         const interval = setInterval(() => {
             calC()
-            console.log('here I am')
+            // console.log('here I am')
             
         }, MINUTE_MS);
 

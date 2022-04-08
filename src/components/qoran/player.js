@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-function Player() {
+function Player(props) {
 
     const [play, setPlay] = useState(false);
     const [seek, setSeek] = useState(0);

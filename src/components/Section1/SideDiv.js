@@ -5,17 +5,19 @@ function SlideDiv() {
 
 
     const [asmaAlHusna, setAsmaAlHusna] = useState(0);
+    const [load, setLoad] = useState(true);
 
     useEffect(()=> {
         var ran = Math.floor(Math.random() * 100);
 
         axios.get(`https://api.aladhan.com/asmaAlHusna/${ran}`)
             .then((response) => {
-
                 setAsmaAlHusna(response.data.data[0]);
+                setLoad(false)
             })
             .catch((error) => {
                 console.log(error);
+                setLoad(false)
             })
     }, [])
     

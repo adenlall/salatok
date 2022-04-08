@@ -11,9 +11,7 @@ import Support from './components/secLast/support';
 
 
 function App() {
-
-  const [ss, setSS] = useState(0);
-  const [cc, setCC] = useState(0);
+  
   const [tat, setTat] = useState(false);
   const [err, setErr] = useState(false);
 
