@@ -1,19 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import moment from 'moment'
-import Axios from 'axios';
 
 function Calendar() {
 
 
     const [Dy, setDy] = useState(0);
-    const [Dyy, setDyy] = useState(0);
     const [Dm, setDm] = useState(0);
     const [Dd, setDd] = useState(0);
-    const [D, setD] = useState(0);
     const [load, setLoad] = useState(true);
-    // const ['Monday', '']
-
-
     useEffect(() => {
         if (localStorage.getItem('timeOut') < moment().format('YYYYMMDD')) {
             var day = moment().format('YYYYMMDD');
@@ -31,7 +25,6 @@ function Calendar() {
             .then(json => {
                 // console.log(json)
 
-                setD(json.data.hijri.date);
                 setDy(json.data.hijri);
                 setDd(json.data.hijri.weekday.en);
                 setDm(json.data.hijri.month.en);
@@ -70,14 +63,11 @@ function Calendar() {
         }
     }
 
-    function dataMou(data) {
-        fetch(`https://api.aladhan.com/v1/gToH?date=${data}`)
-            .then(responses => responses.json())
-            .then(data => {
-                document.querySelector('.xleld').innerHTML = 29 - data.data.hijri.day + ' days';
-            }).finally(() => {
-                setLoad(false);
-            })
+    const dataMou = (data) => {
+
+        const doo = JSON.parse(localStorage.getItem(data));
+        const c = 29 - parseInt(doo.day);
+        return c + ' days';
     }
     const togg = () => {
         if (document.querySelector('#togg').checked === false) {
@@ -131,7 +121,7 @@ function Calendar() {
                         <div className='w-full flex flex-col lg:space-y-0 space-y-2 lg:flex-row items-start space-x-4'>
                             <div className='min-w-fit p-0'>
                                 <div className='flex flex-row w-full space-x-2'><h1 className="font-bold text-3xl">{Dd} - </h1><h1 className="font-bold text-3xl">{Dm}</h1></div>
-                                <p>{D}</p>
+                                <p>{Dy.date}</p>
                             </div>
                             <div className="flex w-full justify-self-stretch items-stretch flex-col space-y-2 ">
                                 <h1 className="w-full space-x-2 flex justify-between"><span className="px-1 min-w-fit rounded-sm text-slate-100 bg-gray-700">{moment().endOf('day').fromNow('D')}</span><p className="   nmak1 w-full">To day end</p></h1>
