@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-function Player(props) {
+function Player() {
 
     const [play, setPlay] = useState(false);
     const [seek, setSeek] = useState(0);
@@ -9,6 +9,16 @@ function Player(props) {
 
     const player = document.getElementById('music_player');
 
+    const recico = {
+        '8': ['Mohamed Siddiq al-Minshawi', 'محمد صديق المنشاوي', 'Mujawwad'],
+        '2': ['AbdulBaset AbdulSamad', 'عبد الباسط عبد الصمد', 'Murattal'],
+        '10': ['Sa`ud ash-Shuraym', 'سعود الشريم', 'undifined'],
+        '12': ['Mahmoud Khalil Al-Husary', 'محمود خليل الحصري', 'Muallim'],
+        '5': ['Hani ar-Rifai', 'هاني الرفاعي', 'undifined'],
+        '7': ['Mishari Rashid al-`Afasy', 'مشاري راشد العفاسي', 'undifined'],
+        '3': ['Abdur-Rahman as-Sudais', 'عَبْدُ ٱلرَّحْمَٰنِ بْنُ عَبْدِ ٱلْعَزِيزِ', 'Murattal']
+    }
+    
     function qakl() {
         setLoad(true)
 
@@ -17,7 +27,6 @@ function Player(props) {
 
                 // setSuraha(response.data.data.surah)
                 document.querySelector('#srslp').src = `https://verses.quran.com/${response.data.audio_files[0].url}`;
-                // console.log(`https://verses.quran.com/${response.data.audio_files[0].url}`)
                 document.querySelector('#music_player').load();
                 setLoad(false)
 
@@ -34,15 +43,6 @@ function Player(props) {
         qakl()
     }, [])
 
-    const recico = {
-        '8': ['Mohamed Siddiq al-Minshawi', 'محمد صديق المنشاوي', 'Mujawwad'],
-        '2': ['AbdulBaset AbdulSamad', 'عبد الباسط عبد الصمد', 'Murattal'],
-        '10': ['Sa`ud ash-Shuraym', 'سعود الشريم', 'undifined'],
-        '12': ['Mahmoud Khalil Al-Husary', 'محمود خليل الحصري', 'Muallim'],
-        '5': ['Hani ar-Rifai', 'هاني الرفاعي', 'undifined'],
-        '7': ['Mishari Rashid al-`Afasy', 'مشاري راشد العفاسي', 'undifined'],
-        '3': ['Abdur-Rahman as-Sudais', 'عَبْدُ ٱلرَّحْمَٰنِ بْنُ عَبْدِ ٱلْعَزِيزِ', 'Murattal']
-    }
     function ggd(rec) {
         setLoad(true)
         for (let i = 0; i < document.querySelectorAll(`.avatar`).length; i++) {
@@ -123,7 +123,6 @@ function Player(props) {
         let duration = audio.duration;
         audio.currentTime = seek.value * duration / 100;
         let current = audio.currentTime * (100 / duration);
-        // console.log('current in logseek : ' + current + '   is not a number ? ' +isNaN(current))
         setSeek(String(current));
         document.querySelector('#ct').innerHTML = `${setct(audio.currentTime)}`;
         document.querySelector('#tt').innerHTML = `${setct(duration)}`;
@@ -187,9 +186,6 @@ function Player(props) {
 
 
     })
-    // https://wp-technique.com/loading/loading.gif
-    // document.querySelector('#music_player').load()
-
     return (
         <>
             <div className="lg:w-1/2 w-full shadow-xl flex flex-col justify-center space-y-4 items-center p-4 rounded-lg bg-slate-100 dark:bg-gray-800 dark:text-slate-100 text-gray-800">
@@ -271,3 +267,4 @@ function Player(props) {
 }
 
 export default Player;
+

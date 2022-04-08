@@ -1,10 +1,9 @@
 import Clock from "./Clock";
 
-function ChSal(props) {
+function ChSal() {
     return ( 
         <div className="flex w-full items-center content-center justify-center">
-            
-                <Clock cc={props.cc} ss={props.ss}/>
+                <Clock />
             </div>
      );
 }

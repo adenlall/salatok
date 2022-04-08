@@ -4,35 +4,59 @@ import $ from 'jquery';
 import moment from 'moment'
 
 
-function SalatsDay(props) {
+function SalatsDay() {
 
     const [stateAPI, setStateAPI] = useState(false);
     const [salatAPI, setSalatAPI] = useState(0);
+    const ss = localStorage.getItem("city");
+    const cc = localStorage.getItem("country");
 
-    var status;
-    if (props.cc === true) {
-        status = '/true';
-    } else {
-        status = '/';
-    }
-    
     const fetchData = () => {
-        
-        $(
-            $.getJSON(`https://muslimsalat.com/${props.cc}/${props.ss}${status}.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`, function (data)
-            {
-                setSalatAPI(data); setStateAPI(true);
-                // console.log(data)
-            })
-       )
-                        
+        if (localStorage.getItem("salatsday") === null) {
+            $(
+                $.getJSON(`https://muslimsalat.com/${cc}/${ss}.json?key=9233c34903ef6aa6fd59a97cedac8226`, function (data) {
+                    setSalatAPI(data); setStateAPI(true);
+                    // console.log(data)
+                    localStorage.setItem("salatsday", JSON.stringify(data));
+
+                })
+            )
+        } else {
+
+            setSalatAPI(JSON.parse(localStorage.getItem("salatsday"))); setStateAPI(true);
+            var hours = 24;
+            var now = new Date().getTime();
+
+            if (localStorage.getItem('setupTime') === null) {
+
+                localStorage.setItem('setupTime', now)
+
+            } else {
+
+                if (now - localStorage.getItem('setupTime') > hours * 60 * 60 * 1000) {
+                    localStorage.setItem('setupTime', now);
+
+                    $(
+                        $.getJSON(`https://muslimsalat.com/${cc}/${ss}.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`, function (data) {
+                            setSalatAPI(data); setStateAPI(true);
+                            // console.log(data)
+                            localStorage.setItem("salatsday", JSON.stringify(data));
+                            // console.log('fetch but locale storage')
+
+                        })
+                    )
+
+                }
+            }
+        }
+
 
 
     }
 
     useEffect(() => {
         fetchData()
-    }, [stateAPI])
+    }, [])
 
 
 
@@ -73,8 +97,8 @@ function SalatsDay(props) {
                             <p className="">{moment(salatAPI.items[0].isha, 'h:mm A').format('HH:mm')}</p>
                         </NavLink>
 
-                        <p>
-                            {props.ss + ' - ' + props.cc+' '}
+                        <p className="text-slate-100">
+                            {ss + ' - ' + cc + ' '}
                             |
                             <span>
                                 {'  daylight : ' + salatAPI.daylight}
@@ -88,8 +112,6 @@ function SalatsDay(props) {
             </>
         );
 
-
     }
 }
-
-export default SalatsDay;
+export default SalatsDay

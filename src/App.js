@@ -38,12 +38,9 @@ function App() {
         }).then(res => {
           localStorage.setItem("city", `${res.data.city}`);
           localStorage.setItem("country", `${res.data.country}`);
-          setSS(res.data.city)
-          setCC(res.data.country)
-          // config
           setErr(false);
           setTat(true);
-          // console.log(res.data, err, tat);
+
         }).catch(erro => {
           console.log(erro)
           // config
@@ -55,10 +52,6 @@ function App() {
       
 
     }else{
-
-      setSS(localStorage.getItem("city"))
-      setCC(localStorage.getItem("country"))
-      // config
       setErr(false);
       setTat(true);
       // console.log('very fast, because of Locale storage')
@@ -78,7 +71,7 @@ function App() {
     return (
       <>
         <div className='w-full flex lg:flex-row flex-col items-stretch justify-center content-center space-y-4 space-x-0 lg:space-y-0 lg:space-x-4 p-4'>
-          <NextSalat cc={cc} ss={ss} />
+          <NextSalat />
           <SlideDiv />
         </div>
         <div className='w-full flex lg:flex-row flex-col items-stretch justify-center content-center space-y-4 space-x-0 lg:space-y-0 lg:space-x-4 p-4'>

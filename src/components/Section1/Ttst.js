@@ -9,23 +9,13 @@ function Ttst(props) {
 
     const [state, setState] = useState(true);
     const [week, setWeek] = useState(0);
-
-    var status;
-    if (props.cc === true) {
-        status = '/true/';
-    } else {
-        status = '/';
-    }
+    const ss = localStorage.getItem("city");
+    const cc = localStorage.getItem("country");
 
     const fetchDatta = () => {
 
-        // await axios.get(`https://muslimsalat.com/${props.cc}/${props.ss}${status}weekly.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`).then(res => {
-        //     setWeek(res.data.items); setState(false);
-        // }).catch(err => console.log('Ttst' +err))
-
-
         $(
-            $.getJSON(`https://muslimsalat.com/${props.cc}/${props.ss}${status}weekly.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`, function (data) {
+            $.getJSON(`https://muslimsalat.com/${cc}/${ss}weekly.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`, function (data) {
                 setWeek(data.items); setState(false);
                 // console.log(data)
             })
