@@ -8,7 +8,7 @@ function Clock() { // TODO:         line 73....
     const [mAngle, setmAngle] = useState((new Date().getMinutes() / 60) * 360);
     const [sAngle, setsAngle] = useState((new Date().getSeconds() / 60) * 360);
 
-    const [slt, setSlt] = useState(0);
+    const slt = JSON.parse(localStorage.getItem("salatsday"));
 
     const [Hdiff, setHDiff] = useState(0);
     const [Mdiff, setMDiff] = useState(0);
@@ -36,26 +36,21 @@ function Clock() { // TODO:         line 73....
 
     }
 
-    useEffect(() => {
-
-        const data = JSON.parse(localStorage.getItem("salatsday"))
-        setSlt(data.items[0]);
-        calC()
-    }, []);
-
 
     const calC = () => {
-        console.log('hello')
-
+        // console.log('hello')
+        
         const sltAr = ['fajr', 'shurooq', 'dhuhr', 'asr', 'maghrib', 'isha']
 
         for (let i = 0; i < sltAr.length; i++) {
+            const ss = slt.items[0]; 
+            const nSl = ss[sltAr[i]];
+            // console.log("slt", nSl)
 
-            const nSl = slt[sltAr[i]];
-            // console.log(nSl)
             let Hdiff = moment(nSl, 'h:mm A').format('HH') - moment().format('HH');
             let Mdiff = moment(nSl, 'h:mm A').format('mm') - moment().format('mm');
 
+            // console.log("Hdiff, Mdiff")
             // console.log(Hdiff, Mdiff)
 
             if (moment(nSl, 'h:mm A').format('HHmm') > moment().format('HHmm')) {
@@ -67,7 +62,7 @@ function Clock() { // TODO:         line 73....
                 setHDiff(Hdiff);
                 setMDiff(Mdiff);
                 setNextis(sltAr[i]);
-            // console.log(Hdiff, Mdiff, sltAr[i])
+                // console.log(Hdiff, Mdiff, sltAr[i])
 
                 break;
             } else {
@@ -83,12 +78,17 @@ function Clock() { // TODO:         line 73....
                 setHDiff(Hdiff);
                 setMDiff(Mdiff);
                 setNextis(sltAr[0]);
-            // console.log(Hdiff, Mdiff, sltAr[i])
-                
+                // console.log(Hdiff, Mdiff, sltAr[i])
+// 
             }
 
         }
     }
+
+
+    useEffect(() => {
+        calC()
+    }, []);
 
 
     useEffect(() => {
@@ -110,10 +110,12 @@ function Clock() { // TODO:         line 73....
     const MINUTE_MS = 60000;
 
     useEffect(() => {
+
         const interval = setInterval(() => {
-            calC()
-            console.log('here I am')
             
+            calC()
+            // console.log('here I am')
+
         }, MINUTE_MS);
 
         return () => clearInterval(interval);

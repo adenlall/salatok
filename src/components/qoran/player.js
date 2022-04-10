@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-function Player() {
+function Player(props) {
 
     const [play, setPlay] = useState(false);
     const [seek, setSeek] = useState(0);
     const [load, setLoad] = useState(true);
-
+    
     const player = document.getElementById('music_player');
 
     const recico = {
@@ -227,34 +227,34 @@ function Player() {
                         <div className="space-x-2 flex w-full sm:w-1/2">
                             <div className="avatar  w-full online" id="rec8">
                                 <div onClick={() => { ggd(8) }} className="shadow-lg w-full mask hover:opacity-80 cursor-pointer mask-squircle ">
-                                    <img alt="" className=' object-cover object-center' src="https://tlgur.com/d/GL0BjABG" />
+                                    <img alt="" className=' object-cover object-center' src="https://tlgur.com/d/gj0BqAV8" />
                                 </div>
                             </div>
                             <div className="avatar  w-full" id="rec2">
                                 <div onClick={() => { ggd(2) }} className="shadow-lg w-full mask hover:opacity-80 cursor-pointer mask-squircle ">
-                                    <img alt="" className=' object-cover object-center' src="https://darulquran.co.uk/wp-content/uploads/2021/02/Abdul-Basit-Abdus-Samad.jpg" />
+                                    <img alt="" className=' object-cover object-center' src="https://tlgur.com/d/4yqK70y4" />
                                 </div>
                             </div>
                             <div className="avatar  w-full" id="rec10">
                                 <div onClick={() => { ggd(10) }} className="shadow-lg w-full mask hover:opacity-80 cursor-pointer mask-squircle ">
-                                    <img alt="" className=' object-cover object-center' src="https://4.bp.blogspot.com/_0S0sNxarG_M/TMnWY_fGxuI/AAAAAAAAFUk/10C_Fqm7K9E/s1600/saoud-shuraim-123.jpg" />
+                                    <img alt="" className=' object-cover object-center' src="https://tlgur.com/d/4AXLj2Pg" />
                                 </div>
                             </div>
                         </div>
                         <div className="space-x-2 flex w-full sm:w-1/2">
                             <div className="avatar  w-full" id="rec5">
                                 <div onClick={() => { ggd(5) }} className="shadow-lg w-full mask hover:opacity-80 cursor-pointer mask-squircle ">
-                                    <img alt="" className=' object-cover object-center' src="https://masjidassunnah-fl.com/wp-content/uploads/2012/12/Hani-Ar-Rifai.jpg" />
+                                    <img alt="" className=' object-cover object-center' src="https://tlgur.com/d/G7BL7Lb8" />
                                 </div>
                             </div>
                             <div className="avatar  w-full" id="rec7">
                                 <div onClick={() => { ggd(7) }} className="shadow-lg w-full mask hover:opacity-80 cursor-pointer mask-squircle ">
-                                    <img alt="" className=' object-cover object-center' src="https://yt3.ggpht.com/a/AGF-l7895FcDq0jG9uG_7uDQZ2T-v1kcSAaGrzP20w=s900-mo-c-c0xffffffff-rj-k-no" />
+                                    <img alt="" className=' object-cover object-center' src="https://tlgur.com/d/g6RLdEzg" />
                                 </div>
                             </div>
                             <div className="avatar  w-full" id="rec3">
                                 <div onClick={() => { ggd(3) }} className="shadow-lg w-full mask hover:opacity-80 cursor-pointer mask-squircle ">
-                                    <img alt="" className=' object-cover object-center' src="https://nice-direct-links.herokuapp.com/4c44/file.jpg" />
+                                    <img alt="" className=' object-cover object-center' src="https://tlgur.com/d/g0ZLxEk8" />
                                 </div>
                             </div>
                         </div>
