@@ -12,8 +12,7 @@ import Support from './components/secLast/support';
 
 function App() {
 
-  const [ss, setSS] = useState(0);
-  const [cc, setCC] = useState(0);
+  
   const [tat, setTat] = useState(false);
   const [err, setErr] = useState(false);
 
@@ -84,7 +83,7 @@ function App() {
           <MPro />
         </div>
         <div className='w-full flex lg:flex-row flex-col items-stretch justify-center content-center space-y-4 space-x-0 lg:space-y-0 lg:space-x-4 p-4'>
-          {/* <Calendar /> */}
+          <Calendar />
         </div>
         <div className='w-full flex lg:flex-row mt-20 flex-col items-stretch justify-center content-center space-y-4 space-x-0 lg:space-y-0 lg:space-x-4 p-4'>
           <Support />

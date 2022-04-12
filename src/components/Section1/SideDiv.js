@@ -13,7 +13,7 @@ function SlideDiv() {
         axios.get(`https://api.aladhan.com/asmaAlHusna/${ran}`)
             .then((response) => {
                 setLoad(false)
-                console.log(response.data.data[0]);
+                // console.log(response.data.data[0]);
                 setAsmaAlHusna(response.data.data[0]);
             })
             .catch((error) => {

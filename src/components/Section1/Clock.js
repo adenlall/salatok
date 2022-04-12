@@ -13,6 +13,9 @@ function Clock(props) { // TODO:         line 73....
     const [Mdiff, setMDiff] = useState(0);
     const [nextis, setNextis] = useState(0);
 
+    const cc = localStorage.getItem("country")
+    const ss = localStorage.getItem("city")
+
     var slt;
 
     const logTime = () => {
@@ -37,14 +40,8 @@ function Clock(props) { // TODO:         line 73....
 
     }
 
-    var status;
-    if (props.cc === true) {
-        status = '/';
-    } else {
-        status = '/';
-    }
+    
 
-    // var slt;
     const fetchData = () => {
 
         // await Axios.get(`https://muslimsalat.com/${props.cc}/${props.ss}${status}.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`).then(res => {
@@ -52,7 +49,7 @@ function Clock(props) { // TODO:         line 73....
         // }).catch(err => { console.log('Clock' + err) })
         if (localStorage.getItem('salatsday') === null) {
             $(
-                $.getJSON(`https://muslimsalat.com/${props.cc}/${props.ss}${status}.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`, function (data) {
+                $.getJSON(`https://muslimsalat.com/${cc}/${ss}.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`, function (data) {
                     console.log("im the second hello jquery")
                     slt = data.items[0];
                     calC();
@@ -61,7 +58,8 @@ function Clock(props) { // TODO:         line 73....
             )
         } else {
             slt = JSON.parse(localStorage.getItem('salatsday'));
-            slt
+            slt = slt.items[0];
+            calC();
         }
     }
 
