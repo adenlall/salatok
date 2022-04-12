@@ -17,15 +17,17 @@ function SalatsDay(props) {
     }
     
     const fetchData = () => {
-        
+        if (localStorage.getItem('salatsday') === null) {
         $(
             $.getJSON(`https://muslimsalat.com/${props.cc}/${props.ss}${status}.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`, function (data)
             {
                 setSalatAPI(data); setStateAPI(true);
-                // console.log(data)
+                localStorage.setItem('salatsday', JSON.stringify(data));
             })
        )
-                        
+        }else{
+            setSalatAPI(JSON.parse(localStorage.getItem('salatsday')));setStateAPI(true);
+        }
 
 
     }

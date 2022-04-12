@@ -5,16 +5,19 @@ function SlideDiv() {
 
 
     const [asmaAlHusna, setAsmaAlHusna] = useState(0);
+    const [load, setLoad] = useState(true);
 
     useEffect(()=> {
         var ran = Math.floor(Math.random() * 100);
 
         axios.get(`https://api.aladhan.com/asmaAlHusna/${ran}`)
             .then((response) => {
-
+                setLoad(false)
+                console.log(response.data.data[0]);
                 setAsmaAlHusna(response.data.data[0]);
             })
             .catch((error) => {
+                setLoad(false)
                 console.log(error);
             })
     }, [])
@@ -42,7 +45,7 @@ function SlideDiv() {
                                     <p className=" font-light text-2xl">  {asmaAlHusna.transliteration} </p>
                                 </div>
                                 <div className="">
-                                    <div className=" font-bold text-xl mb-2 bg-gray-800 p-2 rounded-lg "> {asmaAlHusna.en.meaning}</div>
+                                    <div className=" font-bold text-xl mb-2 bg-gray-800 p-2 rounded-lg "> {asmaAlHusna.transliteration}</div>
                                 </div>
                             </>
                     }

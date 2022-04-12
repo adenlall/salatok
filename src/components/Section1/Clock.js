@@ -9,13 +9,11 @@ function Clock(props) { // TODO:         line 73....
     const [mAngle, setmAngle] = useState((new Date().getMinutes() / 60) * 360);
     const [sAngle, setsAngle] = useState((new Date().getSeconds() / 60) * 360);
 
-    const [slt, setSlt] = useState(0);
-    const [stt, setStt] = useState(true);
-
     const [Hdiff, setHDiff] = useState(0);
     const [Mdiff, setMDiff] = useState(0);
     const [nextis, setNextis] = useState(0);
 
+    var slt;
 
     const logTime = () => {
 
@@ -46,37 +44,41 @@ function Clock(props) { // TODO:         line 73....
         status = '/';
     }
 
-
+    // var slt;
     const fetchData = () => {
 
         // await Axios.get(`https://muslimsalat.com/${props.cc}/${props.ss}${status}.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`).then(res => {
         //     setSlt(res.data.items[0]); setStt(false);
         // }).catch(err => { console.log('Clock' + err) })
-
-
-        $(
-            $.getJSON(`https://muslimsalat.com/${props.cc}/${props.ss}${status}.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`, function (data) {
-                setSlt(data.items[0]); setStt(false);
-                // console.log(data)
-            })
-        )
-
+        if (localStorage.getItem('salatsday') === null) {
+            $(
+                $.getJSON(`https://muslimsalat.com/${props.cc}/${props.ss}${status}.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`, function (data) {
+                    console.log("fetch")
+                    slt = data.items[0];
+                    calC();
+                    // console.log(data)
+                })
+            )
+        } else {
+            slt = JSON.parse(localStorage.getItem('salatsday'));
+            slt = slt.items[0]
+            console.log("local storage")
+            calC();
+        }
     }
 
 
 
 
-    useEffect(() => {
-        fetchData();
-    }, [stt]);
-
 
     //
 
 
-    const calC = async () => {
+    const calC = () => {
 
         const sltAr = ['fajr', 'shurooq', 'dhuhr', 'asr', 'maghrib', 'isha']
+        // console.log('im first here feeettt')
+
 
         for (let i = 0; i < sltAr.length; i++) {
 
@@ -118,38 +120,31 @@ function Clock(props) { // TODO:         line 73....
     }
 
 
+
     useEffect(() => {
+        fetchData()
+    }, []);
 
 
+    useEffect(() => {
         let timerID = setInterval(() => {
             logTime();
-
         }, 1000)
-
         return () => {
             clearInterval(timerID)
         }
+    }, [])
 
-
-    })
 
     useEffect(() => {
-
-
         let timerID = setInterval(() => {
-
             calC()
-            // console.log('step')            
-        }, 1000)
-
+        }, 60000)
         return () => {
             clearInterval(timerID)
-            // console.log('clear')
         }
+    }, []);
 
-
-
-    });
 
     return (
         <div className="flex flex-col items-center content-center justify-center">
