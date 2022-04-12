@@ -9,10 +9,9 @@ useEffect(()=>{
 },[])
 const afrt = () =>{
     convert(moment().format('DD-MM-YYYY'))
-
-    const md =  Math.floor((31 - moment().format('D')) * 31 / 100);
+    const md =  Math.floor(moment().format('D') * 100 / 31 );console.log(moment().format('D'));
     document.querySelector('.gper').innerHTML = md + ' %';
-    document.querySelector('.axeos').value = Math.floor((31 - moment().format('DD')) * 31 / 100);
+    document.querySelector('.axeos').value = md;
 }
 
     const convert = (date) => {
