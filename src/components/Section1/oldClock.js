@@ -1,21 +1,63 @@
 import React, { useState, useEffect } from 'react';
-import $ from 'jquery'
-import moment from 'moment'
+import moment from 'moment';
+import $ from 'jquery';
+import axios from 'axios';
 
+// 34b3bb78ea5ec819943e436035fdd591ff458422
 
-function Clock(props) { // TODO:         line 73....
+function Clock() { // TODO:         line 73....
 
     const [hAngle, sethAngle] = useState((new Date().getHours() % 12 / 12) * 360);
     const [mAngle, setmAngle] = useState((new Date().getMinutes() / 60) * 360);
     const [sAngle, setsAngle] = useState((new Date().getSeconds() / 60) * 360);
+    var slt = '';
 
-    const [slt, setSlt] = useState(0);
-    const [stt, setStt] = useState(true);
+    const ss = localStorage.getItem("city");
+    const cc = localStorage.getItem("country");
+
+
+    if (localStorage.getItem("salatsday") === null) {
+        console.log('null')
+        
+        // $(
+        //     $.getJSON(`https://muslimsalat.com/${cc}/${ss}.json?key=9233c34903ef6aa6fd59a97cedac8226&`, function (data) {
+        //         slt = data;
+        //         console.log(data);
+        //         localStorage.setItem("salatsday", JSON.stringify(data));
+        //     })
+        // );
+        $(
+            $.getJSON(`https://muslimsalat.com/${cc}/${ss}.json?key=9233c34903ef6aa6fd59a97cedac8226`, function (data) {
+                slt = data;
+                console.log("data");
+                console.log(data);
+                localStorage.setItem("salatsday", JSON.stringify(data));
+
+            })
+        )
+
+        // axios.get(`https://muslimsalat.com/${cc}/${ss}.json?key=9233c34903ef6aa6fd59a97cedac8226&`, {headers: {'mode': "cors","Access-Control-Allow-Origin": "*"},})
+        //     .then((response) => {
+        //         console.log("response");
+        //         slt = response.data;
+        //         console.log(response.data);
+        //         localStorage.setItem("salatsday", JSON.stringify(response.data));
+        //     })
+        //     .catch((error) => {
+        //         console.log("error");
+        //         console.log(error);
+        //     })
+
+
+    } else {
+        slt = JSON.parse(localStorage.getItem("salatsday"));
+        console.log('else')
+        console.log(slt)
+    }
 
     const [Hdiff, setHDiff] = useState(0);
     const [Mdiff, setMDiff] = useState(0);
-    const [nextis, setNextis] = useState(0);
-
+    const [nextis, setNextis] = useState('...');
 
     const logTime = () => {
 
@@ -39,58 +81,38 @@ function Clock(props) { // TODO:         line 73....
 
     }
 
-    var status;
-    if (props.cc === true) {
-        status = '/';
-    } else {
-        status = '/';
-    }
 
-
-    const fetchData = () => {
-
-        $(
-            $.getJSON(`https://muslimsalat.com/${props.cc}/${props.ss}${status}.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`, function (data) {
-                setSlt(data.items[0]); setStt(false);
-                console.log(data)
-            })
-        )
-
-    }
-
-
-
-
-
-    //
-
-
-    const calC = async () => {
+    const calC = () => {
+        // console.log('hello')
 
         const sltAr = ['fajr', 'shurooq', 'dhuhr', 'asr', 'maghrib', 'isha']
 
         for (let i = 0; i < sltAr.length; i++) {
+            const ss = slt.items[0];
+            const nSl = ss[sltAr[i]];
+            // console.log("slt", nSl)
 
-            const nSl = slt[sltAr[i]];
+            let Hdiff = moment(nSl, 'h:mm A').format('HH') - moment().format('HH');
+            let Mdiff = moment(nSl, 'h:mm A').format('mm') - moment().format('mm');
 
-            let Hdiff = moment(slt[sltAr[i]], 'h:mm A').format('HH') - moment().format('HH');
-            let Mdiff = moment(slt[sltAr[i]], 'h:mm A').format('mm') - moment().format('mm');
-
+            // console.log("Hdiff, Mdiff")
+            // console.log(Hdiff, Mdiff)
 
             if (moment(nSl, 'h:mm A').format('HHmm') > moment().format('HHmm')) {
+                // console.log('if')
                 if (Mdiff < 0) {
                     Hdiff = Hdiff - 1;
                     Mdiff = 60 - Math.abs(Mdiff);
-                    // console.log(moment(nSl, 'h:mm A').format('HH:mm'), Hdiff, Mdiff)
                 }
                 setHDiff(Hdiff);
                 setMDiff(Mdiff);
                 setNextis(sltAr[i]);
-                // window.alert('if1')
+                // console.log(Hdiff, Mdiff, sltAr[i])
+
                 break;
             } else {
-
-                Hdiff = (props.cc === 'Ma' ? moment(slt[sltAr[0]], 'h:mm A').add(1, 'hours').format('HH') : moment(slt[sltAr[0]], 'h:mm A').format('HH')) - moment().format('HH');
+                // console.log('else')
+                Hdiff = moment(slt[sltAr[0]], 'h:mm A').format('HH') - moment().format('HH');
                 Mdiff = moment(slt[sltAr[0]], 'h:mm A').format('mm') - moment().format('mm');
 
                 if (Mdiff < 0) {
@@ -101,8 +123,8 @@ function Clock(props) { // TODO:         line 73....
                 setHDiff(Hdiff);
                 setMDiff(Mdiff);
                 setNextis(sltAr[0]);
-                // window.alert()
-
+                // console.log(Hdiff, Mdiff, sltAr[i])
+                // 
             }
 
         }
@@ -110,9 +132,12 @@ function Clock(props) { // TODO:         line 73....
 
 
     useEffect(() => {
-        fetchData();
-    }, [])
+        calC()
+    }, []);
+
+
     useEffect(() => {
+
 
         let timerID = setInterval(() => {
             logTime();
@@ -124,9 +149,8 @@ function Clock(props) { // TODO:         line 73....
         }
 
 
-    },[])
+    })
 
-    
 
     const MINUTE_MS = 60000;
 
@@ -135,15 +159,12 @@ function Clock(props) { // TODO:         line 73....
         const interval = setInterval(() => {
 
             calC()
-            console.log('here I am')
+            // console.log('here I am')
 
         }, MINUTE_MS);
 
         return () => clearInterval(interval);
     }, [])
-
-
-
 
     return (
         <div className="flex flex-col items-center content-center justify-center">
@@ -181,7 +202,6 @@ function Clock(props) { // TODO:         line 73....
                         </span> sec
                     </div>
                 </div>
-
             </div>
         </div>
     );

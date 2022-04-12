@@ -14,27 +14,28 @@ function Calendar() {
             let item = moment(day - 1, 'YYYYMMDD').format('DD-MM-YYYY')
             localStorage.removeItem(item);
             localStorage.setItem('timeOut', day);
+        } else {
+
+
+
+            const date = moment().format('D-M-Y');
+
+            fetch(`https://api.aladhan.com/v1/gToH?date${date}`)
+                .then(response => response.json())
+                .then(json => {
+                    // console.log(json)
+
+                    setDy(json.data.hijri);
+                    setDd(json.data.hijri.weekday.en);
+                    setDm(json.data.hijri.month.en);
+                    for (let i = 0; i < document.querySelectorAll('.zitems').length; i++) {
+                        convert(moment(moment().add(i, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), i, 'en')
+                    }
+
+                }).finally(() => {
+                    setLoad(false);
+                })
         }
-
-
-
-        const date = moment().format('D-M-Y');
-
-        fetch(`https://api.aladhan.com/v1/gToH?date${date}`)
-            .then(response => response.json())
-            .then(json => {
-                // console.log(json)
-
-                setDy(json.data.hijri);
-                setDd(json.data.hijri.weekday.en);
-                setDm(json.data.hijri.month.en);
-                for (let i = 0; i < document.querySelectorAll('.zitems').length; i++) {
-                    convert(moment(moment().add(i, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), i, 'en')
-                }
-
-            }).finally(() => {
-                setLoad(false);
-            })
     }, [load]);
 
 
