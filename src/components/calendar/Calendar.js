@@ -25,12 +25,12 @@ function Calendar() {
                 .then(json => {
                     // console.log(json)
 
-                    setDy(json.data.hijri);
-                    setDd(json.data.hijri.weekday.en);
-                    setDm(json.data.hijri.month.en);
-                    for (let i = 0; i < document.querySelectorAll('.zitems').length; i++) {
-                        convert(moment(moment().add(i, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), i, 'en')
-                    }
+                setDy(json.data.hijri);
+                setDd(json.data.hijri.weekday.en);
+                setDm(json.data.hijri.month.en);
+                for (let i = 0; i < document.querySelectorAll('.zitems').length; i++) {
+                    convert(moment(moment().add(i, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), i, 'en')
+                }
 
                 }).finally(() => {
                     setLoad(false);
@@ -67,8 +67,15 @@ function Calendar() {
     const dataMou = (data) => {
 
         const doo = JSON.parse(localStorage.getItem(data));
-        const c = 29 - parseInt(doo.day);
-        return c + ' days';
+        if(doo === null){
+            fetch(`https://api.aladhan.com/v1/gToH?date${data}`)
+            .then(response => response.json())
+            .then(json => {return 29 - parseInt(json.day) + ' days';})
+        }else{
+            const c = 29 - parseInt(doo.day);
+            return c + ' days';
+        }
+        // console.log(JSON.parse(localStorage.getItem(data)));
     }
     const togg = () => {
         if (document.querySelector('#togg').checked === false) {
