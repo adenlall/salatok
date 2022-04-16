@@ -50,17 +50,8 @@ function SalatsDay() {
 
 
 
-    if (locate === false) {
-        return(
-        <div className="w-full sm:w-2/3 rounded-lg text-slate-100 shadow-lg">
-            <div className="flex flex-col rounded-lg items-center space-y-4 justify-center content-center w-full h-[34.8em] p-4 overflow-y-scroll " >
-                <div>We're really sorry, but we dont support your location yet</div>
-                <a href="/"><button className='btn btn-info'>Try again</button></a>
-            </div>
-        </div>
-        )
-    }
-    if (stateAPI === false && locate === true) {
+   
+    if (stateAPI === false && locate === false) {
         return (
             <>
                 <div className="w-full sm:w-2/3 rounded-lg text-slate-100 shadow-lg">
@@ -118,6 +109,15 @@ function SalatsDay() {
             </>
         );
 
+    } else {
+        return(
+        <div className="w-full sm:w-2/3 rounded-lg text-slate-100 shadow-lg">
+            <div className="flex flex-col rounded-lg items-center space-y-4 justify-center content-center w-full h-[34.8em] p-4 overflow-y-scroll " >
+                <div>We're really sorry, but we dont support your location yet</div>
+                <a href="/"><button className='btn btn-info'>Try again</button></a>
+            </div>
+        </div>
+        )
     }
 }
 export default SalatsDay

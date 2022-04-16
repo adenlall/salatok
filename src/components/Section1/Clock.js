@@ -9,7 +9,7 @@ function Clock(props) { // TODO:         line 73....
     const [mAngle, setmAngle] = useState((new Date().getMinutes() / 60) * 360);
     const [sAngle, setsAngle] = useState((new Date().getSeconds() / 60) * 360);
 
-    const [locate, setLocate] = useState(false);
+    const [locate, setLocate] = useState(true);
 
     const [Hdiff, setHDiff] = useState(0);
     const [Mdiff, setMDiff] = useState(0);
@@ -167,7 +167,7 @@ function Clock(props) { // TODO:         line 73....
                 </div>
             </div>
         )
-    } if (locate === true) {
+    } else {
 
         return (
             <div className="flex w-full items-center content-center justify-center">
