@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom'
 import Axios from 'axios';
 
 import NextSalat from './components/Section1/NextSalat';
@@ -65,7 +66,7 @@ function App() {
     getData()
 
   }, [tat])
- if (err === false && tat === false) {
+  if (err === false && tat === false) {
     return (
       <>
         <div className='bg-gradient-to-tr from-teal-800  to-cyan-800 w-screen h-screen m-0 p-2 flex flex-col items-center content-center justify-center'>
@@ -80,7 +81,7 @@ function App() {
       </>
     )
 
-  }else {
+  } else {
 
 
     return (
@@ -89,12 +90,15 @@ function App() {
           {(err === true && tat === true) ?
             <>
               <InformUser />
-              <SelectByUser/>
+              <SelectByUser />
             </>
             :
             <>
               <NextSalat />
-              <SlideDiv />
+              <Routes>
+                <Route path='/setting' element={<SelectByUser />} />
+                <Route path='/' element={<SlideDiv />} />
+              </Routes>
             </>
           }
         </div>
@@ -117,7 +121,7 @@ function App() {
       </>
     );
   }
-  
+
 
 };
 

@@ -3,7 +3,7 @@ import $ from 'jquery'
 import moment from 'moment'
 
 
-function Clock(props) { // TODO:         line 73....
+function Clock(props) {
 
 
     document.title = `Home - Salatok.App - Muslim Day Manager`;

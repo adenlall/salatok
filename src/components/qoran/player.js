@@ -216,7 +216,7 @@ function Player(props) {
                         <div id="tt">00:00</div>
                     </div>
 
-                    <div className='flex items-center justify-center space-x-4 p-4'>
+                    <div className='lg:flex hidden items-center justify-center space-x-4 p-4 lg:py-0 py-[1.4em]'>
                         <img alt='' className='w-6 h-6' src="https://www.talkerscode.com/webtricks/demo/images/volume.png" id="vol_img" />
                         <input type="range" id="change_vol" onChange={volChange} step="0.1" min="0" max="1" className="range range-sm" />
                     </div>
