@@ -26,7 +26,7 @@ function Ttst(props) {
         //     setWeek(res.data.items); setState(false);
         // }).catch(err => console.log('Ttst' +err))
 
-
+        
         $(
             $.getJSON(`https://muslimsalat.com/${cc}/${ss}${status}weekly.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`, function (data) {
                 setWeek(data.items); setState(false);
@@ -35,11 +35,8 @@ function Ttst(props) {
         )
 
     }
-
-    useEffect(() => {
-        document.title = `${props.ynt} Time - Salatok.App - Muslim Day Manager`;
-    }, [])
-
+    
+    document.title = `${props.ynt} Time - Salatok.App - Muslim Day Manager`;
 
     useEffect(() => {
         fetchDatta()

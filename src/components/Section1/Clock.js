@@ -5,6 +5,10 @@ import moment from 'moment'
 
 function Clock(props) { // TODO:         line 73....
 
+
+    document.title = `Home - Salatok.App - Muslim Day Manager`;
+
+
     const [hAngle, sethAngle] = useState((new Date().getHours() % 12 / 12) * 360);
     const [mAngle, setmAngle] = useState((new Date().getMinutes() / 60) * 360);
     const [sAngle, setsAngle] = useState((new Date().getSeconds() / 60) * 360);
