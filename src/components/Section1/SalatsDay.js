@@ -81,10 +81,6 @@ function SalatsDay() {
 
                         <p className="dark:text-slate-100 text-gray-800 text-sm">
                             {ss + ' - ' + cc + ' '}
-                            |
-                            <span>
-                                {'  daylight : ' + salatAPI.daylight}
-                            </span>
                         </p>
 
                     </nav>

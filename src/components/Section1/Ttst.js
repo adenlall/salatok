@@ -62,7 +62,7 @@ function Ttst(props) {
                 <p className='italic'>{moment(week[i]['date_for']).format('dddd')} {moment(week[i]['date_for']).format("MM-D")} :</p>
                 <div className='flex justify-between w-1/3 space-x-2'>
                     <p className='px-2 pt-1 rounded-lg bg-slate-200 dark:bg-gray-700 dark:text-slate-100 text-gray-800' key={i}>{moment(week[i][props.ynt], 'h:mm A').format('HH:mm')}</p>
-                    <p className={((diff > 0) ? 'text-green-500' : (diff < 0) ? 'text-red-500' : 'text-gray-400') + ' font-bold w-full'}>{((diff > 0) ? '+' : '')}{diff}<span className='text-xs'>min</span></p>
+                    <p className={((diff > 0) ? 'text-green-500' : (diff < 0) ? 'text-red-500' : 'text-gray-400') + ' font-bold w-full'}>{((diff > 0) ? '+' : '')}{diff}<strong className='text-xs'>min</strong></p>
                 </div>
             </div>
         )

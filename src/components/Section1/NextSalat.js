@@ -1,6 +1,6 @@
 import { Routes, Route, NavLink } from 'react-router-dom'
+import Clock from './Clock';
 import SalatsDay from "./SalatsDay";
-import ChSal from './ChSal';
 import Ttst from './Ttst';
 
 function NextSalat() {
@@ -21,7 +21,7 @@ function NextSalat() {
 
                 <div className='w-full flex flex-col items-center'>
                     <Routes>
-                        <Route index element={<ChSal />} />
+                        <Route index element={<Clock />} />
                         <Route path='/salat/fajr' element={<Ttst    ynt="fajr" />} />
                         <Route path='/salat/sunrise' element={<Ttst ynt="shurooq" />} />
                         <Route path='/salat/dhuhr' element={<Ttst   ynt="dhuhr" />} />

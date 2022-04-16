@@ -222,7 +222,7 @@ function Player(props) {
                     </div>
                 </div>
                 <div className=''>
-                    <h3 className='text-lg pl-2 h-[4em]'>The reciter : <span className='font-bold badge text-base badge-primary ' id='bbs'>Mohamed Siddiq al-Minshawi</span></h3>
+                    <h3 className='text-lg pl-2 h-[4em]'>The reciter : <strong className='font-bold badge text-base badge-primary ' id='bbs'>Mohamed Siddiq al-Minshawi</strong></h3>
                     <div className='flex sm:flex-row flex-col mt-2 space-x-0 sm:space-x-2 space-y-2 sm:space-y-0 p-2'>
                         <div className="space-x-2 flex w-full sm:w-1/2">
                             <div className="avatar  w-full online" id="rec8">
