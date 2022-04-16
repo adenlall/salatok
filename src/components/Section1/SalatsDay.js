@@ -6,8 +6,9 @@ import moment from 'moment'
 
 function SalatsDay() {
 
+    const [locate, setLocate] = useState(false);
     const [stateAPI, setStateAPI] = useState(false);
-    const [salatAPI, setSalatAPI] = useState(0);
+    const [salatAPI, setSalatAPI] = useState(JSON.parse(localStorage.getItem('salatsday')));
     const ss = localStorage.getItem("city");
     const cc = localStorage.getItem("country");
 
@@ -17,10 +18,27 @@ function SalatsDay() {
                 $.getJSON(`https://muslimsalat.com/${cc}/${ss}.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`, function (data) {
                     setSalatAPI(data); setStateAPI(true);
                     localStorage.setItem('salatsday', JSON.stringify(data));
-                })
+                    if (data.status_code === 0) {
+                        setLocate(false)
+                        window.alert("We're really sorry, but we dont support your location yet")
+                    }else{
+                        setLocate(true)
+                    }
+                }).catch(err => { window.alert("We're really sorry, but we dont support your location yet") })
             )
+            if (salatAPI === 0) {
+                setLocate(false)
+                window.alert("We're really sorry, but we dont support your location yet")
+            }
         } else {
-            setSalatAPI(JSON.parse(localStorage.getItem('salatsday'))); setStateAPI(true);
+            const dataa = JSON.parse(localStorage.getItem('salatsday'))
+            setSalatAPI(dataa); setStateAPI(true);
+            if (dataa.status_code === 0) {
+                setLocate(false)
+                window.alert("We're really sorry, but we dont support your location yet")
+            }else{
+                setLocate(true)
+            }
         }
 
 
@@ -32,7 +50,17 @@ function SalatsDay() {
 
 
 
-    if (stateAPI === false) {
+    if (locate === false) {
+        return(
+        <div className="w-full sm:w-2/3 rounded-lg text-slate-100 shadow-lg">
+            <div className="flex flex-col rounded-lg items-center space-y-4 justify-center content-center w-full h-[34.8em] p-4 overflow-y-scroll " >
+                <div>We're really sorry, but we dont support your location yet</div>
+                <a href="/"><button className='btn btn-info'>Try again</button></a>
+            </div>
+        </div>
+        )
+    }
+    if (stateAPI === false && locate === true) {
         return (
             <>
                 <div className="w-full sm:w-2/3 rounded-lg text-slate-100 shadow-lg">
@@ -47,7 +75,7 @@ function SalatsDay() {
             </>
         )
     }
-    if (stateAPI === true) {
+    if (stateAPI === true && locate === true) {
 
         return (
             <>

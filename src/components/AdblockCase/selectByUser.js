@@ -9,7 +9,7 @@ function SelectByUser() {
         Axios.get(`https://restcountries.com/v3.1/all`)
             .then(data => {
                 const datta = data.data
-                console.log(datta)
+                // console.log(datta)
                 const ele = document.querySelector('.elsex').options
                 for (let i = 0; i < datta.length; i++) {
                     ele.add(new Option(datta[i].name.common, datta[i].altSpellings[0]));
@@ -37,7 +37,7 @@ function SelectByUser() {
             Axios.get(`https://api.countrystatecity.in/v1/countries/${cCode}/cities`, { headers: { 'X-CSCAPI-KEY': 'YTZMZlA4bEhIM29sWWNzU1NUaU9CS3pEMjE3dTVJeUtWeXJ5VW9DUA==' } })
                 .then(data => {
                     const cities = data.data
-                    console.log(cities)
+                    // console.log(cities)
                     for (let i = 0; i < cities.length; i++) {
                         ele.add(
                             new Option(cities[i].name, cities[i].name)
@@ -53,10 +53,12 @@ function SelectByUser() {
 
 
     const save = () => {
+        localStorage.clear();
         var num = document.querySelector('.elsex').selectedIndex - 1
         localStorage.setItem('country', document.querySelectorAll('.elsex option')[num].name)
         localStorage.setItem('city', document.querySelector('.ifsa').value)
         document.querySelector('.bttnn').innerHTML = "Redy!";
+        document.querySelector('#gohome').href = "/";
     }
 
 
@@ -81,7 +83,7 @@ function SelectByUser() {
                         </div>
                     </div>
                 </div>
-                <button onClick={save} className="bttnn btn btn-info md:mt-0 mt-6 sm:h-[100%] md:w-[8em] h-[4em] w-[4em] text-lg font-bold">{"->"}</button>
+                <a id='gohome' href='#'><button onClick={save} className="bttnn btn btn-info md:mt-0 mt-6 sm:h-[100%] md:w-[8em] h-[4em] w-[4em] text-lg font-bold">{"->"}</button></a>
             </div>
         </>
     );
