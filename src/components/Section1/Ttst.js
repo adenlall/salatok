@@ -79,7 +79,7 @@ function Ttst(props) {
                     <h2 className='text-xl font-bold'>week times of {props.ynt} :</h2>
                     <div className='flex flex-col space-y-3 lg:py-8 py-2 px-2'>{newArr}</div>
                     <h1>done!</h1>
-                </div>
+                </div> 
             </>
         );
     }
