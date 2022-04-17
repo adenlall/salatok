@@ -55,6 +55,50 @@ function SelectByUser() {
     }, [selectState])
 
 
+    const locate = () => {
+        document.querySelector('.stt').innerHTML = "..."
+
+        // setState(false);
+
+        Axios.get('https://api.ipify.org?format=json').then(res => {
+
+            Axios.post(`https://iptwist.com`, { ip: `${res.data.ip}` }, {
+              headers: {
+                'Content-Type': 'application/json',
+                'X-IPTWIST-TOKEN': 'Xpy1YphN5bu10XqVYDASedcCt2AJJnDTTIRQcaTLgOstdTIcg5HEAwPYU9fzjKjN'
+              },
+            }).then(res => {
+                console.log(`https://muslimsalat.com/${encodeURI(res.data.country)}/${encodeURI(res.data.city)}.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`)
+              document.querySelector('.stt').innerHTML = `We get it! Now we check if we support your location: ${res.data.country +'-'+res.data.city}`
+              $(
+                $.getJSON(`https://muslimsalat.com/${encodeURI(res.data.country)}/${encodeURI(res.data.city)}.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`, function (data) {
+                    if (data.status_code === 0) {
+                        setStatus(false);
+                        setState(true);
+                        document.querySelector('.stt').innerHTML = `We're really sorry, but we dont support your location yet. Try to chose a big city in your county manually.
+                        your location : ${res.data.country} - ${res.data.city}`
+
+                    } else {
+                        localStorage.clear();
+                        setStatus(true);
+                        setState(true);
+                        localStorage.setItem('country', res.data.country)
+                        localStorage.setItem('city', res.data.city)
+                        document.querySelector('.bttnn').innerHTML = "Redy!";
+                        document.querySelector('.stt').innerHTML = "All done! Enjoy the app."
+                        window.location.replace("/");
+                    }
+                })
+            )
+    
+            }).catch(erro => {document.querySelector('.stt').innerHTML = "Please Sur! Your Adblocker block us to locate your location."})
+    
+          }).catch(error => {document.querySelector('.stt').innerHTML = "Please Sur! Your Adblocker block us to locate your location."})
+    
+
+
+
+    }
     const save = () => {
         setState(false);
         document.querySelector('.stt').innerHTML = "";
@@ -112,7 +156,15 @@ function SelectByUser() {
                     </div>
                 </div>
                 <div className='w-full mt-[1em] flex flex-col-reverse items-end justify-start'>
-                    <a id='gohome' className='w-full flex justify-center' href='#__'><button onClick={save} className="bttnn btn btn-info sm:mt-0 mt-6 w-[90%] h-[4em] text-lg font-bold">{"=> Check"}</button></a>
+                    <div className="space-x-4 w-full flex items-center justify-center mt-4">
+                        <button onClick={save} className='bttnn btn btn-info w-[14em]'>=&gt; check</button>
+                        <button onClick={locate} className='h-[3.1em] w-[3.1em] bg-[#3ABFF8]'>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" >
+                                <path d="M30.56 8.47a8 8 0 00-7-7 64.29 64.29 0 00-15.06 0 8 8 0 00-7 7 64.29 64.29 0 000 15.06 8 8 0 007 7 64.29 64.29 0 0015.06 0 8 8 0 007-7 64.29 64.29 0 000-15.06zm-2 .23A63 63 0 0129 15h-4a9 9 0 00-8-7.94V3a63 63 0 016.3.39 6 6 0 015.28 5.31zM20 17h2.92A7 7 0 0117 22.92V20a1 1 0 00-2 0v2.92A7 7 0 019.08 17H12a1 1 0 000-2H9.08A7 7 0 0115 9.08V12a1 1 0 002 0V9.08A7 7 0 0122.92 15H20a1 1 0 000 2zM8.7 3.42A63 63 0 0115 3v4a9 9 0 00-7.94 8H3a63 63 0 01.39-6.3A6 6 0 018.7 3.42zM3.42 23.3A63 63 0 013 17h4a9 9 0 008 7.94v4a63 63 0 01-6.3-.39 6 6 0 01-5.28-5.25zm19.88 5.28A63 63 0 0117 29v-4a9 9 0 007.94-8h4a63 63 0 01-.39 6.3 6 6 0 01-5.25 5.28z"
+                                    data-name="location android app aplication phone" />
+                            </svg>
+                        </button>                        
+                    </div>
                     <div className='w-[90%] mb-[1em]'>
                         {
                             state === false ?

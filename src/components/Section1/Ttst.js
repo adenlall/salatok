@@ -70,9 +70,8 @@ function Ttst(props) {
 
 
 
-    if (state === true) {
-        return 'Loadng ...'
-    } if (state === false) {
+    if (state === true ) {return 'Loadng ...'}
+    if (state === false) {
         return (
             <>
                 <div className='flex flex-col space-y-2 p-8 w-full'>

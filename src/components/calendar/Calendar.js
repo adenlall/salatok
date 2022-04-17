@@ -4,42 +4,57 @@ import moment from 'moment'
 function Calendar() {
 
 
-    const [Dy, setDy] = useState(0);
-    const [Dm, setDm] = useState(0);
-    const [Dd, setDd] = useState(0);
-    const [load, setLoad] = useState(true);
+    const [Dy, setDy] = useState(moment().format('d'));
+    const [Dm, setDm] = useState('...');
+    const [Dd, setDd] = useState('...');
+    const [load, setLoad] = useState(false);
+
+
     useEffect(() => {
-        if (localStorage.getItem('timeOut') < moment().format('YYYYMMDD')) {
-            var day = moment().format('YYYYMMDD');
-            let item = moment(day - 1, 'YYYYMMDD').format('DD-MM-YYYY')
-            localStorage.removeItem(item);
-            localStorage.setItem('timeOut', day);
+
+        const dat = moment().format('YYYYMMDD')
+
+        for (let i = 0; i < document.querySelectorAll('.zitems').length; i++) {
+            convert(moment(moment().add(i, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), i, 'en')
+        }
+
+        if (localStorage.getItem(moment().format('DD-MM-YYYY')) === null) {
+
+            fetch(`https://api.aladhan.com/v1/gToH?date${moment().format('DD-MM-YYYY')}`)
+            .then(response => response.json())
+            .then(get => {;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                setDy(get.hijri);;;;;;;;;;;;;;;;;;;;;;;
+                setDd(get.hijri.weekday.en);;;;;;;;;;;;
+                setDm(get.hijri.month.en);;;;;;;;;;;;;;
+                localStorage.setItem(moment().format('DD-MM-YYYY'), get.hijri);;;;;;;;
+             })
+
+        } else {
+            const get = JSON.parse(localStorage.getItem(moment().format('DD-MM-YYYY')))
+            setDy(get);
+            setDd(get.weekday.en);
+            setDm(get.month.en);
+        }
+
+        if (localStorage.getItem('timeOut') === null) {
+
+            localStorage.setItem('timeOut', dat);
+
         } else {
 
+            if (localStorage.getItem('timeOut') < dat) {
+                let item = moment(dat - 1, 'YYYYMMDD').format('DD-MM-YYYY')
+                localStorage.removeItem(item);
+                localStorage.setItem('timeOut', dat);
+            }
 
-
-            const date = moment().format('D-M-Y');
-
-            fetch(`https://api.aladhan.com/v1/gToH?date${date}`)
-                .then(response => response.json())
-                .then(json => {
-                    // console.log(json)
-
-                setDy(json.data.hijri);
-                setDd(json.data.hijri.weekday.en);
-                setDm(json.data.hijri.month.en);
-                for (let i = 0; i < document.querySelectorAll('.zitems').length; i++) {
-                    convert(moment(moment().add(i, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), i, 'en')
-                }
-
-                }).finally(() => {
-                    setLoad(false);
-                })
         }
-    }, [load]);
+
+    }, []);
 
 
     function convert(lldate, nuum, lan) {
+
         if (localStorage.getItem(lldate) === null) {
             fetch(`https://api.aladhan.com/v1/gToH?date=${lldate}`)
                 .then(response => response.json())
@@ -61,22 +76,29 @@ function Calendar() {
                 document.querySelectorAll('.zitems')[nuum].innerHTML = datta.day + " " + datta['month'][`${lan}`];
                 (lan === 'ar') ? document.querySelectorAll('.days')[nuum].innerHTML = datta['weekday'][`${lan}`] : document.querySelectorAll('.days')[nuum].innerHTML = moment(lldate, 'DD-MM-YYYY').format('dddd');
             }
+            setLoad(false);
         }
     }
 
+
+
     const dataMou = (data) => {
 
-        const doo = JSON.parse(localStorage.getItem(data));
-        if(doo === null){
+        const doo = localStorage.getItem(data);
+        if (doo === null) {
             fetch(`https://api.aladhan.com/v1/gToH?date${data}`)
-            .then(response => response.json())
-            .then(json => {return 29 - parseInt(json.day) + ' days';})
-        }else{
-            const c = 29 - parseInt(doo.day);
+                .then(response => response.json())
+                .then(json => { return 29 - parseInt(json.day) + ' days'; })
+        } else {
+            const c = 29 - parseInt(JSON.parse(doo).day);
             return c + ' days';
         }
         // console.log(JSON.parse(localStorage.getItem(data)));
     }
+
+
+
+
     const togg = () => {
         if (document.querySelector('#togg').checked === false) {
             setDd(moment(moment().format('DD-MM-YYYY'), 'DD-MM-YYYY').format('dddd'))
