@@ -132,14 +132,14 @@ function Calendar() {
                                 <p>{Dy.date}</p>
                             </div>
                             <div className="flex w-full justify-self-stretch items-stretch flex-col space-y-2 ">
-                                <h1 className="w-full space-x-2 flex justify-between"><span className="px-1 min-w-fit rounded-sm text-slate-100 bg-gray-700">{moment().endOf('day').fromNow('D')}</span><p className="   nmak1 w-full">To day end</p></h1>
-                                <h1 className="w-full space-x-2 flex justify-between"><span className="px-1 min-w-fit rounded-sm text-slate-100 bg-gray-700">{moment().endOf('week').fromNow('D')}</span><p className="  nmak2 w-full">To week end </p></h1>
-                                <h1 className="w-full space-x-2 flex justify-between"><span className="px-1 min-w-fit rounded-sm text-slate-100 bg-gray-700 xleld">{dataMou(moment().format('DD-MM-YYYY'))}</span><p className=" nmak3 w-full">To month end</p></h1>
+                                <h1 className="w-full space-x-2 flex justify-between"><strong className="px-1 min-w-fit rounded-sm text-slate-100 bg-gray-700">{moment().endOf('day').fromNow('D')}</strong><p className="   nmak1 w-full">To day end</p></h1>
+                                <h1 className="w-full space-x-2 flex justify-between"><strong className="px-1 min-w-fit rounded-sm text-slate-100 bg-gray-700">{moment().endOf('week').fromNow('D')}</strong><p className="  nmak2 w-full">To week end </p></h1>
+                                <h1 className="w-full space-x-2 flex justify-between"><strong className="px-1 min-w-fit rounded-sm text-slate-100 bg-gray-700 xleld">{dataMou(moment().format('DD-MM-YYYY'))}</strong><p className=" nmak3 w-full">To month end</p></h1>
                             </div>
                         </div>
                         <div className="form-control">
                             <label className="label cursor-pointer">
-                                <span className="label-text mr-2">To <strong>Arabic</strong></span>
+                                <strong className="label-text mr-2">To <strong>Arabic</strong></strong>
                                 <input type="checkbox" id='togg' onChange={() => { togg() }} className="toggle toggle-accent" />
                             </label>
                         </div>

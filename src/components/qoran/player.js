@@ -216,13 +216,13 @@ function Player(props) {
                         <div id="tt">00:00</div>
                     </div>
 
-                    <div className='flex items-center justify-center space-x-4 p-4'>
+                    <div className='lg:flex hidden items-center justify-center space-x-4 p-4 lg:py-0 py-[1.4em]'>
                         <img alt='' className='w-6 h-6' src="https://www.talkerscode.com/webtricks/demo/images/volume.png" id="vol_img" />
                         <input type="range" id="change_vol" onChange={volChange} step="0.1" min="0" max="1" className="range range-sm" />
                     </div>
                 </div>
                 <div className=''>
-                    <h3 className='text-lg pl-2 h-[4em]'>The reciter : <span className='font-bold badge text-base badge-primary ' id='bbs'>Mohamed Siddiq al-Minshawi</span></h3>
+                    <h3 className='text-lg pl-2 h-[4em]'>The reciter : <strong className='font-bold badge text-base badge-primary ' id='bbs'>Mohamed Siddiq al-Minshawi</strong></h3>
                     <div className='flex sm:flex-row flex-col mt-2 space-x-0 sm:space-x-2 space-y-2 sm:space-y-0 p-2'>
                         <div className="space-x-2 flex w-full sm:w-1/2">
                             <div className="avatar  w-full online" id="rec8">

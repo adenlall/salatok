@@ -26,7 +26,7 @@ function Ttst(props) {
         //     setWeek(res.data.items); setState(false);
         // }).catch(err => console.log('Ttst' +err))
 
-
+        
         $(
             $.getJSON(`https://muslimsalat.com/${cc}/${ss}${status}weekly.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`, function (data) {
                 setWeek(data.items); setState(false);
@@ -35,11 +35,8 @@ function Ttst(props) {
         )
 
     }
-
-    useEffect(() => {
-        document.title = `${props.ynt} Time - Salatok.App - Muslim Day Manager`;
-    }, [])
-
+    
+    document.title = `${props.ynt} Time - Salatok.App - Muslim Day Manager`;
 
     useEffect(() => {
         fetchDatta()
@@ -62,7 +59,7 @@ function Ttst(props) {
                 <p className='italic'>{moment(week[i]['date_for']).format('dddd')} {moment(week[i]['date_for']).format("MM-D")} :</p>
                 <div className='flex justify-between w-1/3 space-x-2'>
                     <p className='px-2 pt-1 rounded-lg bg-slate-200 dark:bg-gray-700 dark:text-slate-100 text-gray-800' key={i}>{moment(week[i][props.ynt], 'h:mm A').format('HH:mm')}</p>
-                    <p className={((diff > 0) ? 'text-green-500' : (diff < 0) ? 'text-red-500' : 'text-gray-400') + ' font-bold w-full'}>{((diff > 0) ? '+' : '')}{diff}<span className='text-xs'>min</span></p>
+                    <p className={((diff > 0) ? 'text-green-500' : (diff < 0) ? 'text-red-500' : 'text-gray-400') + ' font-bold w-full'}>{((diff > 0) ? '+' : '')}{diff}<strong className='text-xs'>min</strong></p>
                 </div>
             </div>
         )
@@ -80,9 +77,9 @@ function Ttst(props) {
             <>
                 <div className='flex flex-col space-y-2 p-8 w-full'>
                     <h2 className='text-xl font-bold'>week times of {props.ynt} :</h2>
-                    <div className='flex flex-col space-y-3 py-8 px-2'>{newArr}</div>
+                    <div className='flex flex-col space-y-3 lg:py-8 py-2 px-2'>{newArr}</div>
                     <h1>done!</h1>
-                </div>
+                </div> 
             </>
         );
     }
