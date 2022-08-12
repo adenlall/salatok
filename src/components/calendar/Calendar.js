@@ -9,21 +9,26 @@ function Calendar() {
     const [Dd, setDd] = useState(0);
     const [load, setLoad] = useState(true);
     useEffect(() => {
-        if (localStorage.getItem('timeOut') < moment().format('YYYYMMDD')) {
-            var day = moment().format('YYYYMMDD');
-            let item = moment(day - 1, 'YYYYMMDD').format('DD-MM-YYYY')
-            localStorage.removeItem(item);
+        if (localStorage.getItem('timeOut')===null){
+            let day = moment().format('YYYYMMDD');
             localStorage.setItem('timeOut', day);
-        } else {
 
-
+        }
+    },[]);
+    useEffect(() => {
+        if (localStorage.getItem('timeOut') < moment().format('YYYYMMDD')) {
+            let day = moment().format('YYYYMMDD');
+            let item = moment(day - 1, 'YYYYMMDD').format('DD-MM-YYYY')
+            localStorage.clear();
+            localStorage.setItem('timeOut', day);
+        }
 
             const date = moment().format('D-M-Y');
 
             fetch(`https://api.aladhan.com/v1/gToH?date${date}`)
                 .then(response => response.json())
                 .then(json => {
-                    // console.log(json)
+                    console.log(json)
 
                 setDy(json.data.hijri);
                 setDd(json.data.hijri.weekday.en);
@@ -35,8 +40,9 @@ function Calendar() {
                 }).finally(() => {
                     setLoad(false);
                 })
-        }
-    }, [load]);
+    
+
+    }, []);
 
 
     function convert(lldate, nuum, lan) {

@@ -97,7 +97,7 @@ function App() {
               <NextSalat />
               <Routes>
                 <Route path='/setting' element={<SelectByUser />} />
-                <Route path='/' element={<SlideDiv />} />
+                <Route path='*' element={<SlideDiv />} />
               </Routes>
             </>
           }
@@ -111,9 +111,9 @@ function App() {
         <div className='w-full flex lg:flex-row flex-col items-stretch justify-center content-center space-y-4 space-x-0 lg:space-y-0 lg:space-x-4 p-4'>
           <MPro />
         </div>
-        <div className='w-full flex lg:flex-row flex-col items-stretch justify-center content-center space-y-4 space-x-0 lg:space-y-0 lg:space-x-4 p-4'>
+        {/* <div className='w-full flex lg:flex-row flex-col items-stretch justify-center content-center space-y-4 space-x-0 lg:space-y-0 lg:space-x-4 p-4'>
           <Calendar />
-        </div>
+        </div> */}
         <div className='w-full flex lg:flex-row mt-20 flex-col items-stretch justify-center content-center space-y-4 space-x-0 lg:space-y-0 lg:space-x-4 p-4'>
           <Support />
         </div>
