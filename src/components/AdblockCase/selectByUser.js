@@ -14,6 +14,11 @@ function SelectByUser() {
                 const datta = data.data
                 // console.log(datta)
                 const ele = document.querySelector('.elsex').options
+              
+              datta.sort(function(a,b){
+                return a.name.common > b.name.common ? 1 : -1; 
+              });
+              
                 for (let i = 0; i < datta.length; i++) {
                     ele.add(new Option(datta[i].name.common, datta[i].altSpellings[0]));
                 }
@@ -40,6 +45,9 @@ function SelectByUser() {
             Axios.get(`https://api.countrystatecity.in/v1/countries/${cCode}/cities`, { headers: { 'X-CSCAPI-KEY': 'YTZMZlA4bEhIM29sWWNzU1NUaU9CS3pEMjE3dTVJeUtWeXJ5VW9DUA==' } })
                 .then(data => {
                     const cities = data.data
+						
+
+
                     // console.log(cities)
                     for (let i = 0; i < cities.length; i++) {
                         ele.add(
@@ -71,7 +79,7 @@ function SelectByUser() {
                     if (data.status_code === 0) {
                         setStatus(false);
                         setState(true);
-                        document.querySelector('.stt').innerHTML = "We're really sorry, but we dont support your location yet. Try to chose a big city in your county."
+                        document.querySelector('.stt').innerHTML = "We're really sorry, but we dont support your location yet. Try to choose another city near you."
 
                     } else {
                         localStorage.clear();
