@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom'
 import Axios from 'axios';
+import moment from 'moment';
 
 import NextSalat from './components/Section1/NextSalat';
 import SlideDiv from './components/Section1/SideDiv';
@@ -42,6 +43,10 @@ function App() {
           localStorage.setItem("country", `${res.data.country}`);
           setErr(false);
           setTat(true);
+					console.log("uuuu")
+					console.log(res.data);
+					console.log(moment().format("HH"));
+					console.log(moment().utc().format("H"));
 
         }).catch(erro => {
           console.log(erro)
@@ -106,7 +111,7 @@ function App() {
           <Sec2 />
         </div>
         <div className='w-full flex lg:flex-row flex-col items-stretch justify-center content-center space-y-4 space-x-0 lg:space-y-0 lg:space-x-4 p-4'>
-          {/* <Holiday/> */}
+{/*           <Holiday/> */}
         </div>
         <div className='w-full flex lg:flex-row flex-col items-stretch justify-center content-center space-y-4 space-x-0 lg:space-y-0 lg:space-x-4 p-4'>
           <MPro />

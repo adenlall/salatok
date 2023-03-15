@@ -59,7 +59,7 @@ function Player(props) {
             .then((response) => {
 
                 // setSuraha(response.data.data.surah)
-                document.querySelector('#srslp').src = `https://verses.quran.com/${response.data.audio_files[0].url}`;
+                document.querySelector('#srslp').src = `https://verses.quran.com/${response.data.audio_files[8].url}`;
                 document.querySelector('#music_player').load();
                 setLoad(false)
 

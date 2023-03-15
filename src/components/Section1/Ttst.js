@@ -13,12 +13,6 @@ function Ttst(props) {
     const ss = localStorage.getItem("city");
     const cc = localStorage.getItem("country");
 
-    var status;
-    if (cc === true) {
-        status = '/true/';
-    } else {
-        status = '/';
-    }
 
     const fetchDatta = () => {
 
@@ -28,7 +22,7 @@ function Ttst(props) {
 
         
         $(
-            $.getJSON(`https://muslimsalat.com/${cc}/${ss}${status}weekly.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`, function (data) {
+            $.getJSON(`https://muslimsalat.com/${cc}/${ss}${cc==`Morocco`? `/true/`:`/`}weekly/6.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`, function (data) {
                 setWeek(data.items); setState(false);
                 // console.log(data)
             })

@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import $ from 'jquery';
 import moment from 'moment'
 
+import SelectByUser from './../AdblockCase/selectByUser';
 
 function SalatsDay() {
 
@@ -15,27 +16,27 @@ function SalatsDay() {
     const fetchData = () => {
         if (localStorage.getItem('salatsday') === null) {
             $(
-                $.getJSON(`https://muslimsalat.com/${cc}/${ss}.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`, function (data) {
+                $.getJSON(`https://muslimsalat.com/${cc}/${ss}${cc==`Morocco`? `/true/`:`/`}6.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`, function (data) {
                     setSalatAPI(data); setStateAPI(true);
                     localStorage.setItem('salatsday', JSON.stringify(data));
                     if (data.status_code === 0) {
                         setLocate(false)
-                        window.alert("We're really sorry, but we dont support your location yet")
+                        //window.alert("We're really sorry, but we dont support your location yet")
                     }else{
                         setLocate(true)
                     }
-                }).catch(err => { window.alert("We're really sorry, but we dont support your location yet") })
+                }).catch(err => { /*window.alert("We're really sorry, but we dont support your location yet")*/ })
             )
             if (salatAPI === 0) {
                 setLocate(false)
-                window.alert("We're really sorry, but we dont support your location yet")
+                //window.alert("We're really sorry, but we dont support your location yet")
             }
         } else {
             const dataa = JSON.parse(localStorage.getItem('salatsday'))
             setSalatAPI(dataa); setStateAPI(true);
             if (dataa.status_code === 0) {
                 setLocate(false)
-                window.alert("We're really sorry, but we dont support your location yet")
+                //window.alert("We're really sorry, but we dont support your location yet")
             }else{
                 setLocate(true)
             }
@@ -60,7 +61,7 @@ function SalatsDay() {
                             <div className="outer"></div>
                             <div className="middle"></div>
                             <div className="inner"></div>
-                        </div>
+                        </div>⁷
                     </div>
                 </div>
             </>
@@ -114,7 +115,7 @@ function SalatsDay() {
         <div className="w-full sm:w-2/3 rounded-lg text-slate-100 shadow-lg">
             <div className="flex flex-col rounded-lg items-center space-y-4 justify-center content-center w-full h-[34.8em] p-4 overflow-y-scroll " >
                 <div>We're really sorry, but we dont support your location yet</div>
-                <a href="/"><button className='btn btn-info'>Try again</button></a>
+                <SelectByUser />
             </div>
         </div>
         )
