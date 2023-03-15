@@ -22,7 +22,7 @@ function Player(props) {
     function qakl() {
         setLoad(true)
 
-        axios.get(`https://api.quran.com/api/v4/recitations/3/by_ayah/${props.num}`)
+        axios.get(`https://api.quran.com/api/v4/recitations/8/by_ayah/${props.num}`)
             .then((response) => {
 
                 // setSuraha(response.data.data.surah)
@@ -59,7 +59,7 @@ function Player(props) {
             .then((response) => {
 
                 // setSuraha(response.data.data.surah)
-                document.querySelector('#srslp').src = `https://verses.quran.com/${response.data.audio_files[8].url}`;
+                document.querySelector('#srslp').src = `https://verses.quran.com/${response.data.audio_files[0].url}`;
                 document.querySelector('#music_player').load();
                 setLoad(false)
 
@@ -169,7 +169,7 @@ function Player(props) {
             // handlePlay();
         }
         if (load === 'err') {
-            console.log('Error please report a bug on github link!');
+            console.log('Error!! please report a bug on website github page!');
             document.querySelector('#play_button').src = 'https://www.talkerscode.com/webtricks/demo/images/play.png';
 
         }
