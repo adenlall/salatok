@@ -16,7 +16,7 @@ function SalatsDay() {
     const fetchData = () => {
         if (localStorage.getItem('salatsday') === null) {
             $(
-                $.getJSON(`https://muslimsalat.com/${cc}/${ss}${cc==`Morocco`? `/true/`:`/`}6.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`, function (data) {
+                $.getJSON(`https://muslimsalat.com/${cc}/${ss}${cc==`Morocco`? `/`:`/`}6.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`, function (data) {
                     setSalatAPI(data); setStateAPI(true);
                     localStorage.setItem('salatsday', JSON.stringify(data));
                     if (data.status_code === 0) {
