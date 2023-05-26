@@ -1,7 +1,7 @@
 function Support() {
     return (
         <>
-            <div className="rounded-lg shadow-lg lg:h-80 h-96 m-0 w-full" style={{ background: 'url("https://tlgur.com/d/GaxaWP68") center / cover' }}>
+            <div className="rounded-lg shadow-lg lg:h-80 h-96 m-0 w-full" style={{ background: 'url("https://iris.ai/wp-content/uploads/2019/05/code-coder-codes-2194062-1.jpg") center / cover' }}>
                 <div className=" lg:py-8 py-20 flex rounded-lg space-y-16 flex-col items-center justify-center lg:h-80 h-96  content-center dark:bg-[linear-gradient(174deg,#0000009e,transparent)] bg-[linear-gradient(198deg,#c0fdfebd,transparent)]">
                     <h1 className="text-4xl font-bold text-white mx-8">It's Open Source and Free, Support Us : </h1>
                     <div className="flex space-x-2 items-center">
