@@ -6,7 +6,7 @@ function InformUser() {
                 <div className="flex flex-row items-center space-y-6 p-4">
                     <img className="w-28 h-28 rounded-2xl" alt="adblocker" src="https://e7.pngegg.com/pngimages/268/71/png-clipart-adblock-plus-web-browser-ad-blocking-computer-icons-opera-hand-rectangle.png" />
                     <div className="flex flex-col p-4">
-                        <header className="text-2xl font-bold">You use AdBlocker, Its fine, but you shoud select your city manually.</header><button className="badge badge-accent hover:text-black badge-outline">more info</button>
+                        <header className="text-2xl font-bold">We could not determine your location maybe because of the ad blocker, Its fine, but you shoud select your city manually.</header><button className="badge badge-accent hover:text-black badge-outline">more info</button>
                     </div>
                 </div>
             </div>
