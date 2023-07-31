@@ -11,44 +11,37 @@ function Calendar() {
 
 
     useEffect(() => {
-
-        const dat = moment().format('YYYYMMDD')
-
-        for (let i = 0; i < document.querySelectorAll('.zitems').length; i++) {
-            convert(moment(moment().add(i, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), i, 'en')
+        if (localStorage.getItem('timeOut')===null){
+            let day = moment().format('YYYYMMDD');
+            localStorage.setItem('timeOut', day);
+        }
+    },[]);
+    useEffect(() => {
+        if (localStorage.getItem('timeOut') < moment().format('YYYYMMDD')) {
+            let day = moment().format('YYYYMMDD');
+            let item = moment(day - 1, 'YYYYMMDD').format('DD-MM-YYYY')
+            localStorage.clear();
+            localStorage.setItem('timeOut', day);
         }
 
-        if (localStorage.getItem(moment().format('DD-MM-YYYY')) === null) {
+            const date = moment().format('D-M-Y');
 
-            fetch(`https://api.aladhan.com/v1/gToH?date${moment().format('DD-MM-YYYY')}`)
-            .then(response => response.json())
-            .then(get => {;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-                setDy(get.hijri);;;;;;;;;;;;;;;;;;;;;;;
-                setDd(get.hijri.weekday.en);;;;;;;;;;;;
-                setDm(get.hijri.month.en);;;;;;;;;;;;;;
-                localStorage.setItem(moment().format('DD-MM-YYYY'), get.hijri);;;;;;;;
-             })
+            fetch(`https://api.aladhan.com/v1/gToH?date${date}`)
+                .then(response => response.json())
+                .then(json => {
+                    console.log(json)
 
-        } else {
-            const get = JSON.parse(localStorage.getItem(moment().format('DD-MM-YYYY')))
-            setDy(get);
-            setDd(get.weekday.en);
-            setDm(get.month.en);
-        }
+                setDy(json.data.hijri);
+                setDd(json.data.hijri.weekday.en);
+                setDm(json.data.hijri.month.en);
+                for (let i = 0; i < document.querySelectorAll('.zitems').length; i++) {
+                    convert(moment(moment().add(i, 'days').calendar('MM-DD-YYYY'), 'MM-DD-YYYY').format('DD-MM-YYYY'), i, 'en')
+                }
 
-        if (localStorage.getItem('timeOut') === null) {
-
-            localStorage.setItem('timeOut', dat);
-
-        } else {
-
-            if (localStorage.getItem('timeOut') < dat) {
-                let item = moment(dat - 1, 'YYYYMMDD').format('DD-MM-YYYY')
-                localStorage.removeItem(item);
-                localStorage.setItem('timeOut', dat);
-            }
-
-        }
+                }).finally(() => {
+                    setLoad(false);
+                })
+    
 
     }, []);
 

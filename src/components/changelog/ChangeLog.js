@@ -11,7 +11,7 @@ function ChangeLog() {
     return (
         <>
             <div className='xpag p-0 m-0 flex flex-col space-y-4 items-center bg-white dark:bg-gray-900'>
-                <div className="lg:w-3/4 mt-16 w-4/5 shadow-xl flex md:flex-row flex-col items-center h-80 justify-center rounded-lg dark:text-slate-100 text-gray-800" style={{ background: 'url("https://tlgur.com/d/8BOqzyxG") center / cover' }}>
+                <div className="lg:w-3/4 mt-16 w-4/5 shadow-xl flex md:flex-row flex-col items-center h-80 justify-center rounded-lg dark:text-slate-100 text-gray-800" style={{ background: 'url("https://www.macobserver.com/wp-content/uploads/2019/05/workfeatured-GitHub-2.png") center / cover' }}>
                     <div className="flex flex-col h-full w-full items-center content-center rounded-lg p-4 justify-center dark:bg-[linear-gradient(228deg,#000000ba,transparent)] bg-[linear-gradient(137deg,#fff,transparent)]">
                         <div className="flex flex-col items-start space-y-4">
                             <header className="text-3xl leading-8 font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">Track full progress on GitHub</header>

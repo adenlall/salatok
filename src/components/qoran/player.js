@@ -22,7 +22,7 @@ function Player(props) {
     function qakl() {
         setLoad(true)
 
-        axios.get(`https://api.quran.com/api/v4/recitations/3/by_ayah/${props.num}`)
+        axios.get(`https://api.quran.com/api/v4/recitations/8/by_ayah/${props.num}`)
             .then((response) => {
 
                 // setSuraha(response.data.data.surah)
@@ -169,7 +169,7 @@ function Player(props) {
             // handlePlay();
         }
         if (load === 'err') {
-            console.log('Error please report a bug on github link!');
+            console.log('Error!! please report a bug on website github page!');
             document.querySelector('#play_button').src = 'https://www.talkerscode.com/webtricks/demo/images/play.png';
 
         }
@@ -229,34 +229,34 @@ function Player(props) {
                         <div className="space-x-2 flex w-full sm:w-1/2">
                             <div className="avatar  w-full online" id="rec8">
                                 <div onClick={() => { ggd(8) }} className="shadow-lg w-full mask hover:opacity-80 cursor-pointer mask-squircle ">
-                                    <img alt="" className=' object-cover object-center' src="https://tlgur.com/d/gj0BqAV8" />
+                                    <img alt="" className=' object-cover object-center' src="https://quran.com.kw/en/wp-content/uploads/al-minshawy-1.jpg" />
                                 </div>
                             </div>
                             <div className="avatar  w-full" id="rec2">
                                 <div onClick={() => { ggd(2) }} className="shadow-lg w-full mask hover:opacity-80 cursor-pointer mask-squircle ">
-                                    <img alt="" className=' object-cover object-center' src="https://tlgur.com/d/4yqK70y4" />
+                                    <img alt="" className=' object-cover object-center' src="https://static.qurancdn.com/images/reciters/1/abdelbasset-profile.jpeg" />
                                 </div>
                             </div>
                             <div className="avatar  w-full" id="rec10">
                                 <div onClick={() => { ggd(10) }} className="shadow-lg w-full mask hover:opacity-80 cursor-pointer mask-squircle ">
-                                    <img alt="" className=' object-cover object-center' src="https://tlgur.com/d/4AXLj2Pg" />
+                                    <img alt="" className=' object-cover object-center' src="https://4.bp.blogspot.com/_0S0sNxarG_M/TMnWY_fGxuI/AAAAAAAAFUk/10C_Fqm7K9E/s1600/saoud-shuraim-123.jpg" />
                                 </div>
                             </div>
                         </div>
                         <div className="space-x-2 flex w-full sm:w-1/2">
                             <div className="avatar  w-full" id="rec5">
                                 <div onClick={() => { ggd(5) }} className="shadow-lg w-full mask hover:opacity-80 cursor-pointer mask-squircle ">
-                                    <img alt="" className=' object-cover object-center' src="https://tlgur.com/d/G7BL7Lb8" />
+                                    <img alt="" className=' object-cover object-center' src="https://i.pinimg.com/originals/14/ab/e2/14abe2f538ac5c08ae6fe72358d0ad99.jpg" />
                                 </div>
                             </div>
                             <div className="avatar  w-full" id="rec7">
                                 <div onClick={() => { ggd(7) }} className="shadow-lg w-full mask hover:opacity-80 cursor-pointer mask-squircle ">
-                                    <img alt="" className=' object-cover object-center' src="https://tlgur.com/d/g6RLdEzg" />
+                                    <img alt="" className=' object-cover object-center' src="https://yellowmethod.weebly.com/uploads/1/2/5/0/125062268/746101366.jpg" />
                                 </div>
                             </div>
                             <div className="avatar  w-full" id="rec3">
                                 <div onClick={() => { ggd(3) }} className="shadow-lg w-full mask hover:opacity-80 cursor-pointer mask-squircle ">
-                                    <img alt="" className=' object-cover object-center' src="https://tlgur.com/d/g0ZLxEk8" />
+                                    <img alt="" className=' object-cover object-center' src="https://lh5.googleusercontent.com/-iozMncW9LnM/AAAAAAAAAAI/AAAAAAAAAbM/0MvLPnRHQoY/s512-c/photo.jpg" />
                                 </div>
                             </div>
                         </div>

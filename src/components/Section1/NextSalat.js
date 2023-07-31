@@ -1,22 +1,25 @@
 import { Routes, Route, NavLink } from 'react-router-dom'
-import SelectByUser from '../AdblockCase/selectByUser';
-import Clock from './Clock';
-import SalatsDay from "./SalatsDay";
-import Ttst from './Ttst';
+
+import   SelectByUser from '../AdblockCase/selectByUser';
+import   Clock        from './Clock';
+import   SalatsDay    from "./SalatsDay";
+import   Ttst         from './Ttst';
+import { PrayTimes }  from './../../utils/PrayTimes.org.js';
+import { Helper    }  from './../../utils/Helper.js';
+import { SData    }  from './../../utils/SData.js';
+
 
 function NextSalat(props) {
-    // if (useLocation().pathname==="/") { // TODO: Error here
-    //     document.getElementById("clos").style.display = "none"; // TODO: Error here
-    // }else{
-    //     document.getElementById("clos").style.display = "block"; // TODO: Error here
 
-    // }
+     const [dDay, setDDay] = useState(null);
+     
+     useEffect(()=>{
+          setDDay(SData.dDay);
+     },[]);
+
 
     return (
-
         <>
-
-
             <div className="lg:w-1/2 w-full shadow-xl flex md:flex-row flex-col  justify-between items-center p-4 rounded-lg bg-slate-100 dark:bg-gray-800 dark:text-slate-100 text-gray-800">
                 <SalatsDay />
 

@@ -5,7 +5,6 @@ import Axios from 'axios';
 import NextSalat from './components/Section1/NextSalat';
 import SlideDiv from './components/Section1/SideDiv';
 import Sec2 from './components/qoran/sec2';
-import Calendar from './components/calendar/Calendar';
 import MPro from './components/tips/month';
 import Support from './components/secLast/support';
 import SelectByUser from './components/AdblockCase/selectByUser';
@@ -38,11 +37,14 @@ function App() {
             'X-IPTWIST-TOKEN': 'Xpy1YphN5bu10XqVYDASedcCt2AJJnDTTIRQcaTLgOstdTIcg5HEAwPYU9fzjKjN'
           },
         }).then(res => {
-          localStorage.setItem("city", `${res.data.city}`);
+          console.log(res.data);
+	     localStorage.setItem("city", `${res.data.city}`);
           localStorage.setItem("country", `${res.data.country}`);
-          setErr(false);
+          localStorage.setItem("timezone", res.data.timezone);
+          localStorage.setItem("latitude",res.data.latitude);
+          localStorage.setItem("longitude", res.data.longitude);
+	     setErr(false);
           setTat(true);
-
         }).catch(erro => {
           console.log(erro)
           // config
@@ -97,25 +99,25 @@ function App() {
               <NextSalat />
               <Routes>
                 <Route path='/setting' element={<SelectByUser />} />
-                <Route path='/' element={<SlideDiv />} />
+                <Route path='*' element={<SlideDiv />} />
               </Routes>
             </>
           }
         </div>
         <div className='w-full flex lg:flex-row flex-col items-stretch justify-center content-center space-y-4 space-x-0 lg:space-y-0 lg:space-x-4 p-4'>
-          <Sec2 />
+          {/* <Sec2 /> */}
         </div>
         <div className='w-full flex lg:flex-row flex-col items-stretch justify-center content-center space-y-4 space-x-0 lg:space-y-0 lg:space-x-4 p-4'>
           {/* <Holiday/> */}
         </div>
         <div className='w-full flex lg:flex-row flex-col items-stretch justify-center content-center space-y-4 space-x-0 lg:space-y-0 lg:space-x-4 p-4'>
-          <MPro />
+          {/* <MPro /> */}
         </div>
-        <div className='w-full flex lg:flex-row flex-col items-stretch justify-center content-center space-y-4 space-x-0 lg:space-y-0 lg:space-x-4 p-4'>
+        {/* <div className='w-full flex lg:flex-row flex-col items-stretch justify-center content-center space-y-4 space-x-0 lg:space-y-0 lg:space-x-4 p-4'>
           <Calendar />
-        </div>
+        </div> */}
         <div className='w-full flex lg:flex-row mt-20 flex-col items-stretch justify-center content-center space-y-4 space-x-0 lg:space-y-0 lg:space-x-4 p-4'>
-          <Support />
+          {/* <Support /> */}
         </div>
 
       </>

@@ -14,6 +14,11 @@ function SelectByUser() {
                 const datta = data.data
                 // console.log(datta)
                 const ele = document.querySelector('.elsex').options
+              
+              datta.sort(function(a,b){
+                return a.name.common > b.name.common ? 1 : -1; 
+              });
+              
                 for (let i = 0; i < datta.length; i++) {
                     ele.add(new Option(datta[i].name.common, datta[i].altSpellings[0]));
                 }
@@ -115,7 +120,7 @@ function SelectByUser() {
                     if (data.status_code === 0) {
                         setStatus(false);
                         setState(true);
-                        document.querySelector('.stt').innerHTML = "We're really sorry, but we dont support your location yet. Try to chose a big city in your county."
+                        document.querySelector('.stt').innerHTML = "We're really sorry, but we dont support your location yet. Try to choose another city near you."
 
                     } else {
                         localStorage.clear();
