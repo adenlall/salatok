@@ -12,7 +12,6 @@ function Calendar() {
         if (localStorage.getItem('timeOut')===null){
             let day = moment().format('YYYYMMDD');
             localStorage.setItem('timeOut', day);
-
         }
     },[]);
     useEffect(() => {

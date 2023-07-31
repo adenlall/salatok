@@ -45,9 +45,6 @@ function SelectByUser() {
             Axios.get(`https://api.countrystatecity.in/v1/countries/${cCode}/cities`, { headers: { 'X-CSCAPI-KEY': 'YTZMZlA4bEhIM29sWWNzU1NUaU9CS3pEMjE3dTVJeUtWeXJ5VW9DUA==' } })
                 .then(data => {
                     const cities = data.data
-						
-
-
                     // console.log(cities)
                     for (let i = 0; i < cities.length; i++) {
                         ele.add(
