@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import moment from 'moment';
+import { SData    }  from './../../utils/SData.js';
+
 import $ from 'jquery';
 
 
@@ -9,33 +11,16 @@ function Ttst(props) {
 
     const [state, setState] = useState(true);
     const [week, setWeek] = useState(0);
+    
+    const dDay = JSON.parse(localStorage.getItem("dDay"));
+
 
     const ss = localStorage.getItem("city");
     const cc = localStorage.getItem("country");
 
 
-    const fetchDatta = () => {
-
-        // await axios.get(`https://muslimsalat.com/${props.cc}/${props.ss}${status}weekly.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`).then(res => {
-        //     setWeek(res.data.items); setState(false);
-        // }).catch(err => console.log('Ttst' +err))
-
-        
-        $(
-            $.getJSON(`https://muslimsalat.com/${cc}/${ss}${cc==`Morocco`? `/`:`/`}weekly/6.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`, function (data) {
-                setWeek(data.items); setState(false);
-                // console.log(data)
-            })
-        )
-
-    }
     
     document.title = `${props.ynt} Time - Salatok.App - Muslim Day Manager`;
-
-    useEffect(() => {
-        fetchDatta()
-    }, [state])
-
 
     const newArr = [];
     for (let i = 0; i < week.length; i++) {
@@ -64,9 +49,8 @@ function Ttst(props) {
 
 
 
-    if (state === true) {
-        return 'Loadng ...'
-    } if (state === false) {
+    if (state === true ) {return 'Loadng ...'}
+    if (state === false) {
         return (
             <>
                 <div className='flex flex-col space-y-2 p-8 w-full'>

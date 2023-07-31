@@ -200,23 +200,25 @@ function Player(props) {
                     </div>
                 </div>
 
-                <div className="flex items-center w-full justify-center content-center space-x-4  p-3 rounded-lg dark:bg-gray-700 bg-[linear-gradient(20deg,#4399be,#08457938)] text-slate-100">
+                <div className="flex items-center w-full justify-center content-center space-x-4 py-6 px-2 sm:py-3 sm:px-3 rounded-lg dark:bg-gray-700 bg-[linear-gradient(20deg,#4399be,#08457938)] text-slate-100">
                     <audio id="music_player">
                         <source id="srslp" src="" />
                     </audio>
 
+                    <div className="flex space-x-1">
+                        <input alt='' className='w-6 h-6' type="image" src="https://cdn2.iconfinder.com/data/icons/guest-house-and-lodge-2/64/47-512.png" onClick={handlePlay} id="play_button" />
+                        <input alt='' className='w-6 h-6' type="image" src="https://www.talkerscode.com/webtricks/demo/images/stop.png" onClick={stop} />
+                        {/* <strong className='font-bold badge text-base badge-info '>MP3 Player</strong> */}
+                    </div>
 
-                    <input alt='' className='w-6 h-6' type="image" src="https://cdn2.iconfinder.com/data/icons/guest-house-and-lodge-2/64/47-512.png" onClick={handlePlay} id="play_button" />
-                    <input alt='' className='w-6 h-6' type="image" src="https://www.talkerscode.com/webtricks/demo/images/stop.png" onClick={stop} />
 
-
-                    <div className="flex space-x-2 w-1/2">
+                    <div className="flex space-x-2 w-full sm:w-1/2">
                         <div id="ct">00:00</div>
                         <input type="range" min="1" max="100" id="seekSlider" value={seek} className="range range-sm" onChange={handelSeek} />
                         <div id="tt">00:00</div>
                     </div>
 
-                    <div className='lg:flex hidden items-center justify-center space-x-4 p-4 lg:py-0 py-[1.4em]'>
+                    <div className='sm:flex hidden items-center justify-center space-x-4 p-4 lg:py-0 py-[1.4em]'>
                         <img alt='' className='w-6 h-6' src="https://www.talkerscode.com/webtricks/demo/images/volume.png" id="vol_img" />
                         <input type="range" id="change_vol" onChange={volChange} step="0.1" min="0" max="1" className="range range-sm" />
                     </div>
