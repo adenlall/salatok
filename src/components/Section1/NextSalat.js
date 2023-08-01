@@ -10,28 +10,7 @@ import { PrayTimes } from './PrayTimes';
 
 function NextSalat(props) {
      
-     function getvalid(a,b){
-     console.log("a :",a);
-     console.log("b :",b);
-          if( a || a === 0 ){
-               console.log("a selected");
-               return a;
-          }
-          console.log("b selected");
-          return b;
-     }
-     
-     
-     function ReadOrWrite(key, data){
-          if(!localStorage.getItem(key)){
-               let pD = JSON.stringify(data);
-               localStorage.setItem(key, pD);
-               return JSON.parse(pD);
-          }
-          return JSON.parse(localStorage.getItem(key));
-     }
-
-     //useEffect(() => {
+     useEffect(() => {
           
           ReadOrWrite("salats_names", ["fajr", "sunrise", "dhuhr", "asr", "maghrib", "isha"]);
 
@@ -44,12 +23,27 @@ function NextSalat(props) {
           salat.setMethod(config.method);
      
           let dd = salat.getTimes(new Date(), config.core.coords, config.core.timezone, config.core.dst, config.core.format);
-          console.log("core", config.core);
-          console.log("dd",dd);
           localStorage.setItem('dDay', JSON.stringify(dd));
      
-     //}, []);
+     }, []);
 
+
+     function getvalid(a,b){
+          if( a || a === 0 ){
+               return a;
+          }
+          return b;
+     }
+     
+     
+     function ReadOrWrite(key, data){
+          if(!localStorage.getItem(key)){
+               let pD = JSON.stringify(data);
+               localStorage.setItem(key, pD);
+               return JSON.parse(pD);
+          }
+          return JSON.parse(localStorage.getItem(key));
+     }
 
     return (
         <>
