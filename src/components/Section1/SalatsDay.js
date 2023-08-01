@@ -10,8 +10,7 @@ function SalatsDay() {
      const dDay = JSON.parse(localStorage.getItem("dDay"));
      console.log("dDay : ", dDay);
      
-     const metas = JSON.parse(localStorage.setItem("salats_names"));
-     
+     const metas = JSON.parse(localStorage.getItem("salats_names"));
      
      const arr = [];
      for (let i=0; i<metas.length; i++ ) {
@@ -22,7 +21,6 @@ function SalatsDay() {
               </NavLink>
           );
      }
-     
      
     if (1 === 1) {
 

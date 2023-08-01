@@ -6,19 +6,14 @@ import $ from 'jquery';
 
 function Ttst(props) {
 
-
-
     const [state, setState] = useState(true);
     const [week, setWeek] = useState(0);
-    
-    const dDay = JSON.parse(localStorage.getItem("dDay"));
 
+    const dDay = JSON.parse(localStorage.getItem("dDay"));
 
     const ss = localStorage.getItem("city");
     const cc = localStorage.getItem("country");
 
-
-    
     document.title = `${props.ynt} Time - Salatok.App - Muslim Day Manager`;
 
     const newArr = [];
