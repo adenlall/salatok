@@ -32,7 +32,7 @@ function NextSalat(props) {
           return JSON.parse(localStorage.getItem(key));
      }
 
-     useEffect(() => {
+     //useEffect(() => {
           
           ReadOrWrite("salats_names", ["fajr", "sunrise", "dhuhr", "asr", "maghrib", "isha"]);
 
@@ -50,7 +50,7 @@ function NextSalat(props) {
           console.log("dd",dd);
           localStorage.setItem('dDay', JSON.stringify(dd));
      
-     }, []);
+     //}, []);
 
 
     return (
