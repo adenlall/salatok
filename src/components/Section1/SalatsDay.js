@@ -26,7 +26,7 @@ function SalatsDay() {
                );
           }
           
-          setState(true);
+          //setState(true);
      
      }, []);
      
