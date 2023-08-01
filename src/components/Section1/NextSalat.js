@@ -9,6 +9,7 @@ import   SData        from '../../utils/SData';
 import   PrayTimes    from '../../utils/PrayTimes.org';
 
 
+
 function NextSalat(props) {
 
      useEffect(() => {
