@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import $ from 'jquery';
 import moment from 'moment';
 
@@ -7,7 +7,7 @@ import SelectByUser from '../AdblockCase/selectByUser';
 
 function SalatsDay() {
      
-     const [state, setState] = useState(false);
+     const [arr, setArr] = useState([]);
      
      
      useEffect(() => {
@@ -17,7 +17,6 @@ function SalatsDay() {
           
           const metas = JSON.parse(localStorage.getItem("salats_names"));
           
-          const arr = [];
           for (let i=0; i<metas.length; i++ ) {
                arr.push(
                     <NavLink to={'/salat/'+metas[i]} className="p-2 px-4 w-full rounded-lg space-x-2 bg-[linear-gradient(21deg,#ffffff61,#ffffff29)] dark:bg-[linear-gradient(21deg,#00000061,#ffffff29)] " itemScope>
@@ -30,7 +29,8 @@ function SalatsDay() {
           setState(true);
      
      }, []);
-    if (state) {
+     
+    if (1==1) {
 
         return (
             <>
