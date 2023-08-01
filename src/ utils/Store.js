@@ -1,4 +1,4 @@
-export class Store{
+export default class Store{
 
      data = {
           salats_names:["fajr", "sunrise", "dhuhr", "asr", "maghrib", "isha"],

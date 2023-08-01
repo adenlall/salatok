@@ -4,9 +4,9 @@ import   SelectByUser from '../AdblockCase/selectByUser';
 import   Clock        from './Clock';
 import   SalatsDay    from "./SalatsDay";
 import   Ttst         from './Ttst';
-import { Helper    }  from '../../utils/Helper';
-import { SData     }  from '../../utils/SData';
-import { PrayTimes }  from '../../utils/PrayTimes.org';
+import   Helper       from './../../utils/Helper';
+import   SData        from './../../utils/SData';
+import   PrayTimes    from './../../utils/PrayTimes.org';
 
 
 function NextSalat(props) {

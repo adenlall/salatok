@@ -1,5 +1,7 @@
-import { Store } from "./Store.js";
-export class Helper {
+import Store from "./Store.js";
+
+
+export default class Helper {
      
      static getValid(a,b){
           if( a || a === 0 ){

@@ -1,7 +1,7 @@
-import { Helper    }  from './Helper.js';
-import { PrayTimes }  from './PrayTimes.org.js';
+import  Helper      from './Helper.js';
+import  PrayTimes   from './PrayTimes.org.js';
 
-export class SData{
+export default class SData{
 
      static dDay(){
           
