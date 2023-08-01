@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 function SlideDiv() {
-    // https://api.aladhan.com/asmaAlHusna/77
-
 
     const [asmaAlHusna, setAsmaAlHusna] = useState(0);
     const [load, setLoad] = useState(true);

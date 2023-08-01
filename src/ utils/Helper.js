@@ -1,5 +1,5 @@
 import { Store } from "./Store.js";
-class Helper {
+export class Helper {
      
      static getValid(a,b){
           if( a || a === 0 ){
@@ -16,5 +16,3 @@ class Helper {
      }
 
 }
-
-export default Helper;

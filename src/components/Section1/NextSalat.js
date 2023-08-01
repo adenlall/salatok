@@ -1,21 +1,19 @@
 import { Routes, Route, NavLink } from 'react-router-dom'
-
+import { useEffect }  from "react";
 import   SelectByUser from '../AdblockCase/selectByUser';
 import   Clock        from './Clock';
 import   SalatsDay    from "./SalatsDay";
 import   Ttst         from './Ttst';
 import { PrayTimes }  from './../../utils/PrayTimes.org.js';
 import { Helper    }  from './../../utils/Helper.js';
-import { SData    }  from './../../utils/SData.js';
+import { SData     }  from './../../utils/SData.js';
 
 
 function NextSalat(props) {
 
-     const [dDay, setDDay] = useState(null);
-     
-     useEffect(()=>{
-          setDDay(SData.dDay);
-     },[]);
+     useEffect(() => {
+       SData.dDay();
+     }, []);
 
 
     return (

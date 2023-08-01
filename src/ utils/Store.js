@@ -1,7 +1,7 @@
 export class Store{
 
      data = {
-          metainfo:["fajr", "sunrise", "dhuhr", "asr", "maghrib", "isha"],
+          salats_names:["fajr", "sunrise", "dhuhr", "asr", "maghrib", "isha"],
      }
 
      write(key){
