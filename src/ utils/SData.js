@@ -1,7 +1,7 @@
 import  Helper      from './Helper';
 import  PrayTimes   from './PrayTimes.org';
 
-export default class SData{
+class SData{
 
      static dDay(){
           
@@ -28,3 +28,5 @@ export default class SData{
      }
 
 }
+
+export default SData;

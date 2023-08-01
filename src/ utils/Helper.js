@@ -1,7 +1,7 @@
 import Store from "./Store";
 
 
-export default class Helper {
+class Helper {
      
      static getValid(a,b){
           if( a || a === 0 ){
@@ -18,3 +18,4 @@ export default class Helper {
      }
 
 }
+export default Helper;
