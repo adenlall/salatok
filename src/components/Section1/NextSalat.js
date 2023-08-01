@@ -8,7 +8,6 @@ import   Ttst    from "./Ttst";
 import { PrayTimes } from './PrayTimes';
 
 
-
 function NextSalat(props) {
      
      function getvalid(a,b){
@@ -42,7 +41,6 @@ function NextSalat(props) {
           }
           
           const salat = new PrayTimes();
-          salat = new PrayTimes();
           salat.setMethod(config.method);
      
           let dd = salat.getTimes(new Date(), config.core.coords, config.core.timezone, config.core.dst, config.core.format);
