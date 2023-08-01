@@ -3,17 +3,48 @@ import { useEffect }  from "react";
 import   SelectByUser from '../AdblockCase/selectByUser';
 import   Clock        from './Clock';
 import   SalatsDay    from "./SalatsDay";
-import   Ttst         from './Ttst';
-import   Helper       from '../../utils/Helper';
-import   SData        from '../../utils/SData';
-import   PrayTimes    from '../../utils/PrayTimes.org';
+import   Ttst    from "./Ttst";
+
+import { PrayTimes } from './PrayTimes';
 
 
 
 function NextSalat(props) {
+     
+     function getvalid(a,b){
+          if( a || a === 0 ){
+               return a;
+          }
+          return b;
+     }
+     
+     
+     function ReadOrWrite(key, data){
+          if(!localStorage.getItem(key)){
+               localStorage.setItem(key, JSON.stringify(data));
+          }
+          return JSON.parse(localStorage.getItem(key));
+     } ReadOrWrite("salats_names", ["fajr", "sunrise", "dhuhr", "asr", "maghrib", "isha"]);
+     
 
      useEffect(() => {
-       SData.dDay();
+          let config = {
+               method: getvalid(localStorage.getItem('method'), "MWL"),
+               core: getvalid(
+                         !getvalid(
+                              localStorage.getItem('core'),
+                              JSON.stringify({coords: ["32.6507792","-8.4242087"], timezone:"auto", dst:"auto", format:"24h"})
+                         ),
+                         JSON.parse(getvalid(localStorage.getItem('core')))
+                    ),
+          }
+          
+          const salat = new PrayTimes();
+          salat = new PrayTimes();
+          salat.setMethod(config.method);
+          
+          let dd = salat.getTimes(new Date(), config.core.coords, config.core.timezone, config.core.dst, config.core.format);
+          localStorage.setItem('dDay', JSON.stringify(dd));
      }, []);
 
 

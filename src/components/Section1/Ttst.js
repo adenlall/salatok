@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import moment from 'moment';
-import { SData    }  from './../../utils/SData.js';
 
 import $ from 'jquery';
 
