@@ -1,5 +1,5 @@
-import  Helper      from './Helper.js';
-import  PrayTimes   from './PrayTimes.org.js';
+import  Helper      from './Helper';
+import  PrayTimes   from './PrayTimes.org';
 
 export default class SData{
 

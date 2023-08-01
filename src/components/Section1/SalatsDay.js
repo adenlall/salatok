@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import $ from 'jquery';
 import moment from 'moment'
 
-import Helper       from './../../utils/Helper.js';
+import Helper       from './../../utils/Helper';
 import SelectByUser from './../AdblockCase/selectByUser';
 
 function SalatsDay() {
