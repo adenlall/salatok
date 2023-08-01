@@ -18,33 +18,28 @@ function NextSalat(props) {
                console.log("a selected");
                return a;
           }
-               console.log("b selected");
+          console.log("b selected");
           return b;
      }
      
      
      function ReadOrWrite(key, data){
           if(!localStorage.getItem(key)){
-               localStorage.setItem(key, JSON.stringify(data));
+               let pD = JSON.stringify(data);
+               localStorage.setItem(key, pD);
+               return JSON.parse(pD);
           }
           return JSON.parse(localStorage.getItem(key));
-     } ReadOrWrite("salats_names", ["fajr", "sunrise", "dhuhr", "asr", "maghrib", "isha"]);
+     }
 
+     useEffect(() => {
+          
+          ReadOrWrite("salats_names", ["fajr", "sunrise", "dhuhr", "asr", "maghrib", "isha"]);
 
-     //useEffect(() => {
-     
           let config = {
-               method: getvalid(localStorage.getItem('method'), "MWL"),
-               core: getvalid(
-                         !getvalid(
-                              localStorage.getItem('core'),
-                              JSON.stringify({coords: ["32.6507792","-8.4242087"], timezone:"auto", dst:"auto", format:"24h"})
-                         ),
-                         JSON.parse(getvalid(localStorage.getItem('core')))
-                    ),
+               method: ReadOrWrite('method', "MWL"),
+               core: ReadOrWrite("core", {coords: ["32.6507792","-8.4242087"], timezone:"auto", dst:"auto", format:"24h"})
           }
-          
-          
           
           const salat = new PrayTimes();
           salat = new PrayTimes();
@@ -55,7 +50,7 @@ function NextSalat(props) {
           console.log("dd",dd);
           localStorage.setItem('dDay', JSON.stringify(dd));
      
-     //}, []);
+     }, []);
 
 
     return (
