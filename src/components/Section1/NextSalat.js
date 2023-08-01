@@ -12,9 +12,13 @@ import { PrayTimes } from './PrayTimes';
 function NextSalat(props) {
      
      function getvalid(a,b){
+     console.log("a :",a);
+     console.log("b :",b);
           if( a || a === 0 ){
+               console.log("a selected");
                return a;
           }
+               console.log("b selected");
           return b;
      }
      
@@ -25,9 +29,10 @@ function NextSalat(props) {
           }
           return JSON.parse(localStorage.getItem(key));
      } ReadOrWrite("salats_names", ["fajr", "sunrise", "dhuhr", "asr", "maghrib", "isha"]);
-     
 
-     useEffect(() => {
+
+     //useEffect(() => {
+     
           let config = {
                method: getvalid(localStorage.getItem('method'), "MWL"),
                core: getvalid(
@@ -39,13 +44,18 @@ function NextSalat(props) {
                     ),
           }
           
+          
+          
           const salat = new PrayTimes();
           salat = new PrayTimes();
           salat.setMethod(config.method);
-          
+     
           let dd = salat.getTimes(new Date(), config.core.coords, config.core.timezone, config.core.dst, config.core.format);
+          console.log("core", config.core);
+          console.log("dd",dd);
           localStorage.setItem('dDay', JSON.stringify(dd));
-     }, []);
+     
+     //}, []);
 
 
     return (
