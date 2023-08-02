@@ -61,7 +61,7 @@ export function Helper() {
                }
                return JSON.parse(localStorage.getItem(key));
 	       },
-      },
+      }
 
 }
 
