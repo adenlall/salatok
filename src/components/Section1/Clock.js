@@ -25,6 +25,20 @@ function Clock(props) {
     const cc = localStorage.getItem("country")
     const ss = localStorage.getItem("city")
 
+	const getDiff = (hh, mm) => {
+		let H = moment.hours();
+		let M = moment.minutes();
+		let Hdiff = hh - H;
+		let Mdiff = mm - M;
+		if(Mdiff<0){
+			Hdiff = Hdiff - 1;
+			Mdiff = 60+Mdiff;
+		}
+		return {
+			hh:Hdiff,
+			mm:Mdiff
+		}
+	}
 
     const calC = () => {
     
@@ -32,37 +46,34 @@ function Clock(props) {
           const sltAr = h.sNames();
           const slt = h.dDay();
           
-          console.log("calC");
-          console.log("sltAr", sltAr);
-          console.log("slt", slt);
-          
         for (let i = 0; i < sltAr.length; i++) {
-        console.log("//////////////////////////");
+        
           console.log("i", i);
             const nSl = slt[sltAr[i]];
-            let ttime = moment(slt[sltAr[i]], 'HH:mm');
-			
+            const ttime = moment(slt[sltAr[i]], 'HH:mm');
 			const isaf = ttime.isSameOrAfter(moment());
-			const debd = ttime - moment();
-			
-            console.log("debd : ", debd)
-            console.log("nSl", i, sltAr[i]);
-            console.log("ttime", ttime);
-            
             if (isaf) {
-            	console.log("iffff: BREAK", ttime.hours(), ttime.minutes());
-                setHDiff(ttime.hours());
-                setMDiff(ttime.minutes());
+            	let dd = getDiff(ttime.hours(), ttime.minutes());
+                setHDiff(dd.hh);
+                setMDiff(dd.mm);
                 setNextis(sltAr[i]);
-        		console.log("//////////////////////////");
                 break;
             }
         }
+        setNextis(sltAr[0]);
+        const ntime = moment(slt[sltAr[0]], 'HH:mm');
+        let Hdiff = 24 - moment.hours() + ntime.hours();
+        let Mdiff = ntime.minutes() - moment.hours();
+		if(Mdiff<0){
+			Hdiff = Hdiff - 1;
+			Mdiff = 60+Mdiff;
+		}
+        setHDiff(Hdiff);
+        setMDiff(Mdiff);
+		
+        
     }
 
-	useEffect(() => {
-	  calC();
-	}, []);
 
 
     useEffect(() => {
@@ -100,6 +111,12 @@ function Clock(props) {
     }, []);
 
 
+	useEffect(() => {
+		console.log("ONLY ONCE");
+		calC();
+	}, []);
+	
+	
     if (locate === false) {
         return (
             <div className="w-full sm:w-2/3 rounded-lg text-slate-100 ">
