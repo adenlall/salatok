@@ -40,7 +40,7 @@ function Clock(props) {
         console.log("//////////////////////////");
           console.log("i", i);
             const nSl = slt[sltAr[i]];
-            let ttime = moment(slt[sltAr[i]], 'HH:mm').format('HH:mm');
+            let ttime = moment(slt[sltAr[i]], 'HH:mm');
 			const duration = moment.duration(ttime.diff(moment().format('HH:mm')));
             
           console.log("nSl", i);
@@ -58,6 +58,9 @@ function Clock(props) {
         }
     }
 
+	useEffect(() => {
+	  calC();
+	}, []);
 
 
     useEffect(() => {
@@ -81,7 +84,7 @@ function Clock(props) {
         return () => {
             clearInterval(timerID)
         }
-    }, [])
+    }, []);
 
 
     useEffect(() => {
