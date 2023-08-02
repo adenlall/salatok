@@ -41,21 +41,18 @@ function Clock(props) {
           console.log("i", i);
             const nSl = slt[sltAr[i]];
             let ttime = moment(slt[sltAr[i]], 'HH:mm');
-			const duration = moment.duration(ttime.diff(moment()));
+			
+			const isaf = ttime.isSameOrAfter(moment());
 			const debd = ttime - moment();
-			const hdm = ttime.hours() - moment.hours();
-			const mdm = ttime.minutes() - moment.minutes();
-            console.log("hdm : ", hdm);
-            console.log("mdm : ", mdm);
+			
             console.log("debd : ", debd)
-          console.log("nSl", i, sltAr[i]);
-          console.log("ttime", ttime);
-          console.log("duration", duration);
-          console.log("duration - h", duration.hours(),duration.minutes());
-            if (duration.hours()>=0 && duration.minutes()>=0) {
-            	console.log("iffff: BREAK")
-                setHDiff(duration.hours());
-                setMDiff(duration.minutes());
+            console.log("nSl", i, sltAr[i]);
+            console.log("ttime", ttime);
+            
+            if (isaf) {
+            	console.log("iffff: BREAK", ttime.hours(), ttime.minutes());
+                setHDiff(ttime.hours());
+                setMDiff(ttime.minutes());
                 setNextis(sltAr[i]);
         		console.log("//////////////////////////");
                 break;
