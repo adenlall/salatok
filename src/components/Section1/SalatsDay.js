@@ -5,13 +5,28 @@ import moment from 'moment';
 
 import SelectByUser from '../AdblockCase/selectByUser';
 
+import { PrayTimes } from './PrayTimes';
+
+
 function SalatsDay() {
      
      const [arr, setArr] = useState("LOADING...");
      
      useEffect(() => {
-       
-          const dDay = JSON.parse(localStorage.getItem("dDay"));
+          
+          let dDay = JSON.parse(localStorage.getItem("dDay"));
+          if(!dDay){
+               console.log("LOG TRACE : SalatsDay@useEffect : if(!dDay)");
+               let config = {
+                    method: ReadOrWrite('method', "MWL"),
+                    core: ReadOrWrite("core", {coords: ["32.6507792","-8.4242087"], timezone:"auto", dst:"auto", format:"24h"})
+               }
+               const salat = new PrayTimes();
+               salat.setMethod(config.method);
+               let dd = salat.getTimes(new Date(), config.core.coords, config.core.timezone, config.core.dst, config.core.format);
+               localStorage.setItem('dDay', JSON.stringify(dd));
+               dDay = dd;
+          }
           console.log("dDay : ", dDay);
           
           const metas = JSON.parse(localStorage.getItem("salats_names"));
@@ -29,6 +44,17 @@ function SalatsDay() {
           setArr(myarr);
      
      }, []);
+     
+     
+     function ReadOrWrite(key, data){
+          if(!localStorage.getItem(key)){
+               let pD = JSON.stringify(data);
+               localStorage.setItem(key, pD);
+               return JSON.parse(pD);
+          }
+          return JSON.parse(localStorage.getItem(key));
+     }
+
      
     if (1==1) {
 
