@@ -64,6 +64,3 @@ export function Helper() {
       }
 
 }
-
-var Helper = new Helper();
-
