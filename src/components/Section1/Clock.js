@@ -46,7 +46,7 @@ function Clock(props) {
           console.log("nSl", i);
           console.log("ttime", ttime);
           console.log("duration", duration);
-          console.log("duration - h", duration.hours(),duration.minuts());
+          console.log("duration - h", duration.hours(),duration.minutes());
             if (duration.hours()>=0 && duration.minutes()>=0) {
             	console.log("iffff: BREAK")
                 setHDiff(duration.hours());
