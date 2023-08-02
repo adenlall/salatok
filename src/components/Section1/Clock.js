@@ -41,10 +41,10 @@ function Clock(props) {
           console.log("i", i);
             const nSl = slt[sltAr[i]];
             let ttime = moment(slt[sltAr[i]], 'HH:mm');
-			const duration = moment().duration(ttime.diff(moment()));
+			const duration = moment.duration(ttime.diff(moment()));
 			const debd = ttime - moment();
-			const hdm = ttime.hours() - moment().hours();
-			const mdm = ttime.minutes() - moment().minutes();
+			const hdm = ttime.hours() - moment.hours();
+			const mdm = ttime.minutes() - moment.minutes();
             console.log("hdm : ", hdm);
             console.log("mdm : ", mdm);
             console.log("debd : ", debd)
