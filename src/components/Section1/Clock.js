@@ -28,7 +28,7 @@ function Clock(props) {
 
     const calC = () => {
     
-     	const h = new Helper();
+     	  const h = new Helper();
           const sltAr = h.sNames();
           const slt = h.dDay();
           
@@ -41,9 +41,14 @@ function Clock(props) {
           console.log("i", i);
             const nSl = slt[sltAr[i]];
             let ttime = moment(slt[sltAr[i]], 'HH:mm');
-			const duration = moment.duration(ttime.diff(moment().format('HH:mm')));
-            
-          console.log("nSl", i);
+			const duration = moment().duration(ttime.diff(moment()));
+			const debd = ttime - moment();
+			const hdm = ttime.hours() - moment().hours();
+			const mdm = ttime.minutes() - moment().minutes();
+            console.log("hdm : ", hdm);
+            console.log("mdm : ", mdm);
+            console.log("debd : ", debd)
+          console.log("nSl", i, sltAr[i]);
           console.log("ttime", ttime);
           console.log("duration", duration);
           console.log("duration - h", duration.hours(),duration.minutes());
