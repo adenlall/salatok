@@ -58,7 +58,7 @@ export function Helper() {
                     let pD = JSON.stringify(data);
                     localStorage.setItem(key, pD);
                     return JSON.parse(pD);
-               }
+               } 
                return JSON.parse(localStorage.getItem(key));
 	       },
       }
