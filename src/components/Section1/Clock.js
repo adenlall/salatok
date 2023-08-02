@@ -7,10 +7,6 @@ import { Helper } from './Helper';
 
 function Clock(props) {
 
-
-    document.title = `Home - Salatok.App - Muslim Day Manager`;
-
-
     const [hAngle, sethAngle] = useState((new Date().getHours() % 12 / 12) * 360);
     const [mAngle, setmAngle] = useState((new Date().getMinutes() / 60) * 360);
     const [sAngle, setsAngle] = useState((new Date().getSeconds() / 60) * 360);
@@ -42,14 +38,12 @@ function Clock(props) {
 	}
 
     const calC = () => {
-    
-     	  const h = new Helper();
-          const sltAr = h.sNames();
-          const slt = h.dDay();
-          
+
+		const h = new Helper();
+		const sltAr = h.sNames();
+		const slt = h.dDay();
+
         for (let i = 0; i < sltAr.length; i++) {
-        
-          console.log("i", i);
             const nSl = slt[sltAr[i]];
             const ttime = moment(slt[sltAr[i]], 'HH:mm');
 			const isaf = ttime.isSameOrAfter(moment());
@@ -67,21 +61,15 @@ function Clock(props) {
         let Hdiff = 24 - m.hours() + ntime.hours();
         let Mdiff = ntime.minutes() - m.minutes();
 		if(Mdiff<0){
-			console.log("lll : ", slt[sltAr[0]]);
-			console.log("Nh : "+m.hours()+ " Ch : "+ntime.hours());
 			Hdiff = Hdiff - 1;
 			Mdiff = 60+Mdiff;
 		}
         setHDiff(Hdiff);
         setMDiff(Mdiff);
-    
     }
-
-
 
     useEffect(() => {
         let timerID = setInterval(() => {
-        	console.log("|||||||||||||||||||||||||");
 		    const date = new Date();
 		    const hourm = date.getHours();
 		    const min = date.getMinutes();
@@ -104,7 +92,6 @@ function Clock(props) {
 
 
     useEffect(() => {
-    	console.log("useEffect")
         let timerID = setInterval(() => {
             calC()
         }, 60000)
@@ -115,7 +102,6 @@ function Clock(props) {
 
 
 	useEffect(() => {
-		console.log("ONLY ONCE");
 		calC();
 	}, []);
 	
