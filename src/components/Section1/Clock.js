@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import $ from 'jquery'
 import moment from 'moment'
 
+import { Helper } from './Helper';
+
+
 function Clock(props) {
 
 
@@ -37,7 +40,7 @@ function Clock(props) {
           console.log("i", i);
             const nSl = slt[sltAr[i]];
             let ttime = moment(slt[sltAr[i]], 'HH:mm').format('HH:mm');
-			const duration = moment.duration(time2.diff(moment().format('HH:mm')));
+			const duration = moment.duration(ttime.diff(moment().format('HH:mm')));
             
           console.log("nSl", i);
           console.log("ttime", ttime);
