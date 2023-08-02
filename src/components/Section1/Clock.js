@@ -67,13 +67,14 @@ function Clock(props) {
         let Hdiff = 24 - m.hours() + ntime.hours();
         let Mdiff = ntime.minutes() - m.minutes();
 		if(Mdiff<0){
-			Hdiff = Hdiff + 1;
+			console.log("lll : ", slt[sltAr[0]]);
+			console.log("Nh : "+m.hours()+ " Ch : "+ntime.hours());
+			Hdiff = Hdiff - 1;
 			Mdiff = 60+Mdiff;
 		}
         setHDiff(Hdiff);
         setMDiff(Mdiff);
-		
-        
+    
     }
 
 
