@@ -62,11 +62,11 @@ function Clock(props) {
 
     useEffect(() => {
         let timerID = setInterval(() => {
+        	console.log("|||||||||||||||||||||||||");
 		    const date = new Date();
 		    const hourm = date.getHours();
 		    const min = date.getMinutes();
 		    const sec = date.getSeconds();
-
 		    var hour = hourm % 12; // 12 format
 
 		    var angH = (hour / 12) * 360;
@@ -85,6 +85,7 @@ function Clock(props) {
 
 
     useEffect(() => {
+    	console.log("useEffect")
         let timerID = setInterval(() => {
             calC()
         }, 60000)
