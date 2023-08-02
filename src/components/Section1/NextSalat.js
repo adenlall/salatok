@@ -38,6 +38,7 @@ function NextSalat(props) {
      
      function ReadOrWrite(key, data){
           if(!localStorage.getItem(key)){
+               console.log("LOG TRACE : NextSalat@ReadOrWrite : not found in storage : key :", key)
                let pD = JSON.stringify(data);
                localStorage.setItem(key, pD);
                return JSON.parse(pD);

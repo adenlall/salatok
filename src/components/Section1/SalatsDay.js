@@ -29,7 +29,7 @@ function SalatsDay() {
           }
           console.log("dDay : ", dDay);
           
-          const metas = JSON.parse(localStorage.getItem("salats_names"));
+          const metas = ReadOrWrite("salats_names", ["fajr", "sunrise", "dhuhr", "asr", "maghrib", "isha"]);
           let myarr = [];
           
           for (let i=0; i<metas.length; i++ ) {
@@ -48,6 +48,7 @@ function SalatsDay() {
      
      function ReadOrWrite(key, data){
           if(!localStorage.getItem(key)){
+               console.log("LOG TRACE : NextSalat@ReadOrWrite : not found in storage : key :", key)
                let pD = JSON.stringify(data);
                localStorage.setItem(key, pD);
                return JSON.parse(pD);
