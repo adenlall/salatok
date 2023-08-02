@@ -5,46 +5,7 @@ import   Clock        from './Clock';
 import   SalatsDay    from "./SalatsDay";
 import   Ttst    from "./Ttst";
 
-import { PrayTimes } from './PrayTimes';
-
-
 function NextSalat(props) {
-     
-     useEffect(() => {
-          
-          ReadOrWrite("salats_names", ["fajr", "sunrise", "dhuhr", "asr", "maghrib", "isha"]);
-
-          let config = {
-               method: ReadOrWrite('method', "MWL"),
-               core: ReadOrWrite("core", {coords: ["32.6507792","-8.4242087"], timezone:"auto", dst:"auto", format:"24h"})
-          }
-          
-          const salat = new PrayTimes();
-          salat.setMethod(config.method);
-     
-          let dd = salat.getTimes(new Date(), config.core.coords, config.core.timezone, config.core.dst, config.core.format);
-          localStorage.setItem('dDay', JSON.stringify(dd));
-     
-     }, []);
-
-
-     function getvalid(a,b){
-          if( a || a === 0 ){
-               return a;
-          }
-          return b;
-     }
-     
-     
-     function ReadOrWrite(key, data){
-          if(!localStorage.getItem(key)){
-               console.log("LOG TRACE : NextSalat@ReadOrWrite : not found in storage : key :", key)
-               let pD = JSON.stringify(data);
-               localStorage.setItem(key, pD);
-               return JSON.parse(pD);
-          }
-          return JSON.parse(localStorage.getItem(key));
-     }
 
     return (
         <>

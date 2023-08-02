@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import $ from 'jquery'
 import moment from 'moment'
 
-
 function Clock(props) {
 
 
@@ -18,134 +17,67 @@ function Clock(props) {
     const [Hdiff, setHDiff] = useState(0);
     const [Mdiff, setMDiff] = useState(0);
     const [nextis, setNextis] = useState(0);
+    const [data, setData] = useState(null);
+    
 
     const cc = localStorage.getItem("country")
     const ss = localStorage.getItem("city")
 
-    var slt = 0;
-
-    const logTime = () => {
-
-
-        const date = new Date();
-        const hourm = date.getHours();
-        const min = date.getMinutes();
-        const sec = date.getSeconds();
-
-        var hour = hourm % 12; // 12 format
-
-        var angH = (hour / 12) * 360;
-        var angM = (min / 60) * 360;
-        var angS = (sec / 60) * 360;
-
-
-
-        sethAngle(angH);
-        setmAngle(angM);
-        setsAngle(angS)
-
-    }
-
-
-
-    const fetchData = () => {
-
-        // await Axios.get(`https://muslimsalat.com/${props.cc}/${props.ss}${status}.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`).then(res => {
-        //     setSlt(res.data.items[0]); setStt(false);
-        // }).catch(err => { console.log('Clock' + err) })
-        if (localStorage.getItem('salatsday') === null) {
-            $(
-                $.getJSON(`https://muslimsalat.com/${cc}/${ss}.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`, function (data) {
-                    console.log("im the second hello jquery")
-                    slt = data.items[0];
-                    if (data.status_code === 0) {
-                        setLocate(false)
-                        localStorage.clear();
-                    } else {
-                        setLocate(true)
-                        calC();
-                    }
-
-                    // console.log(data)
-                })
-            )
-
-        } else {
-            slt = JSON.parse(localStorage.getItem('salatsday'));
-            if (slt.status_code === 0) {
-                setLocate(false)
-                localStorage.clear();
-            } else {
-                slt = slt.items[0];
-                setLocate(true)
-                calC();
-            }
-
-        }
-    }
-
-
-
-
-
-    //
-
 
     const calC = () => {
-
-        const sltAr = ['fajr', 'shurooq', 'dhuhr', 'asr', 'maghrib', 'isha']
-        // console.log('im first here feeettt')
-
-
+          const sltAr = Helper.sNames();
+          const slt = Helper.dDay();
+          
+          console.log("calC");
+          console.log("sltAr", sltAr);
+          console.log("slt", slt);
+          
         for (let i = 0; i < sltAr.length; i++) {
-
+        console.log("//////////////////////////");
+          console.log("i", i);
             const nSl = slt[sltAr[i]];
-
-            let Hdiff = moment(slt[sltAr[i]], 'h:mm A').format('HH') - moment().format('HH');
-            let Mdiff = moment(slt[sltAr[i]], 'h:mm A').format('mm') - moment().format('mm');
-
-
-            if (moment(nSl, 'h:mm A').format('HHmm') > moment().format('HHmm')) {
-                if (Mdiff < 0) {
-                    Hdiff = Hdiff - 1;
-                    Mdiff = 60 - Math.abs(Mdiff);
-                    // console.log(moment(nSl, 'h:mm A').format('HH:mm'), Hdiff, Mdiff)
-                }
-                setHDiff(Hdiff);
-                setMDiff(Mdiff);
+            let ttime = moment(slt[sltAr[i]], 'HH:mm').format('HH:mm');
+			const duration = moment.duration(time2.diff(moment().format('HH:mm')));
+            
+          console.log("nSl", i);
+          console.log("ttime", ttime);
+          console.log("duration", duration);
+          console.log("duration - h", duration.hours(),duration.minuts());
+            if (duration.hours()>=0 && duration.minuts()>=0) {
+            	console.log("iffff: BREAK")
+                setHDiff(duration.hours());
+                setMDiff(duration.minuts());
                 setNextis(sltAr[i]);
-                // window.alert('if1')
+        		console.log("//////////////////////////");
                 break;
-            } else {
-
-                Hdiff = (props.cc === 'Ma' ? moment(slt[sltAr[0]], 'h:mm A').add(1, 'hours').format('HH') : moment(slt[sltAr[0]], 'h:mm A').format('HH')) - moment().format('HH');
-                Mdiff = moment(slt[sltAr[0]], 'h:mm A').format('mm') - moment().format('mm');
-
-                if (Mdiff < 0) {
-                    Hdiff = Hdiff - 1;
-                    Mdiff = 60 - Math.abs(Mdiff);
-                }
-                Hdiff = 24 - parseInt(moment().format('HH')) + (parseInt(moment(slt[sltAr[0]], 'h:mm A').add(1, 'hours').format('HH'))); // TODO: fix this
-                setHDiff(Hdiff);
-                setMDiff(Mdiff);
-                setNextis(sltAr[0]);
-                // window.alert()
-
             }
-
         }
     }
 
 
 
     useEffect(() => {
-        fetchData()
+        setData(Helper.dDay());
     }, []);
 
 
     useEffect(() => {
         let timerID = setInterval(() => {
-            logTime();
+		    const date = new Date();
+		    const hourm = date.getHours();
+		    const min = date.getMinutes();
+		    const sec = date.getSeconds();
+
+		    var hour = hourm % 12; // 12 format
+
+		    var angH = (hour / 12) * 360;
+		    var angM = (min / 60) * 360;
+		    var angS = (sec / 60) * 360;
+
+		    sethAngle(angH);
+		    setmAngle(angM);
+		    setsAngle(angS);
+		    
         }, 1000)
         return () => {
             clearInterval(timerID)
