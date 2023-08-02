@@ -52,7 +52,7 @@ export function Helper() {
 								this.checkStorage();
 								return JSON.parse(localStorage.getItem("salats_names"));
 			},
-      ReadOrWrite: function(key, data){
+      		ReadOrWrite: function(key, data){
                if(!localStorage.getItem(key)){
                     console.log("LOG TRACE : NextSalat@ReadOrWrite : not found in storage : key :", key)
                     let pD = JSON.stringify(data);
@@ -60,12 +60,7 @@ export function Helper() {
                     return JSON.parse(pD);
                }
                return JSON.parse(localStorage.getItem(key));
-          },
-
-         adjust: function(params) {
-             for (var id in params)
-                 setting[id] = params[id];
-         },
+	       },
       },
 
 }
