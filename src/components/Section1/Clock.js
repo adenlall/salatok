@@ -26,8 +26,9 @@ function Clock(props) {
     const ss = localStorage.getItem("city")
 
 	const getDiff = (hh, mm) => {
-		let H = moment.hours();
-		let M = moment.minutes();
+		let m = moment();
+		let H = m.hours();
+		let M = m.minutes();
 		let Hdiff = hh - H;
 		let Mdiff = mm - M;
 		if(Mdiff<0){
@@ -61,9 +62,10 @@ function Clock(props) {
             }
         }
         setNextis(sltAr[0]);
+        let m = moment();
         const ntime = moment(slt[sltAr[0]], 'HH:mm');
-        let Hdiff = 24 - moment.hours() + ntime.hours();
-        let Mdiff = ntime.minutes() - moment.hours();
+        let Hdiff = 24 - m.hours() + ntime.hours();
+        let Mdiff = ntime.minutes() - m.minutes();
 		if(Mdiff<0){
 			Hdiff = Hdiff - 1;
 			Mdiff = 60+Mdiff;
