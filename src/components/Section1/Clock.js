@@ -50,7 +50,7 @@ function Clock(props) {
             if (duration.hours()>=0 && duration.minuts()>=0) {
             	console.log("iffff: BREAK")
                 setHDiff(duration.hours());
-                setMDiff(duration.minuts());
+                setMDiff(duration.minutes());
                 setNextis(sltAr[i]);
         		console.log("//////////////////////////");
                 break;
