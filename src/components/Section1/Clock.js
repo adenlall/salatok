@@ -20,7 +20,6 @@ function Clock(props) {
     const [Hdiff, setHDiff] = useState(0);
     const [Mdiff, setMDiff] = useState(0);
     const [nextis, setNextis] = useState(0);
-    const [data, setData] = useState(null);
     
 
     const cc = localStorage.getItem("country")
@@ -28,8 +27,10 @@ function Clock(props) {
 
 
     const calC = () => {
-          const sltAr = Helper.sNames();
-          const slt = Helper.dDay();
+    
+     	const h = new Helper();
+          const sltAr = h.sNames();
+          const slt = h.dDay();
           
           console.log("calC");
           console.log("sltAr", sltAr);
@@ -57,11 +58,6 @@ function Clock(props) {
         }
     }
 
-
-
-    useEffect(() => {
-        setData(Helper.dDay());
-    }, []);
 
 
     useEffect(() => {

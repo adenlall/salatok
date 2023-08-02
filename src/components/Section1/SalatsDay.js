@@ -13,8 +13,9 @@ function SalatsDay() {
      const [arr, setArr] = useState("LOADING...");
      
      useEffect(() => {
-     	 const dDay = Helper.dDay();
-          const metas = Helper.sNames();
+     	const h = new Helper();
+     	 const dDay = h.dDay();
+          const metas = h.sNames();
           let myarr = [];
           for (let i=0; i<metas.length; i++ ) {
                myarr.push(
