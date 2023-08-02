@@ -7,8 +7,7 @@ import SelectByUser from '../AdblockCase/selectByUser';
 
 function SalatsDay() {
      
-     const [arr, setArr] = useState([]);
-     
+     const [arr, setArr] = useState("LOADING...");
      
      useEffect(() => {
        
@@ -16,9 +15,10 @@ function SalatsDay() {
           console.log("dDay : ", dDay);
           
           const metas = JSON.parse(localStorage.getItem("salats_names"));
+          let myarr = [];
           
           for (let i=0; i<metas.length; i++ ) {
-               arr.push(
+               myarr.push(
                     <NavLink to={'/salat/'+metas[i]} className="p-2 px-4 w-full rounded-lg space-x-2 bg-[linear-gradient(21deg,#ffffff61,#ffffff29)] dark:bg-[linear-gradient(21deg,#00000061,#ffffff29)] " itemScope>
                        <header className="font-bold text-lg text-black dark:text-white" itemProp="salat">{metas[i]}</header>
                        <p className="text-gray-800 dark:text-white">{dDay[metas[i]]}</p>
@@ -26,7 +26,7 @@ function SalatsDay() {
                );
           }
           
-          //setState(true);
+          setArr(myarr);
      
      }, []);
      
