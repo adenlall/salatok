@@ -33,7 +33,10 @@ export function Helper() {
 			},
 			setUPdDay: function() {
 							console.log("`LOG TRACE` : dDay for day "+ moment().format('DD-MM-YYYY') +" `NOT FOUND` in local storage");
-							let config = this.config;
+							let config = {
+								method: this.ReadOrWrite('method', "MWL"),
+								core: this.ReadOrWrite("core", {coords: ["32.6507792","-8.4242087"], timezone:"auto", dst:"auto", format:"24h"})
+							};
 							const salat = new PrayTimes();
 							salat.setMethod(config.method);
 							let dd = salat.getTimes(new Date(), config.core.coords, config.core.timezone, config.core.dst, config.core.format);
@@ -72,12 +75,11 @@ export function Helper() {
 					mm:Mdiff
 				}
 			},
-			config : {
-				method: this.ReadOrWrite('method', "MWL"),
-				core: this.ReadOrWrite("core", {coords: ["32.6507792","-8.4242087"], timezone:"auto", dst:"auto", format:"24h"})
-			},
 	       dWeek: function(ssa){
-					let config = this.config;
+					let config = {
+						method: this.ReadOrWrite('method', "MWL"),
+						core: this.ReadOrWrite("core", {coords: ["32.6507792","-8.4242087"], timezone:"auto", dst:"auto", format:"24h"})
+					};
 					const salat = new PrayTimes();
 					const arr = [];
 					const ddc = this.dDay()[ssa];
