@@ -57,7 +57,7 @@ export function Helper() {
                } 
                return JSON.parse(localStorage.getItem(key));
 	       },
-			getDiff: function(hh, mm) => {
+			getDiff: function(hh, mm) {
 				let m = moment();
 				let H = m.hours();
 				let M = m.minutes();
