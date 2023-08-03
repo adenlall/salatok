@@ -82,7 +82,7 @@ export function Helper() {
 					const arr = [];
 					const ddc = this.dDay()[ssa];
 					let cdate = new Date();
-					for ( i=0; i<7; i++ ) {
+					for (let i=0; i<7; i++ ) {
 						let newdate = cdate.setDate(cdate.getDate() + i);
 						salat.setMethod(config.method);
 						let dd = salat.getTimes(newdate, config.core.coords, config.core.timezone, config.core.dst, config.core.format);
