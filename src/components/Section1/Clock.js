@@ -20,23 +20,7 @@ function Clock(props) {
 
     const cc = localStorage.getItem("country")
     const ss = localStorage.getItem("city")
-
-	const getDiff = (hh, mm) => {
-		let m = moment();
-		let H = m.hours();
-		let M = m.minutes();
-		let Hdiff = hh - H;
-		let Mdiff = mm - M;
-		if(Mdiff<0){
-			Hdiff = Hdiff - 1;
-			Mdiff = 60+Mdiff;
-		}
-		return {
-			hh:Hdiff,
-			mm:Mdiff
-		}
-	}
-
+     
     const calC = () => {
 
 		const h = new Helper();
@@ -48,7 +32,7 @@ function Clock(props) {
             const ttime = moment(slt[sltAr[i]], 'HH:mm');
 			const isaf = ttime.isSameOrAfter(moment());
             if (isaf) {
-            	let dd = getDiff(ttime.hours(), ttime.minutes());
+            	let dd = h.getDiff(ttime.hours(), ttime.minutes());
                 setHDiff(dd.hh);
                 setMDiff(dd.mm);
                 setNextis(sltAr[i]);

@@ -31,17 +31,14 @@ export function Helper() {
 						}
 					}
 			},
-	    setUPdDay: function() {
-									console.log("`LOG TRACE` : dDay for day "+ moment().format('DD-MM-YYYY') +" `NOT FOUND` in local storage");
-									let config = {
-										   method: this.ReadOrWrite('method', "MWL"),
-										   core: this.ReadOrWrite("core", {coords: ["32.6507792","-8.4242087"], timezone:"auto", dst:"auto", format:"24h"})
-									}
-									const salat = new PrayTimes();
-									salat.setMethod(config.method);
-									let dd = salat.getTimes(new Date(), config.core.coords, config.core.timezone, config.core.dst, config.core.format);
-									localStorage.setItem('dDay'+moment().format('DD-MM-YYYY'), JSON.stringify(dd));
-					 				return dd;
+			setUPdDay: function() {
+							console.log("`LOG TRACE` : dDay for day "+ moment().format('DD-MM-YYYY') +" `NOT FOUND` in local storage");
+							let config = this.config;
+							const salat = new PrayTimes();
+							salat.setMethod(config.method);
+							let dd = salat.getTimes(new Date(), config.core.coords, config.core.timezone, config.core.dst, config.core.format);
+							localStorage.setItem('dDay'+moment().format('DD-MM-YYYY'), JSON.stringify(dd));
+			 				return dd;
 			},
 			dDay: function(){
 								this.checkStorage();
@@ -60,6 +57,57 @@ export function Helper() {
                } 
                return JSON.parse(localStorage.getItem(key));
 	       },
+			getDiff: function(hh, mm) => {
+				let m = moment();
+				let H = m.hours();
+				let M = m.minutes();
+				let Hdiff = hh - H;
+				let Mdiff = mm - M;
+				if(Mdiff<0){
+					Hdiff = Hdiff - 1;
+					Mdiff = 60+Mdiff;
+				}
+				return {
+					hh:Hdiff,
+					mm:Mdiff
+				}
+			},
+			config : {
+				method: this.ReadOrWrite('method', "MWL"),
+				core: this.ReadOrWrite("core", {coords: ["32.6507792","-8.4242087"], timezone:"auto", dst:"auto", format:"24h"})
+			},
+	       dWeek: function(ssa){
+					let config = this.config;
+					const salat = new PrayTimes();
+					const arr = [];
+					const ddc = this.dDay()[ssa];
+					let cdate = new Date();
+					for ( i=0; i<7; i++ ) {
+						let newdate = cdate.setDate(cdate.getDate() + i);
+						salat.setMethod(config.method);
+						let dd = salat.getTimes(newdate, config.core.coords, config.core.timezone, config.core.dst, config.core.format);
+						let diff = () => {
+							let baseH = moment(ddc[ssa], "HH.mm").hours();
+							let baseM = moment(ddc[ssa], "HH.mm").minutes();
+							let Gh = moment(dd[ssa], "HH.mm").hours();
+							let Gm = moment(dd[ssa], "HH.mm").minutes();
+							
+							let MDiff = baseM - Gm;
+							
+							if(baseH-Gh === 0){
+								return MDiff;
+							} else {
+								return Math.sign(MDiff)*(60+(-1*Math.abs(MDiff)));
+							}
+						}
+						arr.push([dd[ssa], {
+							diff: diff(),
+							day : moment(newdate).format('dddd'),
+							date: moment(newdate).format("MM-D"),
+						}]);
+					}
+					console.log("FULL WEEK : ", arr);
+					return arr;
+	       }
       }
-
 }
