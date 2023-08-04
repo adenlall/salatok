@@ -28,20 +28,20 @@ function Ttst(props) {
 	setArr(newArr);
 		
 	return (
-			<>
-				<div className='flex flex-col space-y-2 p-8 w-full'>
-					<h1 className='text-xl font-bold'>week times of {props.ynt} :</h1>
-					{
-						arr ? 
-						(
+			<div className='flex flex-col space-y-2 p-8 w-full'>
+				<h1 className='text-xl font-bold'>week times of {props.ynt} :</h1>
+				{
+					arr ? 
+					(
+						<>
 							<div className='flex flex-col space-y-3 lg:py-8 py-2 px-2'>{arr}</div>
 							<h3>done!</h3>
-						) : (
-							<h3 className="h-full font-bold">Loading...</h3>
-						)
-					}
-				</div>
-			</>
+						</>
+					) : (
+						<h3 className="h-full font-bold">Loading...</h3>
+					)
+				}
+			</div>
 	);
 }
 
