@@ -52,7 +52,7 @@ function SelectByUser() {
     
     const setLocation = (data) => {
 		
-		document.querySelector('.stt').innerHTML = `We get it! ${res.data.country +'-'+res.data.city}`;
+		document.querySelector('.stt').innerHTML = `We get it! ${data.country +'-'+data.city}`;
 		localStorage.clear();
 		
 		localStorage.setItem('country' , data.country  );
