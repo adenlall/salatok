@@ -105,7 +105,7 @@ export function Helper() {
 						arr.push([dd[ssa], {
 							diff: diff(dd),
 							day : moment(newdate).format('dddd'),
-							date: moment(newdate).format("MM-D"),
+							date: moment(newdate).format("DD-MM-YYYY"),
 						}]);
 					}
 					console.log("FULL WEEK : ", arr);
