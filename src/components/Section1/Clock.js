@@ -32,7 +32,7 @@ function Clock(props) {
             const ttime = moment(slt[sltAr[i]], 'HH:mm');
             let dd = h.getDiff(ttime.hours(), ttime.minutes());
             console.log(dd.hh, dd.mm, dd.hh >= 0 || dd.mm >= 0);
-            if (dd.hh >= 0 && dd.mm >= 0) {
+            if (dd.hh > 0 && dd.mm > 0) {
                 setHDiff(dd.hh);
                 setMDiff(dd.mm);
                 setNextis(sltAr[i]);

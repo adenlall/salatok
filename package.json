@@ -7,7 +7,7 @@
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
 	    "axios": "^0.26.1",
-		    "daisyui": "^2.11.0",
+		    "daisyui": "^3.5.1",
     "framer-motion": "^6.2.8",
     "jquery": "^3.6.0",
     "moment": "^2.29.1",
