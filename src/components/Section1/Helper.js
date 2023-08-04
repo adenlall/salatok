@@ -18,7 +18,7 @@ export function Helper() {
 				 			}
 				 			return true
 			 			} catch(err) {
-			 				console.error("ERROR : ",err);
+			 				console.error(" ERROR : ", err);
 			 				return false
 			 			}
 			},
