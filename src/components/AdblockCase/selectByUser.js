@@ -51,50 +51,54 @@ function SelectByUser() {
     }
     
     const setLocation = (data) => {
+		
+		document.querySelector('.stt').innerHTML = `We get it! ${res.data.country +'-'+res.data.city}`;
+		localStorage.clear();
+		
 		localStorage.setItem('country' , data.country  );
 		localStorage.setItem('city'    , data.city     );
-		localStorage.setItem("timezone", data.timezone );
+		localStorage.setItem('timezone', data.timezone );
 		localStorage.setItem("lat"     , data.lat      );
 		localStorage.setItem("long"    , data.long     );
 		
 		document.querySelector('.bttnn').innerHTML = "Redy!";
 		document.querySelector('.stt').innerHTML = "All done! Enjoy the app.";
 		window.location.replace("/");
-    }
+	}
     
-     const getValid = (data, key) => {
-        if(key=="city"){
-          if (!getOr(data, ["city","town","village"])) {
-            let cc = getOr(data, ["region","state","province", "place"]);
-            if (cc) {
-              return cc;
-            }
-            console.error('undifined Not city Not region at Nomination@#getValid');
-            console.error({data_related: data});
-            return "[undefined]";
-          }
-          return getOr(data, ["city","town","village"]);
-        }
-        if(key=="region"){
-          if (!getOr(data, ["region","state","province", "place"])) {
-            let rr = getOr(data, ["city","town","village"]);
-            if (rr) {
-              return rr
-            }
-            console.error('undifined Not city Not region at Nomination@#getValid');
-            console.error({data_related: data});
-            return "[undefined]";
-          }
-          return getOr(data, ["region","state","province", "place"]);
-        }
-        if(key==="country"){
-          if (!getOr(data, ["country","country_code"])) {
-            console.error('error no country found in : ', data);
-            return "[undefined]";
-          }
-          return getOr(data, ["country","country_code"]);
-        }
-     }
+		const getValid = (data, key) => {
+		if(key=="city"){
+			if (!getOr(data, ["city","town","village"])) {
+				let cc = getOr(data, ["region","state","province", "place"]);
+				if (cc) {
+				  return cc;
+				}
+				console.error('undifined Not city Not region at Nomination@#getValid');
+				console.error({data_related: data});
+				return "[undefined]";
+		  }
+		  return getOr(data, ["city","town","village"]);
+		}
+		if(key=="region"){
+			if (!getOr(data, ["region","state","province", "place"])) {
+				let rr = getOr(data, ["city","town","village"]);
+				if (rr) {
+				  return rr
+				}
+				console.error('undifined Not city Not region at Nomination@#getValid');
+				console.error({data_related: data});
+				return "[undefined]";
+		  }
+		  return getOr(data, ["region","state","province", "place"]);
+		}
+		if(key==="country"){
+		  if (!getOr(data, ["country","country_code"])) {
+			console.error('error no country found in : ', data);
+			return "[undefined]";
+		  }
+		  return getOr(data, ["country","country_code"]);
+		}
+		}
 
 	const getOr = (res, arr) => {
 		for (let i = 0; i < arr.length; i++) {

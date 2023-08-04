@@ -7,7 +7,7 @@ export function Helper() {
 	return {
 			checkStorage: function () {
 			 			try{
-				 			let dDay   = localStorage.getItem("dDay"+moment().format('DD-MM-YYYY'));
+				 			let dDay   = localStorage.getItem("dDay-"+moment().format('DD-MM-YYYY'));
 				 			let sNames = localStorage.getItem("salats_names");
 				 			if(!dDay){
 				 					this.clearStorage();
