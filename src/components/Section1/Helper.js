@@ -83,7 +83,7 @@ export function Helper() {
 			dWeek: function(ssa){
 					let config = {
 						method: this.ReadOrWrite('method', "MWL"),
-						core: this.ReadOrWrite("core", {coords: ["32.6507792","-8.4242087"], timezone:"auto", dst:"auto", format:"24h"})
+						core: this.ReadOrWrite("core", {coords: [this.getValid(localStorage.getItem("lat"), "32.6507792"), this.getValid(localStorage.getItem("long"), "-8.4242087")], timezone:"auto", dst:"auto", format:"24h"})
 					};
 					const salat = new PrayTimes();
 					const arr = [];
@@ -100,7 +100,7 @@ export function Helper() {
 							} else {
 								return Math.sign(MDiff)*(60+(-1*Math.abs(MDiff)));
 							}
-						}
+					}
 					
 					for (let i=0; i<7; i++ ) {
 						let cdate = new Date();

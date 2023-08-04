@@ -136,8 +136,8 @@ function SelectByUser() {
 					localStorage.setItem('country' , res.data.country  );
 					localStorage.setItem('city'    , res.data.city     );
 					localStorage.setItem("timezone", res.data.timezone );
-					localStorage.setItem("lat"     , res.data.lat      );
-					localStorage.setItem("long"    , res.data.long     );
+					localStorage.setItem("lat"     , res.data.latitude );
+					localStorage.setItem("long"    , res.data.longitude);
 					
 					document.querySelector('.bttnn').innerHTML = "Redy!";
 					document.querySelector('.stt').innerHTML = "All done! Enjoy the app.";

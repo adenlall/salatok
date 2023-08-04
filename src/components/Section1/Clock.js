@@ -26,30 +26,36 @@ function Clock(props) {
 		const h = new Helper();
 		const sltAr = h.sNames();
 		const slt = h.dDay();
+		
+		let status = true;
 
-        for (let i = 0; i < sltAr.length; i++) {
-            const nSl = slt[sltAr[i]];
-            const ttime = moment(slt[sltAr[i]], 'HH:mm');
-            let dd = h.getDiff(ttime.hours(), ttime.minutes());
-            console.log(dd.hh, dd.mm, parseInt(dd.hh) >= 0 && parseInt(dd.mm) >= 0);
-            if (parseInt(dd.hh) >= 0 && parseInt(dd.mm) >= 0) {
-                setHDiff(dd.hh);
-                setMDiff(dd.mm);
-                setNextis(sltAr[i]);
-                break;
-            }
-        }
-        setNextis(sltAr[0]);
-        let m = moment();
-        const ntime = moment(slt[sltAr[0]], 'HH:mm');
-        let Hdiff = 24 - m.hours() + ntime.hours();
-        let Mdiff = ntime.minutes() - m.minutes();
-		if(Mdiff<0){
-			Hdiff = Hdiff - 1;
-			Mdiff = 60+Mdiff;
+		for (let i = 0; i < sltAr.length; i++) {
+			const nSl = slt[sltAr[i]];
+			const ttime = moment(slt[sltAr[i]], 'HH:mm');
+			let dd = h.getDiff(ttime.hours(), ttime.minutes());
+			console.log(sltAr[i]);
+			console.log(dd.hh, dd.mm, parseInt(dd.hh) >= 0 && parseInt(dd.mm) >= 0);
+			if (parseInt(dd.hh) >= 0 && parseInt(dd.mm) >= 0) {
+				setHDiff(dd.hh);
+				setMDiff(dd.mm);
+				setNextis(sltAr[i]);
+				status = false;
+				break;
+			}
 		}
-        setHDiff(Hdiff);
-        setMDiff(Mdiff);
+		if (status) {
+			setNextis(sltAr[0]);
+			let m = moment();
+			const ntime = moment(slt[sltAr[0]], 'HH:mm');
+			let Hdiff = 24 - m.hours() + ntime.hours();
+			let Mdiff = ntime.minutes() - m.minutes();
+			if(Mdiff<0){
+				Hdiff = Hdiff - 1;
+				Mdiff = 60+Mdiff;
+			}
+			setHDiff(Hdiff);
+			setMDiff(Mdiff);
+		}
     }
 
     useEffect(() => {
