@@ -88,6 +88,7 @@ export function Helper() {
 					for (let i=0; i<7; i++ ) {
 						let cdate = new Date();
 						let newdate = cdate.setDate(cdate.getDate() + i);
+						console.log("newwda  ",cdate, newdate, i);
 						salat.setMethod(config.method);
 						let dd = salat.getTimes(newdate, config.core.coords, config.core.timezone, config.core.dst, config.core.format);
 						console.log("dd" , dd);
