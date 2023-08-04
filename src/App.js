@@ -38,12 +38,12 @@ function App() {
           },
         }).then(res => {
           console.log(res.data);
-	     localStorage.setItem("city", `${res.data.city}`);
+          localStorage.setItem("city", `${res.data.city}`);
           localStorage.setItem("country", `${res.data.country}`);
           localStorage.setItem("timezone", res.data.timezone);
-          localStorage.setItem("latitude",res.data.latitude);
-          localStorage.setItem("longitude", res.data.longitude);
-	     setErr(false);
+          localStorage.setItem("lat",res.data.latitude);
+          localStorage.setItem("long", res.data.longitude);
+          setErr(false);
           setTat(true);
         }).catch(erro => {
           console.log(erro)
@@ -53,7 +53,6 @@ function App() {
         })
 
       }).catch(error => { console.log('App.js : ' + error); setErr(true); setTat(true); })
-
 
     } else {
       setErr(false);

@@ -30,14 +30,13 @@ function Clock(props) {
         for (let i = 0; i < sltAr.length; i++) {
             const nSl = slt[sltAr[i]];
             const ttime = moment(slt[sltAr[i]], 'HH:mm');
-			const isaf = ttime.isSameOrAfter(moment());
-            if (isaf) {
-            	let dd = h.getDiff(ttime.hours(), ttime.minutes());
+            let dd = h.getDiff(ttime.hours(), ttime.minutes());
+			if (dd.hh >= 0 || dd.mm >= 0) {
                 setHDiff(dd.hh);
                 setMDiff(dd.mm);
                 setNextis(sltAr[i]);
                 break;
-            }
+			}
         }
         setNextis(sltAr[0]);
         let m = moment();

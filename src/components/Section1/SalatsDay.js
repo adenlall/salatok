@@ -36,7 +36,7 @@ function SalatsDay() {
                     <nav className="flex flex-col rounded-lg items-center space-y-4 justify-center content-center w-full h-full p-4 overflow-y-scroll bg-[linear-gradient(71deg,#ffffffd9,#00f2ff47)] dark:bg-[linear-gradient(71deg,#000000d9,transparent)] " >
                         {arr}
                         <p className="dark:text-slate-100 text-gray-800 text-sm">
-                           
+                           {localStorage.getItem("city")} - {localStorage.getItem("country")}
                         </p>
 
                     </nav>

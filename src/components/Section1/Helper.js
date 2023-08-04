@@ -35,7 +35,7 @@ export function Helper() {
 							console.log("`LOG TRACE` : dDay for day "+ moment().format('DD-MM-YYYY') +" `NOT FOUND` in local storage");
 							let config = {
 								method: this.ReadOrWrite('method', "MWL"),
-								core: this.ReadOrWrite("core", {coords: ["32.6507792","-8.4242087"], timezone:"auto", dst:"auto", format:"24h"})
+								core: this.ReadOrWrite("core", {coords: [this.getValid(localStorage.getItem("lat"), "32.6507792"), this.getValid(localStorage.getItem("long"), "-8.4242087")], timezone:"auto", dst:"auto", format:"24h"})
 							};
 							const salat = new PrayTimes();
 							salat.setMethod(config.method);
@@ -51,31 +51,36 @@ export function Helper() {
 								this.checkStorage();
 								return JSON.parse(localStorage.getItem("salats_names"));
 			},
-      		ReadOrWrite: function(key, data){
-               if(!localStorage.getItem(key)){
-                    console.log("LOG TRACE : NextSalat@ReadOrWrite : not found in storage : key :", key)
-                    let pD = JSON.stringify(data);
-                    localStorage.setItem(key, pD);
-                    return JSON.parse(pD);
-               } 
-               return JSON.parse(localStorage.getItem(key));
-	       },
+			ReadOrWrite: function(key, data){
+				if(!localStorage.getItem(key)){
+					console.log("LOG TRACE : NextSalat@ReadOrWrite : not found in storage : key :", key)
+					let pD = JSON.stringify(data);
+					localStorage.setItem(key, pD);
+					return JSON.parse(pD);
+				}
+				return JSON.parse(localStorage.getItem(key));
+			},
 			getDiff: function(hh, mm) {
+				console.log("GETDIFF", hh,":",mm);
 				let m = moment();
 				let H = m.hours();
 				let M = m.minutes();
 				let Hdiff = hh - H;
 				let Mdiff = mm - M;
+				console.log("Hfiff : ", Hdiff, " is :"+hh+"-"+H);
+				console.log("Mdiff : ", Mdiff, " is :"+mm+"-"+M);
 				if(Mdiff<0){
+					console.log("IFF");
 					Hdiff = Hdiff - 1;
 					Mdiff = 60+Mdiff;
 				}
+				console.log("FINAL : ",Hdiff +" h and "+Mdiff+" min");
 				return {
 					hh:Hdiff,
 					mm:Mdiff
 				}
 			},
-	       dWeek: function(ssa){
+			dWeek: function(ssa){
 					let config = {
 						method: this.ReadOrWrite('method', "MWL"),
 						core: this.ReadOrWrite("core", {coords: ["32.6507792","-8.4242087"], timezone:"auto", dst:"auto", format:"24h"})
@@ -110,6 +115,13 @@ export function Helper() {
 					}
 					console.log("FULL WEEK : ", arr);
 					return arr;
-	       }
-      }
+			},
+			getValid: function  (a,b) {
+						if (a || a===0) {
+							return a;
+						} else {
+							return b;
+						}
+			}
+		}
 }
