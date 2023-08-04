@@ -130,7 +130,7 @@ function Clock(props) {
                         <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
                             <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
                                 <p className="countdown font-mono text-5xl">
-                                    <strong style={{ '--value': Hdiff }}></strong>
+                                    <strong style={{ '--value': Hdiff}}></strong>
                                 </p> hours
                             </div>
                             <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
