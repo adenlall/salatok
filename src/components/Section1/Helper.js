@@ -82,12 +82,15 @@ export function Helper() {
 					};
 					const salat = new PrayTimes();
 					const arr = [];
-					const ddc = this.dDay()[ssa];
+					const ddc = this.dDay();
+					console.log("ddc", ddc);
+					
 					for (let i=0; i<7; i++ ) {
 						let cdate = new Date();
 						let newdate = cdate.setDate(cdate.getDate() + i);
 						salat.setMethod(config.method);
 						let dd = salat.getTimes(newdate, config.core.coords, config.core.timezone, config.core.dst, config.core.format);
+						console.log("dd" , dd);
 						let diff = () => {
 							let baseH = moment(ddc[ssa], "HH.mm").hours();
 							let baseM = moment(ddc[ssa], "HH.mm").minutes();
