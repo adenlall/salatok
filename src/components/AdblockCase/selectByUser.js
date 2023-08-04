@@ -32,15 +32,13 @@ function SelectByUser() {
     		let UIarr = [];
     		for (let i=0; i<data.length; i++ ) {
 				let UI = (
-				<div tabIndex={0} className="collapse border my-5 border-base-300 bg-slate-300 dark:bg-gray-700 dark:text-slate-100 text-gray-800"> 
-				  <div className="collapse-title text-xl font-bold">
-					{data[i].city} - {data[i].country}
-				  </div>
-				  <div className="collapse-content"> 
+				<details class="collapse  my-5 border-base-300 bg-slate-300 dark:bg-gray-700 dark:text-slate-100 text-gray-800">
+				  <summary class="collapse-title text-xl font-medium">{data[i].city} - {data[i].country}</summary>
+				  <div class="collapse-content"> 
 					<p>lat : {data[i].lat}, long : {data[i].long}</p> 
-					<button onClick={()=>{setLocation(data[i])}}>save</button>
+					<button className="btn btn-sm" onClick={()=>{setLocation(data[i])}}>save</button>
 				  </div>
-				</div>
+				</details>
 				);
 				UIarr.push(UI);
     		}
