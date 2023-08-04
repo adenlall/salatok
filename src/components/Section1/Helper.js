@@ -83,28 +83,28 @@ export function Helper() {
 					const salat = new PrayTimes();
 					const arr = [];
 					const ddc = this.dDay()[ssa];
-					let diff = () => {
-						let baseH = moment(ddc[ssa], "HH.mm").hours();
-						let baseM = moment(ddc[ssa], "HH.mm").minutes();
-						let Gh = moment(dd[ssa], "HH.mm").hours();
-						let Gm = moment(dd[ssa], "HH.mm").minutes();
-						
-						log("Middd, ",baseM,Gm);
-						log("Middd, ",baseH,Gh);
-						
-						let MDiff = baseM - Gm;
-						
-						if(baseH-Gh === 0){
-							return MDiff;
-						} else {
-							return Math.sign(MDiff)*(60+(-1*Math.abs(MDiff)));
-						}
-					}
 					for (let i=0; i<7; i++ ) {
 						let cdate = new Date();
 						let newdate = cdate.setDate(cdate.getDate() + i);
 						salat.setMethod(config.method);
 						let dd = salat.getTimes(newdate, config.core.coords, config.core.timezone, config.core.dst, config.core.format);
+						let diff = () => {
+							let baseH = moment(ddc[ssa], "HH.mm").hours();
+							let baseM = moment(ddc[ssa], "HH.mm").minutes();
+							let Gh = moment(dd[ssa], "HH.mm").hours();
+							let Gm = moment(dd[ssa], "HH.mm").minutes();
+							
+							console.log("Middd, ",baseM,Gm);
+							console.log("Middd, ",baseH,Gh);
+							
+							let MDiff = baseM - Gm;
+							
+							if(baseH-Gh === 0){
+								return MDiff;
+							} else {
+								return Math.sign(MDiff)*(60+(-1*Math.abs(MDiff)));
+							}
+						}
 						arr.push([dd[ssa], {
 							diff: diff(),
 							day : moment(newdate).format('dddd'),
