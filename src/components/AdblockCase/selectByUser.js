@@ -37,10 +37,8 @@ function SelectByUser() {
 					{data[i].city} - {data[i].country}
 				  </div>
 				  <div className="collapse-content"> 
-					<p className="truncate">{data[i].name}</p>
-					<p>lat : {data[i].lat}</p> 
-					<p>long : {data[i].long}</p>
-					<button className="p-5" onClick={()=>{setLocation(data[i])}}>save</button>
+					<p>lat : {data[i].lat}, long : {data[i].long}</p> 
+					<button onClick={()=>{setLocation(data[i])}}>save</button>
 				  </div>
 				</div>
 				);
@@ -151,7 +149,7 @@ function SelectByUser() {
 
     return (
 		<>
-			<div className="lg:w-1/2 w-full md:h-auto shadow-xl flex flex-col justify-between items-stretch p-4 rounded-lg bg-slate-100 dark:bg-gray-800 dark:text-slate-100 text-gray-800">
+			<div className="lg:w-[40%] w-full md:h-auto shadow-xl flex flex-col justify-between items-stretch p-4 rounded-lg bg-slate-100 dark:bg-gray-800 dark:text-slate-100 text-gray-800">
 				<div className="flex flex-col h-full w-full justify-evenly items-center">
 					<div className="flex flex-row items-end w-[87%] py-6 space-x-2">
 						<header className="text-2xl lg:text-4xl font-bold">Find your Location.</header>

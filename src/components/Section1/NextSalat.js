@@ -9,7 +9,7 @@ function NextSalat(props) {
 
     return (
         <>
-            <div className="lg:w-[70%] w-full shadow-xl flex md:flex-row flex-col  justify-between items-center p-4 rounded-lg bg-slate-100 dark:bg-gray-800 dark:text-slate-100 text-gray-800">
+            <div className="lg:w-[60%] w-full shadow-xl flex md:flex-row flex-col  justify-between items-center p-4 rounded-lg bg-slate-100 dark:bg-gray-800 dark:text-slate-100 text-gray-800">
                 <SalatsDay />
 
                 <div className='w-full flex flex-col items-center'>
