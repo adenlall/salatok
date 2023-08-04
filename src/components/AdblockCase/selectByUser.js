@@ -153,8 +153,8 @@ function SelectByUser() {
 						<header className="text-2xl lg:text-4xl font-bold">Find your Location.</header>
 					</div>
 					<input onChange={hundelSearch} type="text" placeholder="Search with Nomination API" className="input input-bordered text-black input-primary w-full max-w-xs" />
-					<div className=" max-h-[26em] overflow-scroll">
-						<div className="join join-vertical w-full py-5">
+					<div className="max-h-[20em] my-10 w-full h-full overflow-scroll">
+						<div className="join join-vertical w-full">
 							{dataUI}
 						</div>
 					</div>
