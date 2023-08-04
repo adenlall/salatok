@@ -5,6 +5,7 @@ import $ from 'jquery';
 function SelectByUser() {
 
 	const [dataUI, setDataUI] = useState("");
+	
 	const parse = (res) => {
           let arr=[];
 		      if (res) {
@@ -41,7 +42,7 @@ function SelectByUser() {
 						  <p>lat : {data[i].lat}</p> 
 						  <p>long : {data[i].long}</p>
 						</div>
-						<button onClick={setLocation(data[i])} className="btn btn-active btn-sm">Save</button>
+						<button onClick={()=>{setLocation(data[i])}} className="btn btn-active btn-sm">Save</button>
 					  </div>
 				);
 				UIarr.push(UI);
@@ -150,7 +151,7 @@ function SelectByUser() {
 			<div className="lg:w-1/2 w-full md:h-auto shadow-xl flex flex-col justify-between items-stretch p-4 rounded-lg bg-slate-100 dark:bg-gray-800 dark:text-slate-100 text-gray-800">
 				<div className="flex flex-col h-full w-full justify-evenly items-center">
 					<div className="flex flex-row items-end w-[87%] py-6 space-x-2">
-						<header className="text-2xl lg:text-4xl font-bold">Find your Kocation.</header>
+						<header className="text-2xl lg:text-4xl font-bold">Find your Location.</header>
 					</div>
 					<input onChange={hundelSearch} type="text" placeholder="Search with Nomination API" className="input input-bordered text-black input-primary w-full max-w-xs" />
 					<div className="join join-vertical w-full">
@@ -158,7 +159,7 @@ function SelectByUser() {
 					</div>
 					<p className="stt font-bold text-lg"></p>
 					<div className="btn-group">
-						<button className="btn bttnn">Get my location</button>
+						<button onClick={locate} className="btn bttnn">Detect My Location</button>
 					</div>
 				</div>
 			</div>
