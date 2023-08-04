@@ -31,8 +31,8 @@ function Clock(props) {
             const nSl = slt[sltAr[i]];
             const ttime = moment(slt[sltAr[i]], 'HH:mm');
             let dd = h.getDiff(ttime.hours(), ttime.minutes());
-            console.log(dd.hh, dd.mm, Number.parse(dd.hh) >= 0 && Number.parse(dd.mm) >= 0);
-            if (Number.parse(dd.hh) >= 0 && Number.parse(dd.mm) >= 0) {
+            console.log(dd.hh, dd.mm, parseInt(dd.hh) >= 0 && parseInt(dd.mm) >= 0);
+            if (parseInt(dd.hh) >= 0 && parseInt(dd.mm) >= 0) {
                 setHDiff(dd.hh);
                 setMDiff(dd.mm);
                 setNextis(sltAr[i]);
