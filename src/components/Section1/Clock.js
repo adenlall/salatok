@@ -126,7 +126,7 @@ function Clock(props) {
 
                     </div>
                     <div className='flex flex-col space-y-2 items-center p-2'>
-                        <h2 className="font-bold text-[1.4em]">Next Salat is : <strong className="font-extrabold text-[2em]"> {nextis}</strong></h2>
+                        <h2 className="font-bold text-[1.4em] px-10">Next:<strong className="font-extrabold text-[2em]"> {nextis}</strong></h2>
                         <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
                             <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
                                 <p className="countdown font-mono text-5xl">

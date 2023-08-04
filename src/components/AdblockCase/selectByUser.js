@@ -32,18 +32,18 @@ function SelectByUser() {
     		let UIarr = [];
     		for (let i=0; i<data.length; i++ ) {
 				let UI = (
-					  <div className="collapse collapse-arrow join-item border border-base-300">
-						<input type="radio" name="location-search-accordion" /> 
-						<div className="collapse-title text-xl font-medium">
-						  {data[i].name}
-						  {data[i].city} - {data[i].country}
-						</div>
-						<div className="collapse-content"> 
-						  <p>lat : {data[i].lat}</p> 
-						  <p>long : {data[i].long}</p>
-						</div>
-						<button onClick={()=>{setLocation(data[i])}} className="btn btn-active btn-sm">Save</button>
-					  </div>
+				<div className="collapse bg-base-200">
+				  <input name="searchlocation" type="checkbox" /> 
+				  <div className="collapse-title text-xl font-medium">
+					<p className="truncate">{data[i].name}</p><br/>
+					{data[i].city} - {data[i].country}
+				  </div>
+				  <div className="collapse-content"> 
+					<p>lat : {data[i].lat}</p> 
+					<p>long : {data[i].long}</p>
+					<button onClick={()=>{setLocation(data[i])}}>save</button>
+				  </div>
+				</div>
 				);
 				UIarr.push(UI);
     		}
@@ -158,7 +158,7 @@ function SelectByUser() {
 						<header className="text-2xl lg:text-4xl font-bold">Find your Location.</header>
 					</div>
 					<input onChange={hundelSearch} type="text" placeholder="Search with Nomination API" className="input input-bordered text-black input-primary w-full max-w-xs" />
-					<div className="join join-vertical w-full">
+					<div className="join join-vertical w-full py-5">
 						{dataUI}
 					</div>
 					<p className="stt font-bold text-lg"></p>
