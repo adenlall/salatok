@@ -32,7 +32,7 @@ function SelectByUser() {
     		let UIarr = [];
     		for (let i=0; i<data.length; i++ ) {
 				let UI = (
-				<div className="collapse bg-base-500">
+				<div className="collapse my-3 bg-slate-300 dark:bg-gray-700 dark:text-slate-100 text-gray-800">
 				  <input name="searchlocation" type="checkbox" /> 
 				  <div className="collapse-title text-xl font-medium">
 					{/*<p className="truncate">{data[i].name}</p><br/>*/}
