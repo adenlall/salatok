@@ -105,19 +105,19 @@ function App() {
           }
         </div>
         <div className='w-full flex lg:flex-row flex-col items-stretch justify-center content-center space-y-4 space-x-0 lg:space-y-0 lg:space-x-4 p-4'>
-          {/* <Sec2 /> */}
+          <Sec2 />
         </div>
         <div className='w-full flex lg:flex-row flex-col items-stretch justify-center content-center space-y-4 space-x-0 lg:space-y-0 lg:space-x-4 p-4'>
           {/* <Holiday/> */}
         </div>
         <div className='w-full flex lg:flex-row flex-col items-stretch justify-center content-center space-y-4 space-x-0 lg:space-y-0 lg:space-x-4 p-4'>
-          {/* <MPro /> */}
+          <MPro />
         </div>
         {/* <div className='w-full flex lg:flex-row flex-col items-stretch justify-center content-center space-y-4 space-x-0 lg:space-y-0 lg:space-x-4 p-4'>
           <Calendar />
         </div> */}
         <div className='w-full flex lg:flex-row mt-20 flex-col items-stretch justify-center content-center space-y-4 space-x-0 lg:space-y-0 lg:space-x-4 p-4'>
-          {/* <Support /> */}
+          <Support />
         </div>
 
       </>
