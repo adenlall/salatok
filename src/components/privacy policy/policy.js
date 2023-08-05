@@ -4944,26 +4944,6 @@ function Policy() {
 		                                                              </p>
 		                                                            </div>
 		                                                          </div>
-		                                                          <div
-		                                                            style={{
-		                                                              fontSize: 14,
-		                                                              fontFamily:
-		                                                                "Arial",
-		                                                              paddingTop: 16
-		                                                            }}
-		                                                          >
-		                                                            This privacy
-		                                                            policy was
-		                                                            created using
-		                                                            Termly's{" "}
-		                                                            <a
-		                                                              href="https://termly.io/products/privacy-policy-generator/"
-		                                                            >
-		                                                              Privacy Policy
-		                                                              Generator
-		                                                            </a>
-		                                                            .
-		                                                          </div>
 		                                                        </div>
 		                                                      </div>
 		                                                    </div>
