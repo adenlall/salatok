@@ -83,6 +83,11 @@ function Player(props) {
         player.volume = document.getElementById("change_vol").value;
     }
 
+    const mutePlayer = () => {
+		player.volume = player.volume === 0 ? 1 : 0;
+		document.getElementById("change_vol").value = player.volume;
+    }
+
     const logseek = () => {
         const audio = document.querySelector('#music_player');
         let duration = audio.duration;
@@ -101,10 +106,6 @@ function Player(props) {
         setSeek(String(current));
         document.querySelector('#ct').innerHTML = `${setct(audio.currentTime)}`;
         document.querySelector('#tt').innerHTML = `${setct(duration)}`;
-    }
-
-    const mutePlayer = () => {
-		player.volume = document.getElementById("change_vol").value === "0" ? 1 : 0;
     }
 
     const setct = (time) => {

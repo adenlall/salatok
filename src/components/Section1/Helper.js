@@ -10,7 +10,6 @@ export function Helper() {
 				 			let dDay   = localStorage.getItem("dDay-"+moment().format('DD-MM-YYYY'));
 				 			let sNames = localStorage.getItem("salats_names");
 				 			if(!dDay){
-				 					console.log("!dDay")
 				 					this.clearStorage();
 				 					this.setUPdDay();
 				 			}
@@ -33,17 +32,14 @@ export function Helper() {
 					}
 			},
 			setUPdDay: function() {
-							console.log("`LOG TRACE` : dDay for day "+ moment().format('DD-MM-YYYY') +" `NOT FOUND` in local storage");
 							let config = {
 								method: this.ReadOrWrite('method', "MWL"),
 								core: this.ReadOrWrite("core", {coords: [localStorage.getItem("lat"), localStorage.getItem("long")], timezone:"auto", dst:"auto", format:"24h"})
 							};
-							console.log("config",config)
 							const salat = new PrayTimes();
 							salat.setMethod(config.method);
 							let dd = salat.getTimes(new Date(), config.core.coords, config.core.timezone, config.core.dst, config.core.format);
 							localStorage.setItem('dDay-'+moment().format('DD-MM-YYYY'), JSON.stringify(dd));
-			 				console.log(dd);
 			 				return dd;
 			},
 			dDay: function(){
@@ -55,9 +51,7 @@ export function Helper() {
 								return JSON.parse(localStorage.getItem("salats_names"));
 			},
 			ReadOrWrite: function(key, data){
-				console.log("RorW", key, data)
 				if(!localStorage.getItem(key)){
-					console.log("LOG TRACE : NextSalat@ReadOrWrite : not found in storage : key :", key)
 					let pD = JSON.stringify(data);
 					localStorage.setItem(key, pD);
 					return JSON.parse(pD);
@@ -112,13 +106,9 @@ export function Helper() {
 							date: moment(newdate).format("DD-MM-YYYY"),
 						}]);
 					}
-					console.log("FULL WEEK : ", arr);
 					return arr;
 			},
 			getValid: function  (a,b) {
-			console.log("GETVALID");
-			console.log("a : ",a);
-			console.log("b : ",b);
 						if (a || a===0) {
 							return a;
 						} else {
