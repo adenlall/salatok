@@ -2,17 +2,11 @@ function Policy() {
     return (
     	
     	<>
-	  <style
-		dangerouslySetInnerHTML={{
-		  __html:
-		    "\n   [data-custom-class='body'], [data-custom-class='body'] * {\n   background: transparent !important;\n   }\n   [data-custom-class='title'], [data-custom-class='title'] * {\n   font-family: Arial !important;\n   font-size: 26px !important;\n   color: #000000 !important;\n   }\n   [data-custom-class='subtitle'], [data-custom-class='subtitle'] * {\n   font-family: Arial !important;\n   color: #595959 !important;\n   font-size: 14px !important;\n   }\n   [data-custom-class='heading_1'], [data-custom-class='heading_1'] * {\n   font-family: Arial !important;\n   font-size: 19px !important;\n   color: #000000 !important;\n   }\n   [data-custom-class='heading_2'], [data-custom-class='heading_2'] * {\n   font-family: Arial !important;\n   font-size: 17px !important;\n   color: #000000 !important;\n   }\n   [data-custom-class='body_text'], [data-custom-class='body_text'] * {\n   color: #595959 !important;\n   font-size: 14px !important;\n   font-family: Arial !important;\n   }\n   [data-custom-class='link'], [data-custom-class='link'] * {\n   color: #3030F1 !important;\n   font-size: 14px !important;\n   font-family: Arial !important;\n   word-break: break-word !important;\n   }\n"
-		}}
-	  />
-	  <div className="py-8" data-custom-class="body">
+	  <div className="py-8">
 		<div>
 		  <strong>
 		    <span style={{ fontSize: 26 }}>
-		      <span data-custom-class="title">
+		      <span className="title">
 		        <bdt className="block-component" />
 		        <bdt className="question">PRIVACY POLICY</bdt>
 		        <bdt className="statement-end-if-in-editor" />
@@ -27,7 +21,7 @@ function Policy() {
 		  <span style={{ color: "rgb(127, 127, 127)" }}>
 		    <strong>
 		      <span style={{ fontSize: 15 }}>
-		        <span data-custom-class="subtitle">
+		        <span className="subtitle">
 		          Last updated
 		          <bdt className="question">August 05, 2023</bdt>
 		        </span>
@@ -47,7 +41,7 @@ function Policy() {
 		<div style={{ lineHeight: "1.5" }}>
 		  <span style={{ color: "rgb(127, 127, 127)" }}>
 		    <span style={{ color: "rgb(89, 89, 89)", fontSize: 15 }}>
-		      <span data-custom-class="body_text">
+		      <span className="body_text">
 		        This privacy notice for
 		        <bdt className="question">
 		          adenDev Open organization
@@ -69,7 +63,7 @@ function Policy() {
 		        <strong>our</strong>"
 		        <bdt className="statement-end-if-in-editor" />
 		      </span>
-		      <span data-custom-class="body_text">
+		      <span className="body_text">
 		        ), describes how and why we might collect, store, use, and/or share
 		        (
 		        <bdt className="block-component" />"<strong>process</strong>"
@@ -83,9 +77,9 @@ function Policy() {
 		  </span>
 		  <span style={{ fontSize: 15 }}>
 		    <span style={{ color: "rgb(127, 127, 127)" }}>
-		      <span data-custom-class="body_text">
+		      <span className="body_text">
 		        <span style={{ color: "rgb(89, 89, 89)" }}>
-		          <span data-custom-class="body_text">
+		          <span className="body_text">
 		            <bdt className="block-component" />
 		          </span>
 		        </span>
@@ -97,14 +91,14 @@ function Policy() {
 		  <li style={{ lineHeight: "1.5" }}>
 		    <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
 		      <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		        <span data-custom-class="body_text">
+		        <span className="body_text">
 		          Visit our website
 		          <bdt className="block-component" />
 		          at
 		          <bdt className="question">salatok.vercel.app</bdt>
 		          <span style={{ fontSize: 15 }}>
 		            <span style={{ color: "rgb(89, 89, 89)" }}>
-		              <span data-custom-class="body_text">
+		              <span className="body_text">
 		                <span style={{ fontSize: 15 }}>
 		                  <span style={{ color: "rgb(89, 89, 89)" }}>
 		                    <bdt className="statement-end-if-in-editor">
@@ -126,9 +120,9 @@ function Policy() {
 		    <span style={{ fontSize: 15 }}>
 		      <span style={{ fontSize: 15 }}>
 		        <span style={{ color: "rgb(127, 127, 127)" }}>
-		          <span data-custom-class="body_text">
+		          <span className="body_text">
 		            <span style={{ color: "rgb(89, 89, 89)" }}>
-		              <span data-custom-class="body_text">
+		              <span className="body_text">
 		                <bdt className="block-component" />
 		              </span>
 		            </span>
@@ -140,9 +134,9 @@ function Policy() {
 		  <div style={{ lineHeight: "1.5" }}>
 		    <span style={{ fontSize: 15 }}>
 		      <span style={{ color: "rgb(127, 127, 127)" }}>
-		        <span data-custom-class="body_text">
+		        <span className="body_text">
 		          <span style={{ color: "rgb(89, 89, 89)" }}>
-		            <span data-custom-class="body_text">
+		            <span className="body_text">
 		              <bdt className="block-component" />
 		            </span>
 		          </span>
@@ -154,12 +148,12 @@ function Policy() {
 		    <li style={{ lineHeight: "1.5" }}>
 		      <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
 		        <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		          <span data-custom-class="body_text">
+		          <span className="body_text">
 		            Engage with us in other related ways, including any sales,
 		            marketing, or events
 		            <span style={{ fontSize: 15 }}>
 		              <span style={{ color: "rgb(89, 89, 89)" }}>
-		                <span data-custom-class="body_text">
+		                <span className="body_text">
 		                  <span style={{ fontSize: 15 }}>
 		                    <span style={{ color: "rgb(89, 89, 89)" }}>
 		                      <bdt className="statement-end-if-in-editor" />
@@ -176,7 +170,7 @@ function Policy() {
 		  <div style={{ lineHeight: "1.5" }}>
 		    <span style={{ fontSize: 15 }}>
 		      <span style={{ color: "rgb(127, 127, 127)" }}>
-		        <span data-custom-class="body_text">
+		        <span className="body_text">
 		          <strong>Questions or concerns? </strong>Reading this privacy
 		          notice will help you understand your privacy rights and choices.
 		          If you do not agree with our policies and practices, please do not
@@ -196,7 +190,7 @@ function Policy() {
 		  <div style={{ lineHeight: "1.5" }}>
 		    <strong>
 		      <span style={{ fontSize: 15 }}>
-		        <span data-custom-class="heading_1">SUMMARY OF KEY POINTS</span>
+		        <span className="heading_1">SUMMARY OF KEY POINTS</span>
 		      </span>
 		    </strong>
 		  </div>
@@ -205,7 +199,7 @@ function Policy() {
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <span style={{ fontSize: 15 }}>
-		      <span data-custom-class="body_text">
+		      <span className="body_text">
 		        <strong>
 		          <em>
 		            This summary provides key points from our privacy notice, but
@@ -215,9 +209,9 @@ function Policy() {
 		        </strong>
 		      </span>
 		    </span>
-		    <a data-custom-class="link" href="#toc">
+		    <a className="link" href="#toc">
 		      <span style={{ fontSize: 15 }}>
-		        <span data-custom-class="body_text">
+		        <span className="body_text">
 		          <strong>
 		            <em>table of contents</em>
 		          </strong>
@@ -225,7 +219,7 @@ function Policy() {
 		      </span>
 		    </a>
 		    <span style={{ fontSize: 15 }}>
-		      <span data-custom-class="body_text">
+		      <span className="body_text">
 		        <strong>
 		          <em> below to find the section you are looking for.</em>
 		        </strong>
@@ -237,7 +231,7 @@ function Policy() {
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <span style={{ fontSize: 15 }}>
-		      <span data-custom-class="body_text">
+		      <span className="body_text">
 		        <strong>What personal information do we process?</strong> When you
 		        visit, use, or navigate our Services, we may process personal
 		        information depending on how you interact with
@@ -248,21 +242,21 @@ function Policy() {
 		        features you use. Learn more about
 		      </span>
 		    </span>
-		    <a data-custom-class="link" href="#personalinfo">
+		    <a className="link" href="#personalinfo">
 		      <span style={{ fontSize: 15 }}>
-		        <span data-custom-class="body_text">
+		        <span className="body_text">
 		          personal information you disclose to us
 		        </span>
 		      </span>
 		    </a>
-		    <span data-custom-class="body_text">.</span>
+		    <span className="body_text">.</span>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <br />
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <span style={{ fontSize: 15 }}>
-		      <span data-custom-class="body_text">
+		      <span className="body_text">
 		        <strong>Do we process any sensitive personal information?</strong>
 		        <bdt className="block-component" />
 		        We do not process sensitive personal information.
@@ -275,7 +269,7 @@ function Policy() {
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <span style={{ fontSize: 15 }}>
-		      <span data-custom-class="body_text">
+		      <span className="body_text">
 		        <strong>Do we receive any information from third parties?</strong>
 		        <bdt className="block-component" />
 		        We do not receive any information from third parties.
@@ -288,7 +282,7 @@ function Policy() {
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <span style={{ fontSize: 15 }}>
-		      <span data-custom-class="body_text">
+		      <span className="body_text">
 		        <strong>How do we process your information?</strong> We process your
 		        information to provide, improve, and administer our Services,
 		        communicate with you, for security and fraud prevention, and to
@@ -297,21 +291,21 @@ function Policy() {
 		        have a valid legal reason to do so. Learn more about{" "}
 		      </span>
 		    </span>
-		    <a data-custom-class="link" href="#infouse">
+		    <a className="link" href="#infouse">
 		      <span style={{ fontSize: 15 }}>
-		        <span data-custom-class="body_text">
+		        <span className="body_text">
 		          how we process your information
 		        </span>
 		      </span>
 		    </a>
-		    <span data-custom-class="body_text">.</span>
+		    <span className="body_text">.</span>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <br />
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <span style={{ fontSize: 15 }}>
-		      <span data-custom-class="body_text">
+		      <span className="body_text">
 		        <strong>
 		          In what situations and with which
 		          <bdt className="block-component" />
@@ -322,15 +316,15 @@ function Policy() {
 		        third parties. Learn more about
 		      </span>
 		    </span>
-		    <a data-custom-class="link" href="#whoshare">
+		    <a className="link" href="#whoshare">
 		      <span style={{ fontSize: 15 }}>
-		        <span data-custom-class="body_text">
+		        <span className="body_text">
 		          when and with whom we share your personal information
 		        </span>
 		      </span>
 		    </a>
 		    <span style={{ fontSize: 15 }}>
-		      <span data-custom-class="body_text">
+		      <span className="body_text">
 		        .
 		        <bdt className="block-component" />
 		      </span>
@@ -341,44 +335,44 @@ function Policy() {
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <span style={{ fontSize: 15 }}>
-		      <span data-custom-class="body_text">
+		      <span className="body_text">
 		        <strong>What are your rights?</strong> Depending on where you are
 		        located geographically, the applicable privacy law may mean you have
 		        certain rights regarding your personal information. Learn more about{" "}
 		      </span>
 		    </span>
-		    <a data-custom-class="link" href="#privacyrights">
+		    <a className="link" href="#privacyrights">
 		      <span style={{ fontSize: 15 }}>
-		        <span data-custom-class="body_text">your privacy rights</span>
+		        <span className="body_text">your privacy rights</span>
 		      </span>
 		    </a>
-		    <span data-custom-class="body_text">.</span>
+		    <span className="body_text">.</span>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <br />
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <span style={{ fontSize: 15 }}>
-		      <span data-custom-class="body_text">
+		      <span className="body_text">
 		        <strong>How do you exercise your rights?</strong> The easiest way to
 		        exercise your rights is by
 		        <bdt className="block-component">submitting a </bdt>
 		      </span>
 		    </span>
 		    <a
-		      data-custom-class="link"
+		      className="link"
 		      href="https://app.termly.io/notify/3c0a2760-1e24-4885-be4b-2e4f552969b2"
 		      rel="noopener noreferrer"
 		      target="_blank"
 		    >
 		      <span style={{ fontSize: 15 }}>
-		        <span data-custom-class="body_text">
+		        <span className="body_text">
 		          data subject access request
 		        </span>
 		      </span>
 		    </a>
 		    <span style={{ fontSize: 15 }}>
-		      <span data-custom-class="body_text">
+		      <span className="body_text">
 		        <bdt className="block-component" />, or by contacting us. We will
 		        consider and act upon any request in accordance with applicable data
 		        protection laws.
@@ -390,7 +384,7 @@ function Policy() {
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <span style={{ fontSize: 15 }}>
-		      <span data-custom-class="body_text">
+		      <span className="body_text">
 		        Want to learn more about what
 		        <bdt className="block-component" />
 		        <bdt className="question">adenDev</bdt>
@@ -398,15 +392,15 @@ function Policy() {
 		        does with any information we collect?
 		      </span>
 		    </span>
-		    <a data-custom-class="link" href="#toc">
+		    <a className="link" href="#toc">
 		      <span style={{ fontSize: 15 }}>
-		        <span data-custom-class="body_text">
+		        <span className="body_text">
 		          Review the privacy notice in full
 		        </span>
 		      </span>
 		    </a>
 		    <span style={{ fontSize: 15 }}>
-		      <span data-custom-class="body_text">.</span>
+		      <span className="body_text">.</span>
 		    </span>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
@@ -420,7 +414,7 @@ function Policy() {
 		      <span style={{ color: "rgb(127, 127, 127)" }}>
 		        <span style={{ color: "rgb(0, 0, 0)" }}>
 		          <strong>
-		            <span data-custom-class="heading_1">TABLE OF CONTENTS</span>
+		            <span className="heading_1">TABLE OF CONTENTS</span>
 		          </strong>
 		        </span>
 		      </span>
@@ -431,7 +425,7 @@ function Policy() {
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <span style={{ fontSize: 15 }}>
-		      <a data-custom-class="link" href="#infocollect">
+		      <a className="link" href="#infocollect">
 		        <span style={{ color: "rgb(89, 89, 89)" }}>
 		          1. WHAT INFORMATION DO WE COLLECT?
 		        </span>
@@ -440,7 +434,7 @@ function Policy() {
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <span style={{ fontSize: 15 }}>
-		      <a data-custom-class="link" href="#infouse">
+		      <a className="link" href="#infouse">
 		        <span style={{ color: "rgb(89, 89, 89)" }}>
 		          2. HOW DO WE PROCESS YOUR INFORMATION?
 		          <bdt className="block-component" />
@@ -450,7 +444,7 @@ function Policy() {
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <span style={{ fontSize: 15 }}>
-		      <a data-custom-class="link" href="#legalbases">
+		      <a className="link" href="#legalbases">
 		        <span style={{ color: "rgb(89, 89, 89)" }}>
 		          3.{" "}
 		          <span style={{ fontSize: 15 }}>
@@ -467,21 +461,21 @@ function Policy() {
 		  <div style={{ lineHeight: "1.5" }}>
 		    <span style={{ fontSize: 15 }}>
 		      <span style={{ color: "rgb(89, 89, 89)" }}>
-		        <a data-custom-class="link" href="#whoshare">
+		        <a className="link" href="#whoshare">
 		          4. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?
 		        </a>
 		      </span>
-		      <span data-custom-class="body_text">
+		      <span className="body_text">
 		        <bdt className="block-component" />
 		      </span>
 		      <span style={{ color: "rgb(127, 127, 127)" }}>
 		        <span style={{ color: "rgb(89, 89, 89)" }}>
-		          <span data-custom-class="body_text">
+		          <span className="body_text">
 		            <span style={{ color: "rgb(89, 89, 89)" }}>
 		              <bdt className="block-component" />
 		            </span>
 		          </span>
-		          <span data-custom-class="body_text">
+		          <span className="body_text">
 		            <span style={{ color: "rgb(89, 89, 89)" }}>
 		              <span style={{ color: "rgb(89, 89, 89)" }}>
 		                <span style={{ color: "rgb(89, 89, 89)" }}>
@@ -497,14 +491,14 @@ function Policy() {
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <span style={{ fontSize: 15 }}>
-		      <a data-custom-class="link" href="#inforetain">
+		      <a className="link" href="#inforetain">
 		        <span style={{ color: "rgb(89, 89, 89)" }}>
 		          5. HOW LONG DO WE KEEP YOUR INFORMATION?
 		        </span>
 		      </a>
 		      <span style={{ color: "rgb(127, 127, 127)" }}>
 		        <span style={{ color: "rgb(89, 89, 89)" }}>
-		          <span data-custom-class="body_text">
+		          <span className="body_text">
 		            <span style={{ color: "rgb(89, 89, 89)" }}>
 		              <span style={{ color: "rgb(89, 89, 89)" }}>
 		                <bdt className="block-component" />
@@ -519,7 +513,7 @@ function Policy() {
 		  <div style={{ lineHeight: "1.5" }}>
 		    <span style={{ fontSize: 15 }}>
 		      <span style={{ color: "rgb(89, 89, 89)" }}>
-		        <a data-custom-class="link" href="#privacyrights">
+		        <a className="link" href="#privacyrights">
 		          6. WHAT ARE YOUR PRIVACY RIGHTS?
 		        </a>
 		      </span>
@@ -527,7 +521,7 @@ function Policy() {
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <span style={{ fontSize: 15 }}>
-		      <a data-custom-class="link" href="#DNT">
+		      <a className="link" href="#DNT">
 		        <span style={{ color: "rgb(89, 89, 89)" }}>
 		          7. CONTROLS FOR DO-NOT-TRACK FEATURES
 		        </span>
@@ -536,7 +530,7 @@ function Policy() {
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <span style={{ fontSize: 15 }}>
-		      <a data-custom-class="link" href="#caresidents">
+		      <a className="link" href="#caresidents">
 		        <span style={{ color: "rgb(89, 89, 89)" }}>
 		          8. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?
 		        </span>
@@ -544,13 +538,13 @@ function Policy() {
 		    </span>
 		    <bdt className="block-component">
 		      <span style={{ fontSize: 15 }}>
-		        <span data-custom-class="body_text" />
+		        <span className="body_text" />
 		      </span>
 		    </bdt>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <span style={{ fontSize: 15 }}>
-		      <a data-custom-class="link" href="#policyupdates">
+		      <a className="link" href="#policyupdates">
 		        <span style={{ color: "rgb(89, 89, 89)" }}>
 		          9. DO WE MAKE UPDATES TO THIS NOTICE?
 		        </span>
@@ -558,14 +552,14 @@ function Policy() {
 		    </span>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
-		    <a data-custom-class="link" href="#contact">
+		    <a className="link" href="#contact">
 		      <span style={{ color: "rgb(89, 89, 89)", fontSize: 15 }}>
 		        10. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?
 		      </span>
 		    </a>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
-		    <a data-custom-class="link" href="#request">
+		    <a className="link" href="#request">
 		      <span style={{ color: "rgb(89, 89, 89)" }}>
 		        11. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM
 		        YOU?
@@ -585,7 +579,7 @@ function Policy() {
 		          <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
 		            <span id="control" style={{ color: "rgb(0, 0, 0)" }}>
 		              <strong>
-		                <span data-custom-class="heading_1">
+		                <span className="heading_1">
 		                  1. WHAT INFORMATION DO WE COLLECT?
 		                </span>
 		              </strong>
@@ -599,7 +593,7 @@ function Policy() {
 		    <br />
 		  </div>
 		  <div id="personalinfo" style={{ lineHeight: "1.5" }}>
-		    <span data-custom-class="heading_2" style={{ color: "rgb(0, 0, 0)" }}>
+		    <span className="heading_2" style={{ color: "rgb(0, 0, 0)" }}>
 		      <span style={{ fontSize: 15 }}>
 		        <strong>Personal information you disclose to us</strong>
 		      </span>
@@ -612,10 +606,10 @@ function Policy() {
 		    <div style={{ lineHeight: "1.5" }}>
 		      <span style={{ color: "rgb(127, 127, 127)" }}>
 		        <span style={{ color: "rgb(89, 89, 89)", fontSize: 15 }}>
-		          <span data-custom-class="body_text">
+		          <span className="body_text">
 		            <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
 		              <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		                <span data-custom-class="body_text">
+		                <span className="body_text">
 		                  <strong>
 		                    <em>In Short:</em>
 		                  </strong>
@@ -623,10 +617,10 @@ function Policy() {
 		              </span>
 		            </span>
 		          </span>
-		          <span data-custom-class="body_text">
+		          <span className="body_text">
 		            <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
 		              <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		                <span data-custom-class="body_text">
+		                <span className="body_text">
 		                  <strong>
 		                    <em> </em>
 		                  </strong>
@@ -647,14 +641,14 @@ function Policy() {
 		  <div style={{ lineHeight: "1.5" }}>
 		    <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
 		      <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		        <span data-custom-class="body_text">
+		        <span className="body_text">
 		          We collect personal information that you voluntarily provide to us
 		          when you{" "}
 		          <span style={{ fontSize: 15 }}>
 		            <bdt className="block-component" />
 		          </span>
 		        </span>
-		        <span data-custom-class="body_text">
+		        <span className="body_text">
 		          express an interest in obtaining information about us or our
 		          products and Services, when you participate in activities on the
 		          Services, or otherwise when you contact us.
@@ -668,7 +662,7 @@ function Policy() {
 		  <div style={{ lineHeight: "1.5" }}>
 		    <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
 		      <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		        <span data-custom-class="body_text">
+		        <span className="body_text">
 		          <span style={{ fontSize: 15 }}>
 		            <bdt className="block-component" />
 		          </span>
@@ -678,7 +672,7 @@ function Policy() {
 		  </div>
 		  <div id="sensitiveinfo" style={{ lineHeight: "1.5" }}>
 		    <span style={{ fontSize: 15 }}>
-		      <span data-custom-class="body_text">
+		      <span className="body_text">
 		        <strong>Sensitive Information.</strong>
 		        <bdt className="block-component" />
 		        We do not process sensitive information.
@@ -690,15 +684,15 @@ function Policy() {
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <span style={{ fontSize: 15 }}>
-		      <span data-custom-class="body_text">
+		      <span className="body_text">
 		        <bdt className="else-block" />
 		      </span>
 		    </span>
 		    <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
 		      <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		        <span data-custom-class="body_text">
+		        <span className="body_text">
 		          <span style={{ fontSize: 15 }}>
-		            <span data-custom-class="body_text">
+		            <span className="body_text">
 		              <bdt className="block-component">
 		                <bdt className="block-component" />
 		              </bdt>
@@ -712,7 +706,7 @@ function Policy() {
 		  <div style={{ lineHeight: "1.5" }}>
 		    <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
 		      <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		        <span data-custom-class="body_text">
+		        <span className="body_text">
 		          All personal information that you provide to us must be true,
 		          complete, and accurate, and you must notify us of any changes to
 		          such personal information.
@@ -726,14 +720,14 @@ function Policy() {
 		  <div style={{ lineHeight: "1.5" }}>
 		    <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
 		      <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		        <span data-custom-class="body_text">
+		        <span className="body_text">
 		          <bdt className="block-component" />
 		        </span>
-		        <span data-custom-class="body_text">
+		        <span className="body_text">
 		          <span style={{ color: "rgb(89, 89, 89)", fontSize: 15 }}>
-		            <span data-custom-class="body_text">
+		            <span className="body_text">
 		              <span style={{ color: "rgb(89, 89, 89)", fontSize: 15 }}>
-		                <span data-custom-class="body_text">
+		                <span className="body_text">
 		                  <bdt className="statement-end-if-in-editor">
 		                    <bdt className="block-component" />
 		                  </bdt>
@@ -745,7 +739,7 @@ function Policy() {
 		      </span>
 		    </span>
 		    <span style={{ fontSize: 15 }}>
-		      <span data-custom-class="body_text">
+		      <span className="body_text">
 		        <bdt className="block-component" />
 		      </span>
 		    </span>
@@ -757,7 +751,7 @@ function Policy() {
 		          <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
 		            <span id="control" style={{ color: "rgb(0, 0, 0)" }}>
 		              <strong>
-		                <span data-custom-class="heading_1">
+		                <span className="heading_1">
 		                  2. HOW DO WE PROCESS YOUR INFORMATION?
 		                </span>
 		              </strong>
@@ -774,10 +768,10 @@ function Policy() {
 		    <div style={{ lineHeight: "1.5" }}>
 		      <span style={{ color: "rgb(127, 127, 127)" }}>
 		        <span style={{ color: "rgb(89, 89, 89)", fontSize: 15 }}>
-		          <span data-custom-class="body_text">
+		          <span className="body_text">
 		            <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
 		              <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		                <span data-custom-class="body_text">
+		                <span className="body_text">
 		                  <strong>
 		                    <em>In Short: </em>
 		                  </strong>
@@ -802,7 +796,7 @@ function Policy() {
 		  <div style={{ lineHeight: "1.5" }}>
 		    <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
 		      <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		        <span data-custom-class="body_text">
+		        <span className="body_text">
 		          <strong>
 		            We process your personal information for a variety of reasons,
 		            depending on how you interact with our Services, including:
@@ -814,7 +808,7 @@ function Policy() {
 		    <div style={{ lineHeight: "1.5" }}>
 		      <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
 		        <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		          <span data-custom-class="body_text">
+		          <span className="body_text">
 		            <bdt className="block-component" />
 		          </span>
 		        </span>
@@ -822,7 +816,7 @@ function Policy() {
 		      <div style={{ lineHeight: "1.5" }}>
 		        <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
 		          <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		            <span data-custom-class="body_text">
+		            <span className="body_text">
 		              <bdt className="block-component" />
 		            </span>
 		          </span>
@@ -830,7 +824,7 @@ function Policy() {
 		        <div style={{ lineHeight: "1.5" }}>
 		          <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
 		            <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		              <span data-custom-class="body_text">
+		              <span className="body_text">
 		                <bdt className="block-component" />
 		              </span>
 		            </span>
@@ -838,7 +832,7 @@ function Policy() {
 		          <div style={{ lineHeight: "1.5" }}>
 		            <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
 		              <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		                <span data-custom-class="body_text">
+		                <span className="body_text">
 		                  <bdt className="block-component" />
 		                </span>
 		              </span>
@@ -858,7 +852,7 @@ function Policy() {
 		                  <div style={{ lineHeight: "1.5" }}>
 		                    <bdt className="block-component">
 		                      <span style={{ fontSize: 15 }}>
-		                        <span data-custom-class="body_text" />
+		                        <span className="body_text" />
 		                      </span>
 		                    </bdt>
 		                    <p style={{ fontSize: 15, lineHeight: "1.5" }}>
@@ -880,7 +874,7 @@ function Policy() {
 		                    <div style={{ lineHeight: "1.5" }}>
 		                      <bdt className="block-component">
 		                        <span style={{ fontSize: 15 }}>
-		                          <span data-custom-class="body_text" />
+		                          <span className="body_text" />
 		                        </span>
 		                      </bdt>
 		                      <div style={{ lineHeight: "1.5" }}>
@@ -894,49 +888,49 @@ function Policy() {
 		                          <div style={{ lineHeight: "1.5" }}>
 		                            <span style={{ fontSize: 15 }}>
 		                              <bdt className="block-component">
-		                                <span data-custom-class="body_text" />
+		                                <span className="body_text" />
 		                              </bdt>
 		                            </span>
 		                            <div style={{ lineHeight: "1.5" }}>
 		                              <bdt className="block-component">
 		                                <span style={{ fontSize: 15 }}>
-		                                  <span data-custom-class="body_text" />
+		                                  <span className="body_text" />
 		                                </span>
 		                              </bdt>
 		                              <div style={{ lineHeight: "1.5" }}>
 		                                <bdt className="block-component">
 		                                  <span style={{ fontSize: 15 }}>
-		                                    <span data-custom-class="body_text" />
+		                                    <span className="body_text" />
 		                                  </span>
 		                                </bdt>
 		                                <div style={{ lineHeight: "1.5" }}>
 		                                  <bdt className="block-component">
 		                                    <span style={{ fontSize: 15 }}>
-		                                      <span data-custom-class="body_text" />
+		                                      <span className="body_text" />
 		                                    </span>
 		                                  </bdt>
 		                                  <div style={{ lineHeight: "1.5" }}>
 		                                    <bdt className="block-component">
 		                                      <span style={{ fontSize: 15 }}>
-		                                        <span data-custom-class="body_text" />
+		                                        <span className="body_text" />
 		                                      </span>
 		                                    </bdt>
 		                                    <div style={{ lineHeight: "1.5" }}>
 		                                      <bdt className="block-component">
 		                                        <span style={{ fontSize: 15 }}>
-		                                          <span data-custom-class="body_text" />
+		                                          <span className="body_text" />
 		                                        </span>
 		                                      </bdt>
 		                                      <div style={{ lineHeight: "1.5" }}>
 		                                        <bdt className="block-component">
 		                                          <span style={{ fontSize: 15 }}>
-		                                            <span data-custom-class="body_text" />
+		                                            <span className="body_text" />
 		                                          </span>
 		                                        </bdt>
 		                                        <div style={{ lineHeight: "1.5" }}>
 		                                          <bdt className="block-component">
 		                                            <span style={{ fontSize: 15 }}>
-		                                              <span data-custom-class="body_text" />
+		                                              <span className="body_text" />
 		                                            </span>
 		                                          </bdt>
 		                                          <div
@@ -946,7 +940,7 @@ function Policy() {
 		                                              <span
 		                                                style={{ fontSize: 15 }}
 		                                              >
-		                                                <span data-custom-class="body_text" />
+		                                                <span className="body_text" />
 		                                              </span>
 		                                            </bdt>
 		                                            <div
@@ -956,7 +950,7 @@ function Policy() {
 		                                                <span
 		                                                  style={{ fontSize: 15 }}
 		                                                >
-		                                                  <span data-custom-class="body_text" />
+		                                                  <span className="body_text" />
 		                                                </span>
 		                                              </bdt>
 		                                              <div
@@ -968,7 +962,7 @@ function Policy() {
 		                                                  <span
 		                                                    style={{ fontSize: 15 }}
 		                                                  >
-		                                                    <span data-custom-class="body_text" />
+		                                                    <span className="body_text" />
 		                                                  </span>
 		                                                </bdt>
 		                                                <div
@@ -982,7 +976,7 @@ function Policy() {
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <span data-custom-class="body_text" />
+		                                                      <span className="body_text" />
 		                                                    </span>
 		                                                  </bdt>
 		                                                </div>
@@ -992,7 +986,7 @@ function Policy() {
 		                                                      lineHeight: "1.5"
 		                                                    }}
 		                                                  >
-		                                                    <span data-custom-class="body_text">
+		                                                    <span className="body_text">
 		                                                      <span
 		                                                        style={{
 		                                                          fontSize: 15
@@ -1018,7 +1012,7 @@ function Policy() {
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <span data-custom-class="body_text" />
+		                                                        <span className="body_text" />
 		                                                      </span>
 		                                                    </bdt>
 		                                                  </li>
@@ -1034,7 +1028,7 @@ function Policy() {
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <span data-custom-class="body_text" />
+		                                                      <span className="body_text" />
 		                                                    </span>
 		                                                  </bdt>
 		                                                  <bdt className="block-component">
@@ -1043,7 +1037,7 @@ function Policy() {
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <span data-custom-class="body_text" />
+		                                                      <span className="body_text" />
 		                                                    </span>
 		                                                  </bdt>
 		                                                  <bdt className="block-component">
@@ -1052,7 +1046,7 @@ function Policy() {
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <span data-custom-class="body_text" />
+		                                                      <span className="body_text" />
 		                                                    </span>
 		                                                  </bdt>
 		                                                  <bdt className="block-component">
@@ -1061,7 +1055,7 @@ function Policy() {
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <span data-custom-class="body_text" />
+		                                                      <span className="body_text" />
 		                                                    </span>
 		                                                  </bdt>
 		                                                </div>
@@ -1084,7 +1078,7 @@ function Policy() {
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <span data-custom-class="heading_1">
+		                                                      <span className="heading_1">
 		                                                        3. WHAT LEGAL BASES
 		                                                        DO WE RELY ON TO
 		                                                        PROCESS YOUR
@@ -1111,7 +1105,7 @@ function Policy() {
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <span data-custom-class="body_text">
+		                                                      <span className="body_text">
 		                                                        <strong>
 		                                                          In Short:{" "}
 		                                                        </strong>
@@ -1150,10 +1144,10 @@ function Policy() {
 		                                                  <span
 		                                                    style={{ fontSize: 15 }}
 		                                                  >
-		                                                    <span data-custom-class="body_text">
+		                                                    <span className="body_text">
 		                                                      <bdt className="block-component" />
 		                                                    </span>
-		                                                    <span data-custom-class="body_text">
+		                                                    <span className="body_text">
 		                                                      <bdt className="block-component" />
 		                                                    </span>
 		                                                  </span>
@@ -1176,7 +1170,7 @@ function Policy() {
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <span data-custom-class="body_text">
+		                                                      <span className="body_text">
 		                                                        <strong>
 		                                                          <u>
 		                                                            If you are
@@ -1192,7 +1186,7 @@ function Policy() {
 		                                                  <span
 		                                                    style={{ fontSize: 15 }}
 		                                                  >
-		                                                    <span data-custom-class="body_text">
+		                                                    <span className="body_text">
 		                                                      <bdt className="statement-end-if-in-editor" />
 		                                                    </span>
 		                                                  </span>
@@ -1212,7 +1206,7 @@ function Policy() {
 		                                                  <span
 		                                                    style={{ fontSize: 15 }}
 		                                                  >
-		                                                    <span data-custom-class="body_text">
+		                                                    <span className="body_text">
 		                                                      The General Data
 		                                                      Protection Regulation
 		                                                      (GDPR) and UK GDPR
@@ -1239,7 +1233,7 @@ function Policy() {
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <span data-custom-class="body_text">
+		                                                      <span className="body_text">
 		                                                        <strong>
 		                                                          Consent.{" "}
 		                                                        </strong>
@@ -1260,7 +1254,7 @@ function Policy() {
 		                                                      </span>
 		                                                    </span>
 		                                                    <a
-		                                                      data-custom-class="link"
+		                                                      className="link"
 		                                                      href="#withdrawconsent"
 		                                                    >
 		                                                      <span
@@ -1268,13 +1262,13 @@ function Policy() {
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <span data-custom-class="body_text">
+		                                                        <span className="body_text">
 		                                                          withdrawing your
 		                                                          consent
 		                                                        </span>
 		                                                      </span>
 		                                                    </a>
-		                                                    <span data-custom-class="body_text">
+		                                                    <span className="body_text">
 		                                                      .
 		                                                    </span>
 		                                                  </li>
@@ -1290,7 +1284,7 @@ function Policy() {
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <span data-custom-class="body_text" />
+		                                                      <span className="body_text" />
 		                                                    </span>
 		                                                  </bdt>
 		                                                  <div
@@ -1304,7 +1298,7 @@ function Policy() {
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <span data-custom-class="body_text" />
+		                                                        <span className="body_text" />
 		                                                      </span>
 		                                                    </bdt>
 		                                                    <bdt className="block-component">
@@ -1313,7 +1307,7 @@ function Policy() {
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <span data-custom-class="body_text" />
+		                                                        <span className="body_text" />
 		                                                      </span>
 		                                                    </bdt>
 		                                                  </div>
@@ -1323,7 +1317,7 @@ function Policy() {
 		                                                        lineHeight: "1.5"
 		                                                      }}
 		                                                    >
-		                                                      <span data-custom-class="body_text">
+		                                                      <span className="body_text">
 		                                                        <span
 		                                                          style={{
 		                                                            fontSize: 15
@@ -1370,7 +1364,7 @@ function Policy() {
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <span data-custom-class="body_text" />
+		                                                        <span className="body_text" />
 		                                                      </span>
 		                                                    </bdt>
 		                                                  </div>
@@ -1380,7 +1374,7 @@ function Policy() {
 		                                                        lineHeight: "1.5"
 		                                                      }}
 		                                                    >
-		                                                      <span data-custom-class="body_text">
+		                                                      <span className="body_text">
 		                                                        <span
 		                                                          style={{
 		                                                            fontSize: 15
@@ -1410,7 +1404,7 @@ function Policy() {
 		                                                            fontSize: 15
 		                                                          }}
 		                                                        >
-		                                                          <span data-custom-class="body_text" />
+		                                                          <span className="body_text" />
 		                                                        </span>
 		                                                      </bdt>
 		                                                    </li>
@@ -1426,10 +1420,10 @@ function Policy() {
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <span data-custom-class="body_text" />
+		                                                        <span className="body_text" />
 		                                                      </span>
 		                                                    </bdt>
-		                                                    <span data-custom-class="body_text">
+		                                                    <span className="body_text">
 		                                                      <span
 		                                                        style={{
 		                                                          fontSize: 15
@@ -1453,7 +1447,7 @@ function Policy() {
 		                                                      lineHeight: "1.5"
 		                                                    }}
 		                                                  >
-		                                                    <span data-custom-class="body_text">
+		                                                    <span className="body_text">
 		                                                      <span
 		                                                        style={{
 		                                                          fontSize: 15
@@ -1487,7 +1481,7 @@ function Policy() {
 		                                                      lineHeight: "1.5"
 		                                                    }}
 		                                                  >
-		                                                    <span data-custom-class="body_text">
+		                                                    <span className="body_text">
 		                                                      <span
 		                                                        style={{
 		                                                          fontSize: 15
@@ -1516,10 +1510,10 @@ function Policy() {
 		                                                      </span>
 		                                                    </span>
 		                                                    <a
-		                                                      data-custom-class="link"
+		                                                      className="link"
 		                                                      href="#withdrawconsent"
 		                                                    >
-		                                                      <span data-custom-class="body_text">
+		                                                      <span className="body_text">
 		                                                        <span
 		                                                          style={{
 		                                                            fontSize: 15
@@ -1530,7 +1524,7 @@ function Policy() {
 		                                                        </span>
 		                                                      </span>
 		                                                    </a>
-		                                                    <span data-custom-class="body_text">
+		                                                    <span className="body_text">
 		                                                      <span
 		                                                        style={{
 		                                                          fontSize: 15
@@ -1553,7 +1547,7 @@ function Policy() {
 		                                                      lineHeight: "1.5"
 		                                                    }}
 		                                                  >
-		                                                    <span data-custom-class="body_text">
+		                                                    <span className="body_text">
 		                                                      <span
 		                                                        style={{
 		                                                          fontSize: 15
@@ -1577,7 +1571,7 @@ function Policy() {
 		                                                        lineHeight: "1.5"
 		                                                      }}
 		                                                    >
-		                                                      <span data-custom-class="body_text">
+		                                                      <span className="body_text">
 		                                                        <span
 		                                                          style={{
 		                                                            fontSize: 15
@@ -1599,7 +1593,7 @@ function Policy() {
 		                                                      lineHeight: "1.5"
 		                                                    }}
 		                                                  >
-		                                                    <span data-custom-class="body_text">
+		                                                    <span className="body_text">
 		                                                      <span
 		                                                        style={{
 		                                                          fontSize: 15
@@ -1615,7 +1609,7 @@ function Policy() {
 		                                                        lineHeight: "1.5"
 		                                                      }}
 		                                                    >
-		                                                      <span data-custom-class="body_text">
+		                                                      <span className="body_text">
 		                                                        <span
 		                                                          style={{
 		                                                            fontSize: 15
@@ -1641,7 +1635,7 @@ function Policy() {
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <span data-custom-class="body_text" />
+		                                                        <span className="body_text" />
 		                                                      </span>
 		                                                    </bdt>
 		                                                  </div>
@@ -1651,7 +1645,7 @@ function Policy() {
 		                                                        lineHeight: "1.5"
 		                                                      }}
 		                                                    >
-		                                                      <span data-custom-class="body_text">
+		                                                      <span className="body_text">
 		                                                        <span
 		                                                          style={{
 		                                                            fontSize: 15
@@ -1669,7 +1663,7 @@ function Policy() {
 		                                                            fontSize: 15
 		                                                          }}
 		                                                        >
-		                                                          <span data-custom-class="body_text" />
+		                                                          <span className="body_text" />
 		                                                        </span>
 		                                                      </bdt>
 		                                                    </li>
@@ -1685,7 +1679,7 @@ function Policy() {
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <span data-custom-class="body_text" />
+		                                                        <span className="body_text" />
 		                                                      </span>
 		                                                    </bdt>
 		                                                  </div>
@@ -1695,7 +1689,7 @@ function Policy() {
 		                                                        lineHeight: "1.5"
 		                                                      }}
 		                                                    >
-		                                                      <span data-custom-class="body_text">
+		                                                      <span className="body_text">
 		                                                        <span
 		                                                          style={{
 		                                                            fontSize: 15
@@ -1717,7 +1711,7 @@ function Policy() {
 		                                                            fontSize: 15
 		                                                          }}
 		                                                        >
-		                                                          <span data-custom-class="body_text" />
+		                                                          <span className="body_text" />
 		                                                        </span>
 		                                                      </bdt>
 		                                                    </li>
@@ -1733,7 +1727,7 @@ function Policy() {
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <span data-custom-class="body_text" />
+		                                                        <span className="body_text" />
 		                                                      </span>
 		                                                    </bdt>
 		                                                  </div>
@@ -1743,7 +1737,7 @@ function Policy() {
 		                                                        lineHeight: "1.5"
 		                                                      }}
 		                                                    >
-		                                                      <span data-custom-class="body_text">
+		                                                      <span className="body_text">
 		                                                        <span
 		                                                          style={{
 		                                                            fontSize: 15
@@ -1762,7 +1756,7 @@ function Policy() {
 		                                                            fontSize: 15
 		                                                          }}
 		                                                        >
-		                                                          <span data-custom-class="body_text" />
+		                                                          <span className="body_text" />
 		                                                        </span>
 		                                                      </bdt>
 		                                                    </li>
@@ -1772,7 +1766,7 @@ function Policy() {
 		                                                      lineHeight: "1.5"
 		                                                    }}
 		                                                  >
-		                                                    <span data-custom-class="body_text">
+		                                                    <span className="body_text">
 		                                                      <span
 		                                                        style={{
 		                                                          fontSize: 15
@@ -1788,7 +1782,7 @@ function Policy() {
 		                                                        lineHeight: "1.5"
 		                                                      }}
 		                                                    >
-		                                                      <span data-custom-class="body_text">
+		                                                      <span className="body_text">
 		                                                        <span
 		                                                          style={{
 		                                                            fontSize: 15
@@ -1811,7 +1805,7 @@ function Policy() {
 		                                                      lineHeight: "1.5"
 		                                                    }}
 		                                                  >
-		                                                    <span data-custom-class="body_text">
+		                                                    <span className="body_text">
 		                                                      <span
 		                                                        style={{
 		                                                          fontSize: 15
@@ -1827,7 +1821,7 @@ function Policy() {
 		                                                        lineHeight: "1.5"
 		                                                      }}
 		                                                    >
-		                                                      <span data-custom-class="body_text">
+		                                                      <span className="body_text">
 		                                                        <span
 		                                                          style={{
 		                                                            fontSize: 15
@@ -1861,7 +1855,7 @@ function Policy() {
 		                                                      lineHeight: "1.5"
 		                                                    }}
 		                                                  >
-		                                                    <span data-custom-class="body_text">
+		                                                    <span className="body_text">
 		                                                      <span
 		                                                        style={{
 		                                                          fontSize: 15
@@ -1877,7 +1871,7 @@ function Policy() {
 		                                                        lineHeight: "1.5"
 		                                                      }}
 		                                                    >
-		                                                      <span data-custom-class="body_text">
+		                                                      <span className="body_text">
 		                                                        <span
 		                                                          style={{
 		                                                            fontSize: 15
@@ -1907,7 +1901,7 @@ function Policy() {
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <span data-custom-class="body_text" />
+		                                                        <span className="body_text" />
 		                                                      </span>
 		                                                    </bdt>
 		                                                  </div>
@@ -1922,7 +1916,7 @@ function Policy() {
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <span data-custom-class="body_text">
+		                                                        <span className="body_text">
 		                                                          If it was produced
 		                                                          by an individual
 		                                                          in the course of
@@ -1950,7 +1944,7 @@ function Policy() {
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <span data-custom-class="body_text">
+		                                                      <span className="body_text">
 		                                                        <bdt className="block-component" />
 		                                                      </span>
 		                                                    </span>
@@ -1966,7 +1960,7 @@ function Policy() {
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <span data-custom-class="body_text">
+		                                                        <span className="body_text">
 		                                                          If the collection
 		                                                          is solely for
 		                                                          journalistic,
@@ -1987,7 +1981,7 @@ function Policy() {
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <span data-custom-class="body_text">
+		                                                      <span className="body_text">
 		                                                        <bdt className="block-component" />
 		                                                      </span>
 		                                                    </span>
@@ -2003,7 +1997,7 @@ function Policy() {
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <span data-custom-class="body_text">
+		                                                        <span className="body_text">
 		                                                          If the information
 		                                                          is publicly
 		                                                          available and is
@@ -2011,7 +2005,7 @@ function Policy() {
 		                                                          regulations
 		                                                        </span>
 		                                                        <bdt className="statement-end-if-in-editor">
-		                                                          <span data-custom-class="body_text" />
+		                                                          <span className="body_text" />
 		                                                        </bdt>
 		                                                      </span>
 		                                                    </li>
@@ -2027,7 +2021,7 @@ function Policy() {
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <span data-custom-class="body_text" />
+		                                                        <span className="body_text" />
 		                                                      </span>
 		                                                    </bdt>
 		                                                    <bdt className="statement-end-if-in-editor">
@@ -2036,7 +2030,7 @@ function Policy() {
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <span data-custom-class="body_text" />
+		                                                        <span className="body_text" />
 		                                                      </span>
 		                                                    </bdt>
 		                                                  </div>
@@ -2088,7 +2082,7 @@ function Policy() {
 		                                                              }}
 		                                                            >
 		                                                              <strong>
-		                                                                <span data-custom-class="heading_1">
+		                                                                <span className="heading_1">
 		                                                                  4. WHEN
 		                                                                  AND WITH
 		                                                                  WHOM DO WE
@@ -2129,7 +2123,7 @@ function Policy() {
 		                                                            "rgb(89, 89, 89)"
 		                                                        }}
 		                                                      >
-		                                                        <span data-custom-class="body_text">
+		                                                        <span className="body_text">
 		                                                          <strong>
 		                                                            <em>
 		                                                              In Short:
@@ -2170,7 +2164,7 @@ function Policy() {
 		                                                            "rgb(89, 89, 89)"
 		                                                        }}
 		                                                      >
-		                                                        <span data-custom-class="body_text">
+		                                                        <span className="body_text">
 		                                                          <bdt className="block-component"></bdt>
 		                                                        </span>
 		                                                      </span>
@@ -2193,7 +2187,7 @@ function Policy() {
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <span data-custom-class="body_text">
+		                                                      <span className="body_text">
 		                                                        We{" "}
 		                                                        <bdt className="block-component" />
 		                                                        may need to share
@@ -2215,7 +2209,7 @@ function Policy() {
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <span data-custom-class="body_text">
+		                                                        <span className="body_text">
 		                                                          <strong>
 		                                                            Business
 		                                                            Transfers.
@@ -2247,7 +2241,7 @@ function Policy() {
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <span data-custom-class="body_text">
+		                                                      <span className="body_text">
 		                                                        <bdt className="block-component" />
 		                                                      </span>
 		                                                    </span>
@@ -2262,7 +2256,7 @@ function Policy() {
 		                                                        }}
 		                                                      >
 		                                                        <bdt className="block-component">
-		                                                          <span data-custom-class="body_text" />
+		                                                          <span className="body_text" />
 		                                                        </bdt>
 		                                                      </span>
 		                                                      <div
@@ -2276,7 +2270,7 @@ function Policy() {
 		                                                              fontSize: 15
 		                                                            }}
 		                                                          >
-		                                                            <span data-custom-class="body_text" />
+		                                                            <span className="body_text" />
 		                                                          </span>
 		                                                        </bdt>
 		                                                        <div
@@ -2291,7 +2285,7 @@ function Policy() {
 		                                                                fontSize: 15
 		                                                              }}
 		                                                            >
-		                                                              <span data-custom-class="body_text" />
+		                                                              <span className="body_text" />
 		                                                            </span>
 		                                                          </bdt>
 		                                                          <div
@@ -2306,7 +2300,7 @@ function Policy() {
 		                                                                  fontSize: 15
 		                                                                }}
 		                                                              >
-		                                                                <span data-custom-class="body_text" />
+		                                                                <span className="body_text" />
 		                                                              </span>
 		                                                            </bdt>
 		                                                            <div
@@ -2321,7 +2315,7 @@ function Policy() {
 		                                                                    fontSize: 15
 		                                                                  }}
 		                                                                >
-		                                                                  <span data-custom-class="body_text" />
+		                                                                  <span className="body_text" />
 		                                                                </span>
 		                                                              </bdt>
 		                                                              <span
@@ -2354,14 +2348,14 @@ function Policy() {
 		                                                                        }}
 		                                                                      >
 		                                                                        <bdt className="block-component">
-		                                                                          <span data-custom-class="heading_1" />
+		                                                                          <span className="heading_1" />
 		                                                                        </bdt>
 		                                                                      </span>
 		                                                                    </span>
 		                                                                  </span>
 		                                                                </span>
 		                                                              </span>
-		                                                              <span data-custom-class="body_text">
+		                                                              <span className="body_text">
 		                                                                <span
 		                                                                  style={{
 		                                                                    color:
@@ -2405,11 +2399,11 @@ function Policy() {
 		                                                                                  "rgb(89, 89, 89)"
 		                                                                              }}
 		                                                                            >
-		                                                                              <span data-custom-class="body_text">
+		                                                                              <span className="body_text">
 		                                                                                <bdt className="block-component" />
 		                                                                              </span>
 		                                                                              <bdt className="block-component">
-		                                                                                <span data-custom-class="body_text">
+		                                                                                <span className="body_text">
 		                                                                                  <bdt className="block-component" />
 		                                                                                </span>
 		                                                                              </bdt>
@@ -2472,7 +2466,7 @@ function Policy() {
 		                                                                        }}
 		                                                                      >
 		                                                                        <strong>
-		                                                                          <span data-custom-class="heading_1">
+		                                                                          <span className="heading_1">
 		                                                                            5.
 		                                                                            HOW
 		                                                                            LONG
@@ -2517,7 +2511,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span data-custom-class="body_text">
+		                                                                  <span className="body_text">
 		                                                                    <strong>
 		                                                                      <em>
 		                                                                        In
@@ -2582,7 +2576,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span data-custom-class="body_text">
+		                                                                  <span className="body_text">
 		                                                                    We will
 		                                                                    only
 		                                                                    keep
@@ -2647,7 +2641,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span data-custom-class="body_text">
+		                                                                  <span className="body_text">
 		                                                                    When we
 		                                                                    have no
 		                                                                    ongoing
@@ -2714,7 +2708,7 @@ function Policy() {
 		                                                                        fontSize: 15
 		                                                                      }}
 		                                                                    >
-		                                                                      <span data-custom-class="body_text">
+		                                                                      <span className="body_text">
 		                                                                        <bdt className="block-component" />
 		                                                                      </span>
 		                                                                    </span>
@@ -2772,7 +2766,7 @@ function Policy() {
 		                                                                        }}
 		                                                                      >
 		                                                                        <strong>
-		                                                                          <span data-custom-class="heading_1">
+		                                                                          <span className="heading_1">
 		                                                                            6.
 		                                                                            WHAT
 		                                                                            ARE
@@ -2815,7 +2809,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span data-custom-class="body_text">
+		                                                                  <span className="body_text">
 		                                                                    <strong>
 		                                                                      <em>
 		                                                                        In
@@ -2835,7 +2829,7 @@ function Policy() {
 		                                                                            fontSize: 15
 		                                                                          }}
 		                                                                        >
-		                                                                          <span data-custom-class="body_text">
+		                                                                          <span className="body_text">
 		                                                                            <em>
 		                                                                              <bdt className="block-component" />
 		                                                                            </em>
@@ -2884,7 +2878,7 @@ function Policy() {
 		                                                                            fontSize: 15
 		                                                                          }}
 		                                                                        >
-		                                                                          <span data-custom-class="body_text">
+		                                                                          <span className="body_text">
 		                                                                            <em>
 		                                                                              <bdt className="statement-end-if-in-editor" />
 		                                                                            </em>
@@ -2948,7 +2942,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span data-custom-class="body_text">
+		                                                                  <span className="body_text">
 		                                                                    In some
 		                                                                    regions
 		                                                                    (like{" "}
@@ -3031,7 +3025,7 @@ function Policy() {
 		                                                                </span>
 		                                                              </span>
 		                                                              <a
-		                                                                data-custom-class="link"
+		                                                                className="link"
 		                                                                href="#contact"
 		                                                              >
 		                                                                <span
@@ -3048,7 +3042,7 @@ function Policy() {
 		                                                                        "rgb(89, 89, 89)"
 		                                                                    }}
 		                                                                  >
-		                                                                    <span data-custom-class="body_text">
+		                                                                    <span className="body_text">
 		                                                                      HOW
 		                                                                      CAN
 		                                                                      YOU
@@ -3075,7 +3069,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span data-custom-class="body_text">
+		                                                                  <span className="body_text">
 		                                                                    <bdt className="block-component" />
 		                                                                    "
 		                                                                    <bdt className="statement-end-if-in-editor" />{" "}
@@ -3112,7 +3106,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span data-custom-class="body_text">
+		                                                                  <span className="body_text">
 		                                                                    We will
 		                                                                    consider
 		                                                                    and act
@@ -3126,7 +3120,7 @@ function Policy() {
 		                                                                    protection
 		                                                                    laws.
 		                                                                  </span>
-		                                                                  <span data-custom-class="body_text">
+		                                                                  <span className="body_text">
 		                                                                    <span
 		                                                                      style={{
 		                                                                        fontSize: 15
@@ -3138,7 +3132,7 @@ function Policy() {
 		                                                                            "rgb(89, 89, 89)"
 		                                                                        }}
 		                                                                      >
-		                                                                        <span data-custom-class="body_text">
+		                                                                        <span className="body_text">
 		                                                                          <span
 		                                                                            style={{
 		                                                                              color:
@@ -3196,7 +3190,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span data-custom-class="body_text">
+		                                                                  <span className="body_text">
 		                                                                    If you
 		                                                                    are
 		                                                                    located
@@ -3227,16 +3221,16 @@ function Policy() {
 		                                                                            "rgb(89, 89, 89)"
 		                                                                        }}
 		                                                                      >
-		                                                                        <span data-custom-class="body_text">
+		                                                                        <span className="body_text">
 		                                                                          <span
 		                                                                            style={{
 		                                                                              color:
 		                                                                                "rgb(48, 48, 241)"
 		                                                                            }}
 		                                                                          >
-		                                                                            <span data-custom-class="body_text">
+		                                                                            <span className="body_text">
 		                                                                              <a
-		                                                                                data-custom-class="link"
+		                                                                                className="link"
 		                                                                                href="https://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm"
 		                                                                                rel="noopener noreferrer"
 		                                                                                target="_blank"
@@ -3267,7 +3261,7 @@ function Policy() {
 		                                                                rel="noopener noreferrer"
 		                                                                target="_blank"
 		                                                              >
-		                                                                <span data-custom-class="link">
+		                                                                <span className="link">
 		                                                                  <span
 		                                                                    style={{
 		                                                                      fontSize: 15,
@@ -3282,7 +3276,7 @@ function Policy() {
 		                                                                          "rgb(89, 89, 89)"
 		                                                                      }}
 		                                                                    >
-		                                                                      <span data-custom-class="body_text">
+		                                                                      <span className="body_text">
 		                                                                        UK
 		                                                                        data
 		                                                                        protection
@@ -3306,7 +3300,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span data-custom-class="body_text">
+		                                                                  <span className="body_text">
 		                                                                    .
 		                                                                  </span>
 		                                                                </span>
@@ -3340,7 +3334,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span data-custom-class="body_text">
+		                                                                  <span className="body_text">
 		                                                                    If you
 		                                                                    are
 		                                                                    located
@@ -3360,21 +3354,21 @@ function Policy() {
 		                                                                            "rgb(89, 89, 89)"
 		                                                                        }}
 		                                                                      >
-		                                                                        <span data-custom-class="body_text">
+		                                                                        <span className="body_text">
 		                                                                          <span
 		                                                                            style={{
 		                                                                              color:
 		                                                                                "rgb(48, 48, 241)"
 		                                                                            }}
 		                                                                          >
-		                                                                            <span data-custom-class="body_text">
+		                                                                            <span className="body_text">
 		                                                                              <span
 		                                                                                style={{
 		                                                                                  fontSize: 15
 		                                                                                }}
 		                                                                              >
 		                                                                                <a
-		                                                                                  data-custom-class="link"
+		                                                                                  className="link"
 		                                                                                  href="https://www.edoeb.admin.ch/edoeb/en/home.html"
 		                                                                                  rel="noopener noreferrer"
 		                                                                                  target="_blank"
@@ -3426,7 +3420,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span data-custom-class="body_text">
+		                                                                  <span className="body_text">
 		                                                                    <strong>
 		                                                                      <u>
 		                                                                        Withdrawing
@@ -3486,7 +3480,7 @@ function Policy() {
 		                                                                </span>
 		                                                              </span>
 		                                                              <a
-		                                                                data-custom-class="link"
+		                                                                className="link"
 		                                                                href="#contact"
 		                                                              >
 		                                                                <span
@@ -3503,7 +3497,7 @@ function Policy() {
 		                                                                        "rgb(89, 89, 89)"
 		                                                                    }}
 		                                                                  >
-		                                                                    <span data-custom-class="body_text">
+		                                                                    <span className="body_text">
 		                                                                      HOW
 		                                                                      CAN
 		                                                                      YOU
@@ -3530,7 +3524,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span data-custom-class="body_text">
+		                                                                  <span className="body_text">
 		                                                                    <bdt className="block-component" />
 		                                                                    "
 		                                                                    <bdt className="statement-end-if-in-editor" />{" "}
@@ -3560,7 +3554,7 @@ function Policy() {
 		                                                                  fontSize: 15
 		                                                                }}
 		                                                              >
-		                                                                <span data-custom-class="body_text">
+		                                                                <span className="body_text">
 		                                                                  However,
 		                                                                  please
 		                                                                  note that
@@ -3602,7 +3596,7 @@ function Policy() {
 		                                                                    fontSize: 15
 		                                                                  }}
 		                                                                >
-		                                                                  <span data-custom-class="body_text" />
+		                                                                  <span className="body_text" />
 		                                                                </span>
 		                                                              </bdt>
 		                                                              <span
@@ -3619,7 +3613,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span data-custom-class="body_text">
+		                                                                  <span className="body_text">
 		                                                                    <span
 		                                                                      style={{
 		                                                                        fontSize: 15
@@ -3642,7 +3636,7 @@ function Policy() {
 		                                                                                "rgb(89, 89, 89)"
 		                                                                            }}
 		                                                                          >
-		                                                                            <span data-custom-class="body_text">
+		                                                                            <span className="body_text">
 		                                                                              <span
 		                                                                                style={{
 		                                                                                  fontSize: 15
@@ -3671,7 +3665,7 @@ function Policy() {
 		                                                                    fontSize: 15
 		                                                                  }}
 		                                                                >
-		                                                                  <span data-custom-class="body_text" />
+		                                                                  <span className="body_text" />
 		                                                                </span>
 		                                                              </bdt>
 		                                                            </div>
@@ -3689,7 +3683,7 @@ function Policy() {
 		                                                                  "1.5"
 		                                                              }}
 		                                                            >
-		                                                              <span data-custom-class="body_text">
+		                                                              <span className="body_text">
 		                                                                <span
 		                                                                  style={{
 		                                                                    fontSize: 15
@@ -3718,7 +3712,7 @@ function Policy() {
 		                                                                    fontSize: 15
 		                                                                  }}
 		                                                                >
-		                                                                  <span data-custom-class="body_text" />
+		                                                                  <span className="body_text" />
 		                                                                </span>
 		                                                              </bdt>
 		                                                            </div>
@@ -3772,7 +3766,7 @@ function Policy() {
 		                                                                        }}
 		                                                                      >
 		                                                                        <strong>
-		                                                                          <span data-custom-class="heading_1">
+		                                                                          <span className="heading_1">
 		                                                                            7.
 		                                                                            CONTROLS
 		                                                                            FOR
@@ -3814,7 +3808,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span data-custom-class="body_text">
+		                                                                  <span className="body_text">
 		                                                                    Most web
 		                                                                    browsers
 		                                                                    and some
@@ -3968,7 +3962,7 @@ function Policy() {
 		                                                                        }}
 		                                                                      >
 		                                                                        <strong>
-		                                                                          <span data-custom-class="heading_1">
+		                                                                          <span className="heading_1">
 		                                                                            8.
 		                                                                            DO
 		                                                                            CALIFORNIA
@@ -4013,7 +4007,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span data-custom-class="body_text">
+		                                                                  <span className="body_text">
 		                                                                    <strong>
 		                                                                      <em>
 		                                                                        In
@@ -4071,7 +4065,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span data-custom-class="body_text">
+		                                                                  <span className="body_text">
 		                                                                    California
 		                                                                    Civil
 		                                                                    Code
@@ -4188,7 +4182,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span data-custom-class="body_text">
+		                                                                  <span className="body_text">
 		                                                                    If you
 		                                                                    are
 		                                                                    under 18
@@ -4279,7 +4273,7 @@ function Policy() {
 		                                                                        fontSize: 15
 		                                                                      }}
 		                                                                    >
-		                                                                      <span data-custom-class="body_text">
+		                                                                      <span className="body_text">
 		                                                                        <bdt className="block-component" />
 		                                                                      </span>
 		                                                                    </span>
@@ -4344,7 +4338,7 @@ function Policy() {
 		                                                                        }}
 		                                                                      >
 		                                                                        <strong>
-		                                                                          <span data-custom-class="heading_1">
+		                                                                          <span className="heading_1">
 		                                                                            9.
 		                                                                            DO
 		                                                                            WE
@@ -4389,7 +4383,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span data-custom-class="body_text">
+		                                                                  <span className="body_text">
 		                                                                    <em>
 		                                                                      <strong>
 		                                                                        In
@@ -4442,7 +4436,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span data-custom-class="body_text">
+		                                                                  <span className="body_text">
 		                                                                    We may
 		                                                                    update
 		                                                                    this
@@ -4561,7 +4555,7 @@ function Policy() {
 		                                                                        }}
 		                                                                      >
 		                                                                        <strong>
-		                                                                          <span data-custom-class="heading_1">
+		                                                                          <span className="heading_1">
 		                                                                            10.
 		                                                                            HOW
 		                                                                            CAN
@@ -4607,7 +4601,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span data-custom-class="body_text">
+		                                                                  <span className="body_text">
 		                                                                    If you
 		                                                                    have
 		                                                                    questions
@@ -4624,7 +4618,7 @@ function Policy() {
 		                                                                        fontSize: 15
 		                                                                      }}
 		                                                                    >
-		                                                                      <span data-custom-class="body_text">
+		                                                                      <span className="body_text">
 		                                                                        <bdt className="block-component" />
 		                                                                        email
 		                                                                        us
@@ -4649,7 +4643,7 @@ function Policy() {
 		                                                                            "rgb(89, 89, 89)"
 		                                                                        }}
 		                                                                      >
-		                                                                        <span data-custom-class="body_text">
+		                                                                        <span className="body_text">
 		                                                                          {" "}
 		                                                                          or
 		                                                                          contact
@@ -4692,7 +4686,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span data-custom-class="body_text">
+		                                                                  <span className="body_text">
 		                                                                    <span
 		                                                                      style={{
 		                                                                        fontSize: 15
@@ -4710,7 +4704,7 @@ function Policy() {
 		                                                                              "rgb(89, 89, 89)"
 		                                                                          }}
 		                                                                        >
-		                                                                          <span data-custom-class="body_text">
+		                                                                          <span className="body_text">
 		                                                                            <bdt className="question">
 		                                                                              adenDev
 		                                                                              Open
@@ -4721,14 +4715,14 @@ function Policy() {
 		                                                                      </span>
 		                                                                    </span>
 		                                                                  </span>
-		                                                                  <span data-custom-class="body_text">
+		                                                                  <span className="body_text">
 		                                                                    <span
 		                                                                      style={{
 		                                                                        color:
 		                                                                          "rgb(89, 89, 89)"
 		                                                                      }}
 		                                                                    >
-		                                                                      <span data-custom-class="body_text">
+		                                                                      <span className="body_text">
 		                                                                        <bdt className="block-component" />
 		                                                                      </span>
 		                                                                    </span>
@@ -4747,7 +4741,7 @@ function Policy() {
 		                                                                  fontSize: 15
 		                                                                }}
 		                                                              >
-		                                                                <span data-custom-class="body_text">
+		                                                                <span className="body_text">
 		                                                                  <bdt className="question">
 		                                                                    __________
 		                                                                  </bdt>
@@ -4779,7 +4773,7 @@ function Policy() {
 		                                                                  fontSize: 15
 		                                                                }}
 		                                                              >
-		                                                                <span data-custom-class="body_text">
+		                                                                <span className="body_text">
 		                                                                  <bdt className="question">
 		                                                                    Casablanca
 		                                                                  </bdt>
@@ -4824,13 +4818,13 @@ function Policy() {
 		                                                                  fontSize: 15
 		                                                                }}
 		                                                              >
-		                                                                <span data-custom-class="body_text">
+		                                                                <span className="body_text">
 		                                                                  <span
 		                                                                    style={{
 		                                                                      fontSize: 15
 		                                                                    }}
 		                                                                  >
-		                                                                    <span data-custom-class="body_text">
+		                                                                    <span className="body_text">
 		                                                                      <span
 		                                                                        style={{
 		                                                                          color:
@@ -4849,7 +4843,7 @@ function Policy() {
 		                                                                      fontSize: 15
 		                                                                    }}
 		                                                                  >
-		                                                                    <span data-custom-class="body_text">
+		                                                                    <span className="body_text">
 		                                                                      <span
 		                                                                        style={{
 		                                                                          color:
@@ -4862,7 +4856,7 @@ function Policy() {
 		                                                                              fontSize: 15
 		                                                                            }}
 		                                                                          >
-		                                                                            <span data-custom-class="body_text">
+		                                                                            <span className="body_text">
 		                                                                              <span
 		                                                                                style={{
 		                                                                                  color:
@@ -4875,7 +4869,7 @@ function Policy() {
 		                                                                                      fontSize: 15
 		                                                                                    }}
 		                                                                                  >
-		                                                                                    <span data-custom-class="body_text">
+		                                                                                    <span className="body_text">
 		                                                                                      <span
 		                                                                                        style={{
 		                                                                                          color:
@@ -4891,7 +4885,7 @@ function Policy() {
 		                                                                              </span>
 		                                                                            </span>
 		                                                                          </span>
-		                                                                          <span data-custom-class="body_text">
+		                                                                          <span className="body_text">
 		                                                                            <span
 		                                                                              style={{
 		                                                                                color:
@@ -4912,13 +4906,13 @@ function Policy() {
 		                                                                    </span>
 		                                                                  </span>
 		                                                                </span>
-		                                                                <span data-custom-class="body_text">
+		                                                                <span className="body_text">
 		                                                                  <span
 		                                                                    style={{
 		                                                                      fontSize: 15
 		                                                                    }}
 		                                                                  >
-		                                                                    <span data-custom-class="body_text">
+		                                                                    <span className="body_text">
 		                                                                      <span
 		                                                                        style={{
 		                                                                          color:
@@ -4937,7 +4931,7 @@ function Policy() {
 		                                                                                fontSize: 15
 		                                                                              }}
 		                                                                            >
-		                                                                              <span data-custom-class="body_text">
+		                                                                              <span className="body_text">
 		                                                                                <bdt className="block-component">
 		                                                                                  <bdt className="block-component" />
 		                                                                                </bdt>
@@ -4953,7 +4947,7 @@ function Policy() {
 		                                                                      fontSize: 15
 		                                                                    }}
 		                                                                  >
-		                                                                    <span data-custom-class="body_text">
+		                                                                    <span className="body_text">
 		                                                                      <span
 		                                                                        style={{
 		                                                                          color:
@@ -4966,7 +4960,7 @@ function Policy() {
 		                                                                            fontSize: 15
 		                                                                          }}
 		                                                                        >
-		                                                                          <span data-custom-class="body_text">
+		                                                                          <span className="body_text">
 		                                                                            <bdt className="statement-end-if-in-editor">
 		                                                                              <bdt className="block-component" />
 		                                                                            </bdt>
@@ -5028,7 +5022,7 @@ function Policy() {
 		                                                                        }}
 		                                                                      >
 		                                                                        <strong>
-		                                                                          <span data-custom-class="heading_1">
+		                                                                          <span className="heading_1">
 		                                                                            11.
 		                                                                            HOW
 		                                                                            CAN
@@ -5079,7 +5073,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span data-custom-class="body_text">
+		                                                                  <span className="body_text">
 		                                                                    <bdt className="block-component" />
 		                                                                    You have
 		                                                                    the
@@ -5122,14 +5116,14 @@ function Policy() {
 		                                                                        "rgb(48, 48, 241)"
 		                                                                    }}
 		                                                                  >
-		                                                                    <span data-custom-class="body_text">
+		                                                                    <span className="body_text">
 		                                                                      <span
 		                                                                        style={{
 		                                                                          fontSize: 15
 		                                                                        }}
 		                                                                      >
 		                                                                        <a
-		                                                                          data-custom-class="link"
+		                                                                          className="link"
 		                                                                          href="https://app.termly.io/notify/3c0a2760-1e24-4885-be4b-2e4f552969b2"
 		                                                                          rel="noopener noreferrer"
 		                                                                          target="_blank"
@@ -5143,11 +5137,11 @@ function Policy() {
 		                                                                    </span>
 		                                                                  </span>
 		                                                                  <bdt className="block-component">
-		                                                                    <span data-custom-class="body_text" />
+		                                                                    <span className="body_text" />
 		                                                                  </bdt>
 		                                                                </span>
 		                                                              </span>
-		                                                              <span data-custom-class="body_text">
+		                                                              <span className="body_text">
 		                                                                .
 		                                                              </span>
 		                                                            </div>
