@@ -152,7 +152,7 @@ function SelectByUser() {
 					<div className="flex flex-row items-end w-[87%] py-6 space-x-2">
 						<header className="text-2xl lg:text-4xl font-bold">Find your Location.</header>
 					</div>
-					<input onChange={()=>{hundelSearch()}} type="text" placeholder="Search with Nomination API" className="input input-bordered text-black input-primary w-full max-w-xs" />
+					<input onChange={hundelSearch} type="text" placeholder="Search with Nomination API" className="input input-bordered text-black input-primary w-full max-w-xs" />
 					<div className="max-h-[16em] my-10 w-full h-full overflow-scroll">
 						<div className="join join-vertical w-full">
 							{dataUI}
