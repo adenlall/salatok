@@ -5,7 +5,7 @@
  **anywhere anytime**
  
  - main instance : https://salatok.vercel.app ***using muslimsalat.com api***
- - beta instance : https://salatok-beta.vercel.app ***using praytimes.org library***
+ - beta instance : https://salatok-git-beta-adenlall.vercel.app ***using praytimes.org library***
 
 ## Hacking
 
