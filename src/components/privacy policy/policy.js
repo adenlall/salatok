@@ -5,32 +5,32 @@ function Policy() {
     return (
     	
     	<>
-	  <div className="py-8">
+	  <div className="px-8">
 		<div>
 		  <strong>
-		    <span style={{ fontSize: 26 }}>
-		      <span className="title">
+		    <p style={{ fontSize: 26 }}>
+		      <p className="title">
 		        <bdt className="block-component" />
 		        <bdt className="question">PRIVACY POLICY</bdt>
 		        <bdt className="statement-end-if-in-editor" />
-		      </span>
-		    </span>
+		      </p>
+		    </p>
 		  </strong>
 		</div>
 		<div>
 		  <br />
 		</div>
 		<div>
-		  <span style={{ color: "rgb(127, 127, 127)" }}>
+		  <p style={{ color: "rgb(127, 127, 127)" }}>
 		    <strong>
-		      <span style={{ fontSize: 15 }}>
-		        <span className="subtitle">
+		      <p style={{ fontSize: 15 }}>
+		        <p className="subtitle">
 		          Last updated
 		          <bdt className="question">August 05, 2023</bdt>
-		        </span>
-		      </span>
+		        </p>
+		      </p>
 		    </strong>
-		  </span>
+		  </p>
 		</div>
 		<div>
 		  <br />
@@ -42,9 +42,9 @@ function Policy() {
 		  <br />
 		</div>
 		<div style={{ lineHeight: "1.5" }}>
-		  <span style={{ color: "rgb(127, 127, 127)" }}>
-		    <span style={{ color: "rgb(89, 89, 89)", fontSize: 15 }}>
-		      <span className="body_text">
+		  <p style={{ color: "rgb(127, 127, 127)" }}>
+		    <p style={{ color: "rgb(89, 89, 89)", fontSize: 15 }}>
+		      <p className="body_text">
 		        This privacy notice for
 		        <bdt className="question">
 		          adenDev Open organization
@@ -65,8 +65,8 @@ function Policy() {
 		        ," "<strong>we</strong>," "<strong>us</strong>," or "
 		        <strong>our</strong>"
 		        <bdt className="statement-end-if-in-editor" />
-		      </span>
-		      <span className="body_text">
+		      </p>
+		      <p className="body_text">
 		        ), describes how and why we might collect, store, use, and/or share
 		        (
 		        <bdt className="block-component" />"<strong>process</strong>"
@@ -75,114 +75,114 @@ function Policy() {
 		        <bdt className="block-component" />"<strong>Services</strong>"
 		        <bdt className="statement-end-if-in-editor" />
 		        ), such as when you:
-		      </span>
-		    </span>
-		  </span>
-		  <span style={{ fontSize: 15 }}>
-		    <span style={{ color: "rgb(127, 127, 127)" }}>
-		      <span className="body_text">
-		        <span style={{ color: "rgb(89, 89, 89)" }}>
-		          <span className="body_text">
+		      </p>
+		    </p>
+		  </p>
+		  <p style={{ fontSize: 15 }}>
+		    <p style={{ color: "rgb(127, 127, 127)" }}>
+		      <p className="body_text">
+		        <p style={{ color: "rgb(89, 89, 89)" }}>
+		          <p className="body_text">
 		            <bdt className="block-component" />
-		          </span>
-		        </span>
-		      </span>
-		    </span>
-		  </span>
+		          </p>
+		        </p>
+		      </p>
+		    </p>
+		  </p>
 		</div>
 		<ul>
 		  <li style={{ lineHeight: "1.5" }}>
-		    <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		      <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		        <span className="body_text">
+		    <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
+		      <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
+		        <p className="body_text">
 		          Visit our website
 		          <bdt className="block-component" />
 		          at
 		          <bdt className="question">salatok.vercel.app</bdt>
-		          <span style={{ fontSize: 15 }}>
-		            <span style={{ color: "rgb(89, 89, 89)" }}>
-		              <span className="body_text">
-		                <span style={{ fontSize: 15 }}>
-		                  <span style={{ color: "rgb(89, 89, 89)" }}>
+		          <p style={{ fontSize: 15 }}>
+		            <p style={{ color: "rgb(89, 89, 89)" }}>
+		              <p className="body_text">
+		                <p style={{ fontSize: 15 }}>
+		                  <p style={{ color: "rgb(89, 89, 89)" }}>
 		                    <bdt className="statement-end-if-in-editor">
 		                      , or any website of ours that links to this privacy
 		                      notice
 		                    </bdt>
-		                  </span>
-		                </span>
-		              </span>
-		            </span>
-		          </span>
-		        </span>
-		      </span>
-		    </span>
+		                  </p>
+		                </p>
+		              </p>
+		            </p>
+		          </p>
+		        </p>
+		      </p>
+		    </p>
 		  </li>
 		</ul>
 		<div>
 		  <bdt className="block-component">
-		    <span style={{ fontSize: 15 }}>
-		      <span style={{ fontSize: 15 }}>
-		        <span style={{ color: "rgb(127, 127, 127)" }}>
-		          <span className="body_text">
-		            <span style={{ color: "rgb(89, 89, 89)" }}>
-		              <span className="body_text">
+		    <p style={{ fontSize: 15 }}>
+		      <p style={{ fontSize: 15 }}>
+		        <p style={{ color: "rgb(127, 127, 127)" }}>
+		          <p className="body_text">
+		            <p style={{ color: "rgb(89, 89, 89)" }}>
+		              <p className="body_text">
 		                <bdt className="block-component" />
-		              </span>
-		            </span>
-		          </span>
-		        </span>
-		      </span>
-		    </span>
+		              </p>
+		            </p>
+		          </p>
+		        </p>
+		      </p>
+		    </p>
 		  </bdt>
 		  <div style={{ lineHeight: "1.5" }}>
-		    <span style={{ fontSize: 15 }}>
-		      <span style={{ color: "rgb(127, 127, 127)" }}>
-		        <span className="body_text">
-		          <span style={{ color: "rgb(89, 89, 89)" }}>
-		            <span className="body_text">
+		    <p style={{ fontSize: 15 }}>
+		      <p style={{ color: "rgb(127, 127, 127)" }}>
+		        <p className="body_text">
+		          <p style={{ color: "rgb(89, 89, 89)" }}>
+		            <p className="body_text">
 		              <bdt className="block-component" />
-		            </span>
-		          </span>
-		        </span>
-		      </span>
-		    </span>
+		            </p>
+		          </p>
+		        </p>
+		      </p>
+		    </p>
 		  </div>
 		  <ul>
 		    <li style={{ lineHeight: "1.5" }}>
-		      <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		        <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		          <span className="body_text">
+		      <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
+		        <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
+		          <p className="body_text">
 		            Engage with us in other related ways, including any sales,
 		            marketing, or events
-		            <span style={{ fontSize: 15 }}>
-		              <span style={{ color: "rgb(89, 89, 89)" }}>
-		                <span className="body_text">
-		                  <span style={{ fontSize: 15 }}>
-		                    <span style={{ color: "rgb(89, 89, 89)" }}>
+		            <p style={{ fontSize: 15 }}>
+		              <p style={{ color: "rgb(89, 89, 89)" }}>
+		                <p className="body_text">
+		                  <p style={{ fontSize: 15 }}>
+		                    <p style={{ color: "rgb(89, 89, 89)" }}>
 		                      <bdt className="statement-end-if-in-editor" />
-		                    </span>
-		                  </span>
-		                </span>
-		              </span>
-		            </span>
-		          </span>
-		        </span>
-		      </span>
+		                    </p>
+		                  </p>
+		                </p>
+		              </p>
+		            </p>
+		          </p>
+		        </p>
+		      </p>
 		    </li>
 		  </ul>
 		  <div style={{ lineHeight: "1.5" }}>
-		    <span style={{ fontSize: 15 }}>
-		      <span style={{ color: "rgb(127, 127, 127)" }}>
-		        <span className="body_text">
+		    <p style={{ fontSize: 15 }}>
+		      <p style={{ color: "rgb(127, 127, 127)" }}>
+		        <p className="body_text">
 		          <strong>Questions or concerns? </strong>Reading this privacy
 		          notice will help you understand your privacy rights and choices.
 		          If you do not agree with our policies and practices, please do not
 		          use our Services. If you still have any questions or concerns,
 		          please contact us at
 		          <bdt className="question">adenlall@skiff.com</bdt>.
-		        </span>
-		      </span>
-		    </span>
+		        </p>
+		      </p>
+		    </p>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <br />
@@ -192,17 +192,17 @@ function Policy() {
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <strong>
-		      <span style={{ fontSize: 15 }}>
-		        <span className="heading_1">SUMMARY OF KEY POINTS</span>
-		      </span>
+		      <p style={{ fontSize: 15 }}>
+		        <p className="heading_1">SUMMARY OF KEY POINTS</p>
+		      </p>
 		    </strong>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <br />
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
-		    <span style={{ fontSize: 15 }}>
-		      <span className="body_text">
+		    <p style={{ fontSize: 15 }}>
+		      <p className="body_text">
 		        <strong>
 		          <em>
 		            This summary provides key points from our privacy notice, but
@@ -210,31 +210,31 @@ function Policy() {
 		            clicking the link following each key point or by using our{" "}
 		          </em>
 		        </strong>
-		      </span>
-		    </span>
+		      </p>
+		    </p>
 		    <a className="link" href="#toc">
-		      <span style={{ fontSize: 15 }}>
-		        <span className="body_text">
+		      <p style={{ fontSize: 15 }}>
+		        <p className="body_text">
 		          <strong>
 		            <em>table of contents</em>
 		          </strong>
-		        </span>
-		      </span>
+		        </p>
+		      </p>
 		    </a>
-		    <span style={{ fontSize: 15 }}>
-		      <span className="body_text">
+		    <p style={{ fontSize: 15 }}>
+		      <p className="body_text">
 		        <strong>
 		          <em> below to find the section you are looking for.</em>
 		        </strong>
-		      </span>
-		    </span>
+		      </p>
+		    </p>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <br />
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
-		    <span style={{ fontSize: 15 }}>
-		      <span className="body_text">
+		    <p style={{ fontSize: 15 }}>
+		      <p className="body_text">
 		        <strong>What personal information do we process?</strong> When you
 		        visit, use, or navigate our Services, we may process personal
 		        information depending on how you interact with
@@ -243,72 +243,72 @@ function Policy() {
 		        <bdt className="else-block" />
 		        and the Services, the choices you make, and the products and
 		        features you use. Learn more about
-		      </span>
-		    </span>
+		      </p>
+		    </p>
 		    <a className="link" href="#personalinfo">
-		      <span style={{ fontSize: 15 }}>
-		        <span className="body_text">
+		      <p style={{ fontSize: 15 }}>
+		        <p className="body_text">
 		          personal information you disclose to us
-		        </span>
-		      </span>
+		        </p>
+		      </p>
 		    </a>
-		    <span className="body_text">.</span>
+		    <p className="body_text">.</p>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <br />
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
-		    <span style={{ fontSize: 15 }}>
-		      <span className="body_text">
+		    <p style={{ fontSize: 15 }}>
+		      <p className="body_text">
 		        <strong>Do we process any sensitive personal information?</strong>
 		        <bdt className="block-component" />
 		        We do not process sensitive personal information.
 		        <bdt className="else-block" />
-		      </span>
-		    </span>
+		      </p>
+		    </p>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <br />
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
-		    <span style={{ fontSize: 15 }}>
-		      <span className="body_text">
+		    <p style={{ fontSize: 15 }}>
+		      <p className="body_text">
 		        <strong>Do we receive any information from third parties?</strong>
 		        <bdt className="block-component" />
 		        We do not receive any information from third parties.
 		        <bdt className="else-block" />
-		      </span>
-		    </span>
+		      </p>
+		    </p>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <br />
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
-		    <span style={{ fontSize: 15 }}>
-		      <span className="body_text">
+		    <p style={{ fontSize: 15 }}>
+		      <p className="body_text">
 		        <strong>How do we process your information?</strong> We process your
 		        information to provide, improve, and administer our Services,
 		        communicate with you, for security and fraud prevention, and to
 		        comply with law. We may also process your information for other
 		        purposes with your consent. We process your information only when we
 		        have a valid legal reason to do so. Learn more about{" "}
-		      </span>
-		    </span>
+		      </p>
+		    </p>
 		    <a className="link" href="#infouse">
-		      <span style={{ fontSize: 15 }}>
-		        <span className="body_text">
+		      <p style={{ fontSize: 15 }}>
+		        <p className="body_text">
 		          how we process your information
-		        </span>
-		      </span>
+		        </p>
+		      </p>
 		    </a>
-		    <span className="body_text">.</span>
+		    <p className="body_text">.</p>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <br />
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
-		    <span style={{ fontSize: 15 }}>
-		      <span className="body_text">
+		    <p style={{ fontSize: 15 }}>
+		      <p className="body_text">
 		        <strong>
 		          In what situations and with which
 		          <bdt className="block-component" />
@@ -317,94 +317,94 @@ function Policy() {
 		        We may share information in specific situations and with specific
 		        <bdt className="block-component" />
 		        third parties. Learn more about
-		      </span>
-		    </span>
+		      </p>
+		    </p>
 		    <a className="link" href="#whoshare">
-		      <span style={{ fontSize: 15 }}>
-		        <span className="body_text">
+		      <p style={{ fontSize: 15 }}>
+		        <p className="body_text">
 		          when and with whom we share your personal information
-		        </span>
-		      </span>
+		        </p>
+		      </p>
 		    </a>
-		    <span style={{ fontSize: 15 }}>
-		      <span className="body_text">
+		    <p style={{ fontSize: 15 }}>
+		      <p className="body_text">
 		        .
 		        <bdt className="block-component" />
-		      </span>
-		    </span>
+		      </p>
+		    </p>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <br />
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
-		    <span style={{ fontSize: 15 }}>
-		      <span className="body_text">
+		    <p style={{ fontSize: 15 }}>
+		      <p className="body_text">
 		        <strong>What are your rights?</strong> Depending on where you are
 		        located geographically, the applicable privacy law may mean you have
 		        certain rights regarding your personal information. Learn more about{" "}
-		      </span>
-		    </span>
+		      </p>
+		    </p>
 		    <a className="link" href="#privacyrights">
-		      <span style={{ fontSize: 15 }}>
-		        <span className="body_text">your privacy rights</span>
-		      </span>
+		      <p style={{ fontSize: 15 }}>
+		        <p className="body_text">your privacy rights</p>
+		      </p>
 		    </a>
-		    <span className="body_text">.</span>
+		    <p className="body_text">.</p>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <br />
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
-		    <span style={{ fontSize: 15 }}>
-		      <span className="body_text">
+		    <p style={{ fontSize: 15 }}>
+		      <p className="body_text">
 		        <strong>How do you exercise your rights?</strong> The easiest way to
 		        exercise your rights is by
 		        <bdt className="block-component">submitting a </bdt>
-		      </span>
-		    </span>
+		      </p>
+		    </p>
 		    <a
 		      className="link"
 		      href="https://app.termly.io/notify/3c0a2760-1e24-4885-be4b-2e4f552969b2"
 		      rel="noopener noreferrer"
 		      target="_blank"
 		    >
-		      <span style={{ fontSize: 15 }}>
-		        <span className="body_text">
+		      <p style={{ fontSize: 15 }}>
+		        <p className="body_text">
 		          data subject access request
-		        </span>
-		      </span>
+		        </p>
+		      </p>
 		    </a>
-		    <span style={{ fontSize: 15 }}>
-		      <span className="body_text">
+		    <p style={{ fontSize: 15 }}>
+		      <p className="body_text">
 		        <bdt className="block-component" />, or by contacting us. We will
 		        consider and act upon any request in accordance with applicable data
 		        protection laws.
-		      </span>
-		    </span>
+		      </p>
+		    </p>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <br />
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
-		    <span style={{ fontSize: 15 }}>
-		      <span className="body_text">
+		    <p style={{ fontSize: 15 }}>
+		      <p className="body_text">
 		        Want to learn more about what
 		        <bdt className="block-component" />
 		        <bdt className="question">adenDev</bdt>
 		        <bdt className="else-block" />
 		        does with any information we collect?
-		      </span>
-		    </span>
+		      </p>
+		    </p>
 		    <a className="link" href="#toc">
-		      <span style={{ fontSize: 15 }}>
-		        <span className="body_text">
+		      <p style={{ fontSize: 15 }}>
+		        <p className="body_text">
 		          Review the privacy notice in full
-		        </span>
-		      </span>
+		        </p>
+		      </p>
 		    </a>
-		    <span style={{ fontSize: 15 }}>
-		      <span className="body_text">.</span>
-		    </span>
+		    <p style={{ fontSize: 15 }}>
+		      <p className="body_text">.</p>
+		    </p>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <br />
@@ -413,160 +413,160 @@ function Policy() {
 		    <br />
 		  </div>
 		  <div id="toc" style={{ lineHeight: "1.5" }}>
-		    <span style={{ fontSize: 15 }}>
-		      <span style={{ color: "rgb(127, 127, 127)" }}>
-		        <span style={{ color: "rgb(0, 0, 0)" }}>
+		    <p style={{ fontSize: 15 }}>
+		      <p style={{ color: "rgb(127, 127, 127)" }}>
+		        <p style={{ color: "rgb(0, 0, 0)" }}>
 		          <strong>
-		            <span className="heading_1">TABLE OF CONTENTS</span>
+		            <p className="heading_1">TABLE OF CONTENTS</p>
 		          </strong>
-		        </span>
-		      </span>
-		    </span>
+		        </p>
+		      </p>
+		    </p>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <br />
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
-		    <span style={{ fontSize: 15 }}>
+		    <p style={{ fontSize: 15 }}>
 		      <a className="link" href="#infocollect">
-		        <span style={{ color: "rgb(89, 89, 89)" }}>
+		        <p style={{ color: "rgb(89, 89, 89)" }}>
 		          1. WHAT INFORMATION DO WE COLLECT?
-		        </span>
+		        </p>
 		      </a>
-		    </span>
+		    </p>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
-		    <span style={{ fontSize: 15 }}>
+		    <p style={{ fontSize: 15 }}>
 		      <a className="link" href="#infouse">
-		        <span style={{ color: "rgb(89, 89, 89)" }}>
+		        <p style={{ color: "rgb(89, 89, 89)" }}>
 		          2. HOW DO WE PROCESS YOUR INFORMATION?
 		          <bdt className="block-component" />
-		        </span>
+		        </p>
 		      </a>
-		    </span>
+		    </p>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
-		    <span style={{ fontSize: 15 }}>
+		    <p style={{ fontSize: 15 }}>
 		      <a className="link" href="#legalbases">
-		        <span style={{ color: "rgb(89, 89, 89)" }}>
+		        <p style={{ color: "rgb(89, 89, 89)" }}>
 		          3.{" "}
-		          <span style={{ fontSize: 15 }}>
-		            <span style={{ color: "rgb(89, 89, 89)" }}>
+		          <p style={{ fontSize: 15 }}>
+		            <p style={{ color: "rgb(89, 89, 89)" }}>
 		              WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR PERSONAL
 		              INFORMATION?
-		            </span>
-		          </span>
+		            </p>
+		          </p>
 		          <bdt className="statement-end-if-in-editor" />
-		        </span>
+		        </p>
 		      </a>
-		    </span>
+		    </p>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
-		    <span style={{ fontSize: 15 }}>
-		      <span style={{ color: "rgb(89, 89, 89)" }}>
+		    <p style={{ fontSize: 15 }}>
+		      <p style={{ color: "rgb(89, 89, 89)" }}>
 		        <a className="link" href="#whoshare">
 		          4. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?
 		        </a>
-		      </span>
-		      <span className="body_text">
+		      </p>
+		      <p className="body_text">
 		        <bdt className="block-component" />
-		      </span>
-		      <span style={{ color: "rgb(127, 127, 127)" }}>
-		        <span style={{ color: "rgb(89, 89, 89)" }}>
-		          <span className="body_text">
-		            <span style={{ color: "rgb(89, 89, 89)" }}>
+		      </p>
+		      <p style={{ color: "rgb(127, 127, 127)" }}>
+		        <p style={{ color: "rgb(89, 89, 89)" }}>
+		          <p className="body_text">
+		            <p style={{ color: "rgb(89, 89, 89)" }}>
 		              <bdt className="block-component" />
-		            </span>
-		          </span>
-		          <span className="body_text">
-		            <span style={{ color: "rgb(89, 89, 89)" }}>
-		              <span style={{ color: "rgb(89, 89, 89)" }}>
-		                <span style={{ color: "rgb(89, 89, 89)" }}>
+		            </p>
+		          </p>
+		          <p className="body_text">
+		            <p style={{ color: "rgb(89, 89, 89)" }}>
+		              <p style={{ color: "rgb(89, 89, 89)" }}>
+		                <p style={{ color: "rgb(89, 89, 89)" }}>
 		                  <bdt className="block-component" />
-		                </span>
-		              </span>
+		                </p>
+		              </p>
 		              <bdt className="block-component" />
-		            </span>
-		          </span>
-		        </span>
-		      </span>
-		    </span>
+		            </p>
+		          </p>
+		        </p>
+		      </p>
+		    </p>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
-		    <span style={{ fontSize: 15 }}>
+		    <p style={{ fontSize: 15 }}>
 		      <a className="link" href="#inforetain">
-		        <span style={{ color: "rgb(89, 89, 89)" }}>
+		        <p style={{ color: "rgb(89, 89, 89)" }}>
 		          5. HOW LONG DO WE KEEP YOUR INFORMATION?
-		        </span>
+		        </p>
 		      </a>
-		      <span style={{ color: "rgb(127, 127, 127)" }}>
-		        <span style={{ color: "rgb(89, 89, 89)" }}>
-		          <span className="body_text">
-		            <span style={{ color: "rgb(89, 89, 89)" }}>
-		              <span style={{ color: "rgb(89, 89, 89)" }}>
+		      <p style={{ color: "rgb(127, 127, 127)" }}>
+		        <p style={{ color: "rgb(89, 89, 89)" }}>
+		          <p className="body_text">
+		            <p style={{ color: "rgb(89, 89, 89)" }}>
+		              <p style={{ color: "rgb(89, 89, 89)" }}>
 		                <bdt className="block-component" />
 		                <bdt className="block-component" />
-		              </span>
-		            </span>
-		          </span>
-		        </span>
-		      </span>
-		    </span>
+		              </p>
+		            </p>
+		          </p>
+		        </p>
+		      </p>
+		    </p>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
-		    <span style={{ fontSize: 15 }}>
-		      <span style={{ color: "rgb(89, 89, 89)" }}>
+		    <p style={{ fontSize: 15 }}>
+		      <p style={{ color: "rgb(89, 89, 89)" }}>
 		        <a className="link" href="#privacyrights">
 		          6. WHAT ARE YOUR PRIVACY RIGHTS?
 		        </a>
-		      </span>
-		    </span>
+		      </p>
+		    </p>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
-		    <span style={{ fontSize: 15 }}>
+		    <p style={{ fontSize: 15 }}>
 		      <a className="link" href="#DNT">
-		        <span style={{ color: "rgb(89, 89, 89)" }}>
+		        <p style={{ color: "rgb(89, 89, 89)" }}>
 		          7. CONTROLS FOR DO-NOT-TRACK FEATURES
-		        </span>
+		        </p>
 		      </a>
-		    </span>
+		    </p>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
-		    <span style={{ fontSize: 15 }}>
+		    <p style={{ fontSize: 15 }}>
 		      <a className="link" href="#caresidents">
-		        <span style={{ color: "rgb(89, 89, 89)" }}>
+		        <p style={{ color: "rgb(89, 89, 89)" }}>
 		          8. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?
-		        </span>
+		        </p>
 		      </a>
-		    </span>
+		    </p>
 		    <bdt className="block-component">
-		      <span style={{ fontSize: 15 }}>
-		        <span className="body_text" />
-		      </span>
+		      <p style={{ fontSize: 15 }}>
+		        <p className="body_text" />
+		      </p>
 		    </bdt>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
-		    <span style={{ fontSize: 15 }}>
+		    <p style={{ fontSize: 15 }}>
 		      <a className="link" href="#policyupdates">
-		        <span style={{ color: "rgb(89, 89, 89)" }}>
+		        <p style={{ color: "rgb(89, 89, 89)" }}>
 		          9. DO WE MAKE UPDATES TO THIS NOTICE?
-		        </span>
+		        </p>
 		      </a>
-		    </span>
+		    </p>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <a className="link" href="#contact">
-		      <span style={{ color: "rgb(89, 89, 89)", fontSize: 15 }}>
+		      <p style={{ color: "rgb(89, 89, 89)", fontSize: 15 }}>
 		        10. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?
-		      </span>
+		      </p>
 		    </a>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <a className="link" href="#request">
-		      <span style={{ color: "rgb(89, 89, 89)" }}>
+		      <p style={{ color: "rgb(89, 89, 89)" }}>
 		        11. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM
 		        YOU?
-		      </span>
+		      </p>
 		    </a>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
@@ -576,205 +576,205 @@ function Policy() {
 		    <br />
 		  </div>
 		  <div id="infocollect" style={{ lineHeight: "1.5" }}>
-		    <span style={{ color: "rgb(127, 127, 127)" }}>
-		      <span style={{ color: "rgb(89, 89, 89)", fontSize: 15 }}>
-		        <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		          <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		            <span id="control" style={{ color: "rgb(0, 0, 0)" }}>
+		    <p style={{ color: "rgb(127, 127, 127)" }}>
+		      <p style={{ color: "rgb(89, 89, 89)", fontSize: 15 }}>
+		        <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
+		          <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
+		            <p id="control" style={{ color: "rgb(0, 0, 0)" }}>
 		              <strong>
-		                <span className="heading_1">
+		                <p className="heading_1">
 		                  1. WHAT INFORMATION DO WE COLLECT?
-		                </span>
+		                </p>
 		              </strong>
-		            </span>
-		          </span>
-		        </span>
-		      </span>
-		    </span>
+		            </p>
+		          </p>
+		        </p>
+		      </p>
+		    </p>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <br />
 		  </div>
 		  <div id="personalinfo" style={{ lineHeight: "1.5" }}>
-		    <span className="heading_2" style={{ color: "rgb(0, 0, 0)" }}>
-		      <span style={{ fontSize: 15 }}>
+		    <p className="heading_2" style={{ color: "rgb(0, 0, 0)" }}>
+		      <p style={{ fontSize: 15 }}>
 		        <strong>Personal information you disclose to us</strong>
-		      </span>
-		    </span>
+		      </p>
+		    </p>
 		  </div>
 		  <div>
 		    <div>
 		      <br />
 		    </div>
 		    <div style={{ lineHeight: "1.5" }}>
-		      <span style={{ color: "rgb(127, 127, 127)" }}>
-		        <span style={{ color: "rgb(89, 89, 89)", fontSize: 15 }}>
-		          <span className="body_text">
-		            <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		              <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		                <span className="body_text">
+		      <p style={{ color: "rgb(127, 127, 127)" }}>
+		        <p style={{ color: "rgb(89, 89, 89)", fontSize: 15 }}>
+		          <p className="body_text">
+		            <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
+		              <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
+		                <p className="body_text">
 		                  <strong>
 		                    <em>In Short:</em>
 		                  </strong>
-		                </span>
-		              </span>
-		            </span>
-		          </span>
-		          <span className="body_text">
-		            <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		              <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		                <span className="body_text">
+		                </p>
+		              </p>
+		            </p>
+		          </p>
+		          <p className="body_text">
+		            <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
+		              <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
+		                <p className="body_text">
 		                  <strong>
 		                    <em> </em>
 		                  </strong>
 		                  <em>
 		                    We collect personal information that you provide to us.
 		                  </em>
-		                </span>
-		              </span>
-		            </span>
-		          </span>
-		        </span>
-		      </span>
+		                </p>
+		              </p>
+		            </p>
+		          </p>
+		        </p>
+		      </p>
 		    </div>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <br />
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
-		    <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		      <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		        <span className="body_text">
+		    <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
+		      <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
+		        <p className="body_text">
 		          We collect personal information that you voluntarily provide to us
 		          when you{" "}
-		          <span style={{ fontSize: 15 }}>
+		          <p style={{ fontSize: 15 }}>
 		            <bdt className="block-component" />
-		          </span>
-		        </span>
-		        <span className="body_text">
+		          </p>
+		        </p>
+		        <p className="body_text">
 		          express an interest in obtaining information about us or our
 		          products and Services, when you participate in activities on the
 		          Services, or otherwise when you contact us.
-		        </span>
-		      </span>
-		    </span>
+		        </p>
+		      </p>
+		    </p>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <br />
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
-		    <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		      <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		        <span className="body_text">
-		          <span style={{ fontSize: 15 }}>
+		    <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
+		      <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
+		        <p className="body_text">
+		          <p style={{ fontSize: 15 }}>
 		            <bdt className="block-component" />
-		          </span>
-		        </span>
-		      </span>
-		    </span>
+		          </p>
+		        </p>
+		      </p>
+		    </p>
 		  </div>
 		  <div id="sensitiveinfo" style={{ lineHeight: "1.5" }}>
-		    <span style={{ fontSize: 15 }}>
-		      <span className="body_text">
+		    <p style={{ fontSize: 15 }}>
+		      <p className="body_text">
 		        <strong>Sensitive Information.</strong>
 		        <bdt className="block-component" />
 		        We do not process sensitive information.
-		      </span>
-		    </span>
+		      </p>
+		    </p>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <br />
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
-		    <span style={{ fontSize: 15 }}>
-		      <span className="body_text">
+		    <p style={{ fontSize: 15 }}>
+		      <p className="body_text">
 		        <bdt className="else-block" />
-		      </span>
-		    </span>
-		    <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		      <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		        <span className="body_text">
-		          <span style={{ fontSize: 15 }}>
-		            <span className="body_text">
+		      </p>
+		    </p>
+		    <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
+		      <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
+		        <p className="body_text">
+		          <p style={{ fontSize: 15 }}>
+		            <p className="body_text">
 		              <bdt className="block-component">
 		                <bdt className="block-component" />
 		              </bdt>
-		            </span>
-		          </span>
-		        </span>
-		      </span>
+		            </p>
+		          </p>
+		        </p>
+		      </p>
 		      <bdt className="block-component"></bdt>
-		    </span>
+		    </p>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
-		    <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		      <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		        <span className="body_text">
+		    <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
+		      <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
+		        <p className="body_text">
 		          All personal information that you provide to us must be true,
 		          complete, and accurate, and you must notify us of any changes to
 		          such personal information.
-		        </span>
-		      </span>
-		    </span>
+		        </p>
+		      </p>
+		    </p>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <br />
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
-		    <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		      <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		        <span className="body_text">
+		    <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
+		      <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
+		        <p className="body_text">
 		          <bdt className="block-component" />
-		        </span>
-		        <span className="body_text">
-		          <span style={{ color: "rgb(89, 89, 89)", fontSize: 15 }}>
-		            <span className="body_text">
-		              <span style={{ color: "rgb(89, 89, 89)", fontSize: 15 }}>
-		                <span className="body_text">
+		        </p>
+		        <p className="body_text">
+		          <p style={{ color: "rgb(89, 89, 89)", fontSize: 15 }}>
+		            <p className="body_text">
+		              <p style={{ color: "rgb(89, 89, 89)", fontSize: 15 }}>
+		                <p className="body_text">
 		                  <bdt className="statement-end-if-in-editor">
 		                    <bdt className="block-component" />
 		                  </bdt>
-		                </span>
-		              </span>
-		            </span>
-		          </span>
-		        </span>
-		      </span>
-		    </span>
-		    <span style={{ fontSize: 15 }}>
-		      <span className="body_text">
+		                </p>
+		              </p>
+		            </p>
+		          </p>
+		        </p>
+		      </p>
+		    </p>
+		    <p style={{ fontSize: 15 }}>
+		      <p className="body_text">
 		        <bdt className="block-component" />
-		      </span>
-		    </span>
+		      </p>
+		    </p>
 		  </div>
 		  <div id="infouse" style={{ lineHeight: "1.5" }}>
-		    <span style={{ color: "rgb(127, 127, 127)" }}>
-		      <span style={{ color: "rgb(89, 89, 89)", fontSize: 15 }}>
-		        <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		          <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		            <span id="control" style={{ color: "rgb(0, 0, 0)" }}>
+		    <p style={{ color: "rgb(127, 127, 127)" }}>
+		      <p style={{ color: "rgb(89, 89, 89)", fontSize: 15 }}>
+		        <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
+		          <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
+		            <p id="control" style={{ color: "rgb(0, 0, 0)" }}>
 		              <strong>
-		                <span className="heading_1">
+		                <p className="heading_1">
 		                  2. HOW DO WE PROCESS YOUR INFORMATION?
-		                </span>
+		                </p>
 		              </strong>
-		            </span>
-		          </span>
-		        </span>
-		      </span>
-		    </span>
+		            </p>
+		          </p>
+		        </p>
+		      </p>
+		    </p>
 		  </div>
 		  <div>
 		    <div style={{ lineHeight: "1.5" }}>
 		      <br />
 		    </div>
 		    <div style={{ lineHeight: "1.5" }}>
-		      <span style={{ color: "rgb(127, 127, 127)" }}>
-		        <span style={{ color: "rgb(89, 89, 89)", fontSize: 15 }}>
-		          <span className="body_text">
-		            <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		              <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		                <span className="body_text">
+		      <p style={{ color: "rgb(127, 127, 127)" }}>
+		        <p style={{ color: "rgb(89, 89, 89)", fontSize: 15 }}>
+		          <p className="body_text">
+		            <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
+		              <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
+		                <p className="body_text">
 		                  <strong>
 		                    <em>In Short: </em>
 		                  </strong>
@@ -785,87 +785,87 @@ function Policy() {
 		                    We may also process your information for other purposes
 		                    with your consent.
 		                  </em>
-		                </span>
-		              </span>
-		            </span>
-		          </span>
-		        </span>
-		      </span>
+		                </p>
+		              </p>
+		            </p>
+		          </p>
+		        </p>
+		      </p>
 		    </div>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <br />
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
-		    <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		      <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		        <span className="body_text">
+		    <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
+		      <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
+		        <p className="body_text">
 		          <strong>
 		            We process your personal information for a variety of reasons,
 		            depending on how you interact with our Services, including:
 		          </strong>
 		          <bdt className="block-component" />
-		        </span>
-		      </span>
-		    </span>
+		        </p>
+		      </p>
+		    </p>
 		    <div style={{ lineHeight: "1.5" }}>
-		      <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		        <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		          <span className="body_text">
+		      <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
+		        <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
+		          <p className="body_text">
 		            <bdt className="block-component" />
-		          </span>
-		        </span>
-		      </span>
+		          </p>
+		        </p>
+		      </p>
 		      <div style={{ lineHeight: "1.5" }}>
-		        <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		          <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		            <span className="body_text">
+		        <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
+		          <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
+		            <p className="body_text">
 		              <bdt className="block-component" />
-		            </span>
-		          </span>
-		        </span>
+		            </p>
+		          </p>
+		        </p>
 		        <div style={{ lineHeight: "1.5" }}>
-		          <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		            <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		              <span className="body_text">
+		          <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
+		            <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
+		              <p className="body_text">
 		                <bdt className="block-component" />
-		              </span>
-		            </span>
-		          </span>
+		              </p>
+		            </p>
+		          </p>
 		          <div style={{ lineHeight: "1.5" }}>
-		            <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		              <span style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		                <span className="body_text">
+		            <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
+		              <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
+		                <p className="body_text">
 		                  <bdt className="block-component" />
-		                </span>
-		              </span>
-		            </span>
+		                </p>
+		              </p>
+		            </p>
 		            <div style={{ lineHeight: "1.5" }}>
 		              <bdt className="block-component">
-		                <span style={{ fontSize: 15 }} />
+		                <p style={{ fontSize: 15 }} />
 		              </bdt>
 		              <div style={{ lineHeight: "1.5" }}>
 		                <bdt className="block-component">
-		                  <span style={{ fontSize: 15 }} />
+		                  <p style={{ fontSize: 15 }} />
 		                </bdt>
 		                <div style={{ lineHeight: "1.5" }}>
 		                  <bdt className="block-component">
-		                    <span style={{ fontSize: 15 }} />
+		                    <p style={{ fontSize: 15 }} />
 		                  </bdt>
 		                  <div style={{ lineHeight: "1.5" }}>
 		                    <bdt className="block-component">
-		                      <span style={{ fontSize: 15 }}>
-		                        <span className="body_text" />
-		                      </span>
+		                      <p style={{ fontSize: 15 }}>
+		                        <p className="body_text" />
+		                      </p>
 		                    </bdt>
 		                    <p style={{ fontSize: 15, lineHeight: "1.5" }}>
 		                      <bdt className="block-component">
-		                        <span style={{ fontSize: 15 }} />
+		                        <p style={{ fontSize: 15 }} />
 		                      </bdt>
 		                    </p>
 		                    <p style={{ fontSize: 15, lineHeight: "1.5" }}>
 		                      <bdt className="block-component">
-		                        <span style={{ fontSize: 15 }} />
+		                        <p style={{ fontSize: 15 }} />
 		                      </bdt>
 		                    </p>
 		                    <p style={{ fontSize: 15, lineHeight: "1.5" }}>
@@ -876,85 +876,85 @@ function Policy() {
 		                    </p>
 		                    <div style={{ lineHeight: "1.5" }}>
 		                      <bdt className="block-component">
-		                        <span style={{ fontSize: 15 }}>
-		                          <span className="body_text" />
-		                        </span>
+		                        <p style={{ fontSize: 15 }}>
+		                          <p className="body_text" />
+		                        </p>
 		                      </bdt>
 		                      <div style={{ lineHeight: "1.5" }}>
 		                        <bdt className="block-component">
-		                          <span style={{ fontSize: 15 }} />
+		                          <p style={{ fontSize: 15 }} />
 		                        </bdt>
 		                        <div style={{ lineHeight: "1.5" }}>
 		                          <bdt className="block-component">
-		                            <span style={{ fontSize: 15 }} />
+		                            <p style={{ fontSize: 15 }} />
 		                          </bdt>
 		                          <div style={{ lineHeight: "1.5" }}>
-		                            <span style={{ fontSize: 15 }}>
+		                            <p style={{ fontSize: 15 }}>
 		                              <bdt className="block-component">
-		                                <span className="body_text" />
+		                                <p className="body_text" />
 		                              </bdt>
-		                            </span>
+		                            </p>
 		                            <div style={{ lineHeight: "1.5" }}>
 		                              <bdt className="block-component">
-		                                <span style={{ fontSize: 15 }}>
-		                                  <span className="body_text" />
-		                                </span>
+		                                <p style={{ fontSize: 15 }}>
+		                                  <p className="body_text" />
+		                                </p>
 		                              </bdt>
 		                              <div style={{ lineHeight: "1.5" }}>
 		                                <bdt className="block-component">
-		                                  <span style={{ fontSize: 15 }}>
-		                                    <span className="body_text" />
-		                                  </span>
+		                                  <p style={{ fontSize: 15 }}>
+		                                    <p className="body_text" />
+		                                  </p>
 		                                </bdt>
 		                                <div style={{ lineHeight: "1.5" }}>
 		                                  <bdt className="block-component">
-		                                    <span style={{ fontSize: 15 }}>
-		                                      <span className="body_text" />
-		                                    </span>
+		                                    <p style={{ fontSize: 15 }}>
+		                                      <p className="body_text" />
+		                                    </p>
 		                                  </bdt>
 		                                  <div style={{ lineHeight: "1.5" }}>
 		                                    <bdt className="block-component">
-		                                      <span style={{ fontSize: 15 }}>
-		                                        <span className="body_text" />
-		                                      </span>
+		                                      <p style={{ fontSize: 15 }}>
+		                                        <p className="body_text" />
+		                                      </p>
 		                                    </bdt>
 		                                    <div style={{ lineHeight: "1.5" }}>
 		                                      <bdt className="block-component">
-		                                        <span style={{ fontSize: 15 }}>
-		                                          <span className="body_text" />
-		                                        </span>
+		                                        <p style={{ fontSize: 15 }}>
+		                                          <p className="body_text" />
+		                                        </p>
 		                                      </bdt>
 		                                      <div style={{ lineHeight: "1.5" }}>
 		                                        <bdt className="block-component">
-		                                          <span style={{ fontSize: 15 }}>
-		                                            <span className="body_text" />
-		                                          </span>
+		                                          <p style={{ fontSize: 15 }}>
+		                                            <p className="body_text" />
+		                                          </p>
 		                                        </bdt>
 		                                        <div style={{ lineHeight: "1.5" }}>
 		                                          <bdt className="block-component">
-		                                            <span style={{ fontSize: 15 }}>
-		                                              <span className="body_text" />
-		                                            </span>
+		                                            <p style={{ fontSize: 15 }}>
+		                                              <p className="body_text" />
+		                                            </p>
 		                                          </bdt>
 		                                          <div
 		                                            style={{ lineHeight: "1.5" }}
 		                                          >
 		                                            <bdt className="block-component">
-		                                              <span
+		                                              <p
 		                                                style={{ fontSize: 15 }}
 		                                              >
-		                                                <span className="body_text" />
-		                                              </span>
+		                                                <p className="body_text" />
+		                                              </p>
 		                                            </bdt>
 		                                            <div
 		                                              style={{ lineHeight: "1.5" }}
 		                                            >
 		                                              <bdt className="block-component">
-		                                                <span
+		                                                <p
 		                                                  style={{ fontSize: 15 }}
 		                                                >
-		                                                  <span className="body_text" />
-		                                                </span>
+		                                                  <p className="body_text" />
+		                                                </p>
 		                                              </bdt>
 		                                              <div
 		                                                style={{
@@ -962,11 +962,11 @@ function Policy() {
 		                                                }}
 		                                              >
 		                                                <bdt className="block-component">
-		                                                  <span
+		                                                  <p
 		                                                    style={{ fontSize: 15 }}
 		                                                  >
-		                                                    <span className="body_text" />
-		                                                  </span>
+		                                                    <p className="body_text" />
+		                                                  </p>
 		                                                </bdt>
 		                                                <div
 		                                                  style={{
@@ -974,13 +974,13 @@ function Policy() {
 		                                                  }}
 		                                                >
 		                                                  <bdt className="block-component">
-		                                                    <span
+		                                                    <p
 		                                                      style={{
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <span className="body_text" />
-		                                                    </span>
+		                                                      <p className="body_text" />
+		                                                    </p>
 		                                                  </bdt>
 		                                                </div>
 		                                                <ul>
@@ -989,8 +989,8 @@ function Policy() {
 		                                                      lineHeight: "1.5"
 		                                                    }}
 		                                                  >
-		                                                    <span className="body_text">
-		                                                      <span
+		                                                    <p className="body_text">
+		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
 		                                                        }}
@@ -1007,16 +1007,16 @@ function Policy() {
 		                                                        individual’s vital
 		                                                        interest, such as to
 		                                                        prevent harm.
-		                                                      </span>
-		                                                    </span>
+		                                                      </p>
+		                                                    </p>
 		                                                    <bdt className="statement-end-if-in-editor">
-		                                                      <span
+		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <span className="body_text" />
-		                                                      </span>
+		                                                        <p className="body_text" />
+		                                                      </p>
 		                                                    </bdt>
 		                                                  </li>
 		                                                </ul>
@@ -1026,40 +1026,40 @@ function Policy() {
 		                                                  }}
 		                                                >
 		                                                  <bdt className="block-component">
-		                                                    <span
+		                                                    <p
 		                                                      style={{
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <span className="body_text" />
-		                                                    </span>
+		                                                      <p className="body_text" />
+		                                                    </p>
 		                                                  </bdt>
 		                                                  <bdt className="block-component">
-		                                                    <span
+		                                                    <p
 		                                                      style={{
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <span className="body_text" />
-		                                                    </span>
+		                                                      <p className="body_text" />
+		                                                    </p>
 		                                                  </bdt>
 		                                                  <bdt className="block-component">
-		                                                    <span
+		                                                    <p
 		                                                      style={{
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <span className="body_text" />
-		                                                    </span>
+		                                                      <p className="body_text" />
+		                                                    </p>
 		                                                  </bdt>
 		                                                  <bdt className="block-component">
-		                                                    <span
+		                                                    <p
 		                                                      style={{
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <span className="body_text" />
-		                                                    </span>
+		                                                      <p className="body_text" />
+		                                                    </p>
 		                                                  </bdt>
 		                                                </div>
 		                                                <div
@@ -1076,18 +1076,18 @@ function Policy() {
 		                                                  }}
 		                                                >
 		                                                  <strong>
-		                                                    <span
+		                                                    <p
 		                                                      style={{
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <span className="heading_1">
+		                                                      <p className="heading_1">
 		                                                        3. WHAT LEGAL BASES
 		                                                        DO WE RELY ON TO
 		                                                        PROCESS YOUR
 		                                                        INFORMATION?
-		                                                      </span>
-		                                                    </span>
+		                                                      </p>
+		                                                    </p>
 		                                                  </strong>
 		                                                </div>
 		                                                <div
@@ -1103,12 +1103,12 @@ function Policy() {
 		                                                  }}
 		                                                >
 		                                                  <em>
-		                                                    <span
+		                                                    <p
 		                                                      style={{
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <span className="body_text">
+		                                                      <p className="body_text">
 		                                                        <strong>
 		                                                          In Short:{" "}
 		                                                        </strong>
@@ -1141,19 +1141,19 @@ function Policy() {
 		                                                        <bdt className="statement-end-if-in-editor" />
 		                                                        our legitimate
 		                                                        business interests.
-		                                                      </span>
-		                                                    </span>
+		                                                      </p>
+		                                                    </p>
 		                                                  </em>
-		                                                  <span
+		                                                  <p
 		                                                    style={{ fontSize: 15 }}
 		                                                  >
-		                                                    <span className="body_text">
+		                                                    <p className="body_text">
 		                                                      <bdt className="block-component" />
-		                                                    </span>
-		                                                    <span className="body_text">
+		                                                    </p>
+		                                                    <p className="body_text">
 		                                                      <bdt className="block-component" />
-		                                                    </span>
-		                                                  </span>
+		                                                    </p>
+		                                                  </p>
 		                                                </div>
 		                                                <div
 		                                                  style={{
@@ -1168,12 +1168,12 @@ function Policy() {
 		                                                  }}
 		                                                >
 		                                                  <em>
-		                                                    <span
+		                                                    <p
 		                                                      style={{
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <span className="body_text">
+		                                                      <p className="body_text">
 		                                                        <strong>
 		                                                          <u>
 		                                                            If you are
@@ -1183,16 +1183,16 @@ function Policy() {
 		                                                            to you.
 		                                                          </u>
 		                                                        </strong>
-		                                                      </span>
-		                                                    </span>
+		                                                      </p>
+		                                                    </p>
 		                                                  </em>
-		                                                  <span
+		                                                  <p
 		                                                    style={{ fontSize: 15 }}
 		                                                  >
-		                                                    <span className="body_text">
+		                                                    <p className="body_text">
 		                                                      <bdt className="statement-end-if-in-editor" />
-		                                                    </span>
-		                                                  </span>
+		                                                    </p>
+		                                                  </p>
 		                                                </div>
 		                                                <div
 		                                                  style={{
@@ -1206,10 +1206,10 @@ function Policy() {
 		                                                    lineHeight: "1.5"
 		                                                  }}
 		                                                >
-		                                                  <span
+		                                                  <p
 		                                                    style={{ fontSize: 15 }}
 		                                                  >
-		                                                    <span className="body_text">
+		                                                    <p className="body_text">
 		                                                      The General Data
 		                                                      Protection Regulation
 		                                                      (GDPR) and UK GDPR
@@ -1222,8 +1222,8 @@ function Policy() {
 		                                                      following legal bases
 		                                                      to process your
 		                                                      personal information:
-		                                                    </span>
-		                                                  </span>
+		                                                    </p>
+		                                                  </p>
 		                                                </div>
 		                                                <ul>
 		                                                  <li
@@ -1231,12 +1231,12 @@ function Policy() {
 		                                                      lineHeight: "1.5"
 		                                                    }}
 		                                                  >
-		                                                    <span
+		                                                    <p
 		                                                      style={{
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <span className="body_text">
+		                                                      <p className="body_text">
 		                                                        <strong>
 		                                                          Consent.{" "}
 		                                                        </strong>
@@ -1254,26 +1254,26 @@ function Policy() {
 		                                                        withdraw your
 		                                                        consent at any time.
 		                                                        Learn more about
-		                                                      </span>
-		                                                    </span>
+		                                                      </p>
+		                                                    </p>
 		                                                    <a
 		                                                      className="link"
 		                                                      href="#withdrawconsent"
 		                                                    >
-		                                                      <span
+		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <span className="body_text">
+		                                                        <p className="body_text">
 		                                                          withdrawing your
 		                                                          consent
-		                                                        </span>
-		                                                      </span>
+		                                                        </p>
+		                                                      </p>
 		                                                    </a>
-		                                                    <span className="body_text">
+		                                                    <p className="body_text">
 		                                                      .
-		                                                    </span>
+		                                                    </p>
 		                                                  </li>
 		                                                </ul>
 		                                                <div
@@ -1282,13 +1282,13 @@ function Policy() {
 		                                                  }}
 		                                                >
 		                                                  <bdt className="block-component">
-		                                                    <span
+		                                                    <p
 		                                                      style={{
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <span className="body_text" />
-		                                                    </span>
+		                                                      <p className="body_text" />
+		                                                    </p>
 		                                                  </bdt>
 		                                                  <div
 		                                                    style={{
@@ -1296,22 +1296,22 @@ function Policy() {
 		                                                    }}
 		                                                  >
 		                                                    <bdt className="block-component">
-		                                                      <span
+		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <span className="body_text" />
-		                                                      </span>
+		                                                        <p className="body_text" />
+		                                                      </p>
 		                                                    </bdt>
 		                                                    <bdt className="block-component">
-		                                                      <span
+		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <span className="body_text" />
-		                                                      </span>
+		                                                        <p className="body_text" />
+		                                                      </p>
 		                                                    </bdt>
 		                                                  </div>
 		                                                  <ul>
@@ -1320,8 +1320,8 @@ function Policy() {
 		                                                        lineHeight: "1.5"
 		                                                      }}
 		                                                    >
-		                                                      <span className="body_text">
-		                                                        <span
+		                                                      <p className="body_text">
+		                                                        <p
 		                                                          style={{
 		                                                            fontSize: 15
 		                                                          }}
@@ -1352,8 +1352,8 @@ function Policy() {
 		                                                          involved.
 		                                                          <bdt className="statement-end-if-in-editor" />
 		                                                          <br />
-		                                                        </span>
-		                                                      </span>
+		                                                        </p>
+		                                                      </p>
 		                                                    </li>
 		                                                  </ul>
 		                                                  <div
@@ -1362,13 +1362,13 @@ function Policy() {
 		                                                    }}
 		                                                  >
 		                                                    <bdt className="block-component">
-		                                                      <span
+		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <span className="body_text" />
-		                                                      </span>
+		                                                        <p className="body_text" />
+		                                                      </p>
 		                                                    </bdt>
 		                                                  </div>
 		                                                  <ul>
@@ -1377,8 +1377,8 @@ function Policy() {
 		                                                        lineHeight: "1.5"
 		                                                      }}
 		                                                    >
-		                                                      <span className="body_text">
-		                                                        <span
+		                                                      <p className="body_text">
+		                                                        <p
 		                                                          style={{
 		                                                            fontSize: 15
 		                                                          }}
@@ -1399,16 +1399,16 @@ function Policy() {
 		                                                          potential threats
 		                                                          to the safety of
 		                                                          any person.
-		                                                        </span>
-		                                                      </span>
+		                                                        </p>
+		                                                      </p>
 		                                                      <bdt className="statement-end-if-in-editor">
-		                                                        <span
+		                                                        <p
 		                                                          style={{
 		                                                            fontSize: 15
 		                                                          }}
 		                                                        >
-		                                                          <span className="body_text" />
-		                                                        </span>
+		                                                          <p className="body_text" />
+		                                                        </p>
 		                                                      </bdt>
 		                                                    </li>
 		                                                  </ul>
@@ -1418,16 +1418,16 @@ function Policy() {
 		                                                    }}
 		                                                  >
 		                                                    <bdt className="block-component">
-		                                                      <span
+		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <span className="body_text" />
-		                                                      </span>
+		                                                        <p className="body_text" />
+		                                                      </p>
 		                                                    </bdt>
-		                                                    <span className="body_text">
-		                                                      <span
+		                                                    <p className="body_text">
+		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
 		                                                        }}
@@ -1435,8 +1435,8 @@ function Policy() {
 		                                                        <bdt className="block-component">
 		                                                          <bdt className="block-component" />
 		                                                        </bdt>
-		                                                      </span>
-		                                                    </span>
+		                                                      </p>
+		                                                    </p>
 		                                                  </div>
 		                                                  <div
 		                                                    style={{
@@ -1450,8 +1450,8 @@ function Policy() {
 		                                                      lineHeight: "1.5"
 		                                                    }}
 		                                                  >
-		                                                    <span className="body_text">
-		                                                      <span
+		                                                    <p className="body_text">
+		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
 		                                                        }}
@@ -1469,8 +1469,8 @@ function Policy() {
 		                                                          </u>
 		                                                        </strong>
 		                                                        <bdt className="statement-end-if-in-editor" />
-		                                                      </span>
-		                                                    </span>
+		                                                      </p>
+		                                                    </p>
 		                                                  </div>
 		                                                  <div
 		                                                    style={{
@@ -1484,8 +1484,8 @@ function Policy() {
 		                                                      lineHeight: "1.5"
 		                                                    }}
 		                                                  >
-		                                                    <span className="body_text">
-		                                                      <span
+		                                                    <p className="body_text">
+		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
 		                                                        }}
@@ -1510,33 +1510,33 @@ function Policy() {
 		                                                        <bdt className="statement-end-if-in-editor" />
 		                                                        implied consent).
 		                                                        You can
-		                                                      </span>
-		                                                    </span>
+		                                                      </p>
+		                                                    </p>
 		                                                    <a
 		                                                      className="link"
 		                                                      href="#withdrawconsent"
 		                                                    >
-		                                                      <span className="body_text">
-		                                                        <span
+		                                                      <p className="body_text">
+		                                                        <p
 		                                                          style={{
 		                                                            fontSize: 15
 		                                                          }}
 		                                                        >
 		                                                          withdraw your
 		                                                          consent
-		                                                        </span>
-		                                                      </span>
+		                                                        </p>
+		                                                      </p>
 		                                                    </a>
-		                                                    <span className="body_text">
-		                                                      <span
+		                                                    <p className="body_text">
+		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
 		                                                        {" "}
 		                                                        at any time.
-		                                                      </span>
-		                                                    </span>
+		                                                      </p>
+		                                                    </p>
 		                                                  </div>
 		                                                  <div
 		                                                    style={{
@@ -1550,8 +1550,8 @@ function Policy() {
 		                                                      lineHeight: "1.5"
 		                                                    }}
 		                                                  >
-		                                                    <span className="body_text">
-		                                                      <span
+		                                                    <p className="body_text">
+		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
 		                                                        }}
@@ -1565,8 +1565,8 @@ function Policy() {
 		                                                        your consent,
 		                                                        including, for
 		                                                        example:
-		                                                      </span>
-		                                                    </span>
+		                                                      </p>
+		                                                    </p>
 		                                                  </div>
 		                                                  <ul>
 		                                                    <li
@@ -1574,8 +1574,8 @@ function Policy() {
 		                                                        lineHeight: "1.5"
 		                                                      }}
 		                                                    >
-		                                                      <span className="body_text">
-		                                                        <span
+		                                                      <p className="body_text">
+		                                                        <p
 		                                                          style={{
 		                                                            fontSize: 15
 		                                                          }}
@@ -1587,8 +1587,8 @@ function Policy() {
 		                                                          consent cannot be
 		                                                          obtained in a
 		                                                          timely way
-		                                                        </span>
-		                                                      </span>
+		                                                        </p>
+		                                                      </p>
 		                                                    </li>
 		                                                  </ul>
 		                                                  <div
@@ -1596,15 +1596,15 @@ function Policy() {
 		                                                      lineHeight: "1.5"
 		                                                    }}
 		                                                  >
-		                                                    <span className="body_text">
-		                                                      <span
+		                                                    <p className="body_text">
+		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
 		                                                        <bdt className="block-component" />
-		                                                      </span>
-		                                                    </span>
+		                                                      </p>
+		                                                    </p>
 		                                                  </div>
 		                                                  <ul>
 		                                                    <li
@@ -1612,8 +1612,8 @@ function Policy() {
 		                                                        lineHeight: "1.5"
 		                                                      }}
 		                                                    >
-		                                                      <span className="body_text">
-		                                                        <span
+		                                                      <p className="body_text">
+		                                                        <p
 		                                                          style={{
 		                                                            fontSize: 15
 		                                                          }}
@@ -1623,8 +1623,8 @@ function Policy() {
 		                                                          detection and
 		                                                          prevention
 		                                                          <bdt className="statement-end-if-in-editor" />
-		                                                        </span>
-		                                                      </span>
+		                                                        </p>
+		                                                      </p>
 		                                                    </li>
 		                                                  </ul>
 		                                                  <div
@@ -1633,13 +1633,13 @@ function Policy() {
 		                                                    }}
 		                                                  >
 		                                                    <bdt className="block-component">
-		                                                      <span
+		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <span className="body_text" />
-		                                                      </span>
+		                                                        <p className="body_text" />
+		                                                      </p>
 		                                                    </bdt>
 		                                                  </div>
 		                                                  <ul>
@@ -1648,8 +1648,8 @@ function Policy() {
 		                                                        lineHeight: "1.5"
 		                                                      }}
 		                                                    >
-		                                                      <span className="body_text">
-		                                                        <span
+		                                                      <p className="body_text">
+		                                                        <p
 		                                                          style={{
 		                                                            fontSize: 15
 		                                                          }}
@@ -1658,16 +1658,16 @@ function Policy() {
 		                                                          transactions
 		                                                          provided certain
 		                                                          conditions are met
-		                                                        </span>
-		                                                      </span>
+		                                                        </p>
+		                                                      </p>
 		                                                      <bdt className="statement-end-if-in-editor">
-		                                                        <span
+		                                                        <p
 		                                                          style={{
 		                                                            fontSize: 15
 		                                                          }}
 		                                                        >
-		                                                          <span className="body_text" />
-		                                                        </span>
+		                                                          <p className="body_text" />
+		                                                        </p>
 		                                                      </bdt>
 		                                                    </li>
 		                                                  </ul>
@@ -1677,13 +1677,13 @@ function Policy() {
 		                                                    }}
 		                                                  >
 		                                                    <bdt className="block-component">
-		                                                      <span
+		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <span className="body_text" />
-		                                                      </span>
+		                                                        <p className="body_text" />
+		                                                      </p>
 		                                                    </bdt>
 		                                                  </div>
 		                                                  <ul>
@@ -1692,8 +1692,8 @@ function Policy() {
 		                                                        lineHeight: "1.5"
 		                                                      }}
 		                                                    >
-		                                                      <span className="body_text">
-		                                                        <span
+		                                                      <p className="body_text">
+		                                                        <p
 		                                                          style={{
 		                                                            fontSize: 15
 		                                                          }}
@@ -1706,16 +1706,16 @@ function Policy() {
 		                                                          assess, process,
 		                                                          or settle an
 		                                                          insurance claim
-		                                                        </span>
-		                                                      </span>
+		                                                        </p>
+		                                                      </p>
 		                                                      <bdt className="statement-end-if-in-editor">
-		                                                        <span
+		                                                        <p
 		                                                          style={{
 		                                                            fontSize: 15
 		                                                          }}
 		                                                        >
-		                                                          <span className="body_text" />
-		                                                        </span>
+		                                                          <p className="body_text" />
+		                                                        </p>
 		                                                      </bdt>
 		                                                    </li>
 		                                                  </ul>
@@ -1725,13 +1725,13 @@ function Policy() {
 		                                                    }}
 		                                                  >
 		                                                    <bdt className="block-component">
-		                                                      <span
+		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <span className="body_text" />
-		                                                      </span>
+		                                                        <p className="body_text" />
+		                                                      </p>
 		                                                    </bdt>
 		                                                  </div>
 		                                                  <ul>
@@ -1740,8 +1740,8 @@ function Policy() {
 		                                                        lineHeight: "1.5"
 		                                                      }}
 		                                                    >
-		                                                      <span className="body_text">
-		                                                        <span
+		                                                      <p className="body_text">
+		                                                        <p
 		                                                          style={{
 		                                                            fontSize: 15
 		                                                          }}
@@ -1751,16 +1751,16 @@ function Policy() {
 		                                                          deceased persons
 		                                                          and communicating
 		                                                          with next of kin
-		                                                        </span>
-		                                                      </span>
+		                                                        </p>
+		                                                      </p>
 		                                                      <bdt className="statement-end-if-in-editor">
-		                                                        <span
+		                                                        <p
 		                                                          style={{
 		                                                            fontSize: 15
 		                                                          }}
 		                                                        >
-		                                                          <span className="body_text" />
-		                                                        </span>
+		                                                          <p className="body_text" />
+		                                                        </p>
 		                                                      </bdt>
 		                                                    </li>
 		                                                  </ul>
@@ -1769,15 +1769,15 @@ function Policy() {
 		                                                      lineHeight: "1.5"
 		                                                    }}
 		                                                  >
-		                                                    <span className="body_text">
-		                                                      <span
+		                                                    <p className="body_text">
+		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
 		                                                        <bdt className="block-component" />
-		                                                      </span>
-		                                                    </span>
+		                                                      </p>
+		                                                    </p>
 		                                                  </div>
 		                                                  <ul>
 		                                                    <li
@@ -1785,8 +1785,8 @@ function Policy() {
 		                                                        lineHeight: "1.5"
 		                                                      }}
 		                                                    >
-		                                                      <span className="body_text">
-		                                                        <span
+		                                                      <p className="body_text">
+		                                                        <p
 		                                                          style={{
 		                                                            fontSize: 15
 		                                                          }}
@@ -1799,8 +1799,8 @@ function Policy() {
 		                                                          be victim of
 		                                                          financial abuse
 		                                                          <bdt className="statement-end-if-in-editor" />
-		                                                        </span>
-		                                                      </span>
+		                                                        </p>
+		                                                      </p>
 		                                                    </li>
 		                                                  </ul>
 		                                                  <div
@@ -1808,15 +1808,15 @@ function Policy() {
 		                                                      lineHeight: "1.5"
 		                                                    }}
 		                                                  >
-		                                                    <span className="body_text">
-		                                                      <span
+		                                                    <p className="body_text">
+		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
 		                                                        <bdt className="block-component" />
-		                                                      </span>
-		                                                    </span>
+		                                                      </p>
+		                                                    </p>
 		                                                  </div>
 		                                                  <ul>
 		                                                    <li
@@ -1824,8 +1824,8 @@ function Policy() {
 		                                                        lineHeight: "1.5"
 		                                                      }}
 		                                                    >
-		                                                      <span className="body_text">
-		                                                        <span
+		                                                      <p className="body_text">
+		                                                        <p
 		                                                          style={{
 		                                                            fontSize: 15
 		                                                          }}
@@ -1849,8 +1849,8 @@ function Policy() {
 		                                                          the laws of Canada
 		                                                          or a province
 		                                                          <bdt className="statement-end-if-in-editor" />
-		                                                        </span>
-		                                                      </span>
+		                                                        </p>
+		                                                      </p>
 		                                                    </li>
 		                                                  </ul>
 		                                                  <div
@@ -1858,15 +1858,15 @@ function Policy() {
 		                                                      lineHeight: "1.5"
 		                                                    }}
 		                                                  >
-		                                                    <span className="body_text">
-		                                                      <span
+		                                                    <p className="body_text">
+		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
 		                                                        <bdt className="block-component" />
-		                                                      </span>
-		                                                    </span>
+		                                                      </p>
+		                                                    </p>
 		                                                  </div>
 		                                                  <ul>
 		                                                    <li
@@ -1874,8 +1874,8 @@ function Policy() {
 		                                                        lineHeight: "1.5"
 		                                                      }}
 		                                                    >
-		                                                      <span className="body_text">
-		                                                        <span
+		                                                      <p className="body_text">
+		                                                        <p
 		                                                          style={{
 		                                                            fontSize: 15
 		                                                          }}
@@ -1889,8 +1889,8 @@ function Policy() {
 		                                                          to the production
 		                                                          of records
 		                                                          <bdt className="statement-end-if-in-editor" />
-		                                                        </span>
-		                                                      </span>
+		                                                        </p>
+		                                                      </p>
 		                                                    </li>
 		                                                  </ul>
 		                                                  <div
@@ -1899,13 +1899,13 @@ function Policy() {
 		                                                    }}
 		                                                  >
 		                                                    <bdt className="block-component">
-		                                                      <span
+		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <span className="body_text" />
-		                                                      </span>
+		                                                        <p className="body_text" />
+		                                                      </p>
 		                                                    </bdt>
 		                                                  </div>
 		                                                  <ul>
@@ -1914,12 +1914,12 @@ function Policy() {
 		                                                        lineHeight: "1.5"
 		                                                      }}
 		                                                    >
-		                                                      <span
+		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <span className="body_text">
+		                                                        <p className="body_text">
 		                                                          If it was produced
 		                                                          by an individual
 		                                                          in the course of
@@ -1933,8 +1933,8 @@ function Policy() {
 		                                                          information was
 		                                                          produced
 		                                                          <bdt className="statement-end-if-in-editor" />
-		                                                        </span>
-		                                                      </span>
+		                                                        </p>
+		                                                      </p>
 		                                                    </li>
 		                                                  </ul>
 		                                                  <div
@@ -1942,15 +1942,15 @@ function Policy() {
 		                                                      lineHeight: "1.5"
 		                                                    }}
 		                                                  >
-		                                                    <span
+		                                                    <p
 		                                                      style={{
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <span className="body_text">
+		                                                      <p className="body_text">
 		                                                        <bdt className="block-component" />
-		                                                      </span>
-		                                                    </span>
+		                                                      </p>
+		                                                    </p>
 		                                                  </div>
 		                                                  <ul>
 		                                                    <li
@@ -1958,20 +1958,20 @@ function Policy() {
 		                                                        lineHeight: "1.5"
 		                                                      }}
 		                                                    >
-		                                                      <span
+		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <span className="body_text">
+		                                                        <p className="body_text">
 		                                                          If the collection
 		                                                          is solely for
 		                                                          journalistic,
 		                                                          artistic, or
 		                                                          literary purposes
 		                                                          <bdt className="statement-end-if-in-editor" />
-		                                                        </span>
-		                                                      </span>
+		                                                        </p>
+		                                                      </p>
 		                                                    </li>
 		                                                  </ul>
 		                                                  <div
@@ -1979,15 +1979,15 @@ function Policy() {
 		                                                      lineHeight: "1.5"
 		                                                    }}
 		                                                  >
-		                                                    <span
+		                                                    <p
 		                                                      style={{
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <span className="body_text">
+		                                                      <p className="body_text">
 		                                                        <bdt className="block-component" />
-		                                                      </span>
-		                                                    </span>
+		                                                      </p>
+		                                                    </p>
 		                                                  </div>
 		                                                  <ul>
 		                                                    <li
@@ -1995,22 +1995,22 @@ function Policy() {
 		                                                        lineHeight: "1.5"
 		                                                      }}
 		                                                    >
-		                                                      <span
+		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <span className="body_text">
+		                                                        <p className="body_text">
 		                                                          If the information
 		                                                          is publicly
 		                                                          available and is
 		                                                          specified by the
 		                                                          regulations
-		                                                        </span>
+		                                                        </p>
 		                                                        <bdt className="statement-end-if-in-editor">
-		                                                          <span className="body_text" />
+		                                                          <p className="body_text" />
 		                                                        </bdt>
-		                                                      </span>
+		                                                      </p>
 		                                                    </li>
 		                                                  </ul>
 		                                                  <div
@@ -2019,22 +2019,22 @@ function Policy() {
 		                                                    }}
 		                                                  >
 		                                                    <bdt className="statement-end-if-in-editor">
-		                                                      <span
+		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <span className="body_text" />
-		                                                      </span>
+		                                                        <p className="body_text" />
+		                                                      </p>
 		                                                    </bdt>
 		                                                    <bdt className="statement-end-if-in-editor">
-		                                                      <span
+		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <span className="body_text" />
-		                                                      </span>
+		                                                        <p className="body_text" />
+		                                                      </p>
 		                                                    </bdt>
 		                                                  </div>
 		                                                  <div
@@ -2050,34 +2050,34 @@ function Policy() {
 		                                                      lineHeight: "1.5"
 		                                                    }}
 		                                                  >
-		                                                    <span
+		                                                    <p
 		                                                      style={{
 		                                                        color:
 		                                                          "rgb(127, 127, 127)"
 		                                                      }}
 		                                                    >
-		                                                      <span
+		                                                      <p
 		                                                        style={{
 		                                                          color:
 		                                                            "rgb(89, 89, 89)",
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <span
+		                                                        <p
 		                                                          style={{
 		                                                            fontSize: 15,
 		                                                            color:
 		                                                              "rgb(89, 89, 89)"
 		                                                          }}
 		                                                        >
-		                                                          <span
+		                                                          <p
 		                                                            style={{
 		                                                              fontSize: 15,
 		                                                              color:
 		                                                                "rgb(89, 89, 89)"
 		                                                            }}
 		                                                          >
-		                                                            <span
+		                                                            <p
 		                                                              id="control"
 		                                                              style={{
 		                                                                color:
@@ -2085,20 +2085,20 @@ function Policy() {
 		                                                              }}
 		                                                            >
 		                                                              <strong>
-		                                                                <span className="heading_1">
+		                                                                <p className="heading_1">
 		                                                                  4. WHEN
 		                                                                  AND WITH
 		                                                                  WHOM DO WE
 		                                                                  SHARE YOUR
 		                                                                  PERSONAL
 		                                                                  INFORMATION?
-		                                                                </span>
+		                                                                </p>
 		                                                              </strong>
-		                                                            </span>
-		                                                          </span>
-		                                                        </span>
-		                                                      </span>
-		                                                    </span>
+		                                                            </p>
+		                                                          </p>
+		                                                        </p>
+		                                                      </p>
+		                                                    </p>
 		                                                  </div>
 		                                                  <div
 		                                                    style={{
@@ -2112,21 +2112,21 @@ function Policy() {
 		                                                      lineHeight: "1.5"
 		                                                    }}
 		                                                  >
-		                                                    <span
+		                                                    <p
 		                                                      style={{
 		                                                        fontSize: 15,
 		                                                        color:
 		                                                          "rgb(89, 89, 89)"
 		                                                      }}
 		                                                    >
-		                                                      <span
+		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15,
 		                                                          color:
 		                                                            "rgb(89, 89, 89)"
 		                                                        }}
 		                                                      >
-		                                                        <span className="body_text">
+		                                                        <p className="body_text">
 		                                                          <strong>
 		                                                            <em>
 		                                                              In Short:
@@ -2144,34 +2144,34 @@ function Policy() {
 		                                                            <bdt className="block-component" />
 		                                                            third parties.
 		                                                          </em>
-		                                                        </span>
-		                                                      </span>
-		                                                    </span>
+		                                                        </p>
+		                                                      </p>
+		                                                    </p>
 		                                                  </div>
 		                                                  <div
 		                                                    style={{
 		                                                      lineHeight: "1.5"
 		                                                    }}
 		                                                  >
-		                                                    <span
+		                                                    <p
 		                                                      style={{
 		                                                        fontSize: 15,
 		                                                        color:
 		                                                          "rgb(89, 89, 89)"
 		                                                      }}
 		                                                    >
-		                                                      <span
+		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15,
 		                                                          color:
 		                                                            "rgb(89, 89, 89)"
 		                                                        }}
 		                                                      >
-		                                                        <span className="body_text">
+		                                                        <p className="body_text">
 		                                                          <bdt className="block-component"></bdt>
-		                                                        </span>
-		                                                      </span>
-		                                                    </span>
+		                                                        </p>
+		                                                      </p>
+		                                                    </p>
 		                                                  </div>
 		                                                  <div
 		                                                    style={{
@@ -2185,12 +2185,12 @@ function Policy() {
 		                                                      lineHeight: "1.5"
 		                                                    }}
 		                                                  >
-		                                                    <span
+		                                                    <p
 		                                                      style={{
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <span className="body_text">
+		                                                      <p className="body_text">
 		                                                        We{" "}
 		                                                        <bdt className="block-component" />
 		                                                        may need to share
@@ -2198,8 +2198,8 @@ function Policy() {
 		                                                        information in the
 		                                                        following
 		                                                        situations:
-		                                                      </span>
-		                                                    </span>
+		                                                      </p>
+		                                                    </p>
 		                                                  </div>
 		                                                  <ul>
 		                                                    <li
@@ -2207,12 +2207,12 @@ function Policy() {
 		                                                        lineHeight: "1.5"
 		                                                      }}
 		                                                    >
-		                                                      <span
+		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <span className="body_text">
+		                                                        <p className="body_text">
 		                                                          <strong>
 		                                                            Business
 		                                                            Transfers.
@@ -2230,8 +2230,8 @@ function Policy() {
 		                                                          or a portion of
 		                                                          our business to
 		                                                          another company.
-		                                                        </span>
-		                                                      </span>
+		                                                        </p>
+		                                                      </p>
 		                                                    </li>
 		                                                  </ul>
 		                                                  <div
@@ -2239,42 +2239,42 @@ function Policy() {
 		                                                      lineHeight: "1.5"
 		                                                    }}
 		                                                  >
-		                                                    <span
+		                                                    <p
 		                                                      style={{
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <span className="body_text">
+		                                                      <p className="body_text">
 		                                                        <bdt className="block-component" />
-		                                                      </span>
-		                                                    </span>
+		                                                      </p>
+		                                                    </p>
 		                                                    <div
 		                                                      style={{
 		                                                        lineHeight: "1.5"
 		                                                      }}
 		                                                    >
-		                                                      <span
+		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
 		                                                        <bdt className="block-component">
-		                                                          <span className="body_text" />
+		                                                          <p className="body_text" />
 		                                                        </bdt>
-		                                                      </span>
+		                                                      </p>
 		                                                      <div
 		                                                        style={{
 		                                                          lineHeight: "1.5"
 		                                                        }}
 		                                                      >
 		                                                        <bdt className="block-component">
-		                                                          <span
+		                                                          <p
 		                                                            style={{
 		                                                              fontSize: 15
 		                                                            }}
 		                                                          >
-		                                                            <span className="body_text" />
-		                                                          </span>
+		                                                            <p className="body_text" />
+		                                                          </p>
 		                                                        </bdt>
 		                                                        <div
 		                                                          style={{
@@ -2283,13 +2283,13 @@ function Policy() {
 		                                                          }}
 		                                                        >
 		                                                          <bdt className="block-component">
-		                                                            <span
+		                                                            <p
 		                                                              style={{
 		                                                                fontSize: 15
 		                                                              }}
 		                                                            >
-		                                                              <span className="body_text" />
-		                                                            </span>
+		                                                              <p className="body_text" />
+		                                                            </p>
 		                                                          </bdt>
 		                                                          <div
 		                                                            style={{
@@ -2298,13 +2298,13 @@ function Policy() {
 		                                                            }}
 		                                                          >
 		                                                            <bdt className="block-component">
-		                                                              <span
+		                                                              <p
 		                                                                style={{
 		                                                                  fontSize: 15
 		                                                                }}
 		                                                              >
-		                                                                <span className="body_text" />
-		                                                              </span>
+		                                                                <p className="body_text" />
+		                                                              </p>
 		                                                            </bdt>
 		                                                            <div
 		                                                              style={{
@@ -2313,111 +2313,111 @@ function Policy() {
 		                                                              }}
 		                                                            >
 		                                                              <bdt className="block-component">
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    fontSize: 15
 		                                                                  }}
 		                                                                >
-		                                                                  <span className="body_text" />
-		                                                                </span>
+		                                                                  <p className="body_text" />
+		                                                                </p>
 		                                                              </bdt>
-		                                                              <span
+		                                                              <p
 		                                                                style={{
 		                                                                  color:
 		                                                                    "rgb(89, 89, 89)",
 		                                                                  fontSize: 15
 		                                                                }}
 		                                                              >
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    fontSize: 15
 		                                                                  }}
 		                                                                >
-		                                                                  <span
+		                                                                  <p
 		                                                                    style={{
 		                                                                      color:
 		                                                                        "rgb(89, 89, 89)"
 		                                                                    }}
 		                                                                  >
-		                                                                    <span
+		                                                                    <p
 		                                                                      style={{
 		                                                                        fontSize: 15
 		                                                                      }}
 		                                                                    >
-		                                                                      <span
+		                                                                      <p
 		                                                                        style={{
 		                                                                          color:
 		                                                                            "rgb(89, 89, 89)"
 		                                                                        }}
 		                                                                      >
 		                                                                        <bdt className="block-component">
-		                                                                          <span className="heading_1" />
+		                                                                          <p className="heading_1" />
 		                                                                        </bdt>
-		                                                                      </span>
-		                                                                    </span>
-		                                                                  </span>
-		                                                                </span>
-		                                                              </span>
-		                                                              <span className="body_text">
-		                                                                <span
+		                                                                      </p>
+		                                                                    </p>
+		                                                                  </p>
+		                                                                </p>
+		                                                              </p>
+		                                                              <p className="body_text">
+		                                                                <p
 		                                                                  style={{
 		                                                                    color:
 		                                                                      "rgb(89, 89, 89)",
 		                                                                    fontSize: 15
 		                                                                  }}
 		                                                                >
-		                                                                  <span
+		                                                                  <p
 		                                                                    style={{
 		                                                                      color:
 		                                                                        "rgb(89, 89, 89)",
 		                                                                      fontSize: 15
 		                                                                    }}
 		                                                                  >
-		                                                                    <span
+		                                                                    <p
 		                                                                      style={{
 		                                                                        color:
 		                                                                          "rgb(89, 89, 89)",
 		                                                                        fontSize: 15
 		                                                                      }}
 		                                                                    >
-		                                                                      <span
+		                                                                      <p
 		                                                                        style={{
 		                                                                          fontSize: 15
 		                                                                        }}
 		                                                                      >
-		                                                                        <span
+		                                                                        <p
 		                                                                          style={{
 		                                                                            color:
 		                                                                              "rgb(89, 89, 89)"
 		                                                                          }}
 		                                                                        >
-		                                                                          <span
+		                                                                          <p
 		                                                                            style={{
 		                                                                              fontSize: 15
 		                                                                            }}
 		                                                                          >
-		                                                                            <span
+		                                                                            <p
 		                                                                              style={{
 		                                                                                color:
 		                                                                                  "rgb(89, 89, 89)"
 		                                                                              }}
 		                                                                            >
-		                                                                              <span className="body_text">
+		                                                                              <p className="body_text">
 		                                                                                <bdt className="block-component" />
-		                                                                              </span>
+		                                                                              </p>
 		                                                                              <bdt className="block-component">
-		                                                                                <span className="body_text">
+		                                                                                <p className="body_text">
 		                                                                                  <bdt className="block-component" />
-		                                                                                </span>
+		                                                                                </p>
 		                                                                              </bdt>
-		                                                                            </span>
-		                                                                          </span>
-		                                                                        </span>
-		                                                                      </span>
-		                                                                    </span>
-		                                                                  </span>
-		                                                                </span>
-		                                                              </span>
+		                                                                            </p>
+		                                                                          </p>
+		                                                                        </p>
+		                                                                      </p>
+		                                                                    </p>
+		                                                                  </p>
+		                                                                </p>
+		                                                              </p>
 		                                                            </div>
 		                                                            <div
 		                                                              style={{
@@ -2434,34 +2434,34 @@ function Policy() {
 		                                                                  "1.5"
 		                                                              }}
 		                                                            >
-		                                                              <span
+		                                                              <p
 		                                                                style={{
 		                                                                  color:
 		                                                                    "rgb(127, 127, 127)"
 		                                                                }}
 		                                                              >
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    color:
 		                                                                      "rgb(89, 89, 89)",
 		                                                                    fontSize: 15
 		                                                                  }}
 		                                                                >
-		                                                                  <span
+		                                                                  <p
 		                                                                    style={{
 		                                                                      fontSize: 15,
 		                                                                      color:
 		                                                                        "rgb(89, 89, 89)"
 		                                                                    }}
 		                                                                  >
-		                                                                    <span
+		                                                                    <p
 		                                                                      style={{
 		                                                                        fontSize: 15,
 		                                                                        color:
 		                                                                          "rgb(89, 89, 89)"
 		                                                                      }}
 		                                                                    >
-		                                                                      <span
+		                                                                      <p
 		                                                                        id="control"
 		                                                                        style={{
 		                                                                          color:
@@ -2469,7 +2469,7 @@ function Policy() {
 		                                                                        }}
 		                                                                      >
 		                                                                        <strong>
-		                                                                          <span className="heading_1">
+		                                                                          <p className="heading_1">
 		                                                                            5.
 		                                                                            HOW
 		                                                                            LONG
@@ -2478,13 +2478,13 @@ function Policy() {
 		                                                                            KEEP
 		                                                                            YOUR
 		                                                                            INFORMATION?
-		                                                                          </span>
+		                                                                          </p>
 		                                                                        </strong>
-		                                                                      </span>
-		                                                                    </span>
-		                                                                  </span>
-		                                                                </span>
-		                                                              </span>
+		                                                                      </p>
+		                                                                    </p>
+		                                                                  </p>
+		                                                                </p>
+		                                                              </p>
 		                                                            </div>
 		                                                            <div
 		                                                              style={{
@@ -2500,21 +2500,21 @@ function Policy() {
 		                                                                  "1.5"
 		                                                              }}
 		                                                            >
-		                                                              <span
+		                                                              <p
 		                                                                style={{
 		                                                                  fontSize: 15,
 		                                                                  color:
 		                                                                    "rgb(89, 89, 89)"
 		                                                                }}
 		                                                              >
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    fontSize: 15,
 		                                                                    color:
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span className="body_text">
+		                                                                  <p className="body_text">
 		                                                                    <strong>
 		                                                                      <em>
 		                                                                        In
@@ -2547,9 +2547,9 @@ function Policy() {
 		                                                                      by
 		                                                                      law.
 		                                                                    </em>
-		                                                                  </span>
-		                                                                </span>
-		                                                              </span>
+		                                                                  </p>
+		                                                                </p>
+		                                                              </p>
 		                                                            </div>
 		                                                            <div
 		                                                              style={{
@@ -2565,21 +2565,21 @@ function Policy() {
 		                                                                  "1.5"
 		                                                              }}
 		                                                            >
-		                                                              <span
+		                                                              <p
 		                                                                style={{
 		                                                                  fontSize: 15,
 		                                                                  color:
 		                                                                    "rgb(89, 89, 89)"
 		                                                                }}
 		                                                              >
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    fontSize: 15,
 		                                                                    color:
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span className="body_text">
+		                                                                  <p className="body_text">
 		                                                                    We will
 		                                                                    only
 		                                                                    keep
@@ -2612,9 +2612,9 @@ function Policy() {
 		                                                                    legal
 		                                                                    requirements).
 		                                                                    <bdt className="block-component" />
-		                                                                  </span>
-		                                                                </span>
-		                                                              </span>
+		                                                                  </p>
+		                                                                </p>
+		                                                              </p>
 		                                                            </div>
 		                                                            <div
 		                                                              style={{
@@ -2630,21 +2630,21 @@ function Policy() {
 		                                                                  "1.5"
 		                                                              }}
 		                                                            >
-		                                                              <span
+		                                                              <p
 		                                                                style={{
 		                                                                  fontSize: 15,
 		                                                                  color:
 		                                                                    "rgb(89, 89, 89)"
 		                                                                }}
 		                                                              >
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    fontSize: 15,
 		                                                                    color:
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span className="body_text">
+		                                                                  <p className="body_text">
 		                                                                    When we
 		                                                                    have no
 		                                                                    ongoing
@@ -2696,28 +2696,28 @@ function Policy() {
 		                                                                    deletion
 		                                                                    is
 		                                                                    possible.
-		                                                                    <span
+		                                                                    <p
 		                                                                      style={{
 		                                                                        color:
 		                                                                          "rgb(89, 89, 89)"
 		                                                                      }}
 		                                                                    >
 		                                                                      <bdt className="block-component" />
-		                                                                    </span>
-		                                                                    <span
+		                                                                    </p>
+		                                                                    <p
 		                                                                      style={{
 		                                                                        color:
 		                                                                          "rgb(89, 89, 89)",
 		                                                                        fontSize: 15
 		                                                                      }}
 		                                                                    >
-		                                                                      <span className="body_text">
+		                                                                      <p className="body_text">
 		                                                                        <bdt className="block-component" />
-		                                                                      </span>
-		                                                                    </span>
-		                                                                  </span>
-		                                                                </span>
-		                                                              </span>
+		                                                                      </p>
+		                                                                    </p>
+		                                                                  </p>
+		                                                                </p>
+		                                                              </p>
 		                                                            </div>
 		                                                            <div
 		                                                              style={{
@@ -2734,34 +2734,34 @@ function Policy() {
 		                                                                  "1.5"
 		                                                              }}
 		                                                            >
-		                                                              <span
+		                                                              <p
 		                                                                style={{
 		                                                                  color:
 		                                                                    "rgb(127, 127, 127)"
 		                                                                }}
 		                                                              >
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    color:
 		                                                                      "rgb(89, 89, 89)",
 		                                                                    fontSize: 15
 		                                                                  }}
 		                                                                >
-		                                                                  <span
+		                                                                  <p
 		                                                                    style={{
 		                                                                      fontSize: 15,
 		                                                                      color:
 		                                                                        "rgb(89, 89, 89)"
 		                                                                    }}
 		                                                                  >
-		                                                                    <span
+		                                                                    <p
 		                                                                      style={{
 		                                                                        fontSize: 15,
 		                                                                        color:
 		                                                                          "rgb(89, 89, 89)"
 		                                                                      }}
 		                                                                    >
-		                                                                      <span
+		                                                                      <p
 		                                                                        id="control"
 		                                                                        style={{
 		                                                                          color:
@@ -2769,20 +2769,20 @@ function Policy() {
 		                                                                        }}
 		                                                                      >
 		                                                                        <strong>
-		                                                                          <span className="heading_1">
+		                                                                          <p className="heading_1">
 		                                                                            6.
 		                                                                            WHAT
 		                                                                            ARE
 		                                                                            YOUR
 		                                                                            PRIVACY
 		                                                                            RIGHTS?
-		                                                                          </span>
+		                                                                          </p>
 		                                                                        </strong>
-		                                                                      </span>
-		                                                                    </span>
-		                                                                  </span>
-		                                                                </span>
-		                                                              </span>
+		                                                                      </p>
+		                                                                    </p>
+		                                                                  </p>
+		                                                                </p>
+		                                                              </p>
 		                                                            </div>
 		                                                            <div
 		                                                              style={{
@@ -2798,21 +2798,21 @@ function Policy() {
 		                                                                  "1.5"
 		                                                              }}
 		                                                            >
-		                                                              <span
+		                                                              <p
 		                                                                style={{
 		                                                                  fontSize: 15,
 		                                                                  color:
 		                                                                    "rgb(89, 89, 89)"
 		                                                                }}
 		                                                              >
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    fontSize: 15,
 		                                                                    color:
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span className="body_text">
+		                                                                  <p className="body_text">
 		                                                                    <strong>
 		                                                                      <em>
 		                                                                        In
@@ -2821,24 +2821,24 @@ function Policy() {
 		                                                                    </strong>
 		                                                                    <em>
 		                                                                      {" "}
-		                                                                      <span
+		                                                                      <p
 		                                                                        style={{
 		                                                                          color:
 		                                                                            "rgb(89, 89, 89)"
 		                                                                        }}
 		                                                                      >
-		                                                                        <span
+		                                                                        <p
 		                                                                          style={{
 		                                                                            fontSize: 15
 		                                                                          }}
 		                                                                        >
-		                                                                          <span className="body_text">
+		                                                                          <p className="body_text">
 		                                                                            <em>
 		                                                                              <bdt className="block-component" />
 		                                                                            </em>
-		                                                                          </span>
-		                                                                        </span>
-		                                                                      </span>
+		                                                                          </p>
+		                                                                        </p>
+		                                                                      </p>
 		                                                                      In
 		                                                                      some
 		                                                                      regions,
@@ -2870,24 +2870,24 @@ function Policy() {
 		                                                                      your
 		                                                                      personal
 		                                                                      information.
-		                                                                      <span
+		                                                                      <p
 		                                                                        style={{
 		                                                                          color:
 		                                                                            "rgb(89, 89, 89)"
 		                                                                        }}
 		                                                                      >
-		                                                                        <span
+		                                                                        <p
 		                                                                          style={{
 		                                                                            fontSize: 15
 		                                                                          }}
 		                                                                        >
-		                                                                          <span className="body_text">
+		                                                                          <p className="body_text">
 		                                                                            <em>
 		                                                                              <bdt className="statement-end-if-in-editor" />
 		                                                                            </em>
-		                                                                          </span>
-		                                                                        </span>{" "}
-		                                                                      </span>
+		                                                                          </p>
+		                                                                        </p>{" "}
+		                                                                      </p>
 		                                                                      You
 		                                                                      may
 		                                                                      review,
@@ -2899,23 +2899,23 @@ function Policy() {
 		                                                                      at any
 		                                                                      time.
 		                                                                    </em>
-		                                                                    <span
+		                                                                    <p
 		                                                                      style={{
 		                                                                        color:
 		                                                                          "rgb(89, 89, 89)"
 		                                                                      }}
 		                                                                    >
-		                                                                      <span
+		                                                                      <p
 		                                                                        style={{
 		                                                                          fontSize: 15
 		                                                                        }}
 		                                                                      >
 		                                                                        <bdt className="block-component" />
-		                                                                      </span>
-		                                                                    </span>
-		                                                                  </span>
-		                                                                </span>
-		                                                              </span>
+		                                                                      </p>
+		                                                                    </p>
+		                                                                  </p>
+		                                                                </p>
+		                                                              </p>
 		                                                            </div>
 		                                                            <div
 		                                                              style={{
@@ -2931,21 +2931,21 @@ function Policy() {
 		                                                                  "1.5"
 		                                                              }}
 		                                                            >
-		                                                              <span
+		                                                              <p
 		                                                                style={{
 		                                                                  fontSize: 15,
 		                                                                  color:
 		                                                                    "rgb(89, 89, 89)"
 		                                                                }}
 		                                                              >
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    fontSize: 15,
 		                                                                    color:
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span className="body_text">
+		                                                                  <p className="body_text">
 		                                                                    In some
 		                                                                    regions
 		                                                                    (like{" "}
@@ -3024,28 +3024,28 @@ function Policy() {
 		                                                                    <bdt className="block-component" />
 		                                                                    "
 		                                                                    <bdt className="statement-end-if-in-editor" />
-		                                                                  </span>
-		                                                                </span>
-		                                                              </span>
+		                                                                  </p>
+		                                                                </p>
+		                                                              </p>
 		                                                              <a
 		                                                                className="link"
 		                                                                href="#contact"
 		                                                              >
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    fontSize: 15,
 		                                                                    color:
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span
+		                                                                  <p
 		                                                                    style={{
 		                                                                      fontSize: 15,
 		                                                                      color:
 		                                                                        "rgb(89, 89, 89)"
 		                                                                    }}
 		                                                                  >
-		                                                                    <span className="body_text">
+		                                                                    <p className="body_text">
 		                                                                      HOW
 		                                                                      CAN
 		                                                                      YOU
@@ -3054,32 +3054,32 @@ function Policy() {
 		                                                                      ABOUT
 		                                                                      THIS
 		                                                                      NOTICE?
-		                                                                    </span>
-		                                                                  </span>
-		                                                                </span>
+		                                                                    </p>
+		                                                                  </p>
+		                                                                </p>
 		                                                              </a>
-		                                                              <span
+		                                                              <p
 		                                                                style={{
 		                                                                  fontSize: 15,
 		                                                                  color:
 		                                                                    "rgb(89, 89, 89)"
 		                                                                }}
 		                                                              >
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    fontSize: 15,
 		                                                                    color:
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span className="body_text">
+		                                                                  <p className="body_text">
 		                                                                    <bdt className="block-component" />
 		                                                                    "
 		                                                                    <bdt className="statement-end-if-in-editor" />{" "}
 		                                                                    below.
-		                                                                  </span>
-		                                                                </span>
-		                                                              </span>
+		                                                                  </p>
+		                                                                </p>
+		                                                              </p>
 		                                                            </div>
 		                                                            <div
 		                                                              style={{
@@ -3095,21 +3095,21 @@ function Policy() {
 		                                                                  "1.5"
 		                                                              }}
 		                                                            >
-		                                                              <span
+		                                                              <p
 		                                                                style={{
 		                                                                  fontSize: 15,
 		                                                                  color:
 		                                                                    "rgb(89, 89, 89)"
 		                                                                }}
 		                                                              >
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    fontSize: 15,
 		                                                                    color:
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span className="body_text">
+		                                                                  <p className="body_text">
 		                                                                    We will
 		                                                                    consider
 		                                                                    and act
@@ -3122,40 +3122,40 @@ function Policy() {
 		                                                                    data
 		                                                                    protection
 		                                                                    laws.
-		                                                                  </span>
-		                                                                  <span className="body_text">
-		                                                                    <span
+		                                                                  </p>
+		                                                                  <p className="body_text">
+		                                                                    <p
 		                                                                      style={{
 		                                                                        fontSize: 15
 		                                                                      }}
 		                                                                    >
-		                                                                      <span
+		                                                                      <p
 		                                                                        style={{
 		                                                                          color:
 		                                                                            "rgb(89, 89, 89)"
 		                                                                        }}
 		                                                                      >
-		                                                                        <span className="body_text">
-		                                                                          <span
+		                                                                        <p className="body_text">
+		                                                                          <p
 		                                                                            style={{
 		                                                                              color:
 		                                                                                "rgb(89, 89, 89)"
 		                                                                            }}
 		                                                                          >
-		                                                                            <span
+		                                                                            <p
 		                                                                              style={{
 		                                                                                fontSize: 15
 		                                                                              }}
 		                                                                            >
 		                                                                              <bdt className="statement-end-if-in-editor" />
-		                                                                            </span>
-		                                                                          </span>
-		                                                                        </span>
-		                                                                      </span>
-		                                                                    </span>
-		                                                                  </span>
-		                                                                </span>
-		                                                              </span>
+		                                                                            </p>
+		                                                                          </p>
+		                                                                        </p>
+		                                                                      </p>
+		                                                                    </p>
+		                                                                  </p>
+		                                                                </p>
+		                                                              </p>
 		                                                            </div>
 		                                                            <div
 		                                                              style={{
@@ -3163,7 +3163,7 @@ function Policy() {
 		                                                                  "1.5"
 		                                                              }}
 		                                                            >
-		                                                              <span
+		                                                              <p
 		                                                                style={{
 		                                                                  fontSize: 15,
 		                                                                  color:
@@ -3171,7 +3171,7 @@ function Policy() {
 		                                                                }}
 		                                                              >
 		                                                                {" "}
-		                                                              </span>
+		                                                              </p>
 		                                                            </div>
 		                                                            <div
 		                                                              style={{
@@ -3179,21 +3179,21 @@ function Policy() {
 		                                                                  "1.5"
 		                                                              }}
 		                                                            >
-		                                                              <span
+		                                                              <p
 		                                                                style={{
 		                                                                  fontSize: 15,
 		                                                                  color:
 		                                                                    "rgb(89, 89, 89)"
 		                                                                }}
 		                                                              >
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    fontSize: 15,
 		                                                                    color:
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span className="body_text">
+		                                                                  <p className="body_text">
 		                                                                    If you
 		                                                                    are
 		                                                                    located
@@ -3213,32 +3213,32 @@ function Policy() {
 		                                                                    right to
 		                                                                    complain
 		                                                                    to your{" "}
-		                                                                    <span
+		                                                                    <p
 		                                                                      style={{
 		                                                                        fontSize: 15
 		                                                                      }}
 		                                                                    >
-		                                                                      <span
+		                                                                      <p
 		                                                                        style={{
 		                                                                          color:
 		                                                                            "rgb(89, 89, 89)"
 		                                                                        }}
 		                                                                      >
-		                                                                        <span className="body_text">
-		                                                                          <span
+		                                                                        <p className="body_text">
+		                                                                          <p
 		                                                                            style={{
 		                                                                              color:
 		                                                                                "rgb(48, 48, 241)"
 		                                                                            }}
 		                                                                          >
-		                                                                            <span className="body_text">
+		                                                                            <p className="body_text">
 		                                                                              <a
 		                                                                                className="link"
 		                                                                                href="https://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm"
 		                                                                                rel="noopener noreferrer"
 		                                                                                target="_blank"
 		                                                                              >
-		                                                                                <span
+		                                                                                <p
 		                                                                                  style={{
 		                                                                                    fontSize: 15
 		                                                                                  }}
@@ -3248,66 +3248,66 @@ function Policy() {
 		                                                                                  data
 		                                                                                  protection
 		                                                                                  authority
-		                                                                                </span>
+		                                                                                </p>
 		                                                                              </a>
-		                                                                            </span>
-		                                                                          </span>
-		                                                                        </span>
-		                                                                      </span>
-		                                                                    </span>{" "}
+		                                                                            </p>
+		                                                                          </p>
+		                                                                        </p>
+		                                                                      </p>
+		                                                                    </p>{" "}
 		                                                                    or{" "}
-		                                                                  </span>
-		                                                                </span>
-		                                                              </span>
+		                                                                  </p>
+		                                                                </p>
+		                                                              </p>
 		                                                              <a
 		                                                                href="https://ico.org.uk/make-a-complaint/data-protection-complaints/data-protection-complaints/"
 		                                                                rel="noopener noreferrer"
 		                                                                target="_blank"
 		                                                              >
-		                                                                <span className="link">
-		                                                                  <span
+		                                                                <p className="link">
+		                                                                  <p
 		                                                                    style={{
 		                                                                      fontSize: 15,
 		                                                                      color:
 		                                                                        "rgb(89, 89, 89)"
 		                                                                    }}
 		                                                                  >
-		                                                                    <span
+		                                                                    <p
 		                                                                      style={{
 		                                                                        fontSize: 15,
 		                                                                        color:
 		                                                                          "rgb(89, 89, 89)"
 		                                                                      }}
 		                                                                    >
-		                                                                      <span className="body_text">
+		                                                                      <p className="body_text">
 		                                                                        UK
 		                                                                        data
 		                                                                        protection
 		                                                                        authority
-		                                                                      </span>
-		                                                                    </span>
-		                                                                  </span>
-		                                                                </span>
+		                                                                      </p>
+		                                                                    </p>
+		                                                                  </p>
+		                                                                </p>
 		                                                              </a>
-		                                                              <span
+		                                                              <p
 		                                                                style={{
 		                                                                  fontSize: 15,
 		                                                                  color:
 		                                                                    "rgb(89, 89, 89)"
 		                                                                }}
 		                                                              >
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    fontSize: 15,
 		                                                                    color:
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span className="body_text">
+		                                                                  <p className="body_text">
 		                                                                    .
-		                                                                  </span>
-		                                                                </span>
-		                                                              </span>
+		                                                                  </p>
+		                                                                </p>
+		                                                              </p>
 		                                                            </div>
 		                                                            <div
 		                                                              style={{
@@ -3323,21 +3323,21 @@ function Policy() {
 		                                                                  "1.5"
 		                                                              }}
 		                                                            >
-		                                                              <span
+		                                                              <p
 		                                                                style={{
 		                                                                  fontSize: 15,
 		                                                                  color:
 		                                                                    "rgb(89, 89, 89)"
 		                                                                }}
 		                                                              >
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    fontSize: 15,
 		                                                                    color:
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span className="body_text">
+		                                                                  <p className="body_text">
 		                                                                    If you
 		                                                                    are
 		                                                                    located
@@ -3346,26 +3346,26 @@ function Policy() {
 		                                                                    you may
 		                                                                    contact
 		                                                                    the{" "}
-		                                                                    <span
+		                                                                    <p
 		                                                                      style={{
 		                                                                        fontSize: 15
 		                                                                      }}
 		                                                                    >
-		                                                                      <span
+		                                                                      <p
 		                                                                        style={{
 		                                                                          color:
 		                                                                            "rgb(89, 89, 89)"
 		                                                                        }}
 		                                                                      >
-		                                                                        <span className="body_text">
-		                                                                          <span
+		                                                                        <p className="body_text">
+		                                                                          <p
 		                                                                            style={{
 		                                                                              color:
 		                                                                                "rgb(48, 48, 241)"
 		                                                                            }}
 		                                                                          >
-		                                                                            <span className="body_text">
-		                                                                              <span
+		                                                                            <p className="body_text">
+		                                                                              <p
 		                                                                                style={{
 		                                                                                  fontSize: 15
 		                                                                                }}
@@ -3383,16 +3383,16 @@ function Policy() {
 		                                                                                  Information
 		                                                                                  Commissioner
 		                                                                                </a>
-		                                                                              </span>
-		                                                                            </span>
-		                                                                          </span>
-		                                                                        </span>
-		                                                                      </span>
-		                                                                    </span>
+		                                                                              </p>
+		                                                                            </p>
+		                                                                          </p>
+		                                                                        </p>
+		                                                                      </p>
+		                                                                    </p>
 		                                                                    .
-		                                                                  </span>
-		                                                                </span>
-		                                                              </span>
+		                                                                  </p>
+		                                                                </p>
+		                                                              </p>
 		                                                            </div>
 		                                                            <div
 		                                                              style={{
@@ -3409,21 +3409,21 @@ function Policy() {
 		                                                                  "1.5"
 		                                                              }}
 		                                                            >
-		                                                              <span
+		                                                              <p
 		                                                                style={{
 		                                                                  fontSize: 15,
 		                                                                  color:
 		                                                                    "rgb(89, 89, 89)"
 		                                                                }}
 		                                                              >
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    fontSize: 15,
 		                                                                    color:
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span className="body_text">
+		                                                                  <p className="body_text">
 		                                                                    <strong>
 		                                                                      <u>
 		                                                                        Withdrawing
@@ -3479,28 +3479,28 @@ function Policy() {
 		                                                                    <bdt className="block-component" />
 		                                                                    "
 		                                                                    <bdt className="statement-end-if-in-editor" />
-		                                                                  </span>
-		                                                                </span>
-		                                                              </span>
+		                                                                  </p>
+		                                                                </p>
+		                                                              </p>
 		                                                              <a
 		                                                                className="link"
 		                                                                href="#contact"
 		                                                              >
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    fontSize: 15,
 		                                                                    color:
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span
+		                                                                  <p
 		                                                                    style={{
 		                                                                      fontSize: 15,
 		                                                                      color:
 		                                                                        "rgb(89, 89, 89)"
 		                                                                    }}
 		                                                                  >
-		                                                                    <span className="body_text">
+		                                                                    <p className="body_text">
 		                                                                      HOW
 		                                                                      CAN
 		                                                                      YOU
@@ -3509,34 +3509,34 @@ function Policy() {
 		                                                                      ABOUT
 		                                                                      THIS
 		                                                                      NOTICE?
-		                                                                    </span>
-		                                                                  </span>
-		                                                                </span>
+		                                                                    </p>
+		                                                                  </p>
+		                                                                </p>
 		                                                              </a>
-		                                                              <span
+		                                                              <p
 		                                                                style={{
 		                                                                  fontSize: 15,
 		                                                                  color:
 		                                                                    "rgb(89, 89, 89)"
 		                                                                }}
 		                                                              >
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    fontSize: 15,
 		                                                                    color:
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span className="body_text">
+		                                                                  <p className="body_text">
 		                                                                    <bdt className="block-component" />
 		                                                                    "
 		                                                                    <bdt className="statement-end-if-in-editor" />{" "}
 		                                                                    below
 		                                                                    <bdt className="block-component" />
 		                                                                    .
-		                                                                  </span>
-		                                                                </span>
-		                                                              </span>
+		                                                                  </p>
+		                                                                </p>
+		                                                              </p>
 		                                                            </div>
 		                                                            <div
 		                                                              style={{
@@ -3552,12 +3552,12 @@ function Policy() {
 		                                                                  "1.5"
 		                                                              }}
 		                                                            >
-		                                                              <span
+		                                                              <p
 		                                                                style={{
 		                                                                  fontSize: 15
 		                                                                }}
 		                                                              >
-		                                                                <span className="body_text">
+		                                                                <p className="body_text">
 		                                                                  However,
 		                                                                  please
 		                                                                  note that
@@ -3591,85 +3591,85 @@ function Policy() {
 		                                                                  other than
 		                                                                  consent.
 		                                                                  <bdt className="block-component" />
-		                                                                </span>
-		                                                              </span>
+		                                                                </p>
+		                                                              </p>
 		                                                              <bdt className="block-component">
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    fontSize: 15
 		                                                                  }}
 		                                                                >
-		                                                                  <span className="body_text" />
-		                                                                </span>
+		                                                                  <p className="body_text" />
+		                                                                </p>
 		                                                              </bdt>
-		                                                              <span
+		                                                              <p
 		                                                                style={{
 		                                                                  fontSize: 15,
 		                                                                  color:
 		                                                                    "rgb(89, 89, 89)"
 		                                                                }}
 		                                                              >
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    fontSize: 15,
 		                                                                    color:
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span className="body_text">
-		                                                                    <span
+		                                                                  <p className="body_text">
+		                                                                    <p
 		                                                                      style={{
 		                                                                        fontSize: 15
 		                                                                      }}
 		                                                                    >
-		                                                                      <span
+		                                                                      <p
 		                                                                        style={{
 		                                                                          color:
 		                                                                            "rgb(89, 89, 89)"
 		                                                                        }}
 		                                                                      >
-		                                                                        <span
+		                                                                        <p
 		                                                                          style={{
 		                                                                            fontSize: 15
 		                                                                          }}
 		                                                                        >
-		                                                                          <span
+		                                                                          <p
 		                                                                            style={{
 		                                                                              color:
 		                                                                                "rgb(89, 89, 89)"
 		                                                                            }}
 		                                                                          >
-		                                                                            <span className="body_text">
-		                                                                              <span
+		                                                                            <p className="body_text">
+		                                                                              <p
 		                                                                                style={{
 		                                                                                  fontSize: 15
 		                                                                                }}
 		                                                                              >
-		                                                                                <span
+		                                                                                <p
 		                                                                                  style={{
 		                                                                                    color:
 		                                                                                      "rgb(89, 89, 89)"
 		                                                                                  }}
 		                                                                                >
 		                                                                                  <bdt className="block-component" />
-		                                                                                </span>
-		                                                                              </span>
-		                                                                            </span>
-		                                                                          </span>
-		                                                                        </span>
-		                                                                      </span>
-		                                                                    </span>
-		                                                                  </span>
-		                                                                </span>
-		                                                              </span>
+		                                                                                </p>
+		                                                                              </p>
+		                                                                            </p>
+		                                                                          </p>
+		                                                                        </p>
+		                                                                      </p>
+		                                                                    </p>
+		                                                                  </p>
+		                                                                </p>
+		                                                              </p>
 		                                                              <bdt className="block-component">
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    fontSize: 15
 		                                                                  }}
 		                                                                >
-		                                                                  <span className="body_text" />
-		                                                                </span>
+		                                                                  <p className="body_text" />
+		                                                                </p>
 		                                                              </bdt>
 		                                                            </div>
 		                                                            <div
@@ -3686,8 +3686,8 @@ function Policy() {
 		                                                                  "1.5"
 		                                                              }}
 		                                                            >
-		                                                              <span className="body_text">
-		                                                                <span
+		                                                              <p className="body_text">
+		                                                                <p
 		                                                                  style={{
 		                                                                    fontSize: 15
 		                                                                  }}
@@ -3707,16 +3707,16 @@ function Policy() {
 		                                                                    adenlall@skiff.com
 		                                                                  </bdt>
 		                                                                  .
-		                                                                </span>
-		                                                              </span>
+		                                                                </p>
+		                                                              </p>
 		                                                              <bdt className="statement-end-if-in-editor">
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    fontSize: 15
 		                                                                  }}
 		                                                                >
-		                                                                  <span className="body_text" />
-		                                                                </span>
+		                                                                  <p className="body_text" />
+		                                                                </p>
 		                                                              </bdt>
 		                                                            </div>
 		                                                            <div
@@ -3734,34 +3734,34 @@ function Policy() {
 		                                                                  "1.5"
 		                                                              }}
 		                                                            >
-		                                                              <span
+		                                                              <p
 		                                                                style={{
 		                                                                  color:
 		                                                                    "rgb(127, 127, 127)"
 		                                                                }}
 		                                                              >
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    color:
 		                                                                      "rgb(89, 89, 89)",
 		                                                                    fontSize: 15
 		                                                                  }}
 		                                                                >
-		                                                                  <span
+		                                                                  <p
 		                                                                    style={{
 		                                                                      fontSize: 15,
 		                                                                      color:
 		                                                                        "rgb(89, 89, 89)"
 		                                                                    }}
 		                                                                  >
-		                                                                    <span
+		                                                                    <p
 		                                                                      style={{
 		                                                                        fontSize: 15,
 		                                                                        color:
 		                                                                          "rgb(89, 89, 89)"
 		                                                                      }}
 		                                                                    >
-		                                                                      <span
+		                                                                      <p
 		                                                                        id="control"
 		                                                                        style={{
 		                                                                          color:
@@ -3769,19 +3769,19 @@ function Policy() {
 		                                                                        }}
 		                                                                      >
 		                                                                        <strong>
-		                                                                          <span className="heading_1">
+		                                                                          <p className="heading_1">
 		                                                                            7.
 		                                                                            CONTROLS
 		                                                                            FOR
 		                                                                            DO-NOT-TRACK
 		                                                                            FEATURES
-		                                                                          </span>
+		                                                                          </p>
 		                                                                        </strong>
-		                                                                      </span>
-		                                                                    </span>
-		                                                                  </span>
-		                                                                </span>
-		                                                              </span>
+		                                                                      </p>
+		                                                                    </p>
+		                                                                  </p>
+		                                                                </p>
+		                                                              </p>
 		                                                            </div>
 		                                                            <div
 		                                                              style={{
@@ -3797,21 +3797,21 @@ function Policy() {
 		                                                                  "1.5"
 		                                                              }}
 		                                                            >
-		                                                              <span
+		                                                              <p
 		                                                                style={{
 		                                                                  fontSize: 15,
 		                                                                  color:
 		                                                                    "rgb(89, 89, 89)"
 		                                                                }}
 		                                                              >
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    fontSize: 15,
 		                                                                    color:
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span className="body_text">
+		                                                                  <p className="body_text">
 		                                                                    Most web
 		                                                                    browsers
 		                                                                    and some
@@ -3911,9 +3911,9 @@ function Policy() {
 		                                                                    of this
 		                                                                    privacy
 		                                                                    notice.
-		                                                                  </span>
-		                                                                </span>
-		                                                              </span>
+		                                                                  </p>
+		                                                                </p>
+		                                                              </p>
 		                                                            </div>
 		                                                            <div
 		                                                              style={{
@@ -3930,34 +3930,34 @@ function Policy() {
 		                                                                  "1.5"
 		                                                              }}
 		                                                            >
-		                                                              <span
+		                                                              <p
 		                                                                style={{
 		                                                                  color:
 		                                                                    "rgb(127, 127, 127)"
 		                                                                }}
 		                                                              >
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    color:
 		                                                                      "rgb(89, 89, 89)",
 		                                                                    fontSize: 15
 		                                                                  }}
 		                                                                >
-		                                                                  <span
+		                                                                  <p
 		                                                                    style={{
 		                                                                      fontSize: 15,
 		                                                                      color:
 		                                                                        "rgb(89, 89, 89)"
 		                                                                    }}
 		                                                                  >
-		                                                                    <span
+		                                                                    <p
 		                                                                      style={{
 		                                                                        fontSize: 15,
 		                                                                        color:
 		                                                                          "rgb(89, 89, 89)"
 		                                                                      }}
 		                                                                    >
-		                                                                      <span
+		                                                                      <p
 		                                                                        id="control"
 		                                                                        style={{
 		                                                                          color:
@@ -3965,7 +3965,7 @@ function Policy() {
 		                                                                        }}
 		                                                                      >
 		                                                                        <strong>
-		                                                                          <span className="heading_1">
+		                                                                          <p className="heading_1">
 		                                                                            8.
 		                                                                            DO
 		                                                                            CALIFORNIA
@@ -3974,13 +3974,13 @@ function Policy() {
 		                                                                            SPECIFIC
 		                                                                            PRIVACY
 		                                                                            RIGHTS?
-		                                                                          </span>
+		                                                                          </p>
 		                                                                        </strong>
-		                                                                      </span>
-		                                                                    </span>
-		                                                                  </span>
-		                                                                </span>
-		                                                              </span>
+		                                                                      </p>
+		                                                                    </p>
+		                                                                  </p>
+		                                                                </p>
+		                                                              </p>
 		                                                            </div>
 		                                                            <div
 		                                                              style={{
@@ -3996,21 +3996,21 @@ function Policy() {
 		                                                                  "1.5"
 		                                                              }}
 		                                                            >
-		                                                              <span
+		                                                              <p
 		                                                                style={{
 		                                                                  fontSize: 15,
 		                                                                  color:
 		                                                                    "rgb(89, 89, 89)"
 		                                                                }}
 		                                                              >
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    fontSize: 15,
 		                                                                    color:
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span className="body_text">
+		                                                                  <p className="body_text">
 		                                                                    <strong>
 		                                                                      <em>
 		                                                                        In
@@ -4036,9 +4036,9 @@ function Policy() {
 		                                                                      personal
 		                                                                      information.
 		                                                                    </em>
-		                                                                  </span>
-		                                                                </span>
-		                                                              </span>
+		                                                                  </p>
+		                                                                </p>
+		                                                              </p>
 		                                                            </div>
 		                                                            <div
 		                                                              style={{
@@ -4054,21 +4054,21 @@ function Policy() {
 		                                                                  "1.5"
 		                                                              }}
 		                                                            >
-		                                                              <span
+		                                                              <p
 		                                                                style={{
 		                                                                  fontSize: 15,
 		                                                                  color:
 		                                                                    "rgb(89, 89, 89)"
 		                                                                }}
 		                                                              >
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    fontSize: 15,
 		                                                                    color:
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span className="body_text">
+		                                                                  <p className="body_text">
 		                                                                    California
 		                                                                    Civil
 		                                                                    Code
@@ -4153,9 +4153,9 @@ function Policy() {
 		                                                                    information
 		                                                                    provided
 		                                                                    below.
-		                                                                  </span>
-		                                                                </span>
-		                                                              </span>
+		                                                                  </p>
+		                                                                </p>
+		                                                              </p>
 		                                                            </div>
 		                                                            <div
 		                                                              style={{
@@ -4171,21 +4171,21 @@ function Policy() {
 		                                                                  "1.5"
 		                                                              }}
 		                                                            >
-		                                                              <span
+		                                                              <p
 		                                                                style={{
 		                                                                  fontSize: 15,
 		                                                                  color:
 		                                                                    "rgb(89, 89, 89)"
 		                                                                }}
 		                                                              >
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    fontSize: 15,
 		                                                                    color:
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span className="body_text">
+		                                                                  <p className="body_text">
 		                                                                    If you
 		                                                                    are
 		                                                                    under 18
@@ -4269,22 +4269,22 @@ function Policy() {
 		                                                                    <bdt className="statement-end-if-in-editor" />{" "}
 		                                                                    backups,
 		                                                                    etc.).
-		                                                                    <span
+		                                                                    <p
 		                                                                      style={{
 		                                                                        color:
 		                                                                          "rgb(89, 89, 89)",
 		                                                                        fontSize: 15
 		                                                                      }}
 		                                                                    >
-		                                                                      <span className="body_text">
+		                                                                      <p className="body_text">
 		                                                                        <bdt className="block-component" />
-		                                                                      </span>
-		                                                                    </span>
-		                                                                  </span>
-		                                                                </span>
-		                                                              </span>
+		                                                                      </p>
+		                                                                    </p>
+		                                                                  </p>
+		                                                                </p>
+		                                                              </p>
 		                                                              <bdt className="block-component">
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    fontSize: 15
 		                                                                  }}
@@ -4306,34 +4306,34 @@ function Policy() {
 		                                                                  "1.5"
 		                                                              }}
 		                                                            >
-		                                                              <span
+		                                                              <p
 		                                                                style={{
 		                                                                  color:
 		                                                                    "rgb(127, 127, 127)"
 		                                                                }}
 		                                                              >
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    color:
 		                                                                      "rgb(89, 89, 89)",
 		                                                                    fontSize: 15
 		                                                                  }}
 		                                                                >
-		                                                                  <span
+		                                                                  <p
 		                                                                    style={{
 		                                                                      fontSize: 15,
 		                                                                      color:
 		                                                                        "rgb(89, 89, 89)"
 		                                                                    }}
 		                                                                  >
-		                                                                    <span
+		                                                                    <p
 		                                                                      style={{
 		                                                                        fontSize: 15,
 		                                                                        color:
 		                                                                          "rgb(89, 89, 89)"
 		                                                                      }}
 		                                                                    >
-		                                                                      <span
+		                                                                      <p
 		                                                                        id="control"
 		                                                                        style={{
 		                                                                          color:
@@ -4341,7 +4341,7 @@ function Policy() {
 		                                                                        }}
 		                                                                      >
 		                                                                        <strong>
-		                                                                          <span className="heading_1">
+		                                                                          <p className="heading_1">
 		                                                                            9.
 		                                                                            DO
 		                                                                            WE
@@ -4350,13 +4350,13 @@ function Policy() {
 		                                                                            TO
 		                                                                            THIS
 		                                                                            NOTICE?
-		                                                                          </span>
+		                                                                          </p>
 		                                                                        </strong>
-		                                                                      </span>
-		                                                                    </span>
-		                                                                  </span>
-		                                                                </span>
-		                                                              </span>
+		                                                                      </p>
+		                                                                    </p>
+		                                                                  </p>
+		                                                                </p>
+		                                                              </p>
 		                                                            </div>
 		                                                            <div
 		                                                              style={{
@@ -4372,21 +4372,21 @@ function Policy() {
 		                                                                  "1.5"
 		                                                              }}
 		                                                            >
-		                                                              <span
+		                                                              <p
 		                                                                style={{
 		                                                                  fontSize: 15,
 		                                                                  color:
 		                                                                    "rgb(89, 89, 89)"
 		                                                                }}
 		                                                              >
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    fontSize: 15,
 		                                                                    color:
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span className="body_text">
+		                                                                  <p className="body_text">
 		                                                                    <em>
 		                                                                      <strong>
 		                                                                        In
@@ -4407,9 +4407,9 @@ function Policy() {
 		                                                                      relevant
 		                                                                      laws.
 		                                                                    </em>
-		                                                                  </span>
-		                                                                </span>
-		                                                              </span>
+		                                                                  </p>
+		                                                                </p>
+		                                                              </p>
 		                                                            </div>
 		                                                            <div
 		                                                              style={{
@@ -4425,21 +4425,21 @@ function Policy() {
 		                                                                  "1.5"
 		                                                              }}
 		                                                            >
-		                                                              <span
+		                                                              <p
 		                                                                style={{
 		                                                                  fontSize: 15,
 		                                                                  color:
 		                                                                    "rgb(89, 89, 89)"
 		                                                                }}
 		                                                              >
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    fontSize: 15,
 		                                                                    color:
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span className="body_text">
+		                                                                  <p className="body_text">
 		                                                                    We may
 		                                                                    update
 		                                                                    this
@@ -4504,9 +4504,9 @@ function Policy() {
 		                                                                    protecting
 		                                                                    your
 		                                                                    information.
-		                                                                  </span>
-		                                                                </span>
-		                                                              </span>
+		                                                                  </p>
+		                                                                </p>
+		                                                              </p>
 		                                                            </div>
 		                                                            <div
 		                                                              style={{
@@ -4523,34 +4523,34 @@ function Policy() {
 		                                                                  "1.5"
 		                                                              }}
 		                                                            >
-		                                                              <span
+		                                                              <p
 		                                                                style={{
 		                                                                  color:
 		                                                                    "rgb(127, 127, 127)"
 		                                                                }}
 		                                                              >
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    color:
 		                                                                      "rgb(89, 89, 89)",
 		                                                                    fontSize: 15
 		                                                                  }}
 		                                                                >
-		                                                                  <span
+		                                                                  <p
 		                                                                    style={{
 		                                                                      fontSize: 15,
 		                                                                      color:
 		                                                                        "rgb(89, 89, 89)"
 		                                                                    }}
 		                                                                  >
-		                                                                    <span
+		                                                                    <p
 		                                                                      style={{
 		                                                                        fontSize: 15,
 		                                                                        color:
 		                                                                          "rgb(89, 89, 89)"
 		                                                                      }}
 		                                                                    >
-		                                                                      <span
+		                                                                      <p
 		                                                                        id="control"
 		                                                                        style={{
 		                                                                          color:
@@ -4558,7 +4558,7 @@ function Policy() {
 		                                                                        }}
 		                                                                      >
 		                                                                        <strong>
-		                                                                          <span className="heading_1">
+		                                                                          <p className="heading_1">
 		                                                                            10.
 		                                                                            HOW
 		                                                                            CAN
@@ -4568,13 +4568,13 @@ function Policy() {
 		                                                                            ABOUT
 		                                                                            THIS
 		                                                                            NOTICE?
-		                                                                          </span>
+		                                                                          </p>
 		                                                                        </strong>
-		                                                                      </span>
-		                                                                    </span>
-		                                                                  </span>
-		                                                                </span>
-		                                                              </span>
+		                                                                      </p>
+		                                                                    </p>
+		                                                                  </p>
+		                                                                </p>
+		                                                              </p>
 		                                                            </div>
 		                                                            <div
 		                                                              style={{
@@ -4590,21 +4590,21 @@ function Policy() {
 		                                                                  "1.5"
 		                                                              }}
 		                                                            >
-		                                                              <span
+		                                                              <p
 		                                                                style={{
 		                                                                  fontSize: 15,
 		                                                                  color:
 		                                                                    "rgb(89, 89, 89)"
 		                                                                }}
 		                                                              >
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    fontSize: 15,
 		                                                                    color:
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span className="body_text">
+		                                                                  <p className="body_text">
 		                                                                    If you
 		                                                                    have
 		                                                                    questions
@@ -4614,14 +4614,14 @@ function Policy() {
 		                                                                    this
 		                                                                    notice,
 		                                                                    you may{" "}
-		                                                                    <span
+		                                                                    <p
 		                                                                      style={{
 		                                                                        color:
 		                                                                          "rgb(89, 89, 89)",
 		                                                                        fontSize: 15
 		                                                                      }}
 		                                                                    >
-		                                                                      <span className="body_text">
+		                                                                      <p className="body_text">
 		                                                                        <bdt className="block-component" />
 		                                                                        email
 		                                                                        us
@@ -4630,23 +4630,23 @@ function Policy() {
 		                                                                          adenlall@skiff.com
 		                                                                        </bdt>
 		                                                                        <bdt className="statement-end-if-in-editor" />
-		                                                                      </span>
-		                                                                    </span>
-		                                                                    <span
+		                                                                      </p>
+		                                                                    </p>
+		                                                                    <p
 		                                                                      style={{
 		                                                                        fontSize: 15,
 		                                                                        color:
 		                                                                          "rgb(89, 89, 89)"
 		                                                                      }}
 		                                                                    >
-		                                                                      <span
+		                                                                      <p
 		                                                                        style={{
 		                                                                          fontSize: 15,
 		                                                                          color:
 		                                                                            "rgb(89, 89, 89)"
 		                                                                        }}
 		                                                                      >
-		                                                                        <span className="body_text">
+		                                                                        <p className="body_text">
 		                                                                          {" "}
 		                                                                          or
 		                                                                          contact
@@ -4654,12 +4654,12 @@ function Policy() {
 		                                                                          by
 		                                                                          post
 		                                                                          at:
-		                                                                        </span>
-		                                                                      </span>
-		                                                                    </span>
-		                                                                  </span>
-		                                                                </span>
-		                                                              </span>
+		                                                                        </p>
+		                                                                      </p>
+		                                                                    </p>
+		                                                                  </p>
+		                                                                </p>
+		                                                              </p>
 		                                                            </div>
 		                                                            <div
 		                                                              style={{
@@ -4675,63 +4675,63 @@ function Policy() {
 		                                                                  "1.5"
 		                                                              }}
 		                                                            >
-		                                                              <span
+		                                                              <p
 		                                                                style={{
 		                                                                  fontSize: 15,
 		                                                                  color:
 		                                                                    "rgb(89, 89, 89)"
 		                                                                }}
 		                                                              >
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    fontSize: 15,
 		                                                                    color:
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span className="body_text">
-		                                                                    <span
+		                                                                  <p className="body_text">
+		                                                                    <p
 		                                                                      style={{
 		                                                                        fontSize: 15
 		                                                                      }}
 		                                                                    >
-		                                                                      <span
+		                                                                      <p
 		                                                                        style={{
 		                                                                          color:
 		                                                                            "rgb(89, 89, 89)"
 		                                                                        }}
 		                                                                      >
-		                                                                        <span
+		                                                                        <p
 		                                                                          style={{
 		                                                                            color:
 		                                                                              "rgb(89, 89, 89)"
 		                                                                          }}
 		                                                                        >
-		                                                                          <span className="body_text">
+		                                                                          <p className="body_text">
 		                                                                            <bdt className="question">
 		                                                                              adenDev
 		                                                                              Open
 		                                                                              organization
 		                                                                            </bdt>
-		                                                                          </span>
-		                                                                        </span>
-		                                                                      </span>
-		                                                                    </span>
-		                                                                  </span>
-		                                                                  <span className="body_text">
-		                                                                    <span
+		                                                                          </p>
+		                                                                        </p>
+		                                                                      </p>
+		                                                                    </p>
+		                                                                  </p>
+		                                                                  <p className="body_text">
+		                                                                    <p
 		                                                                      style={{
 		                                                                        color:
 		                                                                          "rgb(89, 89, 89)"
 		                                                                      }}
 		                                                                    >
-		                                                                      <span className="body_text">
+		                                                                      <p className="body_text">
 		                                                                        <bdt className="block-component" />
-		                                                                      </span>
-		                                                                    </span>
-		                                                                  </span>
-		                                                                </span>
-		                                                              </span>
+		                                                                      </p>
+		                                                                    </p>
+		                                                                  </p>
+		                                                                </p>
+		                                                              </p>
 		                                                            </div>
 		                                                            <div
 		                                                              style={{
@@ -4739,31 +4739,31 @@ function Policy() {
 		                                                                  "1.5"
 		                                                              }}
 		                                                            >
-		                                                              <span
+		                                                              <p
 		                                                                style={{
 		                                                                  fontSize: 15
 		                                                                }}
 		                                                              >
-		                                                                <span className="body_text">
+		                                                                <p className="body_text">
 		                                                                  <bdt className="question">
 		                                                                    __________
 		                                                                  </bdt>
-		                                                                  <span
+		                                                                  <p
 		                                                                    style={{
 		                                                                      color:
 		                                                                        "rgb(89, 89, 89)"
 		                                                                    }}
 		                                                                  >
-		                                                                    <span
+		                                                                    <p
 		                                                                      style={{
 		                                                                        fontSize: 15
 		                                                                      }}
 		                                                                    >
 		                                                                      <bdt className="block-component" />
-		                                                                    </span>
-		                                                                  </span>
-		                                                                </span>
-		                                                              </span>
+		                                                                    </p>
+		                                                                  </p>
+		                                                                </p>
+		                                                              </p>
 		                                                            </div>
 		                                                            <div
 		                                                              style={{
@@ -4771,22 +4771,22 @@ function Policy() {
 		                                                                  "1.5"
 		                                                              }}
 		                                                            >
-		                                                              <span
+		                                                              <p
 		                                                                style={{
 		                                                                  fontSize: 15
 		                                                                }}
 		                                                              >
-		                                                                <span className="body_text">
+		                                                                <p className="body_text">
 		                                                                  <bdt className="question">
 		                                                                    Casablanca
 		                                                                  </bdt>
-		                                                                  <span
+		                                                                  <p
 		                                                                    style={{
 		                                                                      color:
 		                                                                        "rgb(89, 89, 89)"
 		                                                                    }}
 		                                                                  >
-		                                                                    <span
+		                                                                    <p
 		                                                                      style={{
 		                                                                        fontSize: 15
 		                                                                      }}
@@ -4805,10 +4805,10 @@ function Policy() {
 		                                                                      <bdt className="statement-end-if-in-editor" />
 		                                                                      <bdt className="block-component" />
 		                                                                      <bdt className="block-component" />
-		                                                                    </span>
-		                                                                  </span>
-		                                                                </span>
-		                                                              </span>
+		                                                                    </p>
+		                                                                  </p>
+		                                                                </p>
+		                                                              </p>
 		                                                            </div>
 		                                                            <div
 		                                                              style={{
@@ -4816,164 +4816,164 @@ function Policy() {
 		                                                                  "1.5"
 		                                                              }}
 		                                                            >
-		                                                              <span
+		                                                              <p
 		                                                                style={{
 		                                                                  fontSize: 15
 		                                                                }}
 		                                                              >
-		                                                                <span className="body_text">
-		                                                                  <span
+		                                                                <p className="body_text">
+		                                                                  <p
 		                                                                    style={{
 		                                                                      fontSize: 15
 		                                                                    }}
 		                                                                  >
-		                                                                    <span className="body_text">
-		                                                                      <span
+		                                                                    <p className="body_text">
+		                                                                      <p
 		                                                                        style={{
 		                                                                          color:
 		                                                                            "rgb(89, 89, 89)"
 		                                                                        }}
 		                                                                      >
 		                                                                        <bdt className="block-component" />
-		                                                                      </span>
-		                                                                    </span>
-		                                                                  </span>
+		                                                                      </p>
+		                                                                    </p>
+		                                                                  </p>
 		                                                                  <bdt className="question">
 		                                                                    Morocco
 		                                                                  </bdt>
-		                                                                  <span
+		                                                                  <p
 		                                                                    style={{
 		                                                                      fontSize: 15
 		                                                                    }}
 		                                                                  >
-		                                                                    <span className="body_text">
-		                                                                      <span
+		                                                                    <p className="body_text">
+		                                                                      <p
 		                                                                        style={{
 		                                                                          color:
 		                                                                            "rgb(89, 89, 89)"
 		                                                                        }}
 		                                                                      >
 		                                                                        <bdt className="statement-end-if-in-editor">
-		                                                                          <span
+		                                                                          <p
 		                                                                            style={{
 		                                                                              fontSize: 15
 		                                                                            }}
 		                                                                          >
-		                                                                            <span className="body_text">
-		                                                                              <span
+		                                                                            <p className="body_text">
+		                                                                              <p
 		                                                                                style={{
 		                                                                                  color:
 		                                                                                    "rgb(89, 89, 89)"
 		                                                                                }}
 		                                                                              >
 		                                                                                <bdt className="statement-end-if-in-editor">
-		                                                                                  <span
+		                                                                                  <p
 		                                                                                    style={{
 		                                                                                      fontSize: 15
 		                                                                                    }}
 		                                                                                  >
-		                                                                                    <span className="body_text">
-		                                                                                      <span
+		                                                                                    <p className="body_text">
+		                                                                                      <p
 		                                                                                        style={{
 		                                                                                          color:
 		                                                                                            "rgb(89, 89, 89)"
 		                                                                                        }}
 		                                                                                      >
 		                                                                                        <bdt className="statement-end-if-in-editor" />
-		                                                                                      </span>
-		                                                                                    </span>
-		                                                                                  </span>
+		                                                                                      </p>
+		                                                                                    </p>
+		                                                                                  </p>
 		                                                                                </bdt>
 		                                                                                <bdt className="statement-end-if-in-editor" />
-		                                                                              </span>
-		                                                                            </span>
-		                                                                          </span>
-		                                                                          <span className="body_text">
-		                                                                            <span
+		                                                                              </p>
+		                                                                            </p>
+		                                                                          </p>
+		                                                                          <p className="body_text">
+		                                                                            <p
 		                                                                              style={{
 		                                                                                color:
 		                                                                                  "rgb(89, 89, 89)"
 		                                                                              }}
 		                                                                            >
-		                                                                              <span
+		                                                                              <p
 		                                                                                style={{
 		                                                                                  fontSize: 15
 		                                                                                }}
 		                                                                              >
 		                                                                                <bdt className="statement-end-if-in-editor" />
-		                                                                              </span>
-		                                                                            </span>
-		                                                                          </span>
+		                                                                              </p>
+		                                                                            </p>
+		                                                                          </p>
 		                                                                        </bdt>
-		                                                                      </span>
-		                                                                    </span>
-		                                                                  </span>
-		                                                                </span>
-		                                                                <span className="body_text">
-		                                                                  <span
+		                                                                      </p>
+		                                                                    </p>
+		                                                                  </p>
+		                                                                </p>
+		                                                                <p className="body_text">
+		                                                                  <p
 		                                                                    style={{
 		                                                                      fontSize: 15
 		                                                                    }}
 		                                                                  >
-		                                                                    <span className="body_text">
-		                                                                      <span
+		                                                                    <p className="body_text">
+		                                                                      <p
 		                                                                        style={{
 		                                                                          color:
 		                                                                            "rgb(89, 89, 89)"
 		                                                                        }}
 		                                                                      >
 		                                                                        <bdt className="statement-end-if-in-editor">
-		                                                                          <span
+		                                                                          <p
 		                                                                            style={{
 		                                                                              color:
 		                                                                                "rgb(89, 89, 89)"
 		                                                                            }}
 		                                                                          >
-		                                                                            <span
+		                                                                            <p
 		                                                                              style={{
 		                                                                                fontSize: 15
 		                                                                              }}
 		                                                                            >
-		                                                                              <span className="body_text">
+		                                                                              <p className="body_text">
 		                                                                                <bdt className="block-component">
 		                                                                                  <bdt className="block-component" />
 		                                                                                </bdt>
-		                                                                              </span>
-		                                                                            </span>
-		                                                                          </span>
+		                                                                              </p>
+		                                                                            </p>
+		                                                                          </p>
 		                                                                        </bdt>
-		                                                                      </span>
-		                                                                    </span>
-		                                                                  </span>
-		                                                                  <span
+		                                                                      </p>
+		                                                                    </p>
+		                                                                  </p>
+		                                                                  <p
 		                                                                    style={{
 		                                                                      fontSize: 15
 		                                                                    }}
 		                                                                  >
-		                                                                    <span className="body_text">
-		                                                                      <span
+		                                                                    <p className="body_text">
+		                                                                      <p
 		                                                                        style={{
 		                                                                          color:
 		                                                                            "rgb(89, 89, 89)",
 		                                                                          fontSize: 15
 		                                                                        }}
 		                                                                      >
-		                                                                        <span
+		                                                                        <p
 		                                                                          style={{
 		                                                                            fontSize: 15
 		                                                                          }}
 		                                                                        >
-		                                                                          <span className="body_text">
+		                                                                          <p className="body_text">
 		                                                                            <bdt className="statement-end-if-in-editor">
 		                                                                              <bdt className="block-component" />
 		                                                                            </bdt>
-		                                                                          </span>
-		                                                                        </span>
-		                                                                      </span>
-		                                                                    </span>
-		                                                                  </span>
-		                                                                </span>
-		                                                              </span>
+		                                                                          </p>
+		                                                                        </p>
+		                                                                      </p>
+		                                                                    </p>
+		                                                                  </p>
+		                                                                </p>
+		                                                              </p>
 		                                                            </div>
 		                                                            <div
 		                                                              style={{
@@ -4990,34 +4990,34 @@ function Policy() {
 		                                                                  "1.5"
 		                                                              }}
 		                                                            >
-		                                                              <span
+		                                                              <p
 		                                                                style={{
 		                                                                  color:
 		                                                                    "rgb(127, 127, 127)"
 		                                                                }}
 		                                                              >
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    color:
 		                                                                      "rgb(89, 89, 89)",
 		                                                                    fontSize: 15
 		                                                                  }}
 		                                                                >
-		                                                                  <span
+		                                                                  <p
 		                                                                    style={{
 		                                                                      fontSize: 15,
 		                                                                      color:
 		                                                                        "rgb(89, 89, 89)"
 		                                                                    }}
 		                                                                  >
-		                                                                    <span
+		                                                                    <p
 		                                                                      style={{
 		                                                                        fontSize: 15,
 		                                                                        color:
 		                                                                          "rgb(89, 89, 89)"
 		                                                                      }}
 		                                                                    >
-		                                                                      <span
+		                                                                      <p
 		                                                                        id="control"
 		                                                                        style={{
 		                                                                          color:
@@ -5025,7 +5025,7 @@ function Policy() {
 		                                                                        }}
 		                                                                      >
 		                                                                        <strong>
-		                                                                          <span className="heading_1">
+		                                                                          <p className="heading_1">
 		                                                                            11.
 		                                                                            HOW
 		                                                                            CAN
@@ -5040,13 +5040,13 @@ function Policy() {
 		                                                                            COLLECT
 		                                                                            FROM
 		                                                                            YOU?
-		                                                                          </span>
+		                                                                          </p>
 		                                                                        </strong>
-		                                                                      </span>
-		                                                                    </span>
-		                                                                  </span>
-		                                                                </span>
-		                                                              </span>
+		                                                                      </p>
+		                                                                    </p>
+		                                                                  </p>
+		                                                                </p>
+		                                                              </p>
 		                                                            </div>
 		                                                            <div
 		                                                              style={{
@@ -5062,14 +5062,14 @@ function Policy() {
 		                                                                  "1.5"
 		                                                              }}
 		                                                            >
-		                                                              <span
+		                                                              <p
 		                                                                style={{
 		                                                                  fontSize: 15,
 		                                                                  color:
 		                                                                    "rgb(89, 89, 89)"
 		                                                                }}
 		                                                              >
-		                                                                <span
+		                                                                <p
 		                                                                  style={{
 		                                                                    fontSize: 15,
 		                                                                    color:
@@ -5077,13 +5077,13 @@ function Policy() {
 		                                                                  }}
 		                                                                >
 		                                                                  <bdt className="block-component">
-		                                                                    <span className="body_text" />
+		                                                                    <p className="body_text" />
 		                                                                  </bdt>
-		                                                                </span>
-		                                                              </span>
-		                                                              <span className="body_text">
+		                                                                </p>
+		                                                              </p>
+		                                                              <p className="body_text">
 		                                                                .
-		                                                              </span>
+		                                                              </p>
 		                                                            </div>
 		                                                          </div>
 		                                                          <div
