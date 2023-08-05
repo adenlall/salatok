@@ -36,7 +36,7 @@ export function Helper() {
 							console.log("`LOG TRACE` : dDay for day "+ moment().format('DD-MM-YYYY') +" `NOT FOUND` in local storage");
 							let config = {
 								method: this.ReadOrWrite('method', "MWL"),
-								core: this.ReadOrWrite("core", {coords: [localStorage.getItem("lat"), localStorage.getItem("long")], timezone:"auto", dst:"auto", format:"24h"})
+								core: this.ReadOrWrite("core", {coords: [parseInt(localStorage.getItem("lat")), parseInt(localStorage.getItem("long"))], timezone:"auto", dst:"auto", format:"24h"})
 							};
 							const salat = new PrayTimes();
 							salat.setMethod(config.method);
@@ -80,7 +80,7 @@ export function Helper() {
 			dWeek: function(ssa){
 					let config = {
 						method: this.ReadOrWrite('method', "MWL"),
-						core: this.ReadOrWrite("core", {coords: [localStorage.getItem("lat"), localStorage.getItem("long")], timezone:"auto", dst:"auto", format:"24h"})
+						core: this.ReadOrWrite("core", {coords: [parseInt(localStorage.getItem("lat")), parseInt(localStorage.getItem("long"))], timezone:"auto", dst:"auto", format:"24h"})
 					};
 					const salat = new PrayTimes();
 					const arr = [];
