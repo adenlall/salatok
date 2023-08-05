@@ -1,11 +1,9 @@
 # salatok
 <a href="https://www.buymeacoffee.com/adenlallI"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=adenlallI&button_colour=00ff98&font_colour=000000&font_family=Comic&outline_colour=000000&coffee_colour=FFDD00" /></a>
 
- your prayer time manager and quran reader.
- **anywhere anytime**
- 
- - main instance : https://salatok.vercel.app ***using muslimsalat.com api***
- - beta instance : https://salatok-git-beta-adenlall.vercel.app ***using praytimes.org library***
+## this is an old version that depend on muslimsalat.com api witch may be down from to time to other. we recomend using [main branch](https://github.com/adenlall/salatok/tree/main) witch is 100% independent.
+
+ - instance : https://salatok-git-old-adenlall.vercel.app/
 
 ## Hacking
 
