@@ -48,7 +48,7 @@ export function Helper() {
 			},
 			dDay: function(){
 								this.checkStorage();
-								return JSON.parse(localStorage.getItem("dDay"+moment().format('DD-MM-YYYY')));
+								return JSON.parse(localStorage.getItem("dDay-"+moment().format('DD-MM-YYYY')));
 			},
 			sNames: function(){
 								this.checkStorage();
