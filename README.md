@@ -3,9 +3,15 @@
 
  your prayer time manager and quran reader.
  **anywhere anytime**
- 
- - main instance : https://salatok.vercel.app ***using muslimsalat.com api***
- - beta instance : https://salatok-git-beta-adenlall.vercel.app ***using praytimes.org library***
+
+### stable
+
+ - main instance : https://salatok.vercel.app ***using praytimes.org library***
+ - old instance : https://salatok-git-old-adenlall.vercel.app ***using muslimsalat.com api***
+
+### beta
+   where to push all new features and fixes bug
+ - https://salatok-git-beta-adenlall.vercel.app
 
 ## Hacking
 
