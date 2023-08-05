@@ -94,14 +94,15 @@ function Player(props) {
 
     const logseek = () => {
         const audio = document.querySelector('#music_player');
+        if(audio.duration===audio.currentTime){
+        	stop();
+        	return;
+        }
         let duration = audio.duration;
         let current = audio.currentTime * (100 / duration);
         setSeek(String(current));
         document.querySelector('#ct').innerHTML = `${setct(audio.currentTime)}`;
         document.querySelector('#tt').innerHTML = `${setct(duration)}`;
-        if(current===duration){
-        	stop();
-        }
     }
 
     const handelSeek = () => {
