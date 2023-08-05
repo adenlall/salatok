@@ -147,7 +147,7 @@ function SelectByUser() {
 
     return (
 		<>
-			<div className="lg:w-[40%] lg:h-[38em] max-h-auto lg:max-h-[84vh] h-auto w-full md:h-auto shadow-xl flex flex-col justify-between items-stretch p-4 rounded-lg bg-slate-100 dark:bg-gray-800 dark:text-slate-100 text-gray-800">
+			<div className="lg:w-[40%] lg:h-[37em] max-h-full lg:max-h-[37em] h-full w-full md:h-auto shadow-xl flex flex-col justify-between items-stretch p-4 rounded-lg bg-slate-100 dark:bg-gray-800 dark:text-slate-100 text-gray-800">
 				<div className="flex flex-col h-full w-full justify-evenly items-center">
 					<div className="flex flex-row items-end w-[87%] py-6 space-x-2">
 						<header className="text-2xl lg:text-4xl font-bold">Find your Location.</header>
