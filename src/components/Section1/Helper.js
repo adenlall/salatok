@@ -10,6 +10,7 @@ export function Helper() {
 				 			let dDay   = localStorage.getItem("dDay-"+moment().format('DD-MM-YYYY'));
 				 			let sNames = localStorage.getItem("salats_names");
 				 			if(!dDay){
+				 					console.log("!dDay")
 				 					this.clearStorage();
 				 					this.setUPdDay();
 				 			}
@@ -23,7 +24,7 @@ export function Helper() {
 			 			}
 			},
 			clearStorage: function(){
-			 		const keysToKeep = ['salats_names', 'country', 'city', 'timezone', 'latitude', 'longitude'];
+			 		const keysToKeep = ['salats_names', 'country', 'city', 'timezone', 'lat', 'long'];
 					for (let i = 0; i < localStorage.length; i++) {
 						const key = localStorage.key(i);
 						if (!keysToKeep.includes(key)) {
