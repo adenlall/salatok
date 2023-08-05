@@ -51,7 +51,7 @@ function App() {
           setTat(true);
         })
 
-      }).catch(error => { console.log('App.js : ' + error); setErr(true); setTat(true); })
+      }).catch(error => { console.error('App.js : ' + error); setErr(true); setTat(true); })
 
     } else {
       setErr(false);
