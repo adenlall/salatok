@@ -104,7 +104,7 @@ function Player(props) {
     }
 
     const mutePlayer = () => {
-		player.volume = document.getElementById("change_vol").value === 0 ? 1 : 0;
+		player.volume = document.getElementById("change_vol").value === "0" ? 1 : 0;
     }
 
     const setct = (time) => {
