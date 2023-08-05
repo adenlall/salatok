@@ -1,17 +1,17 @@
 import React from 'react';
-
+import './privacy.css';
 
 function Policy() {
     return (
     	
     	<>
-	  <div className="px-8">
+	  <div className="md:p-[73px] p-[20px] bg-[#dcefff] dark:bg-[#111827] dark:text-white">
 		<div>
 		  <strong>
 		    <p style={{ fontSize: 26 }}>
-		      <p className="title">
+		      <p className="text-[#000a1a] dark:text-[#67e8f9]">
 		        <bdt className="block-component" />
-		        <bdt className="question">PRIVACY POLICY</bdt>
+		        <bdt className="text-[#111827] dark:text-[#849fa7]">PRIVACY POLICY</bdt>
 		        <bdt className="statement-end-if-in-editor" />
 		      </p>
 		    </p>
@@ -21,12 +21,12 @@ function Policy() {
 		  <br />
 		</div>
 		<div>
-		  <p style={{ color: "rgb(127, 127, 127)" }}>
+		  <p className="text-[#132d57] dark:text-[#67e8f9]">
 		    <strong>
 		      <p style={{ fontSize: 15 }}>
-		        <p className="subtitle">
+		        <p className="text-[#000a1a] dark:text-[#b2fcff]">
 		          Last updated
-		          <bdt className="question">August 05, 2023</bdt>
+		          <bdt className="text-[#111827] dark:text-[#849fa7]">August 05, 2023</bdt>
 		        </p>
 		      </p>
 		    </strong>
@@ -42,15 +42,15 @@ function Policy() {
 		  <br />
 		</div>
 		<div style={{ lineHeight: "1.5" }}>
-		  <p style={{ color: "rgb(127, 127, 127)" }}>
-		    <p style={{ color: "rgb(89, 89, 89)", fontSize: 15 }}>
-		      <p className="body_text">
+		  <p className="text-[#000000] dark:text-[#62a0ea]">
+		    <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		      <p className="text-[#162125] dark:text-[#78c5bd]">
 		        This privacy notice for
-		        <bdt className="question">
+		        <bdt className="text-[#111827] dark:text-[#849fa7]">
 		          adenDev Open organization
 		          <bdt className="block-component" />
 		          (doing business as
-		          <bdt className="question">adenDev</bdt>
+		          <bdt className="text-[#111827] dark:text-[#849fa7]">adenDev</bdt>
 		          )
 		          <bdt className="statement-end-if-in-editor" />
 		        </bdt>
@@ -58,7 +58,7 @@ function Policy() {
 		        <bdt className="block-component" />
 		        "
 		        <bdt className="block-component" />
-		        <bdt className="question">
+		        <bdt className="text-[#111827] dark:text-[#849fa7]">
 		          <strong>adenDev</strong>
 		        </bdt>
 		        <bdt className="else-block" />
@@ -66,7 +66,7 @@ function Policy() {
 		        <strong>our</strong>"
 		        <bdt className="statement-end-if-in-editor" />
 		      </p>
-		      <p className="body_text">
+		      <p className="text-[#162125] dark:text-[#78c5bd]">
 		        ), describes how and why we might collect, store, use, and/or share
 		        (
 		        <bdt className="block-component" />"<strong>process</strong>"
@@ -79,10 +79,10 @@ function Policy() {
 		    </p>
 		  </p>
 		  <p style={{ fontSize: 15 }}>
-		    <p style={{ color: "rgb(127, 127, 127)" }}>
-		      <p className="body_text">
-		        <p style={{ color: "rgb(89, 89, 89)" }}>
-		          <p className="body_text">
+		    <p className="text-[#000000] dark:text-[#62a0ea]">
+		      <p className="text-[#162125] dark:text-[#78c5bd]">
+		        <p className="text-[#000000] dark:text-[#62a0ea]">
+		          <p className="text-[#162125] dark:text-[#78c5bd]">
 		            <bdt className="block-component" />
 		          </p>
 		        </p>
@@ -92,18 +92,18 @@ function Policy() {
 		</div>
 		<ul>
 		  <li style={{ lineHeight: "1.5" }}>
-		    <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		      <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		        <p className="body_text">
+		    <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		      <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		        <p className="text-[#162125] dark:text-[#78c5bd]">
 		          Visit our website
 		          <bdt className="block-component" />
 		          at
-		          <bdt className="question">salatok.vercel.app</bdt>
+		          <bdt className="text-[#111827] dark:text-[#849fa7]">salatok.vercel.app</bdt>
 		          <p style={{ fontSize: 15 }}>
-		            <p style={{ color: "rgb(89, 89, 89)" }}>
-		              <p className="body_text">
+		            <p className="text-[#000000] dark:text-[#62a0ea]">
+		              <p className="text-[#162125] dark:text-[#78c5bd]">
 		                <p style={{ fontSize: 15 }}>
-		                  <p style={{ color: "rgb(89, 89, 89)" }}>
+		                  <p className="text-[#000000] dark:text-[#62a0ea]">
 		                    <bdt className="statement-end-if-in-editor">
 		                      , or any website of ours that links to this privacy
 		                      notice
@@ -122,10 +122,10 @@ function Policy() {
 		  <bdt className="block-component">
 		    <p style={{ fontSize: 15 }}>
 		      <p style={{ fontSize: 15 }}>
-		        <p style={{ color: "rgb(127, 127, 127)" }}>
-		          <p className="body_text">
-		            <p style={{ color: "rgb(89, 89, 89)" }}>
-		              <p className="body_text">
+		        <p className="text-[#000000] dark:text-[#62a0ea]">
+		          <p className="text-[#162125] dark:text-[#78c5bd]">
+		            <p className="text-[#000000] dark:text-[#62a0ea]">
+		              <p className="text-[#162125] dark:text-[#78c5bd]">
 		                <bdt className="block-component" />
 		              </p>
 		            </p>
@@ -136,10 +136,10 @@ function Policy() {
 		  </bdt>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <p style={{ fontSize: 15 }}>
-		      <p style={{ color: "rgb(127, 127, 127)" }}>
-		        <p className="body_text">
-		          <p style={{ color: "rgb(89, 89, 89)" }}>
-		            <p className="body_text">
+		      <p className="text-[#000000] dark:text-[#62a0ea]">
+		        <p className="text-[#162125] dark:text-[#78c5bd]">
+		          <p className="text-[#000000] dark:text-[#62a0ea]">
+		            <p className="text-[#162125] dark:text-[#78c5bd]">
 		              <bdt className="block-component" />
 		            </p>
 		          </p>
@@ -149,16 +149,16 @@ function Policy() {
 		  </div>
 		  <ul>
 		    <li style={{ lineHeight: "1.5" }}>
-		      <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		        <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		          <p className="body_text">
+		      <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		        <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		          <p className="text-[#162125] dark:text-[#78c5bd]">
 		            Engage with us in other related ways, including any sales,
 		            marketing, or events
 		            <p style={{ fontSize: 15 }}>
-		              <p style={{ color: "rgb(89, 89, 89)" }}>
-		                <p className="body_text">
+		              <p className="text-[#000000] dark:text-[#62a0ea]">
+		                <p className="text-[#162125] dark:text-[#78c5bd]">
 		                  <p style={{ fontSize: 15 }}>
-		                    <p style={{ color: "rgb(89, 89, 89)" }}>
+		                    <p className="text-[#000000] dark:text-[#62a0ea]">
 		                      <bdt className="statement-end-if-in-editor" />
 		                    </p>
 		                  </p>
@@ -172,14 +172,14 @@ function Policy() {
 		  </ul>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <p style={{ fontSize: 15 }}>
-		      <p style={{ color: "rgb(127, 127, 127)" }}>
-		        <p className="body_text">
+		      <p className="text-[#000000] dark:text-[#62a0ea]">
+		        <p className="text-[#162125] dark:text-[#78c5bd]">
 		          <strong>Questions or concerns? </strong>Reading this privacy
 		          notice will help you understand your privacy rights and choices.
 		          If you do not agree with our policies and practices, please do not
 		          use our Services. If you still have any questions or concerns,
 		          please contact us at
-		          <bdt className="question">adenlall@skiff.com</bdt>.
+		          <bdt className="text-[#111827] dark:text-[#849fa7]">adenlall@skiff.com</bdt>.
 		        </p>
 		      </p>
 		    </p>
@@ -193,7 +193,7 @@ function Policy() {
 		  <div style={{ lineHeight: "1.5" }}>
 		    <strong>
 		      <p style={{ fontSize: 15 }}>
-		        <p className="heading_1">SUMMARY OF KEY POINTS</p>
+		        <p className="text-[#000000] dark:text-[#62a0ea]">SUMMARY OF KEY POINTS</p>
 		      </p>
 		    </strong>
 		  </div>
@@ -202,7 +202,7 @@ function Policy() {
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <p style={{ fontSize: 15 }}>
-		      <p className="body_text">
+		      <p className="text-[#162125] dark:text-[#78c5bd]">
 		        <strong>
 		          <em>
 		            This summary provides key points from our privacy notice, but
@@ -214,7 +214,7 @@ function Policy() {
 		    </p>
 		    <a className="link" href="#toc">
 		      <p style={{ fontSize: 15 }}>
-		        <p className="body_text">
+		        <p className="text-[#162125] dark:text-[#78c5bd]">
 		          <strong>
 		            <em>table of contents</em>
 		          </strong>
@@ -222,7 +222,7 @@ function Policy() {
 		      </p>
 		    </a>
 		    <p style={{ fontSize: 15 }}>
-		      <p className="body_text">
+		      <p className="text-[#162125] dark:text-[#78c5bd]">
 		        <strong>
 		          <em> below to find the section you are looking for.</em>
 		        </strong>
@@ -234,12 +234,12 @@ function Policy() {
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <p style={{ fontSize: 15 }}>
-		      <p className="body_text">
+		      <p className="text-[#162125] dark:text-[#78c5bd]">
 		        <strong>What personal information do we process?</strong> When you
 		        visit, use, or navigate our Services, we may process personal
 		        information depending on how you interact with
 		        <bdt className="block-component" />
-		        <bdt className="question">adenDev</bdt>
+		        <bdt className="text-[#111827] dark:text-[#849fa7]">adenDev</bdt>
 		        <bdt className="else-block" />
 		        and the Services, the choices you make, and the products and
 		        features you use. Learn more about
@@ -247,19 +247,19 @@ function Policy() {
 		    </p>
 		    <a className="link" href="#personalinfo">
 		      <p style={{ fontSize: 15 }}>
-		        <p className="body_text">
+		        <p className="text-[#162125] dark:text-[#78c5bd]">
 		          personal information you disclose to us
 		        </p>
 		      </p>
 		    </a>
-		    <p className="body_text">.</p>
+		    <p className="text-[#162125] dark:text-[#78c5bd]">.</p>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <br />
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <p style={{ fontSize: 15 }}>
-		      <p className="body_text">
+		      <p className="text-[#162125] dark:text-[#78c5bd]">
 		        <strong>Do we process any sensitive personal information?</strong>
 		        <bdt className="block-component" />
 		        We do not process sensitive personal information.
@@ -272,7 +272,7 @@ function Policy() {
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <p style={{ fontSize: 15 }}>
-		      <p className="body_text">
+		      <p className="text-[#162125] dark:text-[#78c5bd]">
 		        <strong>Do we receive any information from third parties?</strong>
 		        <bdt className="block-component" />
 		        We do not receive any information from third parties.
@@ -285,7 +285,7 @@ function Policy() {
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <p style={{ fontSize: 15 }}>
-		      <p className="body_text">
+		      <p className="text-[#162125] dark:text-[#78c5bd]">
 		        <strong>How do we process your information?</strong> We process your
 		        information to provide, improve, and administer our Services,
 		        communicate with you, for security and fraud prevention, and to
@@ -296,19 +296,19 @@ function Policy() {
 		    </p>
 		    <a className="link" href="#infouse">
 		      <p style={{ fontSize: 15 }}>
-		        <p className="body_text">
+		        <p className="text-[#162125] dark:text-[#78c5bd]">
 		          how we process your information
 		        </p>
 		      </p>
 		    </a>
-		    <p className="body_text">.</p>
+		    <p className="text-[#162125] dark:text-[#78c5bd]">.</p>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <br />
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <p style={{ fontSize: 15 }}>
-		      <p className="body_text">
+		      <p className="text-[#162125] dark:text-[#78c5bd]">
 		        <strong>
 		          In what situations and with which
 		          <bdt className="block-component" />
@@ -321,13 +321,13 @@ function Policy() {
 		    </p>
 		    <a className="link" href="#whoshare">
 		      <p style={{ fontSize: 15 }}>
-		        <p className="body_text">
+		        <p className="text-[#162125] dark:text-[#78c5bd]">
 		          when and with whom we share your personal information
 		        </p>
 		      </p>
 		    </a>
 		    <p style={{ fontSize: 15 }}>
-		      <p className="body_text">
+		      <p className="text-[#162125] dark:text-[#78c5bd]">
 		        .
 		        <bdt className="block-component" />
 		      </p>
@@ -338,7 +338,7 @@ function Policy() {
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <p style={{ fontSize: 15 }}>
-		      <p className="body_text">
+		      <p className="text-[#162125] dark:text-[#78c5bd]">
 		        <strong>What are your rights?</strong> Depending on where you are
 		        located geographically, the applicable privacy law may mean you have
 		        certain rights regarding your personal information. Learn more about{" "}
@@ -346,17 +346,17 @@ function Policy() {
 		    </p>
 		    <a className="link" href="#privacyrights">
 		      <p style={{ fontSize: 15 }}>
-		        <p className="body_text">your privacy rights</p>
+		        <p className="text-[#162125] dark:text-[#78c5bd]">your privacy rights</p>
 		      </p>
 		    </a>
-		    <p className="body_text">.</p>
+		    <p className="text-[#162125] dark:text-[#78c5bd]">.</p>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <br />
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <p style={{ fontSize: 15 }}>
-		      <p className="body_text">
+		      <p className="text-[#162125] dark:text-[#78c5bd]">
 		        <strong>How do you exercise your rights?</strong> The easiest way to
 		        exercise your rights is by
 		        <bdt className="block-component">submitting a </bdt>
@@ -369,13 +369,13 @@ function Policy() {
 		      target="_blank"
 		    >
 		      <p style={{ fontSize: 15 }}>
-		        <p className="body_text">
+		        <p className="text-[#162125] dark:text-[#78c5bd]">
 		          data subject access request
 		        </p>
 		      </p>
 		    </a>
 		    <p style={{ fontSize: 15 }}>
-		      <p className="body_text">
+		      <p className="text-[#162125] dark:text-[#78c5bd]">
 		        <bdt className="block-component" />, or by contacting us. We will
 		        consider and act upon any request in accordance with applicable data
 		        protection laws.
@@ -387,23 +387,23 @@ function Policy() {
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <p style={{ fontSize: 15 }}>
-		      <p className="body_text">
+		      <p className="text-[#162125] dark:text-[#78c5bd]">
 		        Want to learn more about what
 		        <bdt className="block-component" />
-		        <bdt className="question">adenDev</bdt>
+		        <bdt className="text-[#111827] dark:text-[#849fa7]">adenDev</bdt>
 		        <bdt className="else-block" />
 		        does with any information we collect?
 		      </p>
 		    </p>
 		    <a className="link" href="#toc">
 		      <p style={{ fontSize: 15 }}>
-		        <p className="body_text">
+		        <p className="text-[#162125] dark:text-[#78c5bd]">
 		          Review the privacy notice in full
 		        </p>
 		      </p>
 		    </a>
 		    <p style={{ fontSize: 15 }}>
-		      <p className="body_text">.</p>
+		      <p className="text-[#162125] dark:text-[#78c5bd]">.</p>
 		    </p>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
@@ -414,10 +414,10 @@ function Policy() {
 		  </div>
 		  <div id="toc" style={{ lineHeight: "1.5" }}>
 		    <p style={{ fontSize: 15 }}>
-		      <p style={{ color: "rgb(127, 127, 127)" }}>
-		        <p style={{ color: "rgb(0, 0, 0)" }}>
+		      <p className="text-[#000000] dark:text-[#62a0ea]">
+		        <p className="text-[#000000] dark:text-[#62a0ea]">
 		          <strong>
-		            <p className="heading_1">TABLE OF CONTENTS</p>
+		            <p className="text-[#000000] dark:text-[#62a0ea]">TABLE OF CONTENTS</p>
 		          </strong>
 		        </p>
 		      </p>
@@ -429,7 +429,7 @@ function Policy() {
 		  <div style={{ lineHeight: "1.5" }}>
 		    <p style={{ fontSize: 15 }}>
 		      <a className="link" href="#infocollect">
-		        <p style={{ color: "rgb(89, 89, 89)" }}>
+		        <p className="text-[#000000] dark:text-[#62a0ea]">
 		          1. WHAT INFORMATION DO WE COLLECT?
 		        </p>
 		      </a>
@@ -438,7 +438,7 @@ function Policy() {
 		  <div style={{ lineHeight: "1.5" }}>
 		    <p style={{ fontSize: 15 }}>
 		      <a className="link" href="#infouse">
-		        <p style={{ color: "rgb(89, 89, 89)" }}>
+		        <p className="text-[#000000] dark:text-[#62a0ea]">
 		          2. HOW DO WE PROCESS YOUR INFORMATION?
 		          <bdt className="block-component" />
 		        </p>
@@ -448,10 +448,10 @@ function Policy() {
 		  <div style={{ lineHeight: "1.5" }}>
 		    <p style={{ fontSize: 15 }}>
 		      <a className="link" href="#legalbases">
-		        <p style={{ color: "rgb(89, 89, 89)" }}>
+		        <p className="text-[#000000] dark:text-[#62a0ea]">
 		          3.{" "}
 		          <p style={{ fontSize: 15 }}>
-		            <p style={{ color: "rgb(89, 89, 89)" }}>
+		            <p className="text-[#000000] dark:text-[#62a0ea]">
 		              WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR PERSONAL
 		              INFORMATION?
 		            </p>
@@ -463,25 +463,25 @@ function Policy() {
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <p style={{ fontSize: 15 }}>
-		      <p style={{ color: "rgb(89, 89, 89)" }}>
+		      <p className="text-[#000000] dark:text-[#62a0ea]">
 		        <a className="link" href="#whoshare">
 		          4. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?
 		        </a>
 		      </p>
-		      <p className="body_text">
+		      <p className="text-[#162125] dark:text-[#78c5bd]">
 		        <bdt className="block-component" />
 		      </p>
-		      <p style={{ color: "rgb(127, 127, 127)" }}>
-		        <p style={{ color: "rgb(89, 89, 89)" }}>
-		          <p className="body_text">
-		            <p style={{ color: "rgb(89, 89, 89)" }}>
+		      <p className="text-[#000000] dark:text-[#62a0ea]">
+		        <p className="text-[#000000] dark:text-[#62a0ea]">
+		          <p className="text-[#162125] dark:text-[#78c5bd]">
+		            <p className="text-[#000000] dark:text-[#62a0ea]">
 		              <bdt className="block-component" />
 		            </p>
 		          </p>
-		          <p className="body_text">
-		            <p style={{ color: "rgb(89, 89, 89)" }}>
-		              <p style={{ color: "rgb(89, 89, 89)" }}>
-		                <p style={{ color: "rgb(89, 89, 89)" }}>
+		          <p className="text-[#162125] dark:text-[#78c5bd]">
+		            <p className="text-[#000000] dark:text-[#62a0ea]">
+		              <p className="text-[#000000] dark:text-[#62a0ea]">
+		                <p className="text-[#000000] dark:text-[#62a0ea]">
 		                  <bdt className="block-component" />
 		                </p>
 		              </p>
@@ -495,15 +495,15 @@ function Policy() {
 		  <div style={{ lineHeight: "1.5" }}>
 		    <p style={{ fontSize: 15 }}>
 		      <a className="link" href="#inforetain">
-		        <p style={{ color: "rgb(89, 89, 89)" }}>
+		        <p className="text-[#000000] dark:text-[#62a0ea]">
 		          5. HOW LONG DO WE KEEP YOUR INFORMATION?
 		        </p>
 		      </a>
-		      <p style={{ color: "rgb(127, 127, 127)" }}>
-		        <p style={{ color: "rgb(89, 89, 89)" }}>
-		          <p className="body_text">
-		            <p style={{ color: "rgb(89, 89, 89)" }}>
-		              <p style={{ color: "rgb(89, 89, 89)" }}>
+		      <p className="text-[#000000] dark:text-[#62a0ea]">
+		        <p className="text-[#000000] dark:text-[#62a0ea]">
+		          <p className="text-[#162125] dark:text-[#78c5bd]">
+		            <p className="text-[#000000] dark:text-[#62a0ea]">
+		              <p className="text-[#000000] dark:text-[#62a0ea]">
 		                <bdt className="block-component" />
 		                <bdt className="block-component" />
 		              </p>
@@ -515,7 +515,7 @@ function Policy() {
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <p style={{ fontSize: 15 }}>
-		      <p style={{ color: "rgb(89, 89, 89)" }}>
+		      <p className="text-[#000000] dark:text-[#62a0ea]">
 		        <a className="link" href="#privacyrights">
 		          6. WHAT ARE YOUR PRIVACY RIGHTS?
 		        </a>
@@ -525,7 +525,7 @@ function Policy() {
 		  <div style={{ lineHeight: "1.5" }}>
 		    <p style={{ fontSize: 15 }}>
 		      <a className="link" href="#DNT">
-		        <p style={{ color: "rgb(89, 89, 89)" }}>
+		        <p className="text-[#000000] dark:text-[#62a0ea]">
 		          7. CONTROLS FOR DO-NOT-TRACK FEATURES
 		        </p>
 		      </a>
@@ -534,21 +534,21 @@ function Policy() {
 		  <div style={{ lineHeight: "1.5" }}>
 		    <p style={{ fontSize: 15 }}>
 		      <a className="link" href="#caresidents">
-		        <p style={{ color: "rgb(89, 89, 89)" }}>
+		        <p className="text-[#000000] dark:text-[#62a0ea]">
 		          8. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?
 		        </p>
 		      </a>
 		    </p>
 		    <bdt className="block-component">
 		      <p style={{ fontSize: 15 }}>
-		        <p className="body_text" />
+		        <p className="text-[#162125] dark:text-[#78c5bd]" />
 		      </p>
 		    </bdt>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <p style={{ fontSize: 15 }}>
 		      <a className="link" href="#policyupdates">
-		        <p style={{ color: "rgb(89, 89, 89)" }}>
+		        <p className="text-[#000000] dark:text-[#62a0ea]">
 		          9. DO WE MAKE UPDATES TO THIS NOTICE?
 		        </p>
 		      </a>
@@ -556,14 +556,14 @@ function Policy() {
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <a className="link" href="#contact">
-		      <p style={{ color: "rgb(89, 89, 89)", fontSize: 15 }}>
+		      <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
 		        10. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?
 		      </p>
 		    </a>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <a className="link" href="#request">
-		      <p style={{ color: "rgb(89, 89, 89)" }}>
+		      <p className="text-[#000000] dark:text-[#62a0ea]">
 		        11. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM
 		        YOU?
 		      </p>
@@ -576,13 +576,13 @@ function Policy() {
 		    <br />
 		  </div>
 		  <div id="infocollect" style={{ lineHeight: "1.5" }}>
-		    <p style={{ color: "rgb(127, 127, 127)" }}>
-		      <p style={{ color: "rgb(89, 89, 89)", fontSize: 15 }}>
-		        <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		          <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		            <p id="control" style={{ color: "rgb(0, 0, 0)" }}>
+		    <p className="text-[#000000] dark:text-[#62a0ea]">
+		      <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		        <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		          <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		            <p id="control" className="text-[#000000] dark:text-[#62a0ea]">
 		              <strong>
-		                <p className="heading_1">
+		                <p className="text-[#000000] dark:text-[#62a0ea]">
 		                  1. WHAT INFORMATION DO WE COLLECT?
 		                </p>
 		              </strong>
@@ -596,7 +596,7 @@ function Policy() {
 		    <br />
 		  </div>
 		  <div id="personalinfo" style={{ lineHeight: "1.5" }}>
-		    <p className="heading_2" style={{ color: "rgb(0, 0, 0)" }}>
+		    <p className="heading_2" className="text-[#000000] dark:text-[#62a0ea]">
 		      <p style={{ fontSize: 15 }}>
 		        <strong>Personal information you disclose to us</strong>
 		      </p>
@@ -607,12 +607,12 @@ function Policy() {
 		      <br />
 		    </div>
 		    <div style={{ lineHeight: "1.5" }}>
-		      <p style={{ color: "rgb(127, 127, 127)" }}>
-		        <p style={{ color: "rgb(89, 89, 89)", fontSize: 15 }}>
-		          <p className="body_text">
-		            <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		              <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		                <p className="body_text">
+		      <p className="text-[#000000] dark:text-[#62a0ea]">
+		        <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		          <p className="text-[#162125] dark:text-[#78c5bd]">
+		            <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		              <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		                <p className="text-[#162125] dark:text-[#78c5bd]">
 		                  <strong>
 		                    <em>In Short:</em>
 		                  </strong>
@@ -620,10 +620,10 @@ function Policy() {
 		              </p>
 		            </p>
 		          </p>
-		          <p className="body_text">
-		            <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		              <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		                <p className="body_text">
+		          <p className="text-[#162125] dark:text-[#78c5bd]">
+		            <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		              <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		                <p className="text-[#162125] dark:text-[#78c5bd]">
 		                  <strong>
 		                    <em> </em>
 		                  </strong>
@@ -642,16 +642,16 @@ function Policy() {
 		    <br />
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
-		    <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		      <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		        <p className="body_text">
+		    <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		      <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		        <p className="text-[#162125] dark:text-[#78c5bd]">
 		          We collect personal information that you voluntarily provide to us
 		          when you{" "}
 		          <p style={{ fontSize: 15 }}>
 		            <bdt className="block-component" />
 		          </p>
 		        </p>
-		        <p className="body_text">
+		        <p className="text-[#162125] dark:text-[#78c5bd]">
 		          express an interest in obtaining information about us or our
 		          products and Services, when you participate in activities on the
 		          Services, or otherwise when you contact us.
@@ -663,9 +663,9 @@ function Policy() {
 		    <br />
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
-		    <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		      <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		        <p className="body_text">
+		    <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		      <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		        <p className="text-[#162125] dark:text-[#78c5bd]">
 		          <p style={{ fontSize: 15 }}>
 		            <bdt className="block-component" />
 		          </p>
@@ -675,7 +675,7 @@ function Policy() {
 		  </div>
 		  <div id="sensitiveinfo" style={{ lineHeight: "1.5" }}>
 		    <p style={{ fontSize: 15 }}>
-		      <p className="body_text">
+		      <p className="text-[#162125] dark:text-[#78c5bd]">
 		        <strong>Sensitive Information.</strong>
 		        <bdt className="block-component" />
 		        We do not process sensitive information.
@@ -687,15 +687,15 @@ function Policy() {
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
 		    <p style={{ fontSize: 15 }}>
-		      <p className="body_text">
+		      <p className="text-[#162125] dark:text-[#78c5bd]">
 		        <bdt className="else-block" />
 		      </p>
 		    </p>
-		    <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		      <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		        <p className="body_text">
+		    <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		      <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		        <p className="text-[#162125] dark:text-[#78c5bd]">
 		          <p style={{ fontSize: 15 }}>
-		            <p className="body_text">
+		            <p className="text-[#162125] dark:text-[#78c5bd]">
 		              <bdt className="block-component">
 		                <bdt className="block-component" />
 		              </bdt>
@@ -707,9 +707,9 @@ function Policy() {
 		    </p>
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
-		    <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		      <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		        <p className="body_text">
+		    <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		      <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		        <p className="text-[#162125] dark:text-[#78c5bd]">
 		          All personal information that you provide to us must be true,
 		          complete, and accurate, and you must notify us of any changes to
 		          such personal information.
@@ -721,16 +721,16 @@ function Policy() {
 		    <br />
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
-		    <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		      <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		        <p className="body_text">
+		    <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		      <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		        <p className="text-[#162125] dark:text-[#78c5bd]">
 		          <bdt className="block-component" />
 		        </p>
-		        <p className="body_text">
-		          <p style={{ color: "rgb(89, 89, 89)", fontSize: 15 }}>
-		            <p className="body_text">
-		              <p style={{ color: "rgb(89, 89, 89)", fontSize: 15 }}>
-		                <p className="body_text">
+		        <p className="text-[#162125] dark:text-[#78c5bd]">
+		          <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		            <p className="text-[#162125] dark:text-[#78c5bd]">
+		              <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		                <p className="text-[#162125] dark:text-[#78c5bd]">
 		                  <bdt className="statement-end-if-in-editor">
 		                    <bdt className="block-component" />
 		                  </bdt>
@@ -742,19 +742,19 @@ function Policy() {
 		      </p>
 		    </p>
 		    <p style={{ fontSize: 15 }}>
-		      <p className="body_text">
+		      <p className="text-[#162125] dark:text-[#78c5bd]">
 		        <bdt className="block-component" />
 		      </p>
 		    </p>
 		  </div>
 		  <div id="infouse" style={{ lineHeight: "1.5" }}>
-		    <p style={{ color: "rgb(127, 127, 127)" }}>
-		      <p style={{ color: "rgb(89, 89, 89)", fontSize: 15 }}>
-		        <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		          <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		            <p id="control" style={{ color: "rgb(0, 0, 0)" }}>
+		    <p className="text-[#000000] dark:text-[#62a0ea]">
+		      <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		        <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		          <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		            <p id="control" className="text-[#000000] dark:text-[#62a0ea]">
 		              <strong>
-		                <p className="heading_1">
+		                <p className="text-[#000000] dark:text-[#62a0ea]">
 		                  2. HOW DO WE PROCESS YOUR INFORMATION?
 		                </p>
 		              </strong>
@@ -769,12 +769,12 @@ function Policy() {
 		      <br />
 		    </div>
 		    <div style={{ lineHeight: "1.5" }}>
-		      <p style={{ color: "rgb(127, 127, 127)" }}>
-		        <p style={{ color: "rgb(89, 89, 89)", fontSize: 15 }}>
-		          <p className="body_text">
-		            <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		              <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		                <p className="body_text">
+		      <p className="text-[#000000] dark:text-[#62a0ea]">
+		        <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		          <p className="text-[#162125] dark:text-[#78c5bd]">
+		            <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		              <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		                <p className="text-[#162125] dark:text-[#78c5bd]">
 		                  <strong>
 		                    <em>In Short: </em>
 		                  </strong>
@@ -797,9 +797,9 @@ function Policy() {
 		    <br />
 		  </div>
 		  <div style={{ lineHeight: "1.5" }}>
-		    <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		      <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		        <p className="body_text">
+		    <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		      <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		        <p className="text-[#162125] dark:text-[#78c5bd]">
 		          <strong>
 		            We process your personal information for a variety of reasons,
 		            depending on how you interact with our Services, including:
@@ -809,33 +809,33 @@ function Policy() {
 		      </p>
 		    </p>
 		    <div style={{ lineHeight: "1.5" }}>
-		      <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		        <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		          <p className="body_text">
+		      <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		        <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		          <p className="text-[#162125] dark:text-[#78c5bd]">
 		            <bdt className="block-component" />
 		          </p>
 		        </p>
 		      </p>
 		      <div style={{ lineHeight: "1.5" }}>
-		        <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		          <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		            <p className="body_text">
+		        <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		          <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		            <p className="text-[#162125] dark:text-[#78c5bd]">
 		              <bdt className="block-component" />
 		            </p>
 		          </p>
 		        </p>
 		        <div style={{ lineHeight: "1.5" }}>
-		          <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		            <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		              <p className="body_text">
+		          <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		            <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		              <p className="text-[#162125] dark:text-[#78c5bd]">
 		                <bdt className="block-component" />
 		              </p>
 		            </p>
 		          </p>
 		          <div style={{ lineHeight: "1.5" }}>
-		            <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		              <p style={{ fontSize: 15, color: "rgb(89, 89, 89)" }}>
-		                <p className="body_text">
+		            <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		              <p className="text-[#000000] dark:text-[#62a0ea] font-larger">
+		                <p className="text-[#162125] dark:text-[#78c5bd]">
 		                  <bdt className="block-component" />
 		                </p>
 		              </p>
@@ -855,7 +855,7 @@ function Policy() {
 		                  <div style={{ lineHeight: "1.5" }}>
 		                    <bdt className="block-component">
 		                      <p style={{ fontSize: 15 }}>
-		                        <p className="body_text" />
+		                        <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                      </p>
 		                    </bdt>
 		                    <p style={{ fontSize: 15, lineHeight: "1.5" }}>
@@ -877,7 +877,7 @@ function Policy() {
 		                    <div style={{ lineHeight: "1.5" }}>
 		                      <bdt className="block-component">
 		                        <p style={{ fontSize: 15 }}>
-		                          <p className="body_text" />
+		                          <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                        </p>
 		                      </bdt>
 		                      <div style={{ lineHeight: "1.5" }}>
@@ -891,49 +891,49 @@ function Policy() {
 		                          <div style={{ lineHeight: "1.5" }}>
 		                            <p style={{ fontSize: 15 }}>
 		                              <bdt className="block-component">
-		                                <p className="body_text" />
+		                                <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                              </bdt>
 		                            </p>
 		                            <div style={{ lineHeight: "1.5" }}>
 		                              <bdt className="block-component">
 		                                <p style={{ fontSize: 15 }}>
-		                                  <p className="body_text" />
+		                                  <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                </p>
 		                              </bdt>
 		                              <div style={{ lineHeight: "1.5" }}>
 		                                <bdt className="block-component">
 		                                  <p style={{ fontSize: 15 }}>
-		                                    <p className="body_text" />
+		                                    <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                  </p>
 		                                </bdt>
 		                                <div style={{ lineHeight: "1.5" }}>
 		                                  <bdt className="block-component">
 		                                    <p style={{ fontSize: 15 }}>
-		                                      <p className="body_text" />
+		                                      <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                    </p>
 		                                  </bdt>
 		                                  <div style={{ lineHeight: "1.5" }}>
 		                                    <bdt className="block-component">
 		                                      <p style={{ fontSize: 15 }}>
-		                                        <p className="body_text" />
+		                                        <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                      </p>
 		                                    </bdt>
 		                                    <div style={{ lineHeight: "1.5" }}>
 		                                      <bdt className="block-component">
 		                                        <p style={{ fontSize: 15 }}>
-		                                          <p className="body_text" />
+		                                          <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                        </p>
 		                                      </bdt>
 		                                      <div style={{ lineHeight: "1.5" }}>
 		                                        <bdt className="block-component">
 		                                          <p style={{ fontSize: 15 }}>
-		                                            <p className="body_text" />
+		                                            <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                          </p>
 		                                        </bdt>
 		                                        <div style={{ lineHeight: "1.5" }}>
 		                                          <bdt className="block-component">
 		                                            <p style={{ fontSize: 15 }}>
-		                                              <p className="body_text" />
+		                                              <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                            </p>
 		                                          </bdt>
 		                                          <div
@@ -943,7 +943,7 @@ function Policy() {
 		                                              <p
 		                                                style={{ fontSize: 15 }}
 		                                              >
-		                                                <p className="body_text" />
+		                                                <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                              </p>
 		                                            </bdt>
 		                                            <div
@@ -953,7 +953,7 @@ function Policy() {
 		                                                <p
 		                                                  style={{ fontSize: 15 }}
 		                                                >
-		                                                  <p className="body_text" />
+		                                                  <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                                </p>
 		                                              </bdt>
 		                                              <div
@@ -965,7 +965,7 @@ function Policy() {
 		                                                  <p
 		                                                    style={{ fontSize: 15 }}
 		                                                  >
-		                                                    <p className="body_text" />
+		                                                    <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                                  </p>
 		                                                </bdt>
 		                                                <div
@@ -979,7 +979,7 @@ function Policy() {
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <p className="body_text" />
+		                                                      <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                                    </p>
 		                                                  </bdt>
 		                                                </div>
@@ -989,7 +989,7 @@ function Policy() {
 		                                                      lineHeight: "1.5"
 		                                                    }}
 		                                                  >
-		                                                    <p className="body_text">
+		                                                    <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
@@ -1015,7 +1015,7 @@ function Policy() {
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <p className="body_text" />
+		                                                        <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                                      </p>
 		                                                    </bdt>
 		                                                  </li>
@@ -1031,7 +1031,7 @@ function Policy() {
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <p className="body_text" />
+		                                                      <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                                    </p>
 		                                                  </bdt>
 		                                                  <bdt className="block-component">
@@ -1040,7 +1040,7 @@ function Policy() {
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <p className="body_text" />
+		                                                      <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                                    </p>
 		                                                  </bdt>
 		                                                  <bdt className="block-component">
@@ -1049,7 +1049,7 @@ function Policy() {
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <p className="body_text" />
+		                                                      <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                                    </p>
 		                                                  </bdt>
 		                                                  <bdt className="block-component">
@@ -1058,7 +1058,7 @@ function Policy() {
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <p className="body_text" />
+		                                                      <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                                    </p>
 		                                                  </bdt>
 		                                                </div>
@@ -1081,7 +1081,7 @@ function Policy() {
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <p className="heading_1">
+		                                                      <p className="text-[#000000] dark:text-[#62a0ea]">
 		                                                        3. WHAT LEGAL BASES
 		                                                        DO WE RELY ON TO
 		                                                        PROCESS YOUR
@@ -1108,7 +1108,7 @@ function Policy() {
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <p className="body_text">
+		                                                      <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                        <strong>
 		                                                          In Short:{" "}
 		                                                        </strong>
@@ -1147,10 +1147,10 @@ function Policy() {
 		                                                  <p
 		                                                    style={{ fontSize: 15 }}
 		                                                  >
-		                                                    <p className="body_text">
+		                                                    <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                      <bdt className="block-component" />
 		                                                    </p>
-		                                                    <p className="body_text">
+		                                                    <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                      <bdt className="block-component" />
 		                                                    </p>
 		                                                  </p>
@@ -1173,7 +1173,7 @@ function Policy() {
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <p className="body_text">
+		                                                      <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                        <strong>
 		                                                          <u>
 		                                                            If you are
@@ -1189,7 +1189,7 @@ function Policy() {
 		                                                  <p
 		                                                    style={{ fontSize: 15 }}
 		                                                  >
-		                                                    <p className="body_text">
+		                                                    <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                      <bdt className="statement-end-if-in-editor" />
 		                                                    </p>
 		                                                  </p>
@@ -1209,7 +1209,7 @@ function Policy() {
 		                                                  <p
 		                                                    style={{ fontSize: 15 }}
 		                                                  >
-		                                                    <p className="body_text">
+		                                                    <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                      The General Data
 		                                                      Protection Regulation
 		                                                      (GDPR) and UK GDPR
@@ -1236,7 +1236,7 @@ function Policy() {
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <p className="body_text">
+		                                                      <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                        <strong>
 		                                                          Consent.{" "}
 		                                                        </strong>
@@ -1265,13 +1265,13 @@ function Policy() {
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <p className="body_text">
+		                                                        <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                          withdrawing your
 		                                                          consent
 		                                                        </p>
 		                                                      </p>
 		                                                    </a>
-		                                                    <p className="body_text">
+		                                                    <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                      .
 		                                                    </p>
 		                                                  </li>
@@ -1287,7 +1287,7 @@ function Policy() {
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <p className="body_text" />
+		                                                      <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                                    </p>
 		                                                  </bdt>
 		                                                  <div
@@ -1301,7 +1301,7 @@ function Policy() {
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <p className="body_text" />
+		                                                        <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                                      </p>
 		                                                    </bdt>
 		                                                    <bdt className="block-component">
@@ -1310,7 +1310,7 @@ function Policy() {
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <p className="body_text" />
+		                                                        <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                                      </p>
 		                                                    </bdt>
 		                                                  </div>
@@ -1320,7 +1320,7 @@ function Policy() {
 		                                                        lineHeight: "1.5"
 		                                                      }}
 		                                                    >
-		                                                      <p className="body_text">
+		                                                      <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                        <p
 		                                                          style={{
 		                                                            fontSize: 15
@@ -1367,7 +1367,7 @@ function Policy() {
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <p className="body_text" />
+		                                                        <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                                      </p>
 		                                                    </bdt>
 		                                                  </div>
@@ -1377,7 +1377,7 @@ function Policy() {
 		                                                        lineHeight: "1.5"
 		                                                      }}
 		                                                    >
-		                                                      <p className="body_text">
+		                                                      <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                        <p
 		                                                          style={{
 		                                                            fontSize: 15
@@ -1407,7 +1407,7 @@ function Policy() {
 		                                                            fontSize: 15
 		                                                          }}
 		                                                        >
-		                                                          <p className="body_text" />
+		                                                          <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                                        </p>
 		                                                      </bdt>
 		                                                    </li>
@@ -1423,10 +1423,10 @@ function Policy() {
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <p className="body_text" />
+		                                                        <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                                      </p>
 		                                                    </bdt>
-		                                                    <p className="body_text">
+		                                                    <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
@@ -1450,7 +1450,7 @@ function Policy() {
 		                                                      lineHeight: "1.5"
 		                                                    }}
 		                                                  >
-		                                                    <p className="body_text">
+		                                                    <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
@@ -1484,7 +1484,7 @@ function Policy() {
 		                                                      lineHeight: "1.5"
 		                                                    }}
 		                                                  >
-		                                                    <p className="body_text">
+		                                                    <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
@@ -1516,7 +1516,7 @@ function Policy() {
 		                                                      className="link"
 		                                                      href="#withdrawconsent"
 		                                                    >
-		                                                      <p className="body_text">
+		                                                      <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                        <p
 		                                                          style={{
 		                                                            fontSize: 15
@@ -1527,7 +1527,7 @@ function Policy() {
 		                                                        </p>
 		                                                      </p>
 		                                                    </a>
-		                                                    <p className="body_text">
+		                                                    <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
@@ -1550,7 +1550,7 @@ function Policy() {
 		                                                      lineHeight: "1.5"
 		                                                    }}
 		                                                  >
-		                                                    <p className="body_text">
+		                                                    <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
@@ -1574,7 +1574,7 @@ function Policy() {
 		                                                        lineHeight: "1.5"
 		                                                      }}
 		                                                    >
-		                                                      <p className="body_text">
+		                                                      <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                        <p
 		                                                          style={{
 		                                                            fontSize: 15
@@ -1596,7 +1596,7 @@ function Policy() {
 		                                                      lineHeight: "1.5"
 		                                                    }}
 		                                                  >
-		                                                    <p className="body_text">
+		                                                    <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
@@ -1612,7 +1612,7 @@ function Policy() {
 		                                                        lineHeight: "1.5"
 		                                                      }}
 		                                                    >
-		                                                      <p className="body_text">
+		                                                      <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                        <p
 		                                                          style={{
 		                                                            fontSize: 15
@@ -1638,7 +1638,7 @@ function Policy() {
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <p className="body_text" />
+		                                                        <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                                      </p>
 		                                                    </bdt>
 		                                                  </div>
@@ -1648,7 +1648,7 @@ function Policy() {
 		                                                        lineHeight: "1.5"
 		                                                      }}
 		                                                    >
-		                                                      <p className="body_text">
+		                                                      <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                        <p
 		                                                          style={{
 		                                                            fontSize: 15
@@ -1666,7 +1666,7 @@ function Policy() {
 		                                                            fontSize: 15
 		                                                          }}
 		                                                        >
-		                                                          <p className="body_text" />
+		                                                          <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                                        </p>
 		                                                      </bdt>
 		                                                    </li>
@@ -1682,7 +1682,7 @@ function Policy() {
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <p className="body_text" />
+		                                                        <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                                      </p>
 		                                                    </bdt>
 		                                                  </div>
@@ -1692,7 +1692,7 @@ function Policy() {
 		                                                        lineHeight: "1.5"
 		                                                      }}
 		                                                    >
-		                                                      <p className="body_text">
+		                                                      <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                        <p
 		                                                          style={{
 		                                                            fontSize: 15
@@ -1714,7 +1714,7 @@ function Policy() {
 		                                                            fontSize: 15
 		                                                          }}
 		                                                        >
-		                                                          <p className="body_text" />
+		                                                          <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                                        </p>
 		                                                      </bdt>
 		                                                    </li>
@@ -1730,7 +1730,7 @@ function Policy() {
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <p className="body_text" />
+		                                                        <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                                      </p>
 		                                                    </bdt>
 		                                                  </div>
@@ -1740,7 +1740,7 @@ function Policy() {
 		                                                        lineHeight: "1.5"
 		                                                      }}
 		                                                    >
-		                                                      <p className="body_text">
+		                                                      <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                        <p
 		                                                          style={{
 		                                                            fontSize: 15
@@ -1759,7 +1759,7 @@ function Policy() {
 		                                                            fontSize: 15
 		                                                          }}
 		                                                        >
-		                                                          <p className="body_text" />
+		                                                          <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                                        </p>
 		                                                      </bdt>
 		                                                    </li>
@@ -1769,7 +1769,7 @@ function Policy() {
 		                                                      lineHeight: "1.5"
 		                                                    }}
 		                                                  >
-		                                                    <p className="body_text">
+		                                                    <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
@@ -1785,7 +1785,7 @@ function Policy() {
 		                                                        lineHeight: "1.5"
 		                                                      }}
 		                                                    >
-		                                                      <p className="body_text">
+		                                                      <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                        <p
 		                                                          style={{
 		                                                            fontSize: 15
@@ -1808,7 +1808,7 @@ function Policy() {
 		                                                      lineHeight: "1.5"
 		                                                    }}
 		                                                  >
-		                                                    <p className="body_text">
+		                                                    <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
@@ -1824,7 +1824,7 @@ function Policy() {
 		                                                        lineHeight: "1.5"
 		                                                      }}
 		                                                    >
-		                                                      <p className="body_text">
+		                                                      <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                        <p
 		                                                          style={{
 		                                                            fontSize: 15
@@ -1858,7 +1858,7 @@ function Policy() {
 		                                                      lineHeight: "1.5"
 		                                                    }}
 		                                                  >
-		                                                    <p className="body_text">
+		                                                    <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15
@@ -1874,7 +1874,7 @@ function Policy() {
 		                                                        lineHeight: "1.5"
 		                                                      }}
 		                                                    >
-		                                                      <p className="body_text">
+		                                                      <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                        <p
 		                                                          style={{
 		                                                            fontSize: 15
@@ -1904,7 +1904,7 @@ function Policy() {
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <p className="body_text" />
+		                                                        <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                                      </p>
 		                                                    </bdt>
 		                                                  </div>
@@ -1919,7 +1919,7 @@ function Policy() {
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <p className="body_text">
+		                                                        <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                          If it was produced
 		                                                          by an individual
 		                                                          in the course of
@@ -1947,7 +1947,7 @@ function Policy() {
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <p className="body_text">
+		                                                      <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                        <bdt className="block-component" />
 		                                                      </p>
 		                                                    </p>
@@ -1963,7 +1963,7 @@ function Policy() {
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <p className="body_text">
+		                                                        <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                          If the collection
 		                                                          is solely for
 		                                                          journalistic,
@@ -1984,7 +1984,7 @@ function Policy() {
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <p className="body_text">
+		                                                      <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                        <bdt className="block-component" />
 		                                                      </p>
 		                                                    </p>
@@ -2000,7 +2000,7 @@ function Policy() {
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <p className="body_text">
+		                                                        <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                          If the information
 		                                                          is publicly
 		                                                          available and is
@@ -2008,7 +2008,7 @@ function Policy() {
 		                                                          regulations
 		                                                        </p>
 		                                                        <bdt className="statement-end-if-in-editor">
-		                                                          <p className="body_text" />
+		                                                          <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                                        </bdt>
 		                                                      </p>
 		                                                    </li>
@@ -2024,7 +2024,7 @@ function Policy() {
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <p className="body_text" />
+		                                                        <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                                      </p>
 		                                                    </bdt>
 		                                                    <bdt className="statement-end-if-in-editor">
@@ -2033,7 +2033,7 @@ function Policy() {
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <p className="body_text" />
+		                                                        <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                                      </p>
 		                                                    </bdt>
 		                                                  </div>
@@ -2050,42 +2050,13 @@ function Policy() {
 		                                                      lineHeight: "1.5"
 		                                                    }}
 		                                                  >
-		                                                    <p
-		                                                      style={{
-		                                                        color:
-		                                                          "rgb(127, 127, 127)"
-		                                                      }}
-		                                                    >
-		                                                      <p
-		                                                        style={{
-		                                                          color:
-		                                                            "rgb(89, 89, 89)",
-		                                                          fontSize: 15
-		                                                        }}
-		                                                      >
-		                                                        <p
-		                                                          style={{
-		                                                            fontSize: 15,
-		                                                            color:
-		                                                              "rgb(89, 89, 89)"
-		                                                          }}
-		                                                        >
-		                                                          <p
-		                                                            style={{
-		                                                              fontSize: 15,
-		                                                              color:
-		                                                                "rgb(89, 89, 89)"
-		                                                            }}
-		                                                          >
-		                                                            <p
-		                                                              id="control"
-		                                                              style={{
-		                                                                color:
-		                                                                  "rgb(0, 0, 0)"
-		                                                              }}
-		                                                            >
+		                                                    <p>
+		                                                      <p>
+		                                                        <p>
+		                                                          <p>
+		                                                            <p>
 		                                                              <strong>
-		                                                                <p className="heading_1">
+		                                                                <p className="text-[#000000] dark:text-[#62a0ea]">
 		                                                                  4. WHEN
 		                                                                  AND WITH
 		                                                                  WHOM DO WE
@@ -2115,18 +2086,14 @@ function Policy() {
 		                                                    <p
 		                                                      style={{
 		                                                        fontSize: 15,
-		                                                        color:
-		                                                          "rgb(89, 89, 89)"
 		                                                      }}
 		                                                    >
 		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15,
-		                                                          color:
-		                                                            "rgb(89, 89, 89)"
 		                                                        }}
 		                                                      >
-		                                                        <p className="body_text">
+		                                                        <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                          <strong>
 		                                                            <em>
 		                                                              In Short:
@@ -2156,18 +2123,14 @@ function Policy() {
 		                                                    <p
 		                                                      style={{
 		                                                        fontSize: 15,
-		                                                        color:
-		                                                          "rgb(89, 89, 89)"
 		                                                      }}
 		                                                    >
 		                                                      <p
 		                                                        style={{
 		                                                          fontSize: 15,
-		                                                          color:
-		                                                            "rgb(89, 89, 89)"
 		                                                        }}
 		                                                      >
-		                                                        <p className="body_text">
+		                                                        <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                          <bdt className="block-component"></bdt>
 		                                                        </p>
 		                                                      </p>
@@ -2190,7 +2153,7 @@ function Policy() {
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <p className="body_text">
+		                                                      <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                        We{" "}
 		                                                        <bdt className="block-component" />
 		                                                        may need to share
@@ -2212,7 +2175,7 @@ function Policy() {
 		                                                          fontSize: 15
 		                                                        }}
 		                                                      >
-		                                                        <p className="body_text">
+		                                                        <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                          <strong>
 		                                                            Business
 		                                                            Transfers.
@@ -2244,7 +2207,7 @@ function Policy() {
 		                                                        fontSize: 15
 		                                                      }}
 		                                                    >
-		                                                      <p className="body_text">
+		                                                      <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                        <bdt className="block-component" />
 		                                                      </p>
 		                                                    </p>
@@ -2259,7 +2222,7 @@ function Policy() {
 		                                                        }}
 		                                                      >
 		                                                        <bdt className="block-component">
-		                                                          <p className="body_text" />
+		                                                          <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                                        </bdt>
 		                                                      </p>
 		                                                      <div
@@ -2273,7 +2236,7 @@ function Policy() {
 		                                                              fontSize: 15
 		                                                            }}
 		                                                          >
-		                                                            <p className="body_text" />
+		                                                            <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                                          </p>
 		                                                        </bdt>
 		                                                        <div
@@ -2288,7 +2251,7 @@ function Policy() {
 		                                                                fontSize: 15
 		                                                              }}
 		                                                            >
-		                                                              <p className="body_text" />
+		                                                              <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                                            </p>
 		                                                          </bdt>
 		                                                          <div
@@ -2303,7 +2266,7 @@ function Policy() {
 		                                                                  fontSize: 15
 		                                                                }}
 		                                                              >
-		                                                                <p className="body_text" />
+		                                                                <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                                              </p>
 		                                                            </bdt>
 		                                                            <div
@@ -2318,13 +2281,11 @@ function Policy() {
 		                                                                    fontSize: 15
 		                                                                  }}
 		                                                                >
-		                                                                  <p className="body_text" />
+		                                                                  <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                                                </p>
 		                                                              </bdt>
 		                                                              <p
 		                                                                style={{
-		                                                                  color:
-		                                                                    "rgb(89, 89, 89)",
 		                                                                  fontSize: 15
 		                                                                }}
 		                                                              >
@@ -2333,50 +2294,34 @@ function Policy() {
 		                                                                    fontSize: 15
 		                                                                  }}
 		                                                                >
-		                                                                  <p
-		                                                                    style={{
-		                                                                      color:
-		                                                                        "rgb(89, 89, 89)"
-		                                                                    }}
-		                                                                  >
+		                                                                  <p>
 		                                                                    <p
 		                                                                      style={{
 		                                                                        fontSize: 15
 		                                                                      }}
 		                                                                    >
-		                                                                      <p
-		                                                                        style={{
-		                                                                          color:
-		                                                                            "rgb(89, 89, 89)"
-		                                                                        }}
-		                                                                      >
+		                                                                      <p>
 		                                                                        <bdt className="block-component">
-		                                                                          <p className="heading_1" />
+		                                                                          <p className="text-[#000000] dark:text-[#62a0ea]" />
 		                                                                        </bdt>
 		                                                                      </p>
 		                                                                    </p>
 		                                                                  </p>
 		                                                                </p>
 		                                                              </p>
-		                                                              <p className="body_text">
+		                                                              <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                <p
 		                                                                  style={{
-		                                                                    color:
-		                                                                      "rgb(89, 89, 89)",
 		                                                                    fontSize: 15
 		                                                                  }}
 		                                                                >
 		                                                                  <p
 		                                                                    style={{
-		                                                                      color:
-		                                                                        "rgb(89, 89, 89)",
 		                                                                      fontSize: 15
 		                                                                    }}
 		                                                                  >
 		                                                                    <p
 		                                                                      style={{
-		                                                                        color:
-		                                                                          "rgb(89, 89, 89)",
 		                                                                        fontSize: 15
 		                                                                      }}
 		                                                                    >
@@ -2386,10 +2331,7 @@ function Policy() {
 		                                                                        }}
 		                                                                      >
 		                                                                        <p
-		                                                                          style={{
-		                                                                            color:
-		                                                                              "rgb(89, 89, 89)"
-		                                                                          }}
+		                                                                          
 		                                                                        >
 		                                                                          <p
 		                                                                            style={{
@@ -2397,16 +2339,13 @@ function Policy() {
 		                                                                            }}
 		                                                                          >
 		                                                                            <p
-		                                                                              style={{
-		                                                                                color:
-		                                                                                  "rgb(89, 89, 89)"
-		                                                                              }}
+		                                                                              
 		                                                                            >
-		                                                                              <p className="body_text">
+		                                                                              <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                                <bdt className="block-component" />
 		                                                                              </p>
 		                                                                              <bdt className="block-component">
-		                                                                                <p className="body_text">
+		                                                                                <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                                  <bdt className="block-component" />
 		                                                                                </p>
 		                                                                              </bdt>
@@ -2469,7 +2408,7 @@ function Policy() {
 		                                                                        }}
 		                                                                      >
 		                                                                        <strong>
-		                                                                          <p className="heading_1">
+		                                                                          <p className="text-[#000000] dark:text-[#62a0ea]">
 		                                                                            5.
 		                                                                            HOW
 		                                                                            LONG
@@ -2514,7 +2453,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <p className="body_text">
+		                                                                  <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                    <strong>
 		                                                                      <em>
 		                                                                        In
@@ -2579,7 +2518,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <p className="body_text">
+		                                                                  <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                    We will
 		                                                                    only
 		                                                                    keep
@@ -2644,7 +2583,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <p className="body_text">
+		                                                                  <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                    When we
 		                                                                    have no
 		                                                                    ongoing
@@ -2711,7 +2650,7 @@ function Policy() {
 		                                                                        fontSize: 15
 		                                                                      }}
 		                                                                    >
-		                                                                      <p className="body_text">
+		                                                                      <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                        <bdt className="block-component" />
 		                                                                      </p>
 		                                                                    </p>
@@ -2769,7 +2708,7 @@ function Policy() {
 		                                                                        }}
 		                                                                      >
 		                                                                        <strong>
-		                                                                          <p className="heading_1">
+		                                                                          <p className="text-[#000000] dark:text-[#62a0ea]">
 		                                                                            6.
 		                                                                            WHAT
 		                                                                            ARE
@@ -2812,7 +2751,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <p className="body_text">
+		                                                                  <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                    <strong>
 		                                                                      <em>
 		                                                                        In
@@ -2832,7 +2771,7 @@ function Policy() {
 		                                                                            fontSize: 15
 		                                                                          }}
 		                                                                        >
-		                                                                          <p className="body_text">
+		                                                                          <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                            <em>
 		                                                                              <bdt className="block-component" />
 		                                                                            </em>
@@ -2881,7 +2820,7 @@ function Policy() {
 		                                                                            fontSize: 15
 		                                                                          }}
 		                                                                        >
-		                                                                          <p className="body_text">
+		                                                                          <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                            <em>
 		                                                                              <bdt className="statement-end-if-in-editor" />
 		                                                                            </em>
@@ -2945,7 +2884,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <p className="body_text">
+		                                                                  <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                    In some
 		                                                                    regions
 		                                                                    (like{" "}
@@ -3045,7 +2984,7 @@ function Policy() {
 		                                                                        "rgb(89, 89, 89)"
 		                                                                    }}
 		                                                                  >
-		                                                                    <p className="body_text">
+		                                                                    <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                      HOW
 		                                                                      CAN
 		                                                                      YOU
@@ -3072,7 +3011,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <p className="body_text">
+		                                                                  <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                    <bdt className="block-component" />
 		                                                                    "
 		                                                                    <bdt className="statement-end-if-in-editor" />{" "}
@@ -3109,7 +3048,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <p className="body_text">
+		                                                                  <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                    We will
 		                                                                    consider
 		                                                                    and act
@@ -3123,7 +3062,7 @@ function Policy() {
 		                                                                    protection
 		                                                                    laws.
 		                                                                  </p>
-		                                                                  <p className="body_text">
+		                                                                  <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                    <p
 		                                                                      style={{
 		                                                                        fontSize: 15
@@ -3135,7 +3074,7 @@ function Policy() {
 		                                                                            "rgb(89, 89, 89)"
 		                                                                        }}
 		                                                                      >
-		                                                                        <p className="body_text">
+		                                                                        <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                          <p
 		                                                                            style={{
 		                                                                              color:
@@ -3193,7 +3132,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <p className="body_text">
+		                                                                  <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                    If you
 		                                                                    are
 		                                                                    located
@@ -3224,14 +3163,14 @@ function Policy() {
 		                                                                            "rgb(89, 89, 89)"
 		                                                                        }}
 		                                                                      >
-		                                                                        <p className="body_text">
+		                                                                        <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                          <p
 		                                                                            style={{
 		                                                                              color:
 		                                                                                "rgb(48, 48, 241)"
 		                                                                            }}
 		                                                                          >
-		                                                                            <p className="body_text">
+		                                                                            <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                              <a
 		                                                                                className="link"
 		                                                                                href="https://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm"
@@ -3279,7 +3218,7 @@ function Policy() {
 		                                                                          "rgb(89, 89, 89)"
 		                                                                      }}
 		                                                                    >
-		                                                                      <p className="body_text">
+		                                                                      <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                        UK
 		                                                                        data
 		                                                                        protection
@@ -3303,7 +3242,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <p className="body_text">
+		                                                                  <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                    .
 		                                                                  </p>
 		                                                                </p>
@@ -3337,7 +3276,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <p className="body_text">
+		                                                                  <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                    If you
 		                                                                    are
 		                                                                    located
@@ -3357,14 +3296,14 @@ function Policy() {
 		                                                                            "rgb(89, 89, 89)"
 		                                                                        }}
 		                                                                      >
-		                                                                        <p className="body_text">
+		                                                                        <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                          <p
 		                                                                            style={{
 		                                                                              color:
 		                                                                                "rgb(48, 48, 241)"
 		                                                                            }}
 		                                                                          >
-		                                                                            <p className="body_text">
+		                                                                            <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                              <p
 		                                                                                style={{
 		                                                                                  fontSize: 15
@@ -3423,7 +3362,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <p className="body_text">
+		                                                                  <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                    <strong>
 		                                                                      <u>
 		                                                                        Withdrawing
@@ -3500,7 +3439,7 @@ function Policy() {
 		                                                                        "rgb(89, 89, 89)"
 		                                                                    }}
 		                                                                  >
-		                                                                    <p className="body_text">
+		                                                                    <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                      HOW
 		                                                                      CAN
 		                                                                      YOU
@@ -3527,7 +3466,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <p className="body_text">
+		                                                                  <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                    <bdt className="block-component" />
 		                                                                    "
 		                                                                    <bdt className="statement-end-if-in-editor" />{" "}
@@ -3557,7 +3496,7 @@ function Policy() {
 		                                                                  fontSize: 15
 		                                                                }}
 		                                                              >
-		                                                                <p className="body_text">
+		                                                                <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                  However,
 		                                                                  please
 		                                                                  note that
@@ -3599,7 +3538,7 @@ function Policy() {
 		                                                                    fontSize: 15
 		                                                                  }}
 		                                                                >
-		                                                                  <p className="body_text" />
+		                                                                  <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                                                </p>
 		                                                              </bdt>
 		                                                              <p
@@ -3616,7 +3555,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <p className="body_text">
+		                                                                  <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                    <p
 		                                                                      style={{
 		                                                                        fontSize: 15
@@ -3639,7 +3578,7 @@ function Policy() {
 		                                                                                "rgb(89, 89, 89)"
 		                                                                            }}
 		                                                                          >
-		                                                                            <p className="body_text">
+		                                                                            <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                              <p
 		                                                                                style={{
 		                                                                                  fontSize: 15
@@ -3668,7 +3607,7 @@ function Policy() {
 		                                                                    fontSize: 15
 		                                                                  }}
 		                                                                >
-		                                                                  <p className="body_text" />
+		                                                                  <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                                                </p>
 		                                                              </bdt>
 		                                                            </div>
@@ -3686,7 +3625,7 @@ function Policy() {
 		                                                                  "1.5"
 		                                                              }}
 		                                                            >
-		                                                              <p className="body_text">
+		                                                              <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                <p
 		                                                                  style={{
 		                                                                    fontSize: 15
@@ -3703,7 +3642,7 @@ function Policy() {
 		                                                                  you may
 		                                                                  email us
 		                                                                  at{" "}
-		                                                                  <bdt className="question">
+		                                                                  <bdt className="text-[#111827] dark:text-[#849fa7]">
 		                                                                    adenlall@skiff.com
 		                                                                  </bdt>
 		                                                                  .
@@ -3715,7 +3654,7 @@ function Policy() {
 		                                                                    fontSize: 15
 		                                                                  }}
 		                                                                >
-		                                                                  <p className="body_text" />
+		                                                                  <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                                                </p>
 		                                                              </bdt>
 		                                                            </div>
@@ -3769,7 +3708,7 @@ function Policy() {
 		                                                                        }}
 		                                                                      >
 		                                                                        <strong>
-		                                                                          <p className="heading_1">
+		                                                                          <p className="text-[#000000] dark:text-[#62a0ea]">
 		                                                                            7.
 		                                                                            CONTROLS
 		                                                                            FOR
@@ -3811,7 +3750,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <p className="body_text">
+		                                                                  <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                    Most web
 		                                                                    browsers
 		                                                                    and some
@@ -3965,7 +3904,7 @@ function Policy() {
 		                                                                        }}
 		                                                                      >
 		                                                                        <strong>
-		                                                                          <p className="heading_1">
+		                                                                          <p className="text-[#000000] dark:text-[#62a0ea]">
 		                                                                            8.
 		                                                                            DO
 		                                                                            CALIFORNIA
@@ -4010,7 +3949,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <p className="body_text">
+		                                                                  <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                    <strong>
 		                                                                      <em>
 		                                                                        In
@@ -4068,7 +4007,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <p className="body_text">
+		                                                                  <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                    California
 		                                                                    Civil
 		                                                                    Code
@@ -4185,7 +4124,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <p className="body_text">
+		                                                                  <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                    If you
 		                                                                    are
 		                                                                    under 18
@@ -4276,7 +4215,7 @@ function Policy() {
 		                                                                        fontSize: 15
 		                                                                      }}
 		                                                                    >
-		                                                                      <p className="body_text">
+		                                                                      <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                        <bdt className="block-component" />
 		                                                                      </p>
 		                                                                    </p>
@@ -4341,7 +4280,7 @@ function Policy() {
 		                                                                        }}
 		                                                                      >
 		                                                                        <strong>
-		                                                                          <p className="heading_1">
+		                                                                          <p className="text-[#000000] dark:text-[#62a0ea]">
 		                                                                            9.
 		                                                                            DO
 		                                                                            WE
@@ -4386,7 +4325,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <p className="body_text">
+		                                                                  <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                    <em>
 		                                                                      <strong>
 		                                                                        In
@@ -4439,7 +4378,7 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <p className="body_text">
+		                                                                  <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                    We may
 		                                                                    update
 		                                                                    this
@@ -4558,7 +4497,7 @@ function Policy() {
 		                                                                        }}
 		                                                                      >
 		                                                                        <strong>
-		                                                                          <p className="heading_1">
+		                                                                          <p className="text-[#000000] dark:text-[#62a0ea]">
 		                                                                            10.
 		                                                                            HOW
 		                                                                            CAN
@@ -4593,18 +4532,14 @@ function Policy() {
 		                                                              <p
 		                                                                style={{
 		                                                                  fontSize: 15,
-		                                                                  color:
-		                                                                    "rgb(89, 89, 89)"
 		                                                                }}
 		                                                              >
 		                                                                <p
 		                                                                  style={{
 		                                                                    fontSize: 15,
-		                                                                    color:
-		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <p className="body_text">
+		                                                                  <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                    If you
 		                                                                    have
 		                                                                    questions
@@ -4616,17 +4551,15 @@ function Policy() {
 		                                                                    you may{" "}
 		                                                                    <p
 		                                                                      style={{
-		                                                                        color:
-		                                                                          "rgb(89, 89, 89)",
 		                                                                        fontSize: 15
 		                                                                      }}
 		                                                                    >
-		                                                                      <p className="body_text">
+		                                                                      <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                        <bdt className="block-component" />
 		                                                                        email
 		                                                                        us
 		                                                                        at{" "}
-		                                                                        <bdt className="question">
+		                                                                        <bdt className="text-[#111827] dark:text-[#849fa7]">
 		                                                                          adenlall@skiff.com
 		                                                                        </bdt>
 		                                                                        <bdt className="statement-end-if-in-editor" />
@@ -4635,18 +4568,14 @@ function Policy() {
 		                                                                    <p
 		                                                                      style={{
 		                                                                        fontSize: 15,
-		                                                                        color:
-		                                                                          "rgb(89, 89, 89)"
 		                                                                      }}
 		                                                                    >
 		                                                                      <p
 		                                                                        style={{
 		                                                                          fontSize: 15,
-		                                                                          color:
-		                                                                            "rgb(89, 89, 89)"
 		                                                                        }}
 		                                                                      >
-		                                                                        <p className="body_text">
+		                                                                        <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                          {" "}
 		                                                                          or
 		                                                                          contact
@@ -4678,37 +4607,26 @@ function Policy() {
 		                                                              <p
 		                                                                style={{
 		                                                                  fontSize: 15,
-		                                                                  color:
-		                                                                    "rgb(89, 89, 89)"
 		                                                                }}
 		                                                              >
 		                                                                <p
 		                                                                  style={{
 		                                                                    fontSize: 15,
-		                                                                    color:
-		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <p className="body_text">
+		                                                                  <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                    <p
 		                                                                      style={{
 		                                                                        fontSize: 15
 		                                                                      }}
 		                                                                    >
 		                                                                      <p
-		                                                                        style={{
-		                                                                          color:
-		                                                                            "rgb(89, 89, 89)"
-		                                                                        }}
 		                                                                      >
 		                                                                        <p
-		                                                                          style={{
-		                                                                            color:
-		                                                                              "rgb(89, 89, 89)"
-		                                                                          }}
+		                                                                          
 		                                                                        >
-		                                                                          <p className="body_text">
-		                                                                            <bdt className="question">
+		                                                                          <p className="text-[#162125] dark:text-[#78c5bd]">
+		                                                                            <bdt className="text-[#111827] dark:text-[#849fa7]">
 		                                                                              adenDev
 		                                                                              Open
 		                                                                              organization
@@ -4718,14 +4636,10 @@ function Policy() {
 		                                                                      </p>
 		                                                                    </p>
 		                                                                  </p>
-		                                                                  <p className="body_text">
+		                                                                  <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                    <p
-		                                                                      style={{
-		                                                                        color:
-		                                                                          "rgb(89, 89, 89)"
-		                                                                      }}
 		                                                                    >
-		                                                                      <p className="body_text">
+		                                                                      <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                        <bdt className="block-component" />
 		                                                                      </p>
 		                                                                    </p>
@@ -4744,15 +4658,11 @@ function Policy() {
 		                                                                  fontSize: 15
 		                                                                }}
 		                                                              >
-		                                                                <p className="body_text">
-		                                                                  <bdt className="question">
+		                                                                <p className="text-[#162125] dark:text-[#78c5bd]">
+		                                                                  <bdt className="text-[#111827] dark:text-[#849fa7]">
 		                                                                    __________
 		                                                                  </bdt>
 		                                                                  <p
-		                                                                    style={{
-		                                                                      color:
-		                                                                        "rgb(89, 89, 89)"
-		                                                                    }}
 		                                                                  >
 		                                                                    <p
 		                                                                      style={{
@@ -4776,15 +4686,11 @@ function Policy() {
 		                                                                  fontSize: 15
 		                                                                }}
 		                                                              >
-		                                                                <p className="body_text">
-		                                                                  <bdt className="question">
+		                                                                <p className="text-[#162125] dark:text-[#78c5bd]">
+		                                                                  <bdt className="text-[#111827] dark:text-[#849fa7]">
 		                                                                    Casablanca
 		                                                                  </bdt>
 		                                                                  <p
-		                                                                    style={{
-		                                                                      color:
-		                                                                        "rgb(89, 89, 89)"
-		                                                                    }}
 		                                                                  >
 		                                                                    <p
 		                                                                      style={{
@@ -4793,13 +4699,13 @@ function Policy() {
 		                                                                    >
 		                                                                      <bdt className="block-component" />
 		                                                                      ,{" "}
-		                                                                      <bdt className="question">
+		                                                                      <bdt className="text-[#111827] dark:text-[#849fa7]">
 		                                                                        Grande
 		                                                                        Casablanca
 		                                                                      </bdt>
 		                                                                      <bdt className="statement-end-if-in-editor" />
 		                                                                      <bdt className="block-component" />{" "}
-		                                                                      <bdt className="question">
+		                                                                      <bdt className="text-[#111827] dark:text-[#849fa7]">
 		                                                                        24000
 		                                                                      </bdt>
 		                                                                      <bdt className="statement-end-if-in-editor" />
@@ -4821,24 +4727,20 @@ function Policy() {
 		                                                                  fontSize: 15
 		                                                                }}
 		                                                              >
-		                                                                <p className="body_text">
+		                                                                <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                  <p
 		                                                                    style={{
 		                                                                      fontSize: 15
 		                                                                    }}
 		                                                                  >
-		                                                                    <p className="body_text">
+		                                                                    <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                      <p
-		                                                                        style={{
-		                                                                          color:
-		                                                                            "rgb(89, 89, 89)"
-		                                                                        }}
 		                                                                      >
 		                                                                        <bdt className="block-component" />
 		                                                                      </p>
 		                                                                    </p>
 		                                                                  </p>
-		                                                                  <bdt className="question">
+		                                                                  <bdt className="text-[#111827] dark:text-[#849fa7]">
 		                                                                    Morocco
 		                                                                  </bdt>
 		                                                                  <p
@@ -4846,12 +4748,8 @@ function Policy() {
 		                                                                      fontSize: 15
 		                                                                    }}
 		                                                                  >
-		                                                                    <p className="body_text">
+		                                                                    <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                      <p
-		                                                                        style={{
-		                                                                          color:
-		                                                                            "rgb(89, 89, 89)"
-		                                                                        }}
 		                                                                      >
 		                                                                        <bdt className="statement-end-if-in-editor">
 		                                                                          <p
@@ -4859,12 +4757,8 @@ function Policy() {
 		                                                                              fontSize: 15
 		                                                                            }}
 		                                                                          >
-		                                                                            <p className="body_text">
+		                                                                            <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                              <p
-		                                                                                style={{
-		                                                                                  color:
-		                                                                                    "rgb(89, 89, 89)"
-		                                                                                }}
 		                                                                              >
 		                                                                                <bdt className="statement-end-if-in-editor">
 		                                                                                  <p
@@ -4872,12 +4766,8 @@ function Policy() {
 		                                                                                      fontSize: 15
 		                                                                                    }}
 		                                                                                  >
-		                                                                                    <p className="body_text">
+		                                                                                    <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                                      <p
-		                                                                                        style={{
-		                                                                                          color:
-		                                                                                            "rgb(89, 89, 89)"
-		                                                                                        }}
 		                                                                                      >
 		                                                                                        <bdt className="statement-end-if-in-editor" />
 		                                                                                      </p>
@@ -4888,12 +4778,9 @@ function Policy() {
 		                                                                              </p>
 		                                                                            </p>
 		                                                                          </p>
-		                                                                          <p className="body_text">
+		                                                                          <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                            <p
-		                                                                              style={{
-		                                                                                color:
-		                                                                                  "rgb(89, 89, 89)"
-		                                                                              }}
+		                                                                              
 		                                                                            >
 		                                                                              <p
 		                                                                                style={{
@@ -4909,32 +4796,24 @@ function Policy() {
 		                                                                    </p>
 		                                                                  </p>
 		                                                                </p>
-		                                                                <p className="body_text">
+		                                                                <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                  <p
 		                                                                    style={{
 		                                                                      fontSize: 15
 		                                                                    }}
 		                                                                  >
-		                                                                    <p className="body_text">
+		                                                                    <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                      <p
-		                                                                        style={{
-		                                                                          color:
-		                                                                            "rgb(89, 89, 89)"
-		                                                                        }}
 		                                                                      >
 		                                                                        <bdt className="statement-end-if-in-editor">
 		                                                                          <p
-		                                                                            style={{
-		                                                                              color:
-		                                                                                "rgb(89, 89, 89)"
-		                                                                            }}
 		                                                                          >
 		                                                                            <p
 		                                                                              style={{
 		                                                                                fontSize: 15
 		                                                                              }}
 		                                                                            >
-		                                                                              <p className="body_text">
+		                                                                              <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                                <bdt className="block-component">
 		                                                                                  <bdt className="block-component" />
 		                                                                                </bdt>
@@ -4950,11 +4829,9 @@ function Policy() {
 		                                                                      fontSize: 15
 		                                                                    }}
 		                                                                  >
-		                                                                    <p className="body_text">
+		                                                                    <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                      <p
 		                                                                        style={{
-		                                                                          color:
-		                                                                            "rgb(89, 89, 89)",
 		                                                                          fontSize: 15
 		                                                                        }}
 		                                                                      >
@@ -4963,7 +4840,7 @@ function Policy() {
 		                                                                            fontSize: 15
 		                                                                          }}
 		                                                                        >
-		                                                                          <p className="body_text">
+		                                                                          <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                            <bdt className="statement-end-if-in-editor">
 		                                                                              <bdt className="block-component" />
 		                                                                            </bdt>
@@ -4991,41 +4868,29 @@ function Policy() {
 		                                                              }}
 		                                                            >
 		                                                              <p
-		                                                                style={{
-		                                                                  color:
-		                                                                    "rgb(127, 127, 127)"
-		                                                                }}
 		                                                              >
 		                                                                <p
 		                                                                  style={{
-		                                                                    color:
-		                                                                      "rgb(89, 89, 89)",
 		                                                                    fontSize: 15
 		                                                                  }}
 		                                                                >
 		                                                                  <p
 		                                                                    style={{
 		                                                                      fontSize: 15,
-		                                                                      color:
-		                                                                        "rgb(89, 89, 89)"
 		                                                                    }}
 		                                                                  >
 		                                                                    <p
 		                                                                      style={{
 		                                                                        fontSize: 15,
-		                                                                        color:
-		                                                                          "rgb(89, 89, 89)"
 		                                                                      }}
 		                                                                    >
 		                                                                      <p
 		                                                                        id="control"
 		                                                                        style={{
-		                                                                          color:
-		                                                                            "rgb(0, 0, 0)"
 		                                                                        }}
 		                                                                      >
 		                                                                        <strong>
-		                                                                          <p className="heading_1">
+		                                                                          <p className="text-[#000000] dark:text-[#62a0ea]">
 		                                                                            11.
 		                                                                            HOW
 		                                                                            CAN
@@ -5065,31 +4930,25 @@ function Policy() {
 		                                                              <p
 		                                                                style={{
 		                                                                  fontSize: 15,
-		                                                                  color:
-		                                                                    "rgb(89, 89, 89)"
 		                                                                }}
 		                                                              >
 		                                                                <p
 		                                                                  style={{
 		                                                                    fontSize: 15,
-		                                                                    color:
-		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
 		                                                                  <bdt className="block-component">
-		                                                                    <p className="body_text" />
+		                                                                    <p className="text-[#162125] dark:text-[#78c5bd]" />
 		                                                                  </bdt>
 		                                                                </p>
 		                                                              </p>
-		                                                              <p className="body_text">
+		                                                              <p className="text-[#162125] dark:text-[#78c5bd]">
 		                                                                .
 		                                                              </p>
 		                                                            </div>
 		                                                          </div>
 		                                                          <div
 		                                                            style={{
-		                                                              color:
-		                                                                "#595959",
 		                                                              fontSize: 14,
 		                                                              fontFamily:
 		                                                                "Arial",
@@ -5101,10 +4960,6 @@ function Policy() {
 		                                                            created using
 		                                                            Termly's{" "}
 		                                                            <a
-		                                                              style={{
-		                                                                color:
-		                                                                  "rgb(48, 48, 241) !important"
-		                                                              }}
 		                                                              href="https://termly.io/products/privacy-policy-generator/"
 		                                                            >
 		                                                              Privacy Policy

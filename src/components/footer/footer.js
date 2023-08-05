@@ -1,3 +1,6 @@
+import './privacy.css';
+
+
 function Footer() {
     return (
         <footer className="footer rounded-lg shadow-lg p-10 bg-slate-100 dark:bg-gray-800 dark:text-slate-100 text-gray-800">
