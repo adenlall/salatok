@@ -77,6 +77,8 @@ function Player(props) {
         player.currentTime = 0;
         setPlay(false);
         setSeek(0);
+        document.querySelector(".pausebtn").classList.add("hidden");
+        document.querySelector(".playbtn").classList.remove("hidden");
     }
 
     function volChange() {
@@ -95,6 +97,9 @@ function Player(props) {
         setSeek(String(current));
         document.querySelector('#ct').innerHTML = `${setct(audio.currentTime)}`;
         document.querySelector('#tt').innerHTML = `${setct(duration)}`;
+        if(current===duration){
+        	stope();
+        }
     }
 
     const handelSeek = () => {
@@ -127,14 +132,11 @@ function Player(props) {
     }
 
     useEffect(() => {
-        if (load === true) {
-            setPlay(false)
-        }
-        if (load === false) {
-            setPlay(false)
-        }
         if (load === 'err') {
             console.error('ERROR!! in PLAYER.JS please report a bug on website github page!');
+        } else (load === false) {
+            setPlay(false)
+            stop();
         }
     }, [load]);
 
