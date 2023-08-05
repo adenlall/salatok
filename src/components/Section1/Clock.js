@@ -17,6 +17,8 @@ function Clock(props) {
     const [Mdiff, setMDiff] = useState(0);
     const [nextis, setNextis] = useState(0);
     
+    
+		document.title = `Home - Salatok.App - Muslim Day Manager`;
 
     const cc = localStorage.getItem("country")
     const ss = localStorage.getItem("city")
