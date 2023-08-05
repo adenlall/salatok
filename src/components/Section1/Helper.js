@@ -61,20 +61,15 @@ export function Helper() {
 				return JSON.parse(localStorage.getItem(key));
 			},
 			getDiff: function(hh, mm) {
-				console.log("GETDIFF", hh,":",mm);
 				let m = moment();
 				let H = m.hours();
 				let M = m.minutes();
 				let Hdiff = hh - H;
 				let Mdiff = mm - M;
-				console.log("Hfiff : ", Hdiff, " is :"+hh+"-"+H);
-				console.log("Mdiff : ", Mdiff, " is :"+mm+"-"+M);
 				if(Mdiff<0){
-					console.log("IFF");
 					Hdiff = Hdiff - 1;
 					Mdiff = 60+Mdiff;
 				}
-				console.log("FINAL : ",Hdiff +" h and "+Mdiff+" min");
 				return {
 					hh:Hdiff,
 					mm:Mdiff
@@ -83,7 +78,7 @@ export function Helper() {
 			dWeek: function(ssa){
 					let config = {
 						method: this.ReadOrWrite('method', "MWL"),
-						core: this.ReadOrWrite("core", {coords: [this.getValid(localStorage.getItem("lat"), "32.6507792"), this.getValid(localStorage.getItem("long"), "-8.4242087")], timezone:"auto", dst:"auto", format:"24h"})
+						core: this.ReadOrWrite("core", {coords: [localStorage.getItem("lat"), localStorage.getItem("long")], timezone:"auto", dst:"auto", format:"24h"})
 					};
 					const salat = new PrayTimes();
 					const arr = [];
@@ -117,6 +112,9 @@ export function Helper() {
 					return arr;
 			},
 			getValid: function  (a,b) {
+			console.log("GETVALID");
+			console.log("a : ",a);
+			console.log("b : ",b);
 						if (a || a===0) {
 							return a;
 						} else {
