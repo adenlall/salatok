@@ -174,7 +174,7 @@ function Player(props) {
                     </div>
                     <div className="flex space-x-2 w-full sm:w-1/2">
                         <div id="ct">00:00</div>
-                        <input type="range" min="1" max="100" id="seekSlider" value={seek} className="range range-sm" onChange={handelSeek} />
+                        <input type="range" min="1" max="100" id="seekSlider" value={seek} className="range range-sm bg-white text-white" onChange={handelSeek} />
                         <div id="tt">00:00</div>
                     </div>
                     <div className='sm:flex hidden items-center justify-center space-x-4 p-4 lg:py-0 py-[1.4em]'>
