@@ -98,7 +98,7 @@ function Player(props) {
         document.querySelector('#ct').innerHTML = `${setct(audio.currentTime)}`;
         document.querySelector('#tt').innerHTML = `${setct(duration)}`;
         if(current===duration){
-        	stope();
+        	stop();
         }
     }
 
