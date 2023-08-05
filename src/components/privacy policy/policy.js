@@ -1,3 +1,6 @@
+import React from 'react';
+
+
 function Policy() {
     return (
     	
@@ -5073,69 +5076,6 @@ function Policy() {
 		                                                                      "rgb(89, 89, 89)"
 		                                                                  }}
 		                                                                >
-		                                                                  <span className="body_text">
-		                                                                    <bdt className="block-component" />
-		                                                                    You have
-		                                                                    the
-		                                                                    right to
-		                                                                    request
-		                                                                    access
-		                                                                    to the
-		                                                                    personal
-		                                                                    information
-		                                                                    we
-		                                                                    collect
-		                                                                    from
-		                                                                    you,
-		                                                                    change
-		                                                                    that
-		                                                                    information,
-		                                                                    or
-		                                                                    delete
-		                                                                    it.{" "}
-		                                                                    <bdt className="statement-end-if-in-editor" />
-		                                                                    To
-		                                                                    request
-		                                                                    to
-		                                                                    review,
-		                                                                    update,
-		                                                                    or
-		                                                                    delete
-		                                                                    your
-		                                                                    personal
-		                                                                    information,
-		                                                                    please{" "}
-		                                                                    <bdt className="block-component" />
-		                                                                    fill out
-		                                                                    and
-		                                                                    submit a{" "}
-		                                                                  </span>
-		                                                                  <span
-		                                                                    style={{
-		                                                                      color:
-		                                                                        "rgb(48, 48, 241)"
-		                                                                    }}
-		                                                                  >
-		                                                                    <span className="body_text">
-		                                                                      <span
-		                                                                        style={{
-		                                                                          fontSize: 15
-		                                                                        }}
-		                                                                      >
-		                                                                        <a
-		                                                                          className="link"
-		                                                                          href="https://app.termly.io/notify/3c0a2760-1e24-4885-be4b-2e4f552969b2"
-		                                                                          rel="noopener noreferrer"
-		                                                                          target="_blank"
-		                                                                        >
-		                                                                          data
-		                                                                          subject
-		                                                                          access
-		                                                                          request
-		                                                                        </a>
-		                                                                      </span>
-		                                                                    </span>
-		                                                                  </span>
 		                                                                  <bdt className="block-component">
 		                                                                    <span className="body_text" />
 		                                                                  </bdt>
@@ -5145,12 +5085,6 @@ function Policy() {
 		                                                                .
 		                                                              </span>
 		                                                            </div>
-		                                                            <style
-		                                                              dangerouslySetInnerHTML={{
-		                                                                __html:
-		                                                                  "\nul {\nlist-style-type: square;\n}\nul > li > ul {\nlist-style-type: circle;\n}\nul > li > ul > li > ul {\nlist-style-type: square;\n}\nol li {\nfont-family: Arial ;\n}\n"
-		                                                              }}
-		                                                            />
 		                                                          </div>
 		                                                          <div
 		                                                            style={{
