@@ -134,7 +134,7 @@ function Player(props) {
     useEffect(() => {
         if (load === 'err') {
             console.error('ERROR!! in PLAYER.JS please report a bug on website github page!');
-        } else (load === false) {
+        } else {
             setPlay(false)
             stop();
         }
