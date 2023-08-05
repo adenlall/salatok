@@ -72,10 +72,12 @@ function Player(props) {
         }
     };
 
-    const stop = () => {
-        player.pause();
-        player.currentTime = 0;
-        setPlay(false);
+    const stop = (soft) => {
+    	if(!soft){
+		    player.pause();
+		    player.currentTime = 0;
+		    setPlay(false);
+    	}
         setSeek(0);
         document.querySelector(".pausebtn").classList.add("hidden");
         document.querySelector(".playbtn").classList.remove("hidden");
@@ -136,7 +138,7 @@ function Player(props) {
             console.error('ERROR!! in PLAYER.JS please report a bug on website github page!');
         } else {
             setPlay(false)
-            stop();
+            stop(true);
         }
     }, [load]);
 
