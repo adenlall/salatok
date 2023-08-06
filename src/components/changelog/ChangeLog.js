@@ -50,7 +50,7 @@ function ChangeLog() {
                                     improve website UI ...
                                 </p>
                                 <div className="md:w-1/3 w-full min-h-fit">
-                                    <img alt="" className="object-cover" src="/metadata/v1.5.0.svg" />
+                                    <img alt="" className="object-cover" src="/metadata/v1.5.0.png" />
                                 </div>
 
                                 <p className="space-y-2">
