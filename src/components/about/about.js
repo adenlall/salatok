@@ -9,7 +9,7 @@ function About() {
     return (
         <>
             <div className='p-0 m-0 bg-white dark:bg-gray-900'>
-                <div className="lg:w-full mt-12 w-full shadow-xl flex md:flex-row flex-col items-center  justify-center  p-4 rounded-lg bg-white dark:bg-gray-900 dark:text-slate-100 text-gray-800">
+                <div className="lg:w-full m-0 lg:p-40 p-20 w-full flex md:flex-row flex-col items-center  justify-center  p-4 rounded-lg bg-white dark:bg-gray-900 dark:text-slate-100 text-gray-800">
                     <div className="p-4 flex flex-col items-center">
                         <p className="text-3xl leading-8 font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
                             YOUR DONATION MATTER.
@@ -22,7 +22,7 @@ function About() {
                     </div>
                 </div>
             <div className='p-0 m-0 bg-white dark:bg-gray-900'>
-                <div className="lg:w-full mt-12 w-full shadow-xl flex md:flex-row flex-col items-center  justify-center  p-4 rounded-lg bg-white dark:bg-gray-900 dark:text-slate-100 text-gray-800">
+                <div className="lg:w-full  w-full  flex md:flex-row flex-col items-center  justify-center  p-4 rounded-lg bg-white dark:bg-gray-900 dark:text-slate-100 text-gray-800">
                     <div className="p-4 flex flex-col items-center">
                         <p className="text-3xl leading-8 font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
                             From students to Your daily life.
@@ -36,7 +36,7 @@ function About() {
                 </div>
             </div>
 
-                <div className="lg:w-full w-full shadow-xl flex md:flex-row flex-col items-center  justify-center  p-4 rounded-lg bg-slate-100 dark:bg-gray-800 dark:text-slate-100 text-gray-800">
+                <div className="lg:w-full w-full flex md:flex-row flex-col items-center  justify-center  p-4 rounded-lg bg-slate-100 dark:bg-gray-800 dark:text-slate-100 text-gray-800">
                     <div className="container mx-auto px-6 p-6 bg-white dark:bg-gray-800">
                         <div className="mb-16 text-center">
                             <h2 className="text-base text-cyan-400 font-semibold tracking-wide uppercase">
