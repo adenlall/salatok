@@ -17,7 +17,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
 
-      <div className='p-0 m-0 bg-white dark:bg-gray-900'>
+      <div className='p-0 m-0 bg-[linear-gradient(180deg,#8cbdc8,#e8fffc,white)] dark:bg-[linear-gradient(0deg,#0a152a,#111827)]'>
         <Navbar />
         <Routes>
           <Route path='*' element={<App />} />

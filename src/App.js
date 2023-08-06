@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom'
 import Axios from 'axios';
-import moment from 'moment';
 
 import NextSalat from './components/Section1/NextSalat';
 import SlideDiv from './components/Section1/SideDiv';
 import Sec2 from './components/qoran/sec2';
-import Calendar from './components/calendar/Calendar';
 import MPro from './components/tips/month';
 import Support from './components/secLast/support';
 import SelectByUser from './components/AdblockCase/selectByUser';
@@ -28,9 +26,8 @@ function App() {
 
 
   const getData = async () => {
-    if (localStorage.getItem("city") === null || localStorage.getItem("country") === null) {
+    if (!localStorage.getItem("city") || !localStorage.getItem("country")) {
 
-      // console.log('very slow, because there nothing in Locale storage yet')
       await Axios.get('https://api.ipify.org?format=json').then(res => {
         // console.log(res.data);
         Axios.post(`https://iptwist.com`, { ip: `${res.data.ip}` }, {
@@ -39,15 +36,14 @@ function App() {
             'X-IPTWIST-TOKEN': 'Xpy1YphN5bu10XqVYDASedcCt2AJJnDTTIRQcaTLgOstdTIcg5HEAwPYU9fzjKjN'
           },
         }).then(res => {
+          console.log(res.data);
           localStorage.setItem("city", `${res.data.city}`);
           localStorage.setItem("country", `${res.data.country}`);
+          localStorage.setItem("timezone", res.data.timezone);
+          localStorage.setItem("lat",res.data.latitude);
+          localStorage.setItem("long", res.data.longitude);
           setErr(false);
           setTat(true);
-					console.log("uuuu")
-					console.log(res.data);
-					console.log(moment().format("HH"));
-					console.log(moment().utc().format("H"));
-
         }).catch(erro => {
           console.log(erro)
           // config
@@ -55,21 +51,17 @@ function App() {
           setTat(true);
         })
 
-      }).catch(error => { console.log('App.js : ' + error); setErr(true); setTat(true); })
-
+      }).catch(error => { console.error('App.js : ' + error); setErr(true); setTat(true); })
 
     } else {
       setErr(false);
       setTat(true);
-      // console.log('very fast, because of Locale storage')
     }
   }
 
   useEffect(() => {
     //passing getData method to the lifecycle method
-
-    getData()
-
+    getData();
   }, [tat])
   if (err === false && tat === false) {
     return (
@@ -111,7 +103,7 @@ function App() {
           <Sec2 />
         </div>
         <div className='w-full flex lg:flex-row flex-col items-stretch justify-center content-center space-y-4 space-x-0 lg:space-y-0 lg:space-x-4 p-4'>
-{/*           <Holiday/> */}
+          {/* <Holiday/> */}
         </div>
         <div className='w-full flex lg:flex-row flex-col items-stretch justify-center content-center space-y-4 space-x-0 lg:space-y-0 lg:space-x-4 p-4'>
           <MPro />

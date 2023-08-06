@@ -2,12 +2,10 @@ import React, { useState, useEffect } from 'react';
 import $ from 'jquery'
 import moment from 'moment'
 
+import { Helper } from './Helper';
+
 
 function Clock(props) {
-
-
-    document.title = `Home - Salatok.App - Muslim Day Manager`;
-
 
     const [hAngle, sethAngle] = useState((new Date().getHours() % 12 / 12) * 360);
     const [mAngle, setmAngle] = useState((new Date().getMinutes() / 60) * 360);
@@ -18,139 +16,66 @@ function Clock(props) {
     const [Hdiff, setHDiff] = useState(0);
     const [Mdiff, setMDiff] = useState(0);
     const [nextis, setNextis] = useState(0);
+    
+    
+		document.title = `Home - Salatok.App - Muslim Day Manager`;
 
     const cc = localStorage.getItem("country")
     const ss = localStorage.getItem("city")
-
-    var slt = 0;
-
-    const logTime = () => {
-
-
-        const date = new Date();
-        const hourm = date.getHours();
-        const min = date.getMinutes();
-        const sec = date.getSeconds();
-
-        var hour = hourm % 12; // 12 format
-
-        var angH = (hour / 12) * 360;
-        var angM = (min / 60) * 360;
-        var angS = (sec / 60) * 360;
-
-
-
-        sethAngle(angH);
-        setmAngle(angM);
-        setsAngle(angS)
-
-    }
-
-
-
-    const fetchData = () => {
-
-        // await Axios.get(`https://muslimsalat.com/${props.cc}/${props.ss}${status}.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`).then(res => {
-        //     setSlt(res.data.items[0]); setStt(false);
-        // }).catch(err => { console.log('Clock' + err) })
-        if (localStorage.getItem('salatsday') === null) {
-            $(
-                $.getJSON(`https://muslimsalat.com/${cc}/${ss}.json?key=9233c34903ef6aa6fd59a97cedac8226&jsoncallback=?`, function (data) {
-                    console.log("im the second hello jquery")
-                    slt = data.items[0];
-                    if (data.status_code === 0) {
-                        setLocate(false)
-                        localStorage.clear();
-                    } else {
-                        setLocate(true)
-                        calC();
-                    }
-
-                    // console.log(data)
-                })
-            )
-
-        } else {
-            slt = JSON.parse(localStorage.getItem('salatsday'));
-            if (slt.status_code === 0) {
-                setLocate(false)
-                localStorage.clear();
-            } else {
-                slt = slt.items[0];
-                setLocate(true)
-                calC();
-            }
-
-        }
-    }
-
-
-
-
-
-    //
-
-
+     
     const calC = () => {
 
-        const sltAr = ['fajr', 'shurooq', 'dhuhr', 'asr', 'maghrib', 'isha']
-        // console.log('im first here feeettt')
+		const h = new Helper();
+		const sltAr = h.sNames();
+		const slt = h.dDay();
+		
+		let status = true;
 
-
-        for (let i = 0; i < sltAr.length; i++) {
-
-            const nSl = slt[sltAr[i]];
-
-            let Hdiff = moment(slt[sltAr[i]], 'h:mm A').format('HH') - moment().format('HH');
-            let Mdiff = moment(slt[sltAr[i]], 'h:mm A').format('mm') - moment().format('mm');
-
-
-            if (moment(nSl, 'h:mm A').format('HHmm') > moment().format('HHmm')) {
-                if (Mdiff < 0) {
-                    Hdiff = Hdiff - 1;
-                    Mdiff = 60 - Math.abs(Mdiff);
-                    // console.log(moment(nSl, 'h:mm A').format('HH:mm'), Hdiff, Mdiff)
-                }
-                setHDiff(Hdiff);
-                setMDiff(Mdiff);
-                setNextis(sltAr[i]);
-                // window.alert('if1')
-                break;
-            } else {
-
-                Hdiff = (props.cc === 'Ma' ? moment(slt[sltAr[0]], 'h:mm A').add(1, 'hours').format('HH') : moment(slt[sltAr[0]], 'h:mm A').format('HH')) - moment().format('HH');
-                Mdiff = moment(slt[sltAr[0]], 'h:mm A').format('mm') - moment().format('mm');
-
-                if (Mdiff < 0) {
-                    Hdiff = Hdiff - 1;
-                    Mdiff = 60 - Math.abs(Mdiff);
-                }
-                Hdiff = 24 - parseInt(moment().format('HH')) + (parseInt(moment(slt[sltAr[0]], 'h:mm A').add(1, 'hours').format('HH'))); // TODO: fix this
-                setHDiff(Hdiff);
-                setMDiff(Mdiff);
-                setNextis(sltAr[0]);
-                // window.alert()
-
-            }
-
-        }
+		for (let i = 0; i < sltAr.length; i++) {
+			const nSl = slt[sltAr[i]];
+			const ttime = moment(slt[sltAr[i]], 'HH:mm');
+			let dd = h.getDiff(ttime.hours(), ttime.minutes());
+			if (parseInt(dd.hh) >= 0 && parseInt(dd.mm) >= 0) {
+				setHDiff(dd.hh);
+				setMDiff(dd.mm);
+				setNextis(sltAr[i]);
+				status = false;
+				break;
+			}
+		}
+		if (status) {
+			setNextis(sltAr[0]);
+			let m = moment();
+			const ntime = moment(slt[sltAr[0]], 'HH:mm');
+			let Hdiff = 24 - m.hours() + ntime.hours();
+			let Mdiff = ntime.minutes() - m.minutes();
+			if(Mdiff<0){
+				Hdiff = Hdiff - 1;
+				Mdiff = 60+Mdiff;
+			}
+			setHDiff(Hdiff);
+			setMDiff(Mdiff);
+		}
     }
-
-
-
-    useEffect(() => {
-        fetchData()
-    }, []);
-
 
     useEffect(() => {
         let timerID = setInterval(() => {
-            logTime();
+		    const date = new Date();
+		    const hourm = date.getHours();
+		    const min = date.getMinutes();
+		    const sec = date.getSeconds();
+		    var hour = hourm % 12; // 12 format
+		    var angH = (hour / 12) * 360;
+		    var angM = (min / 60) * 360;
+		    var angS = (sec / 60) * 360;
+		    sethAngle(angH);
+		    setmAngle(angM);
+		    setsAngle(angS);
         }, 1000)
         return () => {
             clearInterval(timerID)
         }
-    }, [])
+    }, []);
 
 
     useEffect(() => {
@@ -163,6 +88,11 @@ function Clock(props) {
     }, []);
 
 
+	useEffect(() => {
+		calC();
+	}, []);
+	
+	
     if (locate === false) {
         return (
             <div className="w-full sm:w-2/3 rounded-lg text-slate-100 ">
@@ -193,11 +123,11 @@ function Clock(props) {
 
                     </div>
                     <div className='flex flex-col space-y-2 items-center p-2'>
-                        <h2 className="font-bold text-[1.4em]">Next Salat is : <strong className="font-extrabold text-[2em]"> {nextis}</strong></h2>
+                        <h2 className="font-bold text-[1.4em] px-10">Next:<strong className="font-extrabold text-[2em]"> {nextis}</strong></h2>
                         <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
                             <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
                                 <p className="countdown font-mono text-5xl">
-                                    <strong style={{ '--value': Hdiff }}></strong>
+                                    <strong style={{ '--value': Hdiff}}></strong>
                                 </p> hours
                             </div>
                             <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">

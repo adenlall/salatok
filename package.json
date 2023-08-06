@@ -1,17 +1,16 @@
 {
   "name": "salatok",
   "version": "0.1.0",
-  "private": true,  
-  "engines" : { 
-    "npm" : "7.0.0",
-    "node" : "16.0.0"
+  "private": true,
+  "engines":{
+  	"node":">=16.9.0"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
-    "axios": "^0.26.1",
-    "daisyui": "^2.11.0",
+	    "axios": "^0.26.1",
+		    "daisyui": "^3.5.1",
     "framer-motion": "^6.2.8",
     "jquery": "^3.6.0",
     "moment": "^2.29.1",

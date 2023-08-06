@@ -1,30 +1,22 @@
 import { Routes, Route, NavLink } from 'react-router-dom'
-import SelectByUser from '../AdblockCase/selectByUser';
-import Clock from './Clock';
-import SalatsDay from "./SalatsDay";
-import Ttst from './Ttst';
+import { useEffect }  from "react";
+import   SelectByUser from '../AdblockCase/selectByUser';
+import   Clock        from './Clock';
+import   SalatsDay    from "./SalatsDay";
+import   Ttst    from "./Ttst";
 
 function NextSalat(props) {
-    // if (useLocation().pathname==="/") { // TODO: Error here
-    //     document.getElementById("clos").style.display = "none"; // TODO: Error here
-    // }else{
-    //     document.getElementById("clos").style.display = "block"; // TODO: Error here
-
-    // }
 
     return (
-
         <>
-
-
-            <div className="lg:w-1/2 w-full shadow-xl flex md:flex-row flex-col  justify-between items-center p-4 rounded-lg bg-slate-100 dark:bg-gray-800 dark:text-slate-100 text-gray-800">
+            <div className="lg:w-[60%] w-full shadow-xl h-full max-h-full lg:h-[37em] lg:max-h-[37em] flex md:flex-row flex-col  justify-between items-center p-4 rounded-lg bg-slate-100 dark:bg-gray-800 dark:text-slate-100 text-gray-800">
                 <SalatsDay />
 
                 <div className='w-full flex flex-col items-center'>
                     <Routes>
                         <Route path='*' element={<Clock />} />
                         <Route path='/salat/fajr' element={<Ttst ynt="fajr" />} />
-                        <Route path='/salat/sunrise' element={<Ttst ynt="shurooq" />} />
+                        <Route path='/salat/sunrise' element={<Ttst ynt="sunrise" />} />
                         <Route path='/salat/dhuhr' element={<Ttst ynt="dhuhr" />} />
                         <Route path='/salat/asr' element={<Ttst ynt="asr" />} />
                         <Route path='/salat/maghrib' element={<Ttst ynt="maghrib" />} />
