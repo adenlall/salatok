@@ -10,7 +10,7 @@ function Support() {
                                 GitHub
                             </button>
                         </a>
-                        <a rel="nofollow" href="https://liberapay.org/adenlall/donate">
+                        <a rel="nofollow" href="https://liberapay.com/adenlall/donate">
                         <button className="btn border-black bg-cyan-400 hover:bg-cyan-300 text-[#0a2e3e]">
                             Donate
                         </button>
