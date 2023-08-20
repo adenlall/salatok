@@ -42,7 +42,7 @@ function ChangeLog() {
                             <p>Friday 11-08-2023</p>
                         </div>
                         <div className="flex flex-col space-x-2">
-                            <h3 className="w-full my-4 text-xl font-bold">A step to an offline website</h3>
+                            <h3 className="w-full my-4 text-xl font-bold">A step to an offline website ( works without internet )</h3>
                             <p className="w-full space-y-6 md:space-x-6 mt-6 flex flex-wrap md:flex-row flex-col items-center tracking-tight text-gray-800 dark:text-gray-200 sm:text-2xl">
                                 <p className="md:w-1/2 w-full">
                                     this release is independent from any salat api, because it use now PrayTimes.org library so we take a step to make this app work offline on the browser.<br />
@@ -103,7 +103,7 @@ function ChangeLog() {
                                 <span className="font-bold text-sm">version: 1.0.0</span>
                             </motion.h2>
                             <h1 class="text-2xl leading-8 font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">Salatok App : First Release ᐢ ᵕ ᐢ</h1>
-                            <p>Friday 18-03-2023</p>
+                            <p>Friday 18-03-2022</p>
                         </div>
                         <div className="flex flex-col space-x-2">
                             <h3 className="w-full my-4 text-xl font-bold">welcome to the First Release</h3>
