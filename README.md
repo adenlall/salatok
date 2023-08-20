@@ -1,5 +1,6 @@
-# salatok
-<a href="https://www.buymeacoffee.com/adenlallI"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=adenlallI&button_colour=00ff98&font_colour=000000&font_family=Comic&outline_colour=000000&coffee_colour=FFDD00" /></a>
+<img alt="salatokapp logo" src="https://salatok.vercel.app/salatokLogoWide.svg">
+
+# salatok <a href="https://liberapay.com/adenlall/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
 
  your prayer time manager and quran reader.
  **anywhere anytime**
