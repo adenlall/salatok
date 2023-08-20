@@ -14,7 +14,11 @@ export function Helper() {
 				 					this.setUPdDay();
 				 			}
 				 			if(!sNames){
+<<<<<<< HEAD
 				 				this.ReadOrWrite("salats_names",   ["fajr", "sunrise", "dhuhr", "asr", "maghrib", "isha"]);
+=======
+				 				this.ReadOrWrite("salats_names", ["fajr", "sunrise", "dhuhr", "asr", "maghrib", "isha"]);
+>>>>>>> 687f22797f1b47befc5a41f8caf5ca574c279bde
 				 			}
 				 			return true
 			 			} catch(err) {
