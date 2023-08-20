@@ -32,18 +32,13 @@ function SelectByUser() {
     		let UIarr = [];
     		for (let i=0; i<data.length; i++ ) {
 				let UI = (
-				<div className="collapse bg-base-200">
-				  <input name="searchlocation" type="checkbox" /> 
-				  <div className="collapse-title text-xl font-medium">
-					<p className="truncate">{data[i].name}</p><br/>
-					{data[i].city} - {data[i].country}
+				<details class="collapse  my-5 border-base-300 bg-slate-300 dark:bg-gray-700 dark:text-slate-100 text-gray-800">
+				  <summary class="collapse-title text-xl font-medium">{data[i].city} - {data[i].country}</summary>
+				  <div class="collapse-content"> 
+					<p>lat : {data[i].lat}, long : {data[i].long}</p> 
+					<button className="btn btn-sm" onClick={()=>{setLocation(data[i])}}>save</button>
 				  </div>
-				  <div className="collapse-content"> 
-					<p>lat : {data[i].lat}</p> 
-					<p>long : {data[i].long}</p>
-					<button onClick={()=>{setLocation(data[i])}}>save</button>
-				  </div>
-				</div>
+				</details>
 				);
 				UIarr.push(UI);
     		}
@@ -152,18 +147,27 @@ function SelectByUser() {
 
     return (
 		<>
-			<div className="lg:w-1/2 w-full md:h-auto shadow-xl flex flex-col justify-between items-stretch p-4 rounded-lg bg-slate-100 dark:bg-gray-800 dark:text-slate-100 text-gray-800">
+			<div className="lg:w-[40%] lg:h-[37em] max-h-full lg:max-h-[37em] h-full w-full md:h-auto shadow-xl flex flex-col justify-between items-stretch p-4 rounded-lg bg-slate-100 dark:bg-gray-800 dark:text-slate-100 text-gray-800">
 				<div className="flex flex-col h-full w-full justify-evenly items-center">
 					<div className="flex flex-row items-end w-[87%] py-6 space-x-2">
 						<header className="text-2xl lg:text-4xl font-bold">Find your Location.</header>
+						<div className="tooltip tooltip-left" data-tip="we recommend you select your actual location, to get real times because the location and your local time should be synchronize.">
+							<button className="btn btn-square btn-sm">
+								<svg viewBox="0 0 24 24" className="dark:text-white fill-[#90bec8]" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12 15H12.01M12 12V9M4.98207 19H19.0179C20.5615 19 21.5233 17.3256 20.7455 15.9923L13.7276 3.96153C12.9558 2.63852 11.0442 2.63852 10.2724 3.96153L3.25452 15.9923C2.47675 17.3256 3.43849 19 4.98207 19Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</button>
+						</div>
 					</div>
-					<input onChange={hundelSearch} type="text" placeholder="Search with Nomination API" className="input input-bordered text-black input-primary w-full max-w-xs" />
-					<div className="join join-vertical w-full py-5">
-						{dataUI}
+					<input onChange={hundelSearch} type="text" placeholder="Search with Nomination API" className="input input-bordered text-black input-primary w-[87%] max-w-[87] my-6" />
+					<div className="max-h-[16em] my-10 w-full h-full overflow-scroll">
+						<div className="join join-vertical w-full">
+							{dataUI}
+						</div>
 					</div>
 					<p className="stt font-bold text-lg"></p>
 					<div className="btn-group">
-						<button onClick={locate} className="btn bttnn">Detect My Location</button>
+						<button onClick={()=>{locate()}} className="btn bttnn">Detect My Location</button>
 					</div>
 				</div>
 			</div>

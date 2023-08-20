@@ -19,7 +19,7 @@ function Ttst(props) {
 		for (let i = 0; i < dWeek.length; i++) {
 			newArr.push(
 			    <div className='flex space-x-2 justify-between' key={i} >
-			        <p className='italic'>{dWeek[i][1].day} {dWeek[i][1].date} :</p>
+			        <p className='italic'>{dWeek[i][1].day} {dWeek[i][1].date}</p>
 			        <div className='flex justify-between w-1/3 space-x-2'>
 			            <p className='px-2 pt-1 rounded-lg bg-slate-200 dark:bg-gray-700 dark:text-slate-100 text-gray-800' key={i}>{dWeek[i][0]}</p>
 			            <p className={((dWeek[i][1].diff > 0) ? 'text-green-500' : (dWeek[i][1].diff < 0) ? 'text-red-500' : 'text-gray-400') + ' font-bold w-full'}>{dWeek[i][1].diff > 0 ? '+' : ''}{dWeek[i][1].diff}<strong className='text-xs'>min</strong></p>

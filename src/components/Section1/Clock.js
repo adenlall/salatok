@@ -17,6 +17,8 @@ function Clock(props) {
     const [Mdiff, setMDiff] = useState(0);
     const [nextis, setNextis] = useState(0);
     
+    
+		document.title = `Home - Salatok.App - Muslim Day Manager`;
 
     const cc = localStorage.getItem("country")
     const ss = localStorage.getItem("city")
@@ -33,8 +35,6 @@ function Clock(props) {
 			const nSl = slt[sltAr[i]];
 			const ttime = moment(slt[sltAr[i]], 'HH:mm');
 			let dd = h.getDiff(ttime.hours(), ttime.minutes());
-			console.log(sltAr[i]);
-			console.log(dd.hh, dd.mm, parseInt(dd.hh) >= 0 && parseInt(dd.mm) >= 0);
 			if (parseInt(dd.hh) >= 0 && parseInt(dd.mm) >= 0) {
 				setHDiff(dd.hh);
 				setMDiff(dd.mm);
@@ -65,15 +65,12 @@ function Clock(props) {
 		    const min = date.getMinutes();
 		    const sec = date.getSeconds();
 		    var hour = hourm % 12; // 12 format
-
 		    var angH = (hour / 12) * 360;
 		    var angM = (min / 60) * 360;
 		    var angS = (sec / 60) * 360;
-
 		    sethAngle(angH);
 		    setmAngle(angM);
 		    setsAngle(angS);
-		    
         }, 1000)
         return () => {
             clearInterval(timerID)

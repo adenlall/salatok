@@ -26,9 +26,8 @@ function App() {
 
 
   const getData = async () => {
-    if (localStorage.getItem("city") === null || localStorage.getItem("country") === null) {
+    if (!localStorage.getItem("city") || !localStorage.getItem("country")) {
 
-      // console.log('very slow, because there nothing in Locale storage yet')
       await Axios.get('https://api.ipify.org?format=json').then(res => {
         // console.log(res.data);
         Axios.post(`https://iptwist.com`, { ip: `${res.data.ip}` }, {
@@ -52,20 +51,17 @@ function App() {
           setTat(true);
         })
 
-      }).catch(error => { console.log('App.js : ' + error); setErr(true); setTat(true); })
+      }).catch(error => { console.error('App.js : ' + error); setErr(true); setTat(true); })
 
     } else {
       setErr(false);
       setTat(true);
-      // console.log('very fast, because of Locale storage')
     }
   }
 
   useEffect(() => {
     //passing getData method to the lifecycle method
-
-    getData()
-
+    getData();
   }, [tat])
   if (err === false && tat === false) {
     return (

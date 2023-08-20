@@ -23,7 +23,7 @@ export function Helper() {
 			 			}
 			},
 			clearStorage: function(){
-			 		const keysToKeep = ['salats_names', 'country', 'city', 'timezone', 'latitude', 'longitude'];
+			 		const keysToKeep = ['salats_names', 'country', 'city', 'timezone', 'lat', 'long'];
 					for (let i = 0; i < localStorage.length; i++) {
 						const key = localStorage.key(i);
 						if (!keysToKeep.includes(key)) {
@@ -32,20 +32,19 @@ export function Helper() {
 					}
 			},
 			setUPdDay: function() {
-							console.log("`LOG TRACE` : dDay for day "+ moment().format('DD-MM-YYYY') +" `NOT FOUND` in local storage");
 							let config = {
 								method: this.ReadOrWrite('method', "MWL"),
-								core: this.ReadOrWrite("core", {coords: [this.getValid(localStorage.getItem("lat"), "32.6507792"), this.getValid(localStorage.getItem("long"), "-8.4242087")], timezone:"auto", dst:"auto", format:"24h"})
+								core: this.ReadOrWrite("core", {coords: [localStorage.getItem("lat"), localStorage.getItem("long")], timezone:"auto", dst:"auto", format:"24h"})
 							};
 							const salat = new PrayTimes();
 							salat.setMethod(config.method);
 							let dd = salat.getTimes(new Date(), config.core.coords, config.core.timezone, config.core.dst, config.core.format);
-							localStorage.setItem('dDay'+moment().format('DD-MM-YYYY'), JSON.stringify(dd));
+							localStorage.setItem('dDay-'+moment().format('DD-MM-YYYY'), JSON.stringify(dd));
 			 				return dd;
 			},
 			dDay: function(){
 								this.checkStorage();
-								return JSON.parse(localStorage.getItem("dDay"+moment().format('DD-MM-YYYY')));
+								return JSON.parse(localStorage.getItem("dDay-"+moment().format('DD-MM-YYYY')));
 			},
 			sNames: function(){
 								this.checkStorage();
@@ -53,7 +52,6 @@ export function Helper() {
 			},
 			ReadOrWrite: function(key, data){
 				if(!localStorage.getItem(key)){
-					console.log("LOG TRACE : NextSalat@ReadOrWrite : not found in storage : key :", key)
 					let pD = JSON.stringify(data);
 					localStorage.setItem(key, pD);
 					return JSON.parse(pD);
@@ -61,20 +59,15 @@ export function Helper() {
 				return JSON.parse(localStorage.getItem(key));
 			},
 			getDiff: function(hh, mm) {
-				console.log("GETDIFF", hh,":",mm);
 				let m = moment();
 				let H = m.hours();
 				let M = m.minutes();
 				let Hdiff = hh - H;
 				let Mdiff = mm - M;
-				console.log("Hfiff : ", Hdiff, " is :"+hh+"-"+H);
-				console.log("Mdiff : ", Mdiff, " is :"+mm+"-"+M);
 				if(Mdiff<0){
-					console.log("IFF");
 					Hdiff = Hdiff - 1;
 					Mdiff = 60+Mdiff;
 				}
-				console.log("FINAL : ",Hdiff +" h and "+Mdiff+" min");
 				return {
 					hh:Hdiff,
 					mm:Mdiff
@@ -83,7 +76,7 @@ export function Helper() {
 			dWeek: function(ssa){
 					let config = {
 						method: this.ReadOrWrite('method', "MWL"),
-						core: this.ReadOrWrite("core", {coords: [this.getValid(localStorage.getItem("lat"), "32.6507792"), this.getValid(localStorage.getItem("long"), "-8.4242087")], timezone:"auto", dst:"auto", format:"24h"})
+						core: this.ReadOrWrite("core", {coords: [localStorage.getItem("lat"), localStorage.getItem("long")], timezone:"auto", dst:"auto", format:"24h"})
 					};
 					const salat = new PrayTimes();
 					const arr = [];
@@ -113,7 +106,6 @@ export function Helper() {
 							date: moment(newdate).format("DD-MM-YYYY"),
 						}]);
 					}
-					console.log("FULL WEEK : ", arr);
 					return arr;
 			},
 			getValid: function  (a,b) {
