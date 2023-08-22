@@ -1,4 +1,4 @@
-<img alt="salatokapp logo" src="https://salatok.vercel.app/salatokLogoWide.svg">
+<img alt="salatok logo" src="https://salatok.vercel.app/salatokLogoWide.svg">
 
 # salatok <a href="https://liberapay.com/adenlall/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
 
