@@ -12,7 +12,7 @@ function Footer() {
             <div>
                 <span className="footer-title">Social</span>
                 <div className="grid grid-flow-col gap-4">
-                    <a className="fill-current text-xl hover:text-cyan-300 text-[#0a2e3e] dark:text-cyan-200 dark:hover:text-cyan-400 transition-colors duration-200" href="hhtps://mastodon.social/@adenlall">
+                    <a className="fill-current text-xl hover:text-cyan-300 text-[#0a2e3e] dark:text-cyan-200 dark:hover:text-cyan-400 transition-colors duration-200" href="https://mastodon.social/@adenlall">
                     	<svg
 						  width={24}
 						  height={24}
