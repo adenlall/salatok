@@ -2,7 +2,7 @@
 
 # salatok <a href="https://liberapay.com/adenlall/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
 
- your prayer time manager and quran reader.
+ your prayer time manager and quran player.
  **anywhere anytime**
 
 ### stable
