@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/salatok/static/css/main.7af8215e.css",
-    "main.js": "/salatok/static/js/main.b59e2670.js",
-    "static/js/787.c51e0b28.chunk.js": "/salatok/static/js/787.c51e0b28.chunk.js",
-    "index.html": "/salatok/index.html",
-    "main.7af8215e.css.map": "/salatok/static/css/main.7af8215e.css.map",
-    "main.b59e2670.js.map": "/salatok/static/js/main.b59e2670.js.map",
-    "787.c51e0b28.chunk.js.map": "/salatok/static/js/787.c51e0b28.chunk.js.map"
+    "main.css": "/static/css/main.f0bb4259.css",
+    "main.js": "/static/js/main.45a11fe9.js",
+    "static/js/787.c51e0b28.chunk.js": "/static/js/787.c51e0b28.chunk.js",
+    "index.html": "/index.html",
+    "main.f0bb4259.css.map": "/static/css/main.f0bb4259.css.map",
+    "main.45a11fe9.js.map": "/static/js/main.45a11fe9.js.map",
+    "787.c51e0b28.chunk.js.map": "/static/js/787.c51e0b28.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7af8215e.css",
-    "static/js/main.b59e2670.js"
+    "static/css/main.f0bb4259.css",
+    "static/js/main.45a11fe9.js"
   ]
 }
