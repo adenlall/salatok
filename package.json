@@ -1,17 +1,16 @@
 {
-  "homepage": "https://adenlall.github.io/salatok",
   "name": "salatok",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": ">=16.9.0"
+  "engines":{
+  	"node":">=16.9.0"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
-    "axios": "^0.26.1",
-    "daisyui": "^3.5.1",
+	    "axios": "^0.26.1",
+		    "daisyui": "^3.5.1",
     "framer-motion": "^6.2.8",
     "jquery": "^3.6.0",
     "moment": "^2.29.1",
@@ -26,8 +25,6 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -51,7 +48,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.8",
-    "gh-pages": "^6.1.1",
     "postcss": "^8.4.16",
     "tailwindcss": "^3.1.8"
   }
