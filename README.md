@@ -28,3 +28,7 @@ this app is 100% made with react and daisyui, resources:
 
 ## Support the project
 <a href="https://liberapay.com/adenlall/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
+
+ - [hooanime stream anime online](https://ar.hooanime.com)
+
+
